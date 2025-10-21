@@ -1,0 +1,161 @@
+Product_Family,Width,Length,Depth,Exact,excel_part_number,app_part_number,part_number_match,excel_price,app_price,price_match,excel_carton_qty,app_carton_qty,carton_qty_match,excel_carton_price,app_carton_price,carton_price_match,overall_match
+Fiberglass Throwaway - 2-PC ,14.5,62.75,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+Fiberglass Throwaway - 2-PC ,20.375,34.125,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+Fiberglass Throwaway - 2-PC ,16.0,65.25,1.0,Yes,11204CT01166525,Dimensions out of range,False,9.53,Invalid Part Number,False,12.0,$0.00,False,114.36,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,9.625,13.125,1.0,No,11204C010962513125,Dimensions out of range,False,6.1,Invalid Part Number,False,12.0,$0.00,False,73.2,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,16.375,44.125,1.0,Yes,11204CD011637544125,Dimensions out of range,False,9.09,Invalid Part Number,False,12.0,$0.00,False,109.08,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,8.875,12.5,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+Fiberglass Throwaway - 2-PC ,30.5,69.375,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,16.25,38.5,1.0,No,11204CD011625385,Dimensions out of range,False,9.09,Invalid Part Number,False,12.0,$0.00,False,109.08,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,9.875,68.75,2.0,Yes,11204CT02098756875,Dimensions out of range,False,9.99,Invalid Part Number,False,12.0,$0.00,False,119.88,$0.00,False,False
+Fiberglass Throwaway - 2-PC ,10.625,14.75,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+Poly Throwaway - 2-PC,17.875,70.75,2.0,No,12204CT02178757075,Dimensions out of range,False,10.64,Invalid Part Number,False,12.0,$0.00,False,127.68,$0.00,False,False
+Poly Throwaway - 2-PC,12.75,70.875,1.0,Yes,12204CT01127570875,Dimensions out of range,False,9.57,Invalid Part Number,False,12.0,$0.00,False,114.84,$0.00,False,False
+Poly Throwaway - 2-PC,29.0,35.875,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+Poly Throwaway - 2-PC,8.0,40.0,1.0,Yes,12204CE010840,Dimensions out of range,False,8.68,Invalid Part Number,False,12.0,$0.00,False,104.16,$0.00,False,False
+Poly Throwaway - 2-PC,21.25,12.0,2.0,No,12204C02212512,Dimensions out of range,False,6.72,Invalid Part Number,False,12.0,$0.00,False,80.64,$0.00,False,False
+Poly Throwaway - 2-PC,22.625,50.875,2.0,No,12204CD022262550875,Dimensions out of range,False,10.13,Invalid Part Number,False,12.0,$0.00,False,121.56,$0.00,False,False
+Poly Throwaway - 2-PC,25.375,19.125,2.0,Yes,12204CD022537519125,Dimensions out of range,False,9.2,Invalid Part Number,False,12.0,$0.00,False,110.4,$0.00,False,False
+Poly Throwaway - 2-PC,27.375,13.625,2.0,No,12204CD022737513625,Dimensions out of range,False,9.2,Invalid Part Number,False,12.0,$0.00,False,110.4,$0.00,False,False
+Poly Throwaway - 2-PC,8.875,62.0,1.0,Yes,12204CT010887562,Dimensions out of range,False,8.68,Invalid Part Number,False,12.0,$0.00,False,104.16,$0.00,False,False
+Poly Throwaway - 2-PC,23.25,32.375,1.0,No,12204CD01232532375,Dimensions out of range,False,9.1,Invalid Part Number,False,12.0,$0.00,False,109.2,$0.00,False,False
+MERV 8 Pleat - SC,23.5,46.125,2.0,No,21208CD0223546125,21208C0223546125,False,20.51,$13.21,False,12.0,$12.00,True,246.12,$158.52,False,False
+MERV 8 Pleat - SC,17.875,51.25,2.0,Yes,21208CD02178755125,21208C02178755125,False,20.51,$13.21,False,12.0,$12.00,True,246.12,$158.52,False,False
+MERV 8 Pleat - SC,27.375,40.125,1.0,No,Contact Customer Service,21208C012737540125,False,Contact Regional Sales Director,$10.98,False,12.0,$12.00,True,Contact Regional Sales Director,$131.76,False,False
+MERV 8 Pleat - SC,34.0,67.125,1.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+MERV 8 Pleat - SC,31.375,71.25,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+MERV 8 Pleat - SC,30.75,66.875,1.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+MERV 8 Pleat - SC,6.5,46.25,2.0,No,21208CD020654625,21208C02654625,False,14.24,$13.21,False,12.0,$12.00,True,170.88,$158.52,False,False
+MERV 8 Pleat - SC,36.625,6.875,2.0,Yes,21208CD023662506875,21208C02366256875,False,12.47,$13.21,False,12.0,$12.00,True,149.64,$158.52,False,False
+MERV 8 Pleat - SC,9.375,29.0,1.0,Yes,21208C010937529,21208C01937529,False,8,$10.98,False,12.0,$12.00,True,96,$131.76,False,False
+MERV 8 Pleat - SC,29.5,14.75,2.0,Yes,21208CD022951475,21208C022951475,False,14.24,$13.21,False,12.0,$12.00,True,170.88,$158.52,False,False
+MERV 8 Pleat - HC,26.625,24.25,4.0,No,ERROR,21308C04266252425,False,False,$24.70,False,6.0,$6.00,True,0,$148.20,False,False
+MERV 8 Pleat - HC,31.5,29.0,2.0,No,21308CD0231529,21308C0231529,False,22.56,$14.53,False,12.0,$12.00,True,270.72,$174.36,False,False
+MERV 8 Pleat - HC,20.625,23.75,1.0,No,21308C01206252375,21308C01206252375,True,12.08,$12.08,True,12.0,$12.00,True,144.96,$144.96,True,True
+MERV 8 Pleat - HC,14.75,13.875,1.0,No,21308C01147513875,21308C01147513875,True,8.8,$12.08,False,12.0,$12.00,True,105.6,$144.96,False,False
+MERV 8 Pleat - HC,18.0,30.125,1.0,No,21308CD011830125,21308C011830125,False,14.49,$12.08,False,12.0,$12.00,True,173.88,$144.96,False,False
+MERV 8 Pleat - HC,31.875,39.125,1.0,No,Contact Customer Service,21308C013187539125,False,Contact Regional Sales Director,$12.08,False,12.0,$12.00,True,Contact Regional Sales Director,$144.96,False,False
+MERV 8 Pleat - HC,22.125,28.75,2.0,No,21308C02221252875,21308C02221252875,True,17.43,$14.53,False,12.0,$12.00,True,209.16,$174.36,False,False
+MERV 8 Pleat - HC,21.875,54.875,1.0,Yes,21308CD012187554875,21308C012187554875,False,25.04,$12.08,False,12.0,$12.00,True,300.48,$144.96,False,False
+MERV 8 Pleat - HC,30.25,23.5,1.0,No,21308CD013025235,21308C013025235,False,17.39,$12.08,False,12.0,$12.00,True,208.68,$144.96,False,False
+MERV 8 Pleat - HC,7.75,16.875,4.0,Yes,ERROR,21308C0477516875,False,False,$24.70,False,6.0,$6.00,True,0,$148.20,False,False
+MERV 10 Pleat - SC,36.625,12.125,2.0,Yes,21210CD023662512125,21210C02366251687512125,False,14.95,$13.87,False,12.0,$12.00,True,179.4,$166.44,False,False
+MERV 10 Pleat - SC,26.375,40.25,2.0,Yes,Contact Customer Service,21210C022637516875121254025,False,Contact Regional Sales Director,$13.87,False,12.0,$12.00,True,Contact Regional Sales Director,$166.44,False,False
+MERV 10 Pleat - SC,19.625,33.5,1.0,No,21210CD0119625335,21210C011962516875121254025334,False,16.6,$11.53,False,12.0,$12.00,True,199.2,$138.36,False,False
+MERV 10 Pleat - SC,10.125,29.0,4.0,No,ERROR,21210C041012516875121254025334,False,False,$23.57,False,6.0,$6.00,True,0,$141.42,False,False
+MERV 10 Pleat - SC,6.375,68.5,4.0,No,ERROR,21210C04637516875121254025334,False,False,$23.57,False,6.0,$6.00,True,0,$141.42,False,False
+MERV 10 Pleat - SC,16.25,42.875,1.0,No,21210CD01162542875,21210C01162516875121254025334,False,16.6,$11.53,False,12.0,$12.00,True,199.2,$138.36,False,False
+MERV 10 Pleat - SC,7.75,7.625,1.0,Yes,21210C01077507625,21210C0177516875121254025334,False,8.4,$11.53,False,12.0,$12.00,True,100.8,$138.36,False,False
+MERV 10 Pleat - SC,18.875,13.125,4.0,Yes,ERROR,21210C041887516875121254025334,False,False,$23.57,False,6.0,$6.00,True,0,$141.42,False,False
+MERV 10 Pleat - SC,28.25,6.625,2.0,No,21210CD02282506625,21210C02282516875121254025334,False,13.1,$13.87,False,12.0,$12.00,True,157.2,$166.44,False,False
+MERV 10 Pleat - SC,14.75,23.375,4.0,No,ERROR,21210C04147516875121254025334,False,False,$23.57,False,6.0,$6.00,True,0,$141.42,False,False
+MERV 10 Pleat - HC,24.875,9.0,2.0,No,21310CD022487509,21310C022487516875121254025334,False,14.41,$15.25,False,12.0,$12.00,True,172.92,$183.00,False,False
+MERV 10 Pleat - HC,7.375,47.375,2.0,Yes,21310CD020737547375,21310C02737516875121254025334,False,16.45,$15.25,False,12.0,$12.00,True,197.4,$183.00,False,False
+MERV 10 Pleat - HC,16.375,26.125,2.0,Yes,21310C021637526125,21310C021637516875121254025334,False,15.25,$15.25,True,12.0,$12.00,True,183,$183.00,True,False
+MERV 10 Pleat - HC,28.375,51.75,4.0,Yes,ERROR,21310C042837516875121254025334,False,False,$25.93,False,6.0,$6.00,True,0,$155.58,False,False
+MERV 10 Pleat - HC,32.125,36.0,1.0,Yes,Contact Customer Service,21310C013212516875121254025334,False,Contact Regional Sales Director,$12.68,False,12.0,$12.00,True,Contact Regional Sales Director,$152.16,False,False
+MERV 10 Pleat - HC,16.25,30.875,1.0,Yes,21310CD01162530875,21310C01162516875121254025334,False,15.22,$12.68,False,12.0,$12.00,True,182.64,$152.16,False,False
+MERV 10 Pleat - HC,21.75,16.875,2.0,Yes,21310C02217516875,21310C02217516875121254025334,False,15.25,$15.25,True,12.0,$12.00,True,183,$183.00,True,False
+MERV 10 Pleat - HC,34.375,68.125,2.0,Yes,Contact Customer Service,21310C023437516875121254025334,False,Contact Regional Sales Director,$15.25,False,12.0,$12.00,True,Contact Regional Sales Director,$183.00,False,False
+MERV 10 Pleat - HC,23.75,17.75,2.0,Yes,21310C0223751775,21310C02237516875121254025334,False,15.25,$15.25,True,12.0,$12.00,True,183,$183.00,True,False
+MERV 10 Pleat - HC,12.75,8.75,4.0,Yes,ERROR,21310C04127516875121254025334,False,False,$25.93,False,6.0,$6.00,True,0,$155.58,False,False
+MERV 11 Pleat - SC,23.25,64.75,4.0,No,ERROR,21211C04232516875121254025334,False,False,$26.49,False,6.0,$6.00,True,0,$158.94,False,False
+MERV 11 Pleat - SC,30.375,36.25,4.0,Yes,ERROR,21211C043037516875121254025334,False,False,$26.49,False,6.0,$6.00,True,0,$158.94,False,False
+MERV 11 Pleat - SC,25.25,51.375,4.0,No,ERROR,21211C04252516875121254025334,False,False,$26.49,False,6.0,$6.00,True,0,$158.94,False,False
+MERV 11 Pleat - SC,15.25,52.125,1.0,Yes,21211CD01152552125,21211C01152516875121254025334,False,18.66,$12.96,False,12.0,$12.00,True,223.92,$155.52,False,False
+MERV 11 Pleat - SC,29.5,61.875,4.0,Yes,ERROR,21211C0429516875121254025334,False,False,$26.49,False,6.0,$6.00,True,0,$158.94,False,False
+MERV 11 Pleat - SC,35.875,14.75,1.0,No,21211CD01358751475,21211C013587516875121254025334,False,15.55,$12.96,False,12.0,$12.00,True,186.6,$155.52,False,False
+MERV 11 Pleat - SC,13.5,66.125,2.0,No,21211CT0213566125,21211C0213516875121254025334,False,26.22,$15.58,False,12.0,$12.00,True,314.64,$186.96,False,False
+MERV 11 Pleat - SC,14.0,35.625,1.0,No,21211CD011435625,21211C011416875121254025334,False,15.55,$12.96,False,12.0,$12.00,True,186.6,$155.52,False,False
+MERV 11 Pleat - SC,34.625,51.75,1.0,Yes,Contact Customer Service,21211C013462516875121254025334,False,Contact Regional Sales Director,$12.96,False,12.0,$12.00,True,Contact Regional Sales Director,$155.52,False,False
+MERV 11 Pleat - SC,15.5,6.625,4.0,No,ERROR,21211C0415516875121254025334,False,False,$26.49,False,6.0,$6.00,True,0,$158.94,False,False
+MERV 11 Pleat - HC,12.625,29.75,2.0,No,21311C02126252975,21311C021262516875121254025334,False,17.14,$17.14,True,12.0,$12.00,True,205.68,$205.68,True,False
+MERV 11 Pleat - HC,6.25,50.5,1.0,No,21311CD010625505,21311C0162516875121254025334,False,17.1,$14.25,False,12.0,$12.00,True,205.2,$171.00,False,False
+MERV 11 Pleat - HC,29.875,40.25,2.0,No,Contact Customer Service,21311C022987516875121254025334,False,Contact Regional Sales Director,$17.14,False,12.0,$12.00,True,Contact Regional Sales Director,$205.68,False,False
+MERV 11 Pleat - HC,31.5,72.875,2.0,No,Contact Customer Service,21311C0231516875121254025334,False,Contact Regional Sales Director,$17.14,False,12.0,$12.00,True,Contact Regional Sales Director,$205.68,False,False
+MERV 11 Pleat - HC,26.0,16.125,4.0,Yes,ERROR,21311C042616875121254025334,False,False,$29.14,False,6.0,$6.00,True,0,$174.84,False,False
+MERV 11 Pleat - HC,30.625,33.75,4.0,Yes,ERROR,21311C043062516875121254025334,False,False,$29.14,False,6.0,$6.00,True,0,$174.84,False,False
+MERV 11 Pleat - HC,15.0,26.5,1.0,Yes,21311C0115265,21311C011516875121254025334,False,14.25,$14.25,True,12.0,$12.00,True,171,$171.00,True,False
+MERV 11 Pleat - HC,33.125,54.375,4.0,No,ERROR,21311C043312516875121254025334,False,False,$29.14,False,6.0,$6.00,True,0,$174.84,False,False
+MERV 11 Pleat - HC,32.75,61.375,1.0,Yes,Contact Customer Service,21311C01327516875121254025334,False,Contact Regional Sales Director,$14.25,False,12.0,$12.00,True,Contact Regional Sales Director,$171.00,False,False
+MERV 11 Pleat - HC,9.875,24.125,2.0,No,21311C020987524125,21311C02987516875121254025334,False,11.41,$17.14,False,12.0,$12.00,True,136.92,$205.68,False,False
+MERV 13 Pleat - HC,32.625,59.25,1.0,No,Contact Customer Service,21213C013262516875121254025334,False,Contact Regional Sales Director,$16.82,False,12.0,$12.00,True,Contact Regional Sales Director,$201.84,False,False
+MERV 13 Pleat - HC,9.75,56.75,2.0,No,21213CD0209755675,21213C0297516875121254025334,False,21.81,$20.23,False,12.0,$12.00,True,261.72,$242.76,False,False
+MERV 13 Pleat - HC,33.5,70.0,2.0,Yes,Contact Customer Service,21213C0233516875121254025334,False,Contact Regional Sales Director,$20.23,False,12.0,$12.00,True,Contact Regional Sales Director,$242.76,False,False
+MERV 13 Pleat - HC,11.5,19.875,2.0,No,21213C0211519875,21213C0211516875121254025334,False,13.47,$20.23,False,12.0,$12.00,True,161.64,$242.76,False,False
+MERV 13 Pleat - HC,21.25,60.25,1.0,No,21213CT0121256025,21213C01212516875121254025334,False,45.33,$16.82,False,12.0,$12.00,True,543.96,$201.84,False,False
+MERV 13 Pleat - HC,10.25,10.25,2.0,No,21213C0210251025,21213C02102516875121254025334,False,13.47,$20.23,False,12.0,$12.00,True,161.64,$242.76,False,False
+MERV 13 Pleat - HC,28.5,54.125,2.0,No,Contact Customer Service,21213C0228516875121254025334,False,Contact Regional Sales Director,$20.23,False,12.0,$12.00,True,Contact Regional Sales Director,$242.76,False,False
+MERV 13 Pleat - HC,12.125,34.875,2.0,No,21213CD021212534875,21213C021212516875121254025334,False,21.81,$20.23,False,12.0,$12.00,True,261.72,$242.76,False,False
+MERV 13 Pleat - HC,35.625,30.875,4.0,Yes,ERROR,21213C043562516875121254025334,False,False,$34.39,False,6.0,$6.00,True,0,$206.34,False,False
+MERV 13 Pleat - HC,10.125,61.375,2.0,No,21213CT021012561375,21213C021012516875121254025334,False,34.03,$20.23,False,12.0,$12.00,True,408.36,$242.76,False,False
+XT High Strength M9 Pleat SC,25.75,69.625,1.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M9 Pleat SC,14.0,62.0,2.0,No,23209CT021462,Dimensions out of range,False,30.21,Invalid Part Number,False,12.0,$0.00,False,362.52,$0.00,False,False
+XT High Strength M9 Pleat SC,10.375,34.0,2.0,No,23209CD021037534,Dimensions out of range,False,19.37,Invalid Part Number,False,12.0,$0.00,False,232.44,$0.00,False,False
+XT High Strength M9 Pleat SC,35.125,68.875,1.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M9 Pleat SC,25.625,31.125,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M9 Pleat SC,14.375,37.25,2.0,No,23209CD02143753725,Dimensions out of range,False,19.37,Invalid Part Number,False,12.0,$0.00,False,232.44,$0.00,False,False
+XT High Strength M9 Pleat SC,21.375,58.75,1.0,Yes,23209CD01213755875,Dimensions out of range,False,30.96,Invalid Part Number,False,12.0,$0.00,False,371.52,$0.00,False,False
+XT High Strength M9 Pleat SC,26.125,48.25,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M9 Pleat SC,21.75,42.5,2.0,No,23209CD022175425,Dimensions out of range,False,27.89,Invalid Part Number,False,12.0,$0.00,False,334.68,$0.00,False,False
+XT High Strength M9 Pleat SC,12.375,24.125,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M9 Pleat HC,22.5,67.75,2.0,No,23309CT022256775,Dimensions out of range,False,57.43,Invalid Part Number,False,12.0,$0.00,False,689.16,$0.00,False,False
+XT High Strength M9 Pleat HC,33.25,15.625,2.0,No,23309CD02332515625,Dimensions out of range,False,21.3,Invalid Part Number,False,12.0,$0.00,False,255.6,$0.00,False,False
+XT High Strength M9 Pleat HC,14.5,65.0,2.0,No,23309CT0214565,Dimensions out of range,False,39.88,Invalid Part Number,False,12.0,$0.00,False,478.56,$0.00,False,False
+XT High Strength M9 Pleat HC,29.125,23.5,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M9 Pleat HC,7.75,68.75,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M9 Pleat HC,14.0,72.375,1.0,No,23309CT011472375,Dimensions out of range,False,36.9,Invalid Part Number,False,12.0,$0.00,False,442.8,$0.00,False,False
+XT High Strength M9 Pleat HC,9.875,38.75,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M9 Pleat HC,33.5,54.0,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M9 Pleat HC,12.5,22.75,1.0,No,23309C011252275,Dimensions out of range,False,11.96,Invalid Part Number,False,12.0,$0.00,False,143.52,$0.00,False,False
+XT High Strength M9 Pleat HC,17.0,49.25,1.0,No,23309CD01174925,Dimensions out of range,False,23.65,Invalid Part Number,False,12.0,$0.00,False,283.8,$0.00,False,False
+XT High Strength M10 Pleat SC,11.875,12.875,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat SC,31.5,56.125,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M10 Pleat SC,10.625,43.875,1.0,No,23210CD011062543875,Dimensions out of range,False,18.81,Invalid Part Number,False,12.0,$0.00,False,225.72,$0.00,False,False
+XT High Strength M10 Pleat SC,10.25,59.125,1.0,Yes,23210CD01102559125,Dimensions out of range,False,22.58,Invalid Part Number,False,12.0,$0.00,False,270.96,$0.00,False,False
+XT High Strength M10 Pleat SC,17.25,17.75,2.0,Yes,23210C0217251775,Dimensions out of range,False,18.86,Invalid Part Number,False,12.0,$0.00,False,226.32,$0.00,False,False
+XT High Strength M10 Pleat SC,19.0,55.25,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat SC,28.875,54.125,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat SC,35.125,53.125,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat SC,14.125,50.625,1.0,No,23210CD011412550625,Dimensions out of range,False,22.58,Invalid Part Number,False,12.0,$0.00,False,270.96,$0.00,False,False
+XT High Strength M10 Pleat SC,7.5,29.75,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,31.625,53.75,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M10 Pleat HC,21.875,61.25,2.0,No,23310CT02218756125,Dimensions out of range,False,50.25,Invalid Part Number,False,12.0,$0.00,False,603,$0.00,False,False
+XT High Strength M10 Pleat HC,27.75,53.625,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,36.5,65.5,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M10 Pleat HC,10.625,22.5,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,25.625,19.0,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,13.5,31.125,2.0,Yes,23310CD0213531125,Dimensions out of range,False,22.37,Invalid Part Number,False,12.0,$0.00,False,268.44,$0.00,False,False
+XT High Strength M10 Pleat HC,20.25,68.875,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,13.5,71.75,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M10 Pleat HC,11.125,26.5,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat SC,33.75,46.125,1.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat SC,29.375,34.875,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat SC,18.25,15.25,2.0,No,23211C0218251525,Dimensions out of range,False,14.11,Invalid Part Number,False,12.0,$0.00,False,169.32,$0.00,False,False
+XT High Strength M11 Pleat SC,28.875,35.625,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat SC,10.375,9.5,2.0,Yes,23211C0210375095,Dimensions out of range,False,14.11,Invalid Part Number,False,12.0,$0.00,False,169.32,$0.00,False,False
+XT High Strength M11 Pleat SC,21.5,8.625,2.0,No,23211C0221508625,Dimensions out of range,False,14.11,Invalid Part Number,False,12.0,$0.00,False,169.32,$0.00,False,False
+XT High Strength M11 Pleat SC,16.25,39.875,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat SC,8.625,8.625,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat SC,25.625,33.0,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat SC,10.75,30.75,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,8.0,9.0,1.0,Yes,23311CE010809,Dimensions out of range,False,14.11,Invalid Part Number,False,12.0,$0.00,False,169.32,$0.00,False,False
+XT High Strength M11 Pleat HC,12.375,28.5,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,28.125,61.25,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,30.0,47.75,2.0,No,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat HC,35.25,14.625,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,29.0,19.125,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,9.875,54.75,1.0,Yes,23311CD01098755475,Dimensions out of range,False,23.26,Invalid Part Number,False,12.0,$0.00,False,279.12,$0.00,False,False
+XT High Strength M11 Pleat HC,7.875,68.0,4.0,No,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M11 Pleat HC,30.375,57.0,2.0,Yes,Contact Customer Service,Dimensions out of range,False,Contact Regional Sales Director,Invalid Part Number,True,12.0,$0.00,False,Contact Regional Sales Director,$0.00,False,False
+XT High Strength M11 Pleat HC,18.125,71.875,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M13 Pleat HC,19.375,12.375,2.0,Yes,23213C021937512375,Dimensions out of range,False,16.65,Invalid Part Number,False,12.0,$0.00,False,199.8,$0.00,False,False
+XT High Strength M13 Pleat HC,22.125,18.75,1.0,Yes,23213C01221251875,Dimensions out of range,False,20.79,Invalid Part Number,False,12.0,$0.00,False,249.48,$0.00,False,False
+XT High Strength M13 Pleat HC,21.0,17.75,1.0,Yes,23213C01211775,Dimensions out of range,False,20.79,Invalid Part Number,False,12.0,$0.00,False,249.48,$0.00,False,False
+XT High Strength M13 Pleat HC,32.875,38.875,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M13 Pleat HC,8.875,61.375,2.0,Yes,23213CT020887561375,Dimensions out of range,False,35.06,Invalid Part Number,False,12.0,$0.00,False,420.72,$0.00,False,False
+XT High Strength M13 Pleat HC,19.875,18.0,1.0,Yes,23213C011987518,Dimensions out of range,False,20.79,Invalid Part Number,False,12.0,$0.00,False,249.48,$0.00,False,False
+XT High Strength M13 Pleat HC,28.0,29.25,4.0,Yes,ERROR,Dimensions out of range,False,False,Invalid Part Number,True,6.0,$0.00,False,0,$0.00,True,False
+XT High Strength M13 Pleat HC,11.25,53.25,2.0,Yes,23213CD0211255325,Dimensions out of range,False,,Invalid Part Number,True,12.0,$0.00,False,,$0.00,False,False
+XT High Strength M13 Pleat HC,17.25,27.25,2.0,No,23213C0217252725,Dimensions out of range,False,25.01,Invalid Part Number,False,12.0,$0.00,False,300.12,$0.00,False,False
+XT High Strength M13 Pleat HC,22.875,27.5,2.0,No,23213C0222875275,Dimensions out of range,False,30.01,Invalid Part Number,False,12.0,$0.00,False,360.12,$0.00,False,False

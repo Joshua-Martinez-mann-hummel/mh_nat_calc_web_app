@@ -1,0 +1,183 @@
+import xlwings as xw
+import pandas as pd
+import random
+import time
+import os
+
+# ----------------------------------------------------
+# CONFIGURATION
+# ----------------------------------------------------
+
+# --- Use paths relative to this script's location ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', 'raw_calc.xlsm') # Go up two directories
+OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
+
+SHEET_NAME = "Pleats Calc"
+
+NUM_TESTS_PER_FAMILY = 10
+
+DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
+WIDTH_RANGE = (6, 36)
+LENGTH_RANGE = (6, 72)
+
+
+# ----------------------------------------------------
+# HELPERS
+# ----------------------------------------------------
+def get_dropdown_values(ws, cell_address):
+    """Return list of dropdown options for a given cell (even across sheets)."""
+    rng = ws.range(cell_address)
+    try:
+        validation = rng.api.Validation
+    except Exception:
+        return []
+
+    try:
+        if validation.Type != 3:  # 3 = xlValidateList
+            return []
+    except Exception:
+        return []
+
+    formula = validation.Formula1
+
+    # Case 1: Inline comma-separated list ("Yes,No")
+    if not formula or not str(formula).startswith("="):
+        return [item.strip() for item in str(formula).split(",") if item.strip()]
+
+    # Case 2: Range reference (e.g., ='Sheet2'!$A$1:$A$5)
+    ref = formula[1:]  # remove leading '='
+
+    # Parse out the sheet name and range
+    if "!" in ref:
+        sheet_name, range_ref = ref.split("!", 1)
+        sheet_name = sheet_name.strip("'")  # remove quotes if any
+        try:
+            target_ws = ws.book.sheets[sheet_name]
+            target_rng = target_ws.range(range_ref)
+            values = [cell.value for cell in target_rng if cell.value is not None]
+            return values
+        except Exception as e:
+            print(f"⚠️ Could not read range {ref}: {e}")
+            return []
+
+    # Case 3: Named range
+    try:
+        named = ws.book.names[ref]
+        named_rng = named.refers_to_range
+        if named_rng is not None:
+            return [cell.value for cell in named_rng if cell.value is not None]
+        else:
+            # fallback: try evaluating
+            vals = ws.book.app.evaluate(ref)
+            flat = []
+            if vals is None:
+                return []
+            if isinstance(vals, (tuple, list)):
+                for row in vals:
+                    for v in row:
+                        if v is not None:
+                            flat.append(v)
+            else:
+                flat = [vals]
+            return flat
+    except Exception as e:
+        print(f"⚠️ Could not resolve named range {ref}: {e}")
+        return []
+
+
+def random_dimension(range_min, range_max):
+    whole = random.randint(range_min, range_max)
+    decimal = random.choice(DECIMAL_OPTIONS)
+    return whole, decimal
+
+
+# ----------------------------------------------------
+# MAIN
+# ----------------------------------------------------
+def main():
+    app = xw.App(visible=False)
+    wb = xw.Book(WORKBOOK_PATH)
+    ws = wb.sheets[SHEET_NAME]
+
+    # Automatically detect dropdown lists
+    product_families = get_dropdown_values(ws, "F7")
+    depth_options = get_dropdown_values(ws, "F15")
+    made_exact_options = get_dropdown_values(ws, "G13")
+
+    print("📦 Product Families:", product_families)
+    print("📏 Depth Options:", depth_options)
+    print("🎯 Will-Be-Made-Exact Options:", made_exact_options)
+
+    results = []
+
+    for family in product_families:
+        print(f"\nRunning tests for Product Family: {family}")
+        depth_options = get_dropdown_values(ws, "F15")
+
+        for _ in range(NUM_TESTS_PER_FAMILY):
+            width_whole, width_dec = random_dimension(*WIDTH_RANGE)
+            length_whole, length_dec = random_dimension(*LENGTH_RANGE)
+            will_be_exact = random.choice(made_exact_options)
+            depth = random.choice(depth_options)
+
+            # Populate Inputs
+            ws["F7"].value = family
+            ws["F10"].value = width_whole
+            ws["G10"].value = width_dec
+            ws["F11"].value = length_whole
+            ws["G11"].value = length_dec
+            ws["G13"].value = will_be_exact
+            ws["F15"].value = depth
+            ##debug prints
+            ##print(f" Test Case - Width: {width_whole + width_dec}, Length: {length_whole + length_dec}, Depth: {depth}, Exact: {will_be_exact}")
+
+            # Force Excel recalculation
+            ws.book.app.calculate()
+            ws.book.app.calculation = 'automatic'  # Ensure automatic calc is on
+            time.sleep(0.5)  # Wait half a second for Excel to finish
+
+            # Read Outputs using NAMED RANGES (like the macro does)
+            try:
+                part_number = wb.names["Part_Number_pleats"].refers_to_range.value
+                price = wb.names["Price_pleats"].refers_to_range.value
+                carton_qty = wb.names["Carton_qty_pleats"].refers_to_range.value
+                carton_price = wb.names["Carton_price_pleats"].refers_to_range.value
+                ##print("using named ranges")
+            except Exception as e:
+                print(f"Error reading named ranges: {e}")
+                # Fallback to your original method if needed
+                part_number = ws["F19"].value
+                price = ws["F21"].value
+                carton_qty = ws["F23"].value
+                carton_price = ws["F24"].value
+                ##print("using cell addresses")
+            
+            # Ensure we don't write NaN values to the CSV, which can cause errors
+            price = 0 if pd.isna(price) else price
+            carton_qty = 0 if pd.isna(carton_qty) else carton_qty
+            carton_price = 0 if pd.isna(carton_price) else carton_price
+
+
+            results.append({
+                "Product_Family": family,
+                "Width": width_whole + width_dec,
+                "Length": length_whole + length_dec,
+                "Exact": will_be_exact,
+                "Depth": depth,
+                "Part_Number": part_number,
+                "Price": price,
+                "Carton_Quantity": carton_qty,
+                "Carton_Price": carton_price
+            })
+
+    df = pd.DataFrame(results)
+    df.to_csv(OUTPUT_CSV_PATH, index=False)
+    print(f"\n✅ Test results saved to {OUTPUT_CSV_PATH}")
+
+    wb.close()
+    app.quit()
+
+
+if __name__ == "__main__":
+    main()
