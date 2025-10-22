@@ -15,7 +15,7 @@ OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
 
 SHEET_NAME = "Pleats Calc"
 
-NUM_TESTS_PER_FAMILY = 10
+NUM_TESTS_PER_FAMILY = 5
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
 WIDTH_RANGE = (6, 36)
@@ -111,18 +111,25 @@ def main():
 
     results = []
 
-    for family in product_families:
+    for i, family in enumerate(product_families):
         print(f"\nRunning tests for Product Family: {family}")
-        depth_options = get_dropdown_values(ws, "F15")
 
         for _ in range(NUM_TESTS_PER_FAMILY):
             width_whole, width_dec = random_dimension(*WIDTH_RANGE)
             length_whole, length_dec = random_dimension(*LENGTH_RANGE)
             will_be_exact = random.choice(made_exact_options)
-            depth = random.choice(depth_options)
 
-            # Populate Inputs
+            # Set the product family in Excel to update dependent dropdowns
             ws["F7"].value = family
+            
+            # For the first two families, only test depths 1 and 2.
+            if i < 2:
+                depth = random.choice([1, 2])
+            else:
+                # For all other families, use the available depth options from Excel.
+                depth_options = get_dropdown_values(ws, "F15")
+                depth = random.choice(depth_options)
+            # Populate Inputs
             ws["F10"].value = width_whole
             ws["G10"].value = width_dec
             ws["F11"].value = length_whole

@@ -5,7 +5,7 @@ import numpy as np
 # --- CONFIGURATION ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 EXCEL_RESULTS_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
-APP_RESULTS_PATH = os.path.join(SCRIPT_DIR, "my_results_pleats.csv")
+APP_RESULTS_PATH = os.path.join(SCRIPT_DIR, "results_pleats_app.csv")
 SUMMARY_CSV_PATH = os.path.join(SCRIPT_DIR, "comparison_summary.csv")
 
 
