@@ -135,15 +135,38 @@ export const calculatePleatPrice = (
     return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Invalid Part Number' };
   }
 
+  // --- Get Product Code for Table Switch Logic ---
+  const productCodeRow = pricingData.productFamilyCodes.find(
+    (p) => p.Name.trim() === inputs.productFamily.trim()
+  );
+  const productCode = productCodeRow?.Product_Prefix;
+
   // --- GATE 1: Manual Override Check ---
-  // The condition from Z37 in the Excel map is whether the filter is "Made Exact"
-  const useTableA = inputs.isExact;
+  // This list contains product codes that MUST use the 'A' table.
+  const tableAProducts = [23209, 23309, 23210, 23310, 23211, 23311, 23213];
+
+  // The table switch is now based on whether the current product's code is in the special list.
+  const useTableA = productCode ? tableAProducts.includes(productCode) : false;
 
   const tableToSearch = useTableA
     ? pricingData.specialOverrideA
     : pricingData.specialOverrideB;
 
-  const lookupKey = `${width}x${length}x${inputs.depth}`;
+  // Construct the lookup key string-by-string to avoid floating point inaccuracies.
+  // This is more robust than `${width}x${length}x${depth}`.
+  const fractionalWidthRow = pricingData.fractionalCodes.find(
+    (row) => row.Decimal_Value === inputs.widthFraction
+  );
+  const fractionalWidthCode = fractionalWidthRow?.Part_Number_Code;
+
+  const fractionalLengthRow = pricingData.fractionalCodes.find(
+    (row) => row.Decimal_Value === inputs.lengthFraction
+  );
+  const fractionalLengthCode = fractionalLengthRow?.Part_Number_Code;
+
+  const widthString = fractionalWidthCode ? `${inputs.widthWhole}.${fractionalWidthCode}` : `${inputs.widthWhole}`;
+  const lengthString = fractionalLengthCode ? `${inputs.lengthWhole}.${fractionalLengthCode}` : `${inputs.lengthWhole}`;
+  const lookupKey = `${widthString}x${lengthString}x${inputs.depth}`;
 
   const specialPriceRow = tableToSearch.find(
     (row) => row.Lookup_Key === lookupKey

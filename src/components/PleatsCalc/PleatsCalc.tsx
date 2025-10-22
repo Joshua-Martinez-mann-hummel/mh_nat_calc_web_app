@@ -58,6 +58,23 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
       setDecimalLength(inputs.lengthWhole + inputs.lengthFraction);
     }
   }, [inputMode, inputs.widthWhole, inputs.widthFraction, inputs.lengthWhole, inputs.lengthFraction]);
+
+  // Find the current product code to determine available depths
+  const currentProductCode = data?.productFamilyCodes.find(
+    (p) => p.Name === inputs.productFamily
+  )?.Product_Prefix;
+
+  const restrictedDepthProducts = [11204, 12204];
+  const isDepthRestricted = currentProductCode ? restrictedDepthProducts.includes(currentProductCode) : false;
+
+  // This effect will run when the product family changes.
+  // If the new product has restricted depth and the current depth is 4, reset it.
+  useEffect(() => {
+    if (isDepthRestricted && inputs.depth === 4) {
+      setInputs((prev) => ({ ...prev, depth: 1 })); // Reset to a valid depth
+    }
+  }, [inputs.productFamily, isDepthRestricted, inputs.depth]);
+
   // This "effect" runs whenever the user's inputs change to calculate the new price
   useEffect(() => {
     if (data) {
@@ -263,7 +280,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
             >
               <option value={1}>1"</option>
               <option value={2}>2"</option>
-              <option value={4}>4"</option>
+              {!isDepthRestricted && <option value={4}>4"</option>}
             </select>
           </FormField>
           <FormField label="Made Exact?">
