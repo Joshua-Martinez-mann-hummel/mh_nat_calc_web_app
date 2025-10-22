@@ -107,6 +107,7 @@ def main():
 
     print("📦 Product Families:", product_families)
     print("📏 Depth Options:", depth_options)
+    print(f"   [DEBUG] Initial depth option types: {[type(o) for o in depth_options]}")
     print("🎯 Will-Be-Made-Exact Options:", made_exact_options)
 
     results = []
@@ -126,39 +127,86 @@ def main():
             if i < 2:
                 depth = random.choice([1, 2])
             else:
-                # For all other families, use the available depth options from Excel.
-                depth_options = get_dropdown_values(ws, "F15")
+                # For all other families, get the available depth options from Excel, preserving their type.
+                depth_options = [v for v in get_dropdown_values(ws, "F15") if v not in (None, "")]
+                print(f"   [DEBUG] Dependent depth options for '{family}': {depth_options} (types: {[type(o) for o in depth_options]})")
+                # CRITICAL: Do NOT convert the type. The Excel formulas expect the exact type (e.g., text '4') from the dropdown source.
                 depth = random.choice(depth_options)
+
+            # --- Additional Debugging ---
+            try:
+                print(f"   [DEBUG] F15 (Depth) dropdown validation formula: {ws.range('F15').api.Validation.Formula1}")
+            except Exception:
+                print("   [DEBUG] Could not read F15 validation formula.")
+
             # Populate Inputs
             ws["F10"].value = width_whole
             ws["G10"].value = width_dec
             ws["F11"].value = length_whole
             ws["G11"].value = length_dec
-            ws["G13"].value = will_be_exact
-            ws["F15"].value = depth
-            ##debug prints
-            ##print(f" Test Case - Width: {width_whole + width_dec}, Length: {length_whole + length_dec}, Depth: {depth}, Exact: {will_be_exact}")
+            ws["G13"].value = str(will_be_exact)
 
-            # Force Excel recalculation
+            # Set the depth value, preserving its original type (e.g., text '4')
+            # The formulas in the sheet depend on this exact type.
+            print(f"   [DEBUG] Setting depth to: {depth} (type: {type(depth)})")
+            # If the depth is a string that looks like a number (e.g., '4'),
+            # we prepend an apostrophe to force Excel to treat it as text.
+            # This prevents auto-conversion to a number, which breaks the formulas.
+            if isinstance(depth, str) and depth.isnumeric():
+                ws["F15"].value = f"'{depth}"
+            else:
+                ws["F15"].value = depth
+
+            # Force Excel recalculation and wait for it to complete
             ws.book.app.calculate()
             ws.book.app.calculation = 'automatic'  # Ensure automatic calc is on
             time.sleep(0.5)  # Wait half a second for Excel to finish
 
-            # Read Outputs using NAMED RANGES (like the macro does)
+            # Read Outputs - get the DISPLAYED text, not the formula value
             try:
-                part_number = wb.names["Part_Number_pleats"].refers_to_range.value
-                price = wb.names["Price_pleats"].refers_to_range.value
-                carton_qty = wb.names["Carton_qty_pleats"].refers_to_range.value
-                carton_price = wb.names["Carton_price_pleats"].refers_to_range.value
-                ##print("using named ranges")
+                # Try to get the displayed text (what you see visually)
+                part_number = ws["F19"].api.Text
+                price_text = ws["F21"].api.Text
+                carton_qty_text = ws["F23"].api.Text
+                carton_price_text = ws["F24"].api.Text
+                
+                print(f"   [DEBUG] Text values: Part#='{part_number}', Price='{price_text}', Qty='{carton_qty_text}', CartonPrice='{carton_price_text}'")
+                
+                # Convert to proper types
+                try:
+                    price = float(price_text.replace('$', '').replace(',', '')) if price_text and price_text != '' else 0
+                except:
+                    price = 0
+                
+                try:
+                    carton_qty = float(carton_qty_text.replace(',', '')) if carton_qty_text and carton_qty_text != '' else 0
+                except:
+                    carton_qty = 0
+                    
+                try:
+                    carton_price = float(carton_price_text.replace('$', '').replace(',', '')) if carton_price_text and carton_price_text != '' else 0
+                except:
+                    carton_price = 0
+                
             except Exception as e:
-                print(f"Error reading named ranges: {e}")
-                # Fallback to your original method if needed
+                print(f"   [DEBUG] Error reading text: {e}")
+                # Last resort fallback
                 part_number = ws["F19"].value
-                price = ws["F21"].value
-                carton_qty = ws["F23"].value
-                carton_price = ws["F24"].value
-                ##print("using cell addresses")
+                price = ws["F21"].value if ws["F21"].value else 0
+                carton_qty = ws["F23"].value if ws["F23"].value else 0
+                carton_price = ws["F24"].value if ws["F24"].value else 0
+
+            print(f"   [DEBUG] Final values: Part#='{part_number}', Price={price}, Qty={carton_qty}, CartonPrice={carton_price}")
+
+            # Safety check for Excel errors before appending results
+            # We check for standard Excel errors (e.g., #N/A) and custom text errors.
+            is_error = False
+            for val in [part_number, price, carton_qty, carton_price]:
+                if isinstance(val, str) and (val.startswith('#') or 'Contact' in val):
+                    is_error = True
+                    print(f"⚠️  Excel error or 'Contact' message detected: '{val}' for {family} | Depth: {depth}. Skipping result.")
+                    break # No need to check other values
+            if is_error: continue
             
             # Ensure we don't write NaN values to the CSV, which can cause errors
             price = 0 if pd.isna(price) else price

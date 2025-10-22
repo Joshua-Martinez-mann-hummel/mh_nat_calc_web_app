@@ -59,38 +59,52 @@ export const generatePleatPartNumber = (
 
   console.log(`Found Fractional Codes: WidthCode=${fractionalWidthCode}, LengthCode=${fractionalLengthCode}`);
 
-  // --- Step 2: Find the Correct Row from the Tiered Matrix ---
-  console.log(`Searching Tiered Matrix for Product_Prefix=${productCode} and FaceValue=${faceValue}`);
-  const relevantRow: TieredLookupRow | undefined = pricingData.tieredLookupMatrix.find(
-    (row) =>
-      row.Product_Prefix === productCode &&
-      faceValue >= row.Min_Range &&
-      faceValue <= row.Max_Range
-  );
-  
-  if (!relevantRow) {
-    console.error('Could not find a matching row in the Tiered Lookup Matrix.');
-    return 'Dimensions out of range';
-  }
-  console.log('Found Tiered Matrix Row:', relevantRow);
-
   // --- Step 3: Determine the Secondary Code ---
-  // This replicates the logic from the T, U, and V columns
+  // This logic is based on the dimension checker from cells U57 and U58.
+  // It implements a 4-tier check based on standard and oversize dimension thresholds.
   let secondaryCode: number;
-  if (inputs.depth === 1) {
-    secondaryCode = relevantRow['1" Update']; // Or Double/Triple based on other inputs if needed
-  } else if (inputs.depth === 2) {
-    secondaryCode = relevantRow['2" Update'];
+
+  const standardThreshold = pricingData.dimensionThresholds.find(
+    (t) => t.Depth === inputs.depth && t.Limit_Type === 'Standard'
+  );
+  const oversizeThreshold = pricingData.dimensionThresholds.find(
+    (t) => t.Depth === inputs.depth && t.Limit_Type === 'Oversize'
+  );
+
+  if (!standardThreshold || !oversizeThreshold) {
+    return 'Invalid depth threshold';
+  }
+
+  if (inputs.depth === 1 || inputs.depth === 2) {
+    if (width <= standardThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 1;
+    } else if (width <= standardThreshold.Width_Limit && length <= oversizeThreshold.Length_Limit) {
+      secondaryCode = 2;
+    } else if (width <= oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 2;
+    } else if (width <= standardThreshold.Width_Limit && length > oversizeThreshold.Length_Limit) {
+      secondaryCode = 3;
+    } else if (width > oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 3;
+    } else {
+      secondaryCode = 4;
+    }
   } else {
-    secondaryCode = relevantRow['4" Update'];
+    // The same logic applies for 4" depth, just with its own set of thresholds.
+    if (width <= standardThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 1;
+    } else if (width <= standardThreshold.Width_Limit && length <= oversizeThreshold.Length_Limit) {
+      secondaryCode = 2;
+    } else {
+      secondaryCode = 3;
+    }
   }
   console.log(`Determined Secondary Code: ${secondaryCode}`);
 
   // --- Step 4: Determine the Primary Code ---
   // This replicates the logic from cells AA24 and AA25
   let primaryCode: string;
-  const isWholeNumber = (num: number) => num % 1 === 0;
-  const isExactAndWhole = inputs.isExact && isWholeNumber(width) && isWholeNumber(length);
+  const isExactAndWhole = inputs.isExact && inputs.widthFraction === 0 && inputs.lengthFraction === 0;
   console.log(`Determining Primary Code. isExactAndWhole=${isExactAndWhole}`);
 
   if (isExactAndWhole) {
@@ -112,8 +126,12 @@ export const generatePleatPartNumber = (
   const formattedWholeWidth = inputs.widthWhole.toString().padStart(2, '0');
   const formattedWholeLength = inputs.lengthWhole.toString().padStart(2, '0');
 
+  // Only append fractional codes if they are not 0.
+  const finalFractionalWidthCode = fractionalWidthCode || '';
+  const finalFractionalLengthCode = fractionalLengthCode || '';
+
   console.log('Assembling final part number from pieces:', { productCode, primaryCode, depth: inputs.depth, formattedWholeWidth, fractionalWidthCode, formattedWholeLength, fractionalLengthCode });
-  const partNumber = `${productCode}${primaryCode}0${inputs.depth}${formattedWholeWidth}${fractionalWidthCode}${formattedWholeLength}${fractionalLengthCode}`;
+  const partNumber = `${productCode}${primaryCode}0${inputs.depth}${formattedWholeWidth}${finalFractionalWidthCode}${formattedWholeLength}${finalFractionalLengthCode}`;
 
   console.log('--- Finished Part Number Generation ---');
 
@@ -133,6 +151,67 @@ export const calculatePleatPrice = (
 
   if (!isPartNumberValid) {
     return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Invalid Part Number' };
+  }
+
+  // --- Determine Secondary Codes for Part Number vs. Pricing ---
+  // The part number code is based on the actual depth's dimension rules.
+  // The price column code uses 1"/2" dimension rules, even for 4" filters, to determine the price multiplier.
+  const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
+    const standardThreshold = pricingData.dimensionThresholds.find(
+      (t) => t.Depth === depthForThresholds && t.Limit_Type === 'Standard'
+    );
+    const oversizeThreshold = pricingData.dimensionThresholds.find(
+      (t) => t.Depth === depthForThresholds && t.Limit_Type === 'Oversize'
+    );
+
+    if (!standardThreshold || !oversizeThreshold) {
+      // This should not happen with valid data, but it's a safe fallback.
+      return -1; // Indicates an error
+    }
+
+    if (depthForThresholds === 1 || depthForThresholds === 2) {
+      if (width <= standardThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+        return 1;
+      } else if (width <= standardThreshold.Width_Limit && length <= oversizeThreshold.Length_Limit) {
+        return 2;
+      } else if (width <= oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+        return 2;
+      } else if (width <= standardThreshold.Width_Limit && length > oversizeThreshold.Length_Limit) {
+        return 3;
+      } else if (width > oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+        return 3;
+      } else {
+        return 4;
+      }
+    } else { // Depth is 4
+      if (width <= standardThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+        return 1;
+      } else if (width <= standardThreshold.Width_Limit && length <= oversizeThreshold.Length_Limit) {
+        return 2;
+      } else {
+        return 3;
+      }
+    }
+  };
+
+  const partNumberCode = calculateSecondaryCode(inputs.depth);
+  // For pricing, if depth is 4", we use the 2" dimension thresholds to get the code.
+  const priceColumnCode = inputs.depth === 4 ? calculateSecondaryCode(2) : partNumberCode;
+
+  if (partNumberCode === -1 || priceColumnCode === -1) {
+    return { partNumber: 'Invalid depth threshold', price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false };
+  }
+
+  // If secondaryCode is 4, it's a manual quote, regardless of other checks.
+  if (partNumberCode === 4) {
+    return {
+      partNumber,
+      price: 0,
+      cartonQuantity: 0,
+      cartonPrice: 0,
+      isOversize: true,
+      notes: 'Oversize dimensions - Manual Quote',
+    };
   }
 
   // --- Get Product Code for Table Switch Logic ---
@@ -177,58 +256,39 @@ export const calculatePleatPrice = (
     return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: specialPriceRow.Override_Price };
   }
 
-  // --- GATE 2: Non-Standard (Oversize) Dimension Check ---
-  const threshold = pricingData.dimensionThresholds.find(
-    (t) => t.Depth === `${inputs.depth}"`
-  );
-
-  const isOversize = threshold
-    ? width > threshold.Width_Limit || length > threshold.Length_Limit
-    : false;
-
-  if (isOversize) {
-    // This is a fixed, non-standard price as per the user's request.
-    // This value may need to be adjusted based on business rules.
-    const nonStandardPrice = 999.99;
-    return {
-      partNumber,
-      price: nonStandardPrice,
-      cartonQuantity: 0,
-      cartonPrice: 0,
-      isOversize: true,
-      notes: 'Oversize dimensions - Manual Quote',
-    };
-  }
-
   // --- GATE 3: Standard Price Calculation ---
-  const priceCode = partNumber.substring(0, 5);
-  const priceCodeAsNumber = parseInt(priceCode, 10);
-
-  const priceRow = pricingData.standardPrices.find(
-    // Compare as numbers to avoid type mismatch from CSV parsing
-    (p) => p.Product_Code === priceCodeAsNumber
+  const faceValue = width * length;
+  const tieredRow = pricingData.tieredLookupMatrix.find(
+    (row) => row.Product_Prefix === productCode && faceValue >= row.Min_Range && faceValue <= row.Max_Range
   );
 
-  if (!priceRow) {
-    // Return the valid part number, but with a note about the pricing error.
-    return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Invalid Price Code' };
+  if (!tieredRow) {
+    return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Dimensions out of range' };
   }
 
-  const priceKey = `${inputs.depth}"_Price` as keyof typeof priceRow;
-  const listPrice = priceRow[priceKey];
+  // Build the key to find the correct price column from the tieredRow.
+  let priceColumnKey: keyof TieredLookupRow;
+  let suffix: 'Update' | 'Double' | 'Triple';
+
+  if (priceColumnCode === 1) {
+    suffix = 'Update';
+  } else if (priceColumnCode === 2) {
+    suffix = 'Double';
+  } else { // secondaryCode is 3
+    suffix = 'Triple';
+  }
+
+  priceColumnKey = `${inputs.depth}_${suffix}` as keyof TieredLookupRow;
+
+  const listPrice = tieredRow[priceColumnKey];
 
   if (typeof listPrice !== 'number') {
-    return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Price not available for depth' };
+    return { partNumber, price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false, notes: 'Price not available for this configuration' };
   }
 
   // --- Final Assembly ---
-  // Calculate carton quantity based on depth.
-  let cartonQuantity: number;
-  if (inputs.depth === 4) {
-    cartonQuantity = 6;
-  } else {
-    cartonQuantity = 12;
-  }
+  // Carton quantity is always 12, regardless of depth.
+  const cartonQuantity = 12;
   const cartonPrice = listPrice * cartonQuantity;
 
   return {

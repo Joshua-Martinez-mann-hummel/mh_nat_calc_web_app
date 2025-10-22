@@ -9,17 +9,15 @@ export interface TieredLookupRow {
   Product_Prefix: number;
   Min_Range: number;
   Max_Range: number;
-  '1" Current': number;
-  '2" Current': number;
-  '1" Update': number;
-  '1" Double': number;
-  '1" Triple': number;
-  '2" Update': number;
-  '2" Double': number;
-  '2" Triple': number;
-  '4" Update': number;
-  '4" Double': number;
-  '4" Triple': number;
+  '1_Update': number | 'N/A';
+  '1_Double': number | 'N/A';
+  '1_Triple': number | 'N/A';
+  '2_Update': number | 'N/A';
+  '2_Double': number | 'N/A';
+  '2_Triple': number | 'N/A';
+  '4_Update': number | 'N/A';
+  '4_Double': number | 'N/A';
+  '4_Triple': number | 'N/A';
 }
 
 export interface SpecialOverridePriceRow {
@@ -29,13 +27,13 @@ export interface SpecialOverridePriceRow {
 
 export interface StandardPriceRow {
   Product_Code: number;
-  '1"_Price': number;
-  '2"_Price': number;
-  '4"_Price': number;
+  '1_Price': number;
+  '2_Price': number;
+  '4_Price': number;
 }
 
 export interface DimensionThresholdRow {
-  Depth: string;
+  Depth: number;
   Limit_Type: 'Standard' | 'Oversize';
   Width_Limit: number;
   Length_Limit: number;
