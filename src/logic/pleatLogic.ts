@@ -5,8 +5,10 @@ import type { PricingData, TieredLookupRow } from '../data/dataTypes';
 // Define a type for our form inputs for clarity
 export interface PleatInputs {
   productFamily: string;
-  width: number;
-  length: number;
+  widthWhole: number;
+  widthFraction: number;
+  lengthWhole: number;
+  lengthFraction: number;
   depth: 1 | 2 | 4;
   isExact: boolean;
 }
@@ -24,9 +26,16 @@ export const generatePleatPartNumber = (
   inputs: PleatInputs,
   pricingData: PricingData
 ): string => {
+  console.log('--- Starting Part Number Generation ---');
+  console.log('Received Inputs:', inputs);
   // --- Step 1: Calculate Core Properties ---
-  const faceValue = inputs.width * inputs.length;
+  // Combine whole and fractional parts for calculations
+  const width = inputs.widthWhole + inputs.widthFraction;
+  const length = inputs.lengthWhole + inputs.lengthFraction;
 
+  const faceValue = width * length;
+
+  console.log(`Calculated Dimensions: Width=${width}, Length=${length}, FaceValue=${faceValue}`);
   const productCodeRow = pricingData.productFamilyCodes.find(
     (p) => p.Name.trim() === inputs.productFamily.trim()
   );
@@ -35,18 +44,35 @@ export const generatePleatPartNumber = (
   if (!productCode) {
     return 'Invalid Product Family';
   }
+  console.log('Found Product Code:', productCode);
+
+  // --- Get Fractional Codes ---
+  const fractionalWidthRow = pricingData.fractionalCodes.find(
+    (row) => row.Decimal_Value === inputs.widthFraction
+  );
+  const fractionalWidthCode = fractionalWidthRow?.Part_Number_Code;
+
+  const fractionalLengthRow = pricingData.fractionalCodes.find(
+    (row) => row.Decimal_Value === inputs.lengthFraction
+  );
+  const fractionalLengthCode = fractionalLengthRow?.Part_Number_Code;
+
+  console.log(`Found Fractional Codes: WidthCode=${fractionalWidthCode}, LengthCode=${fractionalLengthCode}`);
 
   // --- Step 2: Find the Correct Row from the Tiered Matrix ---
+  console.log(`Searching Tiered Matrix for Product_Prefix=${productCode} and FaceValue=${faceValue}`);
   const relevantRow: TieredLookupRow | undefined = pricingData.tieredLookupMatrix.find(
     (row) =>
       row.Product_Prefix === productCode &&
       faceValue >= row.Min_Range &&
       faceValue <= row.Max_Range
   );
-
+  
   if (!relevantRow) {
+    console.error('Could not find a matching row in the Tiered Lookup Matrix.');
     return 'Dimensions out of range';
   }
+  console.log('Found Tiered Matrix Row:', relevantRow);
 
   // --- Step 3: Determine the Secondary Code ---
   // This replicates the logic from the T, U, and V columns
@@ -58,12 +84,14 @@ export const generatePleatPartNumber = (
   } else {
     secondaryCode = relevantRow['4" Update'];
   }
+  console.log(`Determined Secondary Code: ${secondaryCode}`);
 
   // --- Step 4: Determine the Primary Code ---
   // This replicates the logic from cells AA24 and AA25
   let primaryCode: string;
   const isWholeNumber = (num: number) => num % 1 === 0;
-  const isExactAndWhole = inputs.isExact && isWholeNumber(inputs.width) && isWholeNumber(inputs.length);
+  const isExactAndWhole = inputs.isExact && isWholeNumber(width) && isWholeNumber(length);
+  console.log(`Determining Primary Code. isExactAndWhole=${isExactAndWhole}`);
 
   if (isExactAndWhole) {
     primaryCode = 'CE'; // The "Exact, Whole-Number" override
@@ -74,28 +102,20 @@ export const generatePleatPartNumber = (
     else if (secondaryCode === 2) primaryCode = 'CD';
     else primaryCode = 'C';
   }
+  console.log(`Determined Primary Code: ${primaryCode}`);
 
   if (primaryCode === 'CQ') {
     return 'Contact Customer Service';
   }
 
   // --- Step 5: Assemble the Final Part Number ---
-  const formatDimension = (dimension: number): string => {
-    const isWhole = dimension % 1 === 0;
-    if (isWhole) {
-      // It's a whole number, format as a two-digit string (e.g., 9 -> "09", 12 -> "12")
-      const formatted = dimension.toString().padStart(2, '0');
-      return formatted;
-    } else {
-      // It has a decimal, remove the "." to create a three-digit code (e.g., 12.5 -> "125")
-      const formatted = dimension.toString().replace('.', '');
-      return formatted;
-    }
-  };
-  const formattedWidth = formatDimension(inputs.width);
-  const formattedLength = formatDimension(inputs.length);
+  const formattedWholeWidth = inputs.widthWhole.toString().padStart(2, '0');
+  const formattedWholeLength = inputs.lengthWhole.toString().padStart(2, '0');
 
-  const partNumber = `${productCode}${primaryCode}0${inputs.depth}${formattedWidth}${formattedLength}`;
+  console.log('Assembling final part number from pieces:', { productCode, primaryCode, depth: inputs.depth, formattedWholeWidth, fractionalWidthCode, formattedWholeLength, fractionalLengthCode });
+  const partNumber = `${productCode}${primaryCode}0${inputs.depth}${formattedWholeWidth}${fractionalWidthCode}${formattedWholeLength}${fractionalLengthCode}`;
+
+  console.log('--- Finished Part Number Generation ---');
 
   return partNumber;
 };
@@ -104,6 +124,10 @@ export const calculatePleatPrice = (
   inputs: PleatInputs,
   pricingData: PricingData
 ): PleatPricingResult => {
+  // Combine whole and fractional parts for calculations
+  const width = inputs.widthWhole + inputs.widthFraction;
+  const length = inputs.lengthWhole + inputs.lengthFraction;
+
   const partNumber = generatePleatPartNumber(inputs, pricingData);
   const isPartNumberValid = partNumber.startsWith('1') || partNumber.startsWith('2');
 
@@ -119,7 +143,7 @@ export const calculatePleatPrice = (
     ? pricingData.specialOverrideA
     : pricingData.specialOverrideB;
 
-  const lookupKey = `${inputs.width}x${inputs.length}x${inputs.depth}`;
+  const lookupKey = `${width}x${length}x${inputs.depth}`;
 
   const specialPriceRow = tableToSearch.find(
     (row) => row.Lookup_Key === lookupKey
@@ -136,7 +160,7 @@ export const calculatePleatPrice = (
   );
 
   const isOversize = threshold
-    ? inputs.width > threshold.Width_Limit || inputs.length > threshold.Length_Limit
+    ? width > threshold.Width_Limit || length > threshold.Length_Limit
     : false;
 
   if (isOversize) {

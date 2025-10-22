@@ -9,17 +9,17 @@ export interface TieredLookupRow {
   Product_Prefix: number;
   Min_Range: number;
   Max_Range: number;
-  '1"_Current': number; // Add this line
-  '2"_Current': number; // Add this line
-  '1"_Update': number;
-  '1"_Double': number;
-  '1"_Triple': number;
-  '2"_Update': number;
-  '2"_Double': number;
-  '2"_Triple': number;
-  '4"_Update': number;
-  '4"_Double': number;
-  '4"_Triple': number;
+  '1" Current': number;
+  '2" Current': number;
+  '1" Update': number;
+  '1" Double': number;
+  '1" Triple': number;
+  '2" Update': number;
+  '2" Double': number;
+  '2" Triple': number;
+  '4" Update': number;
+  '4" Double': number;
+  '4" Triple': number;
 }
 
 export interface SpecialOverridePriceRow {
@@ -41,6 +41,16 @@ export interface DimensionThresholdRow {
   Length_Limit: number;
 }
 
+  Length_Limit: number;
+}
+
+export interface FractionalCodeRow {
+  Decimal_Value: number;
+  Fraction_Text: string;
+  Letter_Code: string;
+  Part_Number_Code: number;
+}
+
 // A single object to hold all our structured data
 export interface PricingData {
   productFamilyCodes: ProductFamilyCode[];
@@ -49,4 +59,5 @@ export interface PricingData {
   dimensionThresholds: DimensionThresholdRow[];
   specialOverrideA: SpecialOverridePriceRow[];
   specialOverrideB: SpecialOverridePriceRow[];
+  fractionalCodes: FractionalCodeRow[];
 }

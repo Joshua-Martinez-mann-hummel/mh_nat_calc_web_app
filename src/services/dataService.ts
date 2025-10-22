@@ -10,6 +10,8 @@ import standardPricesUrl from '../data/Standard Price Table.csv?url';
 import dimensionThresholdsUrl from '../data/Dimension Thresholds.csv?url';
 import specialOverrideAUrl from '../data/special-override-prices-A.csv?url';
 import specialOverrideBUrl from '../data/special-override-prices-B.csv?url';
+import fractionalCodesUrl from '../data/Fractional_Codes.csv?url';
+
 
 export const loadAndParseData = async (): Promise<PricingData> => {
   const fetchAndParse = (filePath: string): Promise<any[]> => {
@@ -34,6 +36,7 @@ export const loadAndParseData = async (): Promise<PricingData> => {
       dimensionThresholds,
       specialOverrideA,
       specialOverrideB,
+      fractionalCodes,
     ] = await Promise.all([
       fetchAndParse(productFamilyCodesUrl),
       fetchAndParse(tieredLookupMatrixUrl),
@@ -41,6 +44,7 @@ export const loadAndParseData = async (): Promise<PricingData> => {
       fetchAndParse(dimensionThresholdsUrl),
       fetchAndParse(specialOverrideAUrl),
       fetchAndParse(specialOverrideBUrl),
+      fetchAndParse(fractionalCodesUrl),
     ]);
 
     return {
@@ -50,6 +54,7 @@ export const loadAndParseData = async (): Promise<PricingData> => {
       dimensionThresholds,
       specialOverrideA,
       specialOverrideB,
+      fractionalCodes,
     };
   } catch (error) {
     console.error("Error loading pricing data:", error);
