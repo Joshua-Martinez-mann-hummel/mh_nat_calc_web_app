@@ -6,12 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:logic": "rimraf ./dist/logic && tsc --project tsconfig.logic.json",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test:newExcel": "rimraf ./src/testing/results_pleats_excel.csv && python ./src/testing/test_pleats_excel.py",
-    "test:newApp": "rimraf ./src/testing/results_pleats_app.csv && python ./src/testing/test_pleats_calc.py",
-    "test:newCompare": "rimraf ./src/testing/comparison_summary.csv && python ./src/testing/compare_results.py",
-    "test:newAllPleats": "npm run test:newExcel && npm run test:newApp && npm run test:newCompare"
+    "test:excel": "rimraf ./src/testing/results_pleats_excel.csv && python ./src/testing/test_pleats_excel.py",
+    "test:app:slow": "rimraf ./src/testing/results_pleats_app.csv && python ./src/testing/test_pleats_calc.py",
+    "test:logic": "npm run build:logic && rimraf ./src/testing/results_pleats_app.csv && python ./src/testing/test_pleats_logic.py",
+    "test:compare": "rimraf ./src/testing/comparison_summary.csv && python ./src/testing/compare_results.py",
+    "test:all:fast": "npm run test:excel && npm run test:logic && npm run test:compare",
+    "test:all:slow": "npm run test:excel && npm run test:app:slow && npm run test:compare"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",
@@ -31,7 +34,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
-    "rimraf": "^6.0.1",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",

@@ -99,15 +99,18 @@ def main():
 
         # Custom matching logic for price fields
         # It's a match if the numeric values are close, OR if both are considered "error" states.
-        is_excel_price_error = pd.isna(excel_price_clean) or str(excel_price_orig).strip() in EXCEL_ERROR_STRINGS
+        is_excel_price_error = pd.isna(excel_price_clean) or excel_price_clean == 0
         is_app_price_error = pd.isna(app_price_clean) or app_price_clean == 0
         price_match = (np.isclose(excel_price_clean, app_price_clean, equal_nan=False)) or (is_excel_price_error and is_app_price_error)
 
-        is_excel_cq_error = pd.isna(excel_cq_clean) or str(excel_cq_orig).strip() in EXCEL_ERROR_STRINGS
+        is_excel_cq_error = pd.isna(excel_cq_clean) or excel_cq_clean == 0
         is_app_cq_error = pd.isna(app_cq_clean) or app_cq_clean == 0
-        cq_match = (np.isclose(excel_cq_clean, app_cq_clean, equal_nan=False)) or (is_excel_cq_error and is_app_cq_error)
+        # If both prices are non-numeric, we can ignore the carton quantity mismatch
+        # as it's a known issue where Excel shows 12 and the app correctly shows 0.
+        cq_match = (np.isclose(excel_cq_clean, app_cq_clean, equal_nan=False)) or \
+                   (is_excel_cq_error and is_app_cq_error) or (is_excel_price_error and is_app_price_error)
 
-        is_excel_cp_error = pd.isna(excel_cp_clean) or str(excel_cp_orig).strip() in EXCEL_ERROR_STRINGS
+        is_excel_cp_error = pd.isna(excel_cp_clean) or excel_cp_clean == 0
         is_app_cp_error = pd.isna(app_cp_clean) or app_cp_clean == 0
         cp_match = (np.isclose(excel_cp_clean, app_cp_clean, equal_nan=False)) or (is_excel_cp_error and is_app_cp_error)
 

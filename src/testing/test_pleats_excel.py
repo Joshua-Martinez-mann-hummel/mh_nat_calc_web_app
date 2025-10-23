@@ -1,6 +1,7 @@
 import xlwings as xw
 import pandas as pd
 import random
+import itertools
 import time
 import os
 
@@ -13,14 +14,26 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', 'raw_calc.xlsm') # Go up two directories
 OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
 
-SHEET_NAME = "Pleats Calc"
+SHEET_NAME = "Pleats Calc" 
 
-NUM_TESTS_PER_FAMILY = 10
+NUM_TESTS_PER_COMBINATION = 10 # Number of random (Width, Length) whole number pairs to test per product family
+SECONDS_PER_TEST_CASE = 0.5 # Rough estimate for Excel operations + sleep per test case
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
 WIDTH_RANGE = (6, 36)
 LENGTH_RANGE = (6, 72)
 
+EXCEL_ERROR_STRINGS = [
+    'Contact Customer Service',
+    'Dimensions out of range',
+    '#N/A', # Standard Excel error
+    '#VALUE!', # Another standard Excel error
+    '#DIV/0!', # Another standard Excel error
+    '#REF!', # Another standard Excel error
+    '#NAME?', # Another standard Excel error
+    '#NUM!', # Another standard Excel error
+    '#NULL!' # Another standard Excel error
+]
 
 # ----------------------------------------------------
 # HELPERS
@@ -57,13 +70,13 @@ def get_dropdown_values(ws, cell_address):
             target_rng = target_ws.range(range_ref)
             values = [cell.value for cell in target_rng if cell.value is not None]
             return values
-        except Exception as e:
-            print(f"⚠️ Could not read range {ref}: {e}")
+        except Exception:
+            # print(f"⚠️ Could not read range {formula[1:]}: {e}") # Debugging only
             return []
 
     # Case 3: Named range
-    try:
-        named = ws.book.names[ref]
+    try: # Corrected: use formula[1:]
+        named = ws.book.names[formula[1:]]
         named_rng = named.refers_to_range
         if named_rng is not None:
             return [cell.value for cell in named_rng if cell.value is not None]
@@ -71,18 +84,20 @@ def get_dropdown_values(ws, cell_address):
             # fallback: try evaluating
             vals = ws.book.app.evaluate(ref)
             flat = []
-            if vals is None:
-                return []
-            if isinstance(vals, (tuple, list)):
-                for row in vals:
-                    for v in row:
-                        if v is not None:
-                            flat.append(v)
-            else:
-                flat = [vals]
+            if vals is not None: # Ensure vals is not None before iterating
+                if isinstance(vals, (tuple, list)):
+                    for row in vals:
+                        # Ensure row is iterable, in case it's a single value
+                        if not isinstance(row, (tuple, list)):
+                            row = [row]
+                        for v in row:
+                            if v is not None:
+                                flat.append(v)
+                else:
+                    flat = [vals]
             return flat
-    except Exception as e:
-        print(f"⚠️ Could not resolve named range {ref}: {e}")
+    except Exception:
+        # print(f"⚠️ Could not resolve named range {formula[1:]}: {e}") # Debugging only
         return []
 
 
@@ -90,6 +105,27 @@ def random_dimension(range_min, range_max):
     whole = random.randint(range_min, range_max)
     decimal = random.choice(DECIMAL_OPTIONS)
     return whole, decimal
+
+def parse_excel_output_value(text_value):
+    """
+    Parses an Excel output text value.
+    If it's an error string, returns the string.
+    Otherwise, attempts to convert to float, returning 0.0 on failure.
+    """
+    if isinstance(text_value, str):
+        # Check for known error strings or Excel error codes (case-insensitive for "Contact Customer Service")
+        if any(err_str.lower() in text_value.lower() for err_str in EXCEL_ERROR_STRINGS) or text_value.startswith('#'):
+            return text_value # Keep error string as is
+        
+        # Attempt to convert to float
+        cleaned_value = text_value.replace('$', '').replace(',', '').strip()
+        if cleaned_value == '':
+            return 0.0
+        try:
+            return float(cleaned_value)
+        except ValueError:
+            return 0.0 # Not a recognized error string, but still not a number
+    return text_value # Return as is if not a string (e.g., already a number)
 
 
 # ----------------------------------------------------
@@ -111,120 +147,107 @@ def main():
     print("🎯 Will-Be-Made-Exact Options:", made_exact_options)
 
     results = []
+    test_cases = []
 
+    print("\nGenerating test cases in-memory...")
+    # Create all random test cases first
     for i, family in enumerate(product_families):
-        print(f"\nRunning tests for Product Family: {family}")
+        # Set the product family once to get its dependent dropdowns
+        ws["F7"].value = family
+        time.sleep(0.1) # A small pause might be needed for Excel to update dependent validation
+        
+        # For the first two families, only test depths 1 and 2.
+        if i < 2:
+            available_depths = [1, 2]
+        else:
+            available_depths = [v for v in get_dropdown_values(ws, "F15") if v not in (None, "")]
 
-        for _ in range(NUM_TESTS_PER_FAMILY):
-            width_whole, width_dec = random_dimension(*WIDTH_RANGE)
-            length_whole, length_dec = random_dimension(*LENGTH_RANGE)
-            will_be_exact = random.choice(made_exact_options)
+        # Systematically create combinations for every depth and exact status.
+        # For each of those combinations, generate a number of tests with random dimensions.
+        for depth, exact in itertools.product(available_depths, made_exact_options):
+            for _ in range(NUM_TESTS_PER_COMBINATION):
+                width_whole, width_dec = random_dimension(*WIDTH_RANGE)
+                length_whole, length_dec = random_dimension(*LENGTH_RANGE)
+                test_cases.append({
+                    "family": family,
+                    "width_whole": width_whole, "width_dec": width_dec, "length_whole": length_whole, "length_dec": length_dec,
+                    "exact": exact,
+                    "depth": depth
+                })
+    print(f"Generated {len(test_cases)} total test cases.")
 
-            # Set the product family in Excel to update dependent dropdowns
-            ws["F7"].value = family
+    # Calculate and print estimated time
+    total_seconds = len(test_cases) * SECONDS_PER_TEST_CASE
+    estimated_minutes = total_seconds / 60
+    print(f"Estimated time to process in Excel: {estimated_minutes:.2f} minutes.")
+    print("Processing test cases in Excel...")
+
+    # Now, iterate through the generated test cases and get results from Excel
+    for i, case in enumerate(test_cases):
+        print(f"  Processing case {i+1}/{len(test_cases)} for family '{case['family']}'...", end='\r')
+        
+        # Populate Inputs
+        ws["F7"].value = case["family"]
+        ws["F10"].value = case["width_whole"]
+        ws["G10"].value = case["width_dec"]
+        ws["F11"].value = case["length_whole"]
+        ws["G11"].value = case["length_dec"]
+        ws["G13"].value = str(case["exact"])
+
+        depth_val = case["depth"]
+        if isinstance(depth_val, str) and depth_val.isnumeric():
+            ws["F15"].value = f"'{depth_val}"
+        else:
+            ws["F15"].value = depth_val
+
+        # Force Excel recalculation. Using app.calculate() is more reliable.
+        # The sleep is a fallback for very slow/complex sheets.
+        wb.app.calculate()
+        time.sleep(0.1) # Reduced sleep, as bulk calculation is often faster.
+
+        # Read Outputs - get the DISPLAYED text, not the formula value
+        try:
+            part_number = ws["F19"].api.Text
+            price_text = ws["F21"].api.Text
+            carton_qty_text = ws["F23"].api.Text
+            carton_price_text = ws["F24"].api.Text
             
-            # For the first two families, only test depths 1 and 2.
-            if i < 2:
-                depth = random.choice([1, 2])
-            else:
-                # For all other families, get the available depth options from Excel, preserving their type.
-                depth_options = [v for v in get_dropdown_values(ws, "F15") if v not in (None, "")]
-                print(f"   [DEBUG] Dependent depth options for '{family}': {depth_options} (types: {[type(o) for o in depth_options]})")
-                # CRITICAL: Do NOT convert the type. The Excel formulas expect the exact type (e.g., text '4') from the dropdown source.
-                depth = random.choice(depth_options)
-
-            # --- Additional Debugging ---
-            try:
-                print(f"   [DEBUG] F15 (Depth) dropdown validation formula: {ws.range('F15').api.Validation.Formula1}")
-            except Exception:
-                print("   [DEBUG] Could not read F15 validation formula.")
-
-            # Populate Inputs
-            ws["F10"].value = width_whole
-            ws["G10"].value = width_dec
-            ws["F11"].value = length_whole
-            ws["G11"].value = length_dec
-            ws["G13"].value = str(will_be_exact)
-
-            # Set the depth value, preserving its original type (e.g., text '4')
-            # The formulas in the sheet depend on this exact type.
-            print(f"   [DEBUG] Setting depth to: {depth} (type: {type(depth)})")
-            # If the depth is a string that looks like a number (e.g., '4'),
-            # we prepend an apostrophe to force Excel to treat it as text.
-            # This prevents auto-conversion to a number, which breaks the formulas.
-            if isinstance(depth, str) and depth.isnumeric():
-                ws["F15"].value = f"'{depth}"
-            else:
-                ws["F15"].value = depth
-
-            # Force Excel recalculation and wait for it to complete
-            ws.book.app.calculate()
-            ws.book.app.calculation = 'automatic'  # Ensure automatic calc is on
-            time.sleep(0.5)  # Wait half a second for Excel to finish
-
-            # Read Outputs - get the DISPLAYED text, not the formula value
-            try:
-                # Try to get the displayed text (what you see visually)
-                part_number = ws["F19"].api.Text
-                price_text = ws["F21"].api.Text
-                carton_qty_text = ws["F23"].api.Text
-                carton_price_text = ws["F24"].api.Text
-                
-                print(f"   [DEBUG] Text values: Part#='{part_number}', Price='{price_text}', Qty='{carton_qty_text}', CartonPrice='{carton_price_text}'")
-                
-                # Convert to proper types
-                try:
-                    price = float(price_text.replace('$', '').replace(',', '')) if price_text and price_text != '' else 0
-                except:
-                    price = 0
-                
-                try:
-                    carton_qty = float(carton_qty_text.replace(',', '')) if carton_qty_text and carton_qty_text != '' else 0
-                except:
-                    carton_qty = 0
-                    
-                try:
-                    carton_price = float(carton_price_text.replace('$', '').replace(',', '')) if carton_price_text and carton_price_text != '' else 0
-                except:
-                    carton_price = 0
-                
-            except Exception as e:
-                print(f"   [DEBUG] Error reading text: {e}")
-                # Last resort fallback
-                part_number = ws["F19"].value
-                price = ws["F21"].value if ws["F21"].value else 0
-                carton_qty = ws["F23"].value if ws["F23"].value else 0
-                carton_price = ws["F24"].value if ws["F24"].value else 0
-
-            print(f"   [DEBUG] Final values: Part#='{part_number}', Price={price}, Qty={carton_qty}, CartonPrice={carton_price}")
-
-            # Safety check for Excel errors before appending results
-            # We check for standard Excel errors (e.g., #N/A) and custom text errors.
-            is_error = False
-            for val in [part_number, price, carton_qty, carton_price]:
-                if isinstance(val, str) and (val.startswith('#') or 'Contact' in val):
-                    is_error = True
-                    print(f"⚠️  Excel error or 'Contact' message detected: '{val}' for {family} | Depth: {depth}. Skipping result.")
-                    break # No need to check other values
-            if is_error: continue
+            price = parse_excel_output_value(price_text)
+            carton_qty = parse_excel_output_value(carton_qty_text)
+            carton_price = parse_excel_output_value(carton_price_text)
             
-            # Ensure we don't write NaN values to the CSV, which can cause errors
+        except Exception as e:
+            print(f"\n   [DEBUG] Error reading text: {e}. Falling back to .value")
+            # Fallback to .value if .api.Text fails, but still parse them
+            part_number = ws["F19"].value
+            price = parse_excel_output_value(ws["F21"].value)
+            carton_qty = parse_excel_output_value(ws["F23"].value)
+            carton_price = parse_excel_output_value(ws["F24"].value)
+
+        # Check if any of the *parsed* values are strings (meaning they were error messages)
+        if any(isinstance(val, str) for val in [price, carton_qty, carton_price]):
+            print(f"\n✅  Found 'Contact'/'Error' case for {case['family']} | Depth: {case['depth']}. Including in results.")
+
+        # Ensure we don't write NaN values to the CSV.
+        # This will only affect numeric values. String error messages will remain as strings.
+        if isinstance(price, (int, float)):
             price = 0 if pd.isna(price) else price
+        if isinstance(carton_qty, (int, float)):
             carton_qty = 0 if pd.isna(carton_qty) else carton_qty
+        if isinstance(carton_price, (int, float)):
             carton_price = 0 if pd.isna(carton_price) else carton_price
 
-
-            results.append({
-                "Product_Family": family,
-                "Width": width_whole + width_dec,
-                "Length": length_whole + length_dec,
-                "Exact": will_be_exact,
-                "Depth": depth,
-                "Part_Number": part_number,
-                "Price": price,
-                "Carton_Quantity": carton_qty,
-                "Carton_Price": carton_price
-            })
+        results.append({
+            "Product_Family": case["family"],
+            "Width": case["width_whole"] + case["width_dec"],
+            "Length": case["length_whole"] + case["length_dec"],
+            "Exact": case["exact"],
+            "Depth": case["depth"],
+            "Part_Number": part_number,
+            "Price": price,
+            "Carton_Quantity": carton_qty,
+            "Carton_Price": carton_price
+        })
 
     df = pd.DataFrame(results)
     df.to_csv(OUTPUT_CSV_PATH, index=False)
@@ -232,6 +255,7 @@ def main():
 
     wb.close()
     app.quit()
+    print("\n") # Newline after the progress indicator
 
 
 if __name__ == "__main__":

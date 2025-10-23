@@ -39,9 +39,6 @@ export interface DimensionThresholdRow {
   Length_Limit: number;
 }
 
-  Length_Limit: number;
-}
-
 export interface FractionalCodeRow {
   Decimal_Value: number;
   Fraction_Text: string;
