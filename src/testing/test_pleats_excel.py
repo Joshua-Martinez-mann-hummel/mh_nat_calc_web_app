@@ -15,7 +15,7 @@ OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
 
 SHEET_NAME = "Pleats Calc"
 
-NUM_TESTS_PER_FAMILY = 5
+NUM_TESTS_PER_FAMILY = 10
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
 WIDTH_RANGE = (6, 36)

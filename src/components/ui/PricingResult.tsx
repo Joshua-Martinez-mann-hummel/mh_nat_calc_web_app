@@ -10,6 +10,21 @@ interface PricingResultProps {
 function PricingResult({ results, onCalculate }: PricingResultProps) {
   const isCalculated = results && results.Price > 0;
 
+  const formatValue = (key: string, value: any) => {
+    if (typeof value === 'number') {
+      // Don't format Part Number or Carton Quantity as currency
+      if (key === 'Part Number' || key === 'Carton Quantity') {
+        return value.toLocaleString();
+      }
+      // Format other numbers as currency
+      return value.toLocaleString('en-US', {
+        style: 'currency',
+        currency: 'USD',
+      });
+    }
+    return value;
+  };
+
   return (
     <div className="bg-gray-50 rounded-lg p-6 flex flex-col">
       <h3 className="text-lg font-semibold mb-4">Pricing Result</h3>
@@ -17,9 +32,7 @@ function PricingResult({ results, onCalculate }: PricingResultProps) {
         {results && Object.entries(results).map(([label, value]) => (
           <div key={label} className="flex justify-between text-sm">
             <span className="text-gray-600">{label}:</span>
-            <span className={`font-medium ${label.toLowerCase().includes('price') ? 'text-green-600' : 'text-gray-900'}`}>
-              {typeof value === 'number' ? `$${value.toFixed(2)}` : value}
-            </span>
+            <span className={`font-medium ${label.toLowerCase().includes('price') ? 'text-green-600' : 'text-gray-900'}`}>{formatValue(label, value)}</span>
           </div>
         ))}
       </div>

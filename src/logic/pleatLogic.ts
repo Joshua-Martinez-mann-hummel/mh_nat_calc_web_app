@@ -90,13 +90,19 @@ export const generatePleatPartNumber = (
       secondaryCode = 4;
     }
   } else {
-    // The same logic applies for 4" depth, just with its own set of thresholds.
+    // Logic for 4" depth, copied from 1" & 2" logic but using 4" thresholds.
     if (width <= standardThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
       secondaryCode = 1;
     } else if (width <= standardThreshold.Width_Limit && length <= oversizeThreshold.Length_Limit) {
       secondaryCode = 2;
-    } else {
+    } else if (width <= oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 2;
+    } else if (width <= standardThreshold.Width_Limit && length > oversizeThreshold.Length_Limit) {
       secondaryCode = 3;
+    } else if (width > oversizeThreshold.Width_Limit && length <= standardThreshold.Length_Limit) {
+      secondaryCode = 3;
+    } else {
+      secondaryCode = 4;
     }
   }
   console.log(`Determined Secondary Code: ${secondaryCode}`);
@@ -194,16 +200,16 @@ export const calculatePleatPrice = (
     }
   };
 
-  const partNumberCode = calculateSecondaryCode(inputs.depth);
+  const secondaryCodeForActualDepth = calculateSecondaryCode(inputs.depth);
   // For pricing, if depth is 4", we use the 2" dimension thresholds to get the code.
-  const priceColumnCode = inputs.depth === 4 ? calculateSecondaryCode(2) : partNumberCode;
+  const secondaryCodeFor1InchLogic = inputs.depth === 4 ? calculateSecondaryCode(2) : secondaryCodeForActualDepth;
 
-  if (partNumberCode === -1 || priceColumnCode === -1) {
+  if (secondaryCodeForActualDepth === -1 || secondaryCodeFor1InchLogic === -1) {
     return { partNumber: 'Invalid depth threshold', price: 0, cartonQuantity: 0, cartonPrice: 0, isOversize: false };
   }
 
-  // If secondaryCode is 4, it's a manual quote, regardless of other checks.
-  if (partNumberCode === 4) {
+  // If secondaryCodeForActualDepth is 4, it's a manual quote, regardless of other checks.
+  if (secondaryCodeForActualDepth === 4) {
     return {
       partNumber,
       price: 0,
@@ -270,12 +276,34 @@ export const calculatePleatPrice = (
   let priceColumnKey: keyof TieredLookupRow;
   let suffix: 'Update' | 'Double' | 'Triple';
 
-  if (priceColumnCode === 1) {
-    suffix = 'Update';
-  } else if (priceColumnCode === 2) {
-    suffix = 'Double';
-  } else { // secondaryCode is 3
-    suffix = 'Triple';
+  const rule1Products = [11204, 12204];
+  const rule2Products = [23209, 23309, 23210, 23310, 23211, 23311, 23213]; // The 23xxx codes
+
+  if (productCode && rule1Products.includes(productCode)) {
+    // Apply Rule 1 (if 11204 or 12204)
+    if (secondaryCodeForActualDepth === 1) {
+      suffix = 'Update';
+    } else { // if 2, 3, or 4
+      suffix = 'Double';
+    }
+  } else if (productCode && rule2Products.includes(productCode)) {
+    // Apply Rule 2 (if 23xxx)
+    if (secondaryCodeFor1InchLogic === 1) {
+      suffix = 'Update';
+    } else if (secondaryCodeFor1InchLogic === 2) {
+      suffix = 'Double';
+    } else { // if 3 or 4
+      suffix = 'Triple';
+    }
+  } else {
+    // Apply Rule 3 (Generic - All Others)
+    if (secondaryCodeForActualDepth === 1) {
+      suffix = 'Update';
+    } else if (secondaryCodeForActualDepth === 2) {
+      suffix = 'Double';
+    } else { // if 3 or 4
+      suffix = 'Triple';
+    }
   }
 
   priceColumnKey = `${inputs.depth}_${suffix}` as keyof TieredLookupRow;
