@@ -13,10 +13,6 @@ export interface PleatInputs {
   isExact: boolean;
 }
 
-export interface PleatDebugInfo {
-  partNumberGeneration?: any;
-  priceCalculation?: any;
-}
 
 export interface PartNumberDebugInfo {
   productCode?: number | string;
@@ -28,6 +24,24 @@ export interface PartNumberDebugInfo {
   assembledPartNumber?: string;
 }
 
+export interface PriceCalculationDebugInfo {
+  isPartNumberValid?: boolean;
+  secondaryCodeForActualDepth?: number;
+  secondaryCodeFor1InchLogic?: number;
+  overrideTableUsed?: 'A' | 'B';
+  overrideLookupKey?: string;
+  overridePriceRowFound?: any;
+  faceValue?: number;
+  tieredPriceRowFound?: any;
+  priceColumnKey?: string;
+  listPrice?: number | 'N/A';
+  finalPrice?: number | string;
+}
+
+export interface PleatDebugInfo {
+  partNumberGeneration: PartNumberDebugInfo;
+  priceCalculation: PriceCalculationDebugInfo;
+}
 export interface PleatPricingResult {
   partNumber: string;
   price: number;
@@ -165,7 +179,7 @@ export const calculatePleatPrice = (
   const { partNumber, debugInfo: partNumberDebugInfo } = generatePleatPartNumber(inputs, pricingData);
   const debugInfo: PleatDebugInfo = {
     partNumberGeneration: partNumberDebugInfo,
-    priceCalculation: {},
+    priceCalculation: {}, // Will be populated throughout this function
   };
 
   const isPartNumberValid = partNumber.startsWith('1') || partNumber.startsWith('2');

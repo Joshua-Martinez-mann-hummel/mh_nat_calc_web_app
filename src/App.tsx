@@ -8,13 +8,14 @@ import PadsCalc from './components/PadsCalc/PadsCalc';
 import SleevesCalc from './components/SleevesCalc/SleevesCalc';
 import Dashboard from './components/Dashboard/Dashboard';
 
-interface Calculation {
+export interface Calculation {
   id: number;
   productType: string;
   config: object;
   price: number;
   timestamp: string;
   partNumber: string;
+  notes?: string;
   cartonQuantity: number;
   cartonPrice: number;
 }
@@ -23,17 +24,46 @@ export default function PricingCalculator() {
   const [activeTab, setActiveTab] = useState('home');
   const [calculations, setCalculations] = useState<Calculation[]>([]);
 
-  const addCalculation = (productType: string, config: object, price: number, quoteDetails: any) => {
+  const addCalculation = (productType: string, config: object, price: number, resultDetails: any) => {
     const newCalc = {
       id: Date.now(),
       productType,
       config,
       price,
       timestamp: new Date().toLocaleString(),
-      partNumber: quoteDetails.partNumber,
-      cartonQuantity: quoteDetails.cartonQuantity,
-      cartonPrice: quoteDetails.cartonPrice,
+      partNumber: resultDetails.partNumber,
+      cartonQuantity: resultDetails.cartonQuantity,
+      cartonPrice: resultDetails.cartonPrice,
+      notes: resultDetails.notes,
     };
+
+    // Log debug information to the console if it exists
+    if (resultDetails.debugInfo) {
+      console.group(`--- Pricing Debug: ${productType} ---`);
+      console.log('Inputs:', config);
+
+      if (resultDetails.debugInfo.partNumberGeneration) {
+        console.groupCollapsed('Part Number Generation');
+        console.table(resultDetails.debugInfo.partNumberGeneration);
+        console.groupEnd();
+      }
+
+      if (resultDetails.debugInfo.priceCalculation) {
+        console.groupCollapsed('Price Calculation');
+        console.table(resultDetails.debugInfo.priceCalculation);
+        console.groupEnd();
+      }
+
+      console.log('Final Result:', {
+        partNumber: resultDetails.partNumber,
+        price: resultDetails.price,
+        cartonQuantity: resultDetails.cartonQuantity,
+        cartonPrice: resultDetails.cartonPrice,
+        isOversize: resultDetails.isOversize,
+        notes: resultDetails.notes,
+      });
+      console.groupEnd();
+    }
     setCalculations([newCalc, ...calculations]);
   };
 
