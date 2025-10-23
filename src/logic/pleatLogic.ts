@@ -322,14 +322,20 @@ export const calculatePleatPrice = (
   let priceColumnKey: keyof TieredLookupRow;
   let suffix: 'Update' | 'Double' | 'Triple';
 
-  const rule1Products = [11204, 12204];
   const rule2Products = [23209, 23309, 23210, 23310, 23211, 23311, 23213]; // The 23xxx codes
 
-  if (productCode && rule1Products.includes(productCode)) {
-    // Apply Rule 1 (if 11204 or 12204)
+  if (productCode === 12204) {
+    // Apply Rule 1 for 12204
     if (secondaryCodeForActualDepth === 1) {
       suffix = 'Update';
-    } else { // if 2, 3, or 4
+    } else {
+      suffix = 'Double';
+    }
+  } else if (productCode === 11204) {
+    // Apply Rule 1 for 11204 (uses 1-inch logic)
+    if (secondaryCodeFor1InchLogic === 1) {
+      suffix = 'Update';
+    } else {
       suffix = 'Double';
     }
   } else if (productCode && rule2Products.includes(productCode)) {
@@ -342,10 +348,21 @@ export const calculatePleatPrice = (
       suffix = 'Triple';
     }
   } else {
-    // Apply Rule 3 (Generic - All Others)
-    if (secondaryCodeForActualDepth === 1) {
+    // --- Apply Rule 3 (Generic - All Others) with Excel C68 exception ---
+    const isC68ExceptionRange = tieredRow.Min_Range === 600 && tieredRow.Max_Range === 899;
+
+    if (
+      inputs.depth === 2 &&
+      isC68ExceptionRange &&
+      secondaryCodeForActualDepth !== 1
+    ) {
+      // C68 Exception: If depth is 2" AND face value is in the 600-899 range AND secondary code is not 1, force 'Triple'.
+      suffix = 'Triple';
+    } else if (secondaryCodeForActualDepth === 1) {
+      // Normal Generic Rule
       suffix = 'Update';
     } else if (secondaryCodeForActualDepth === 2) {
+      // Normal Generic Rule
       suffix = 'Double';
     } else { // if 3 or 4
       suffix = 'Triple';

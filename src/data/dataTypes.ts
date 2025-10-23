@@ -7,6 +7,7 @@ export interface ProductFamilyCode {
 
 export interface TieredLookupRow {
   Product_Prefix: number;
+  Excel_Row_Number?: number; // Optional: To identify special case rows from the source Excel file
   Min_Range: number;
   Max_Range: number;
   '1_Update': number | 'N/A';
