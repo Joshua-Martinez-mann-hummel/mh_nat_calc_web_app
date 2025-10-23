@@ -311,47 +311,30 @@ export const calculatePleatPrice = (
   const rule1Products = [11204, 12204];
   const rule2Products = [23209, 23309, 23210, 23310, 23211, 23311, 23213]; // The 23xxx codes
 
-  // --- Apply Pricing Rules to determine the column suffix ---
-
-  if (productCode === 11204) {
-    // Apply Rule 1 for product 11204 (uses 1-inch logic)
-    if (secondaryCodeFor1InchLogic === 1) {
-      suffix = 'Update';
-    } else { // 2, 3, or 4
-      suffix = 'Double';
-    }
-  } else if (productCode === 12204) {
-    // Apply Rule 1 for product 12204 (uses actual depth logic)
+  if (productCode && rule1Products.includes(productCode)) {
+    // Apply Rule 1 (if 11204 or 12204)
     if (secondaryCodeForActualDepth === 1) {
       suffix = 'Update';
-    } else { // 2, 3, or 4
+    } else { // if 2, 3, or 4
       suffix = 'Double';
     }
-  }else if (productCode && rule2Products.includes(productCode)) {
-    // Apply Rule 2 (if 23xxx - uses 1-inch logic)
+  } else if (productCode && rule2Products.includes(productCode)) {
+    // Apply Rule 2 (if 23xxx)
     if (secondaryCodeFor1InchLogic === 1) {
       suffix = 'Update';
     } else if (secondaryCodeFor1InchLogic === 2) {
       suffix = 'Double';
-    } else { // 3 or 4
+    } else { // if 3 or 4
       suffix = 'Triple';
     }
   } else {
     // Apply Rule 3 (Generic - All Others)
-    const isC68ExceptionRange = tieredRow.Min_Range === 600 && tieredRow.Max_Range === 899;
-
-    if (inputs.depth === 2 && isC68ExceptionRange && secondaryCodeForActualDepth !== 1) {
-      // Special exception for 2" depth filters in the 600-899 faceValue range that are not standard size.
+    if (secondaryCodeForActualDepth === 1) {
+      suffix = 'Update';
+    } else if (secondaryCodeForActualDepth === 2) {
+      suffix = 'Double';
+    } else { // if 3 or 4
       suffix = 'Triple';
-    } else {
-      // Normal Generic Rule (uses actual depth logic)
-      if (secondaryCodeForActualDepth === 1) {
-        suffix = 'Update';
-      } else if (secondaryCodeForActualDepth === 2) {
-        suffix = 'Double';
-      } else { // 3 or 4
-        suffix = 'Triple';
-      }
     }
   }
 
