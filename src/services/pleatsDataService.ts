@@ -1,16 +1,16 @@
 // This file is responsible for fetching the raw CSV data from your project and converting it into a usable JavaScript object.
 
 import Papa from 'papaparse';
-import type { PricingData } from '../data/PleatsData/dataTypes';
+import type { PricingData } from '../data/PleatsData/pleatsDataTypes';
 
 // Import the CSV files as URL assets. Vite will generate the correct public URLs.
-import productFamilyCodesUrl from '../data/Product Family Codes.csv?url';
-import tieredLookupMatrixUrl from '../data/Tiered Lookup Matrix.csv?url';
-import standardPricesUrl from '../data/Standard Price Table.csv?url';
-import dimensionThresholdsUrl from '../data/Dimension Thresholds.csv?url';
-import specialOverrideAUrl from '../data/special-override-prices-A.csv?url';
-import specialOverrideBUrl from '../data/special-override-prices-B.csv?url';
-import fractionalCodesUrl from '../data/Fractional_Codes.csv?url';
+import productFamilyCodesUrl from '/src/data/PleatsData/Product Family Codes.csv?url';
+import tieredLookupMatrixUrl from '/src/data/PleatsData/Tiered Lookup Matrix.csv?url';
+import standardPricesUrl from '/src/data/PleatsData/Standard Price Table.csv?url';
+import dimensionThresholdsUrl from '/src/data/PleatsData/Dimension Thresholds.csv?url';
+import specialOverrideAUrl from '/src/data/PleatsData/special-override-prices-A.csv?url';
+import specialOverrideBUrl from '/src/data/PleatsData/special-override-prices-B.csv?url';
+import fractionalCodesUrl from '/src/data/PleatsData/Fractional_Codes.csv?url';
 
 
 export const loadAndParseData = async (): Promise<PricingData> => {
@@ -22,7 +22,7 @@ export const loadAndParseData = async (): Promise<PricingData> => {
         skipEmptyLines: true,
         dynamicTyping: true, // Automatically converts numbers
         complete: (results: Papa.ParseResult<any>) => resolve(results.data),
-        error: (error) => reject(error),
+       error: (error) => reject(error),
       });
     });
   };

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { SleevesData } from '../services/sleeveDataService';
+import type { SleevesData } from '../data/SleevesData/sleevesDataTypes';
 import { loadSleevesData } from '../services/sleeveDataService';
 
 export const useSleevesData = () => {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import type { PricingData } from '../data/PleatsData/dataTypes';
-import { loadAndParseData } from '../services/dataService';
+import type { PricingData } from '../data/PleatsData/pleatsDataTypes';
+import { loadAndParseData } from '../services/pleatsDataService';
 
 export const usePricingData = () => {
   const [data, setData] = useState<PricingData | null>(null);
