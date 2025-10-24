@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { PricingData } from '../data/dataTypes';
+import type { PricingData } from '../data/PleatsData/dataTypes';
 import { loadAndParseData } from '../services/dataService';
 
 export const usePricingData = () => {

@@ -1,7 +1,7 @@
 // This file is responsible for fetching the raw CSV data from your project and converting it into a usable JavaScript object.
 
 import Papa from 'papaparse';
-import type { PricingData } from '../data/dataTypes';
+import type { PricingData } from '../data/PleatsData/dataTypes';
 
 // Import the CSV files as URL assets. Vite will generate the correct public URLs.
 import productFamilyCodesUrl from '../data/Product Family Codes.csv?url';

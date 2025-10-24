@@ -1,6 +1,6 @@
 // src/logic/pleatLogic.ts
 
-import type { PricingData, TieredLookupRow } from "../data/dataTypes.js";
+import type { PricingData, TieredLookupRow } from "../data/PleatsData/dataTypes.js";
 
 // Define a type for our form inputs for clarity
 
