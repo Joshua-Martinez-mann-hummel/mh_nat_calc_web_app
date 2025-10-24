@@ -301,17 +301,20 @@ export const calculatePleatPrice = (
 
   // The price column code uses 1"/2" dimension rules, even for 4" filters, to determine the price multiplier.
 
-const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
-  const standardThreshold = pricingData.dimensionThresholds.find(
-    (t) => t.Depth === depthForThresholds && t.Limit_Type === 'Standard'
-  );
-  const oversizeThreshold = pricingData.dimensionThresholds.find(
-    (t) => t.Depth === depthForThresholds && t.Limit_Type === 'Oversize'
-  );
+  const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
+    const standardThreshold = pricingData.dimensionThresholds.find(
+      (t) => t.Depth === depthForThresholds && t.Limit_Type === "Standard"
+    );
 
-  if (!standardThreshold || !oversizeThreshold) { // This condition should ideally not be met with correct data setup
-    return -1;
-  }
+    const oversizeThreshold = pricingData.dimensionThresholds.find(
+      (t) => t.Depth === depthForThresholds && t.Limit_Type === "Oversize"
+    );
+
+    if (!standardThreshold || !oversizeThreshold) {
+      // This should not happen with valid data, but it's a safe fallback.
+
+      return -1; // Indicates an error
+    }
 
     if (depthForThresholds === 1 || depthForThresholds === 2) {
       if (
@@ -490,48 +493,46 @@ const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
       debugInfo,
     };
   }
+
   // --- GATE 3: Standard Price Calculation ---
 
-  // 1. Calculate Unrounded Value
   const unroundedFaceValue = width * length;
 
-  // 2. Apply Rounding Logic
+  // Apply rounding logic
   const boundaries = [299, 599, 899, 1199, 1499, 1799];
-  let faceValue = Math.round(unroundedFaceValue); // Default rounding
+  let faceValue = Math.round(unroundedFaceValue);
 
   if (productCode === 21211) {
     for (const boundary of boundaries) {
       if (unroundedFaceValue > boundary && unroundedFaceValue < boundary + 1) {
-        faceValue = Math.ceil(unroundedFaceValue); // Special rounding UP
+        faceValue = Math.ceil(unroundedFaceValue);
         break;
       }
     }
   }
 
-  // 3. Update debug log with final faceValue
   debugInfo.priceCalculation.faceValue = faceValue;
 
-  // 4. Use rounded faceValue in lookup
   const tieredRow = pricingData.tieredLookupMatrix.find(
-    (row) =>
-      row.Product_Prefix === productCode &&
-      faceValue >= row.Min_Range &&
-      faceValue <= row.Max_Range
+    (row) => {
+      return row.Product_Prefix === productCode &&
+        faceValue >= row.Min_Range &&
+        faceValue <= row.Max_Range;
+    }
   );
 
-  // Log the result *after* the lookup
   debugInfo.priceCalculation.tieredPriceRowFound = tieredRow || "None";
 
-  // Check for lookup failure *after* the lookup
   if (!tieredRow) {
     debugInfo.priceCalculation.finalPrice = "Dimensions out of range";
+
     return {
       partNumber,
       price: 0,
       cartonQuantity: 0,
       cartonPrice: 0,
       isOversize: false,
-      notes: "Price lookup failed: Dimensions out of range", // Corrected error handling
+      notes: "Dimensions out of range",
       debugInfo,
     };
   }
@@ -569,31 +570,18 @@ const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
       suffix = "Triple";
     }
   } else {
-  // --- Apply Rule 3 (Generic - All Others) with Excel C68 exception ---
-  const isC68ExceptionRange = tieredRow.Min_Range === 600 && tieredRow.Max_Range === 899; // Identify the specific range
+    // Apply Rule 3 (Generic - All Others)
 
-  if (
-    // inputs.depth === 2 && // Check if depth is exactly 2
-    // isC68ExceptionRange && // Check if FaceValue is in the 600-899 range
-    // secondaryCodeForActualDepth !== 1 // Check if secondary code is 2, 3, or 4
-    productCode === 21310 && // ADD THIS CHECK: Only apply to product 21310
-    inputs.depth === 2 &&
-    isC68ExceptionRange && // Checks if FaceValue is in the 600-899 range
-  secondaryCodeForActualDepth !== 1
-  ) {
-    // C68 Exception: Force 'Triple'
-    suffix = 'Triple';
-  } else if (secondaryCodeForActualDepth === 1) {
-    // Normal Generic Rule
-    suffix = 'Update';
-  } else if (secondaryCodeForActualDepth === 2) {
-    // Normal Generic Rule
-    suffix = 'Double';
-  } else { // if 3 or 4
-    // Normal Generic Rule
-    suffix = 'Triple';
+    if (secondaryCodeForActualDepth === 1) {
+      suffix = "Update";
+    } else if (secondaryCodeForActualDepth === 2) {
+      suffix = "Double";
+    } else {
+      // if 3 or 4
+
+      suffix = "Triple";
+    }
   }
-}
 
   priceColumnKey = `${inputs.depth}_${suffix}` as keyof TieredLookupRow;
 

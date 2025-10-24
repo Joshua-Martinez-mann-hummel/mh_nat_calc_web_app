@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import CalculatorTemplate from '../ui/CalculatorTemplate';
 import FormField from '../ui/FormField';
 import PricingResult from '../ui/PricingResult';
-import { usePricingData } from '../../hooks/usePricingData';
-import { calculatePleatPrice, type PleatInputs } from '../../logic/pleatLogic';
+import { usePricingData, type PricingData } from '../../hooks/usePricingData';
+import { calculatePleatPrice, type PleatInputs, type PleatPricingResult } from '../../logic/pleatLogic';
 
 interface PleatsCalcProps {
   onCalculate: (productType: string, config: object, price: number, quoteDetails: object) => void;
@@ -31,9 +31,16 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   const [decimalWidth, setDecimalWidth] = useState<number>(inputs.widthWhole + inputs.widthFraction);
   const [decimalLength, setDecimalLength] = useState<number>(inputs.lengthWhole + inputs.lengthFraction);
 
-  // State to hold the final calculated part number
-  // Let's manage the full quote result in state
-  const [pricingResult, setPricingResult] = useState({ 'Part Number': 'N/A', 'Price': 0, 'Carton Quantity': 0, 'Carton Price': 0 });
+  // State to hold the full pricing result, including debug info
+  const [pricingResult, setPricingResult] = useState<PleatPricingResult | null>(null);
+
+  // A derived state for what's shown in the UI, which can include notes.
+  const displayResult = {
+    'Part Number': pricingResult?.partNumber || 'N/A',
+    'Price': pricingResult?.notes || pricingResult?.price || 0,
+    'Carton Quantity': pricingResult?.notes ? 0 : pricingResult?.cartonQuantity || 0,
+    'Carton Price': pricingResult?.notes ? 0 : pricingResult?.cartonPrice || 0,
+  };
 
   // This effect runs once when the data is loaded to set the initial product family
   useEffect(() => {
@@ -79,15 +86,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   useEffect(() => {
     if (data) {
       const result = calculatePleatPrice(inputs, data);
-      // If there's an override note, display it instead of the price.
-      setPricingResult({
-        'Part Number': result.partNumber,
-        'Price': result.notes || result.price,
-        'Carton Quantity': result.notes ? 0 : result.cartonQuantity,
-        'Carton Price': result.notes ? 0 : result.cartonPrice,
-      });
-    } else {
-      setPricingResult({ 'Part Number': 'Loading...', 'Price': 0, 'Carton Quantity': 0, 'Carton Price': 0 });
+      setPricingResult(result);
     }
   }, [inputs, data]); // Dependency array: triggers recalculation on input change
 
@@ -145,12 +144,8 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   }
 
   const handleAddToDashboard = () => {
-    if (pricingResult && pricingResult.Price > 0) {
-      onCalculate('pleats', inputs, pricingResult.Price, {
-        partNumber: pricingResult['Part Number'],
-        cartonQuantity: pricingResult['Carton Quantity'],
-        cartonPrice: pricingResult['Carton Price'],
-      });
+    if (pricingResult && pricingResult.price > 0) {
+      onCalculate('pleats', inputs, pricingResult.price, pricingResult);
     }
   };
 
@@ -287,7 +282,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
             <div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="isExact" value="yes" checked={inputs.isExact} onChange={() => setInputs({ ...inputs, isExact: true })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">Yes</span></label><label className="flex items-center"><input type="radio" name="isExact" value="no" checked={!inputs.isExact} onChange={() => setInputs({ ...inputs, isExact: false })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">No</span></label></div>
           </FormField>
         </div>
-        <PricingResult results={pricingResult} onCalculate={handleAddToDashboard} />
+        <PricingResult results={displayResult} onCalculate={handleAddToDashboard} />
       </div>
     </CalculatorTemplate>
   );
