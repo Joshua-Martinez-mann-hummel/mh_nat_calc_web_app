@@ -10,16 +10,23 @@ import type {
   SleeveValidationRule,
 } from '../data/SleevesData/sleevesDataTypes';
 
+// Import CSV files as URL assets
+import sleevesProductMasterUrl from '/src/data/SleevesData/SleevesProductMaster.csv?url';
+import sleevesSleevePricingUrl from '/src/data/SleevesData/SleevesSleevePricing.csv?url';
+import sleevesFramePricingUrl from '/src/data/SleevesData/SleevesFramePricing.csv?url';
+import sleevesCrossWireRulesUrl from '/src/data/SleevesData/SleevesCrossWireRules.csv?url';
+import sleevesCartonQtyUrl from '/src/data/SleevesData/SleevesCartonQty.csv?url';
+import sleevesFractionalCodesUrl from '/src/data/SleevesData/SleevesFractionalCodes.csv?url';
+import sleevesValidationRulesUrl from '/src/data/SleevesData/SleevesValidationRules.csv?url';
+
 const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
-  const response = await fetch(filePath);
-  const csvText = await response.text();
   return new Promise<T[]>((resolve, reject) => {
-    Papa.parse<T>(csvText, {
+    Papa.parse<T>(filePath, {
+      download: true, // Let PapaParse fetch the file from the URL
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
-      // Filter out any empty rows that PapaParse might return
-      complete: (results) => resolve(results.data.filter(row => (row as any).productName || (row as any).DecimalValue !== undefined || (row as any).maxLength !== undefined)),
+      complete: (results) => resolve(results.data),
       error: (error: any) => reject(error),
     });
   });
@@ -27,13 +34,13 @@ const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
 
 export const loadSleevesData = async (): Promise<SleevesData> => {
   const [productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules] = await Promise.all([
-    loadAndParseCsv<SleeveProduct>('/src/data/SleevesData/csv/SleevesProductMaster.csv'),
-    loadAndParseCsv<SleevePricingTier>('/src/data/SleevesData/csv/SleevesSleevePricing.csv'),
-    loadAndParseCsv<FramePricingTier>('/src/data/SleevesData/csv/SleevesFramePricing.csv'),
-    loadAndParseCsv<CrossWireRule>('/src/data/SleevesData/csv/SleevesCrossWireRules.csv'),
-    loadAndParseCsv<SleeveCartonQty>('/src/data/SleevesData/csv/SleevesCartonQty.csv'),
-    loadAndParseCsv<SleeveFractionalCode>('/src/data/SleevesData/csv/SleevesFractionalCodes.csv'),
-    loadAndParseCsv<SleeveValidationRule>('/src/data/SleevesData/csv/SleevesValidationRules.csv'),
+    loadAndParseCsv<SleeveProduct>(sleevesProductMasterUrl),
+    loadAndParseCsv<SleevePricingTier>(sleevesSleevePricingUrl),
+    loadAndParseCsv<FramePricingTier>(sleevesFramePricingUrl),
+    loadAndParseCsv<CrossWireRule>(sleevesCrossWireRulesUrl),
+    loadAndParseCsv<SleeveCartonQty>(sleevesCartonQtyUrl),
+    loadAndParseCsv<SleeveFractionalCode>(sleevesFractionalCodesUrl),
+    loadAndParseCsv<SleeveValidationRule>(sleevesValidationRulesUrl),
   ]);
 
   return { productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules };

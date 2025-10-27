@@ -44,7 +44,7 @@ function SleevesCalc({ onCalculate }: SleevesCalcProps) {
       setInputs((prev) => ({
         ...prev,
         productName: data.productMaster[0].productName,
-        option: data.productMaster[0].options.split(',')[0],
+        option: data.productMaster[0].options.split(',')[0]
       }));
       // Also update decimal inputs
       setDecimalWidth(initialInputs.widthWhole + initialInputs.widthFraction);
@@ -129,18 +129,18 @@ function SleevesCalc({ onCalculate }: SleevesCalcProps) {
     setInputs((prev) => ({ ...prev, lengthWhole: whole, lengthFraction: closestFraction }));
   };
 
-  // Handle loading and error states
-  if (isLoading) {
-    return <div>Loading Sleeves Data...</div>;
-  }
+// Handle loading and error states FIRST
+if (isLoading) {
+  return <div>Loading Sleeves Data...</div>;
+}
 
-  if (error) {
-    return <div>Error loading data: {error.message}</div>;
-  }
+if (error) {
+  return <div>Error loading data: {error.message}</div>;
+}
 
-  if (!data) {
-    return <div>No data available.</div>;
-  }
+if (!data) {
+  return <div>No data available.</div>;
+}
 
   // --- Dropdown Options Generation (inside render logic) ---
   const generateIntList = (min: number, max: number) => {
