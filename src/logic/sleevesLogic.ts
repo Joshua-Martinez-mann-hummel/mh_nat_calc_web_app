@@ -1,4 +1,4 @@
-import type { SleevesData } from '../data/SleevesData/sleevesDataTypes';
+import type { SleevesData } from '../data/SleevesData/sleevesDataTypes.js';
 
 export interface SleeveInputs {
   productName: string;
@@ -68,6 +68,32 @@ export const calculateSleeves = (inputs: SleeveInputs, data: SleevesData): Sleev
   debugInfo.totalLength = totalLength;
   console.log(`[SleevesLogic] Total Dimensions: ${totalWidth}W x ${totalLength}L`);
 
+  // Step 2.3: Logic Path 1 - Part Number Generation (Moved Up)
+  // Generate the part number as early as possible.
+  const piece1_prefix = productPrefix;
+  const piece2_widthInt = widthWhole.toString().padStart(2, '0');
+  const widthFracRow = fractionalCodes.find((f) => f.DecimalValue === widthFraction);
+  const piece3_widthFrac = widthFracRow?.LetterCode ?? '';
+  const piece4_lengthInt = lengthWhole.toString().padStart(2, '0');
+  const lengthFracRow = fractionalCodes.find((f) => f.DecimalValue === lengthFraction);
+  const piece5_lengthFrac = lengthFracRow?.LetterCode ?? '';
+  const piece6_optionSuffix = option === 'Standard' ? '' : 'AT';
+
+  // This must be calculated here, before validation, to ensure it's part of the part number on error.
+  let piece7_frameSuffix = '';
+  if (productPrefix === '072') {
+    const maxDim = Math.max(widthWhole, lengthWhole);
+    const wireRule = crossWireRules.find((r) => maxDim <= r.maxDim);
+    const wires = wireRule ? wireRule.wires : '';
+    piece7_frameSuffix = `-${wires}CW`;
+  }
+  console.log(`[SleevesLogic] Part Number Pieces:`, { piece1_prefix, piece2_widthInt, piece3_widthFrac, piece4_lengthInt, piece5_lengthFrac, piece6_optionSuffix, piece7_frameSuffix });
+
+  const partNumber = `${piece1_prefix}${piece2_widthInt}${piece3_widthFrac}${piece4_lengthInt}${piece5_lengthFrac}${piece6_optionSuffix}${piece7_frameSuffix}`;
+  // Immediately update the result object with the generated part number.
+  result.partNumber = partNumber;
+  debugInfo.partNumber = partNumber;
+
   // Step 2.2: Run Validation Logic (The "Guardrails")
   // 1. Check Option
   if (!validOptions.includes(option)) {
@@ -90,41 +116,6 @@ export const calculateSleeves = (inputs: SleeveInputs, data: SleevesData): Sleev
     console.error('[SleevesLogic] Validation failed. Errors:', errors);
     return result;
   }
-
-  // Step 2.3: Logic Path 1 - Part Number Generation
-  const piece1_prefix = productPrefix;
-  const piece2_widthInt = widthWhole.toString().padStart(2, '0');
-  const widthFracRow = fractionalCodes.find((f) => f.DecimalValue === widthFraction);
-  const piece3_widthFrac = widthFracRow?.LetterCode ?? '';
-  const piece4_lengthInt = lengthWhole.toString().padStart(2, '0');
-  const lengthFracRow = fractionalCodes.find((f) => f.DecimalValue === lengthFraction);
-  const piece5_lengthFrac = lengthFracRow?.LetterCode ?? '';
-  const piece6_optionSuffix = option === 'Standard' ? '' : 'AT';
-
-  let piece7_frameSuffix = '';
-  if (productPrefix === '072') {
-    const maxDim = Math.max(widthWhole, lengthWhole);
-    const wireRule = crossWireRules.find((r) => maxDim <= r.maxDim);
-    if (wireRule) {
-      const wires = wireRule.wires;
-      piece7_frameSuffix = `-${wires}CW`;
-    }
-  }
-  console.log(`[SleevesLogic] Part Number Pieces:`, { piece1_prefix, piece2_widthInt, piece3_widthFrac, piece4_lengthInt, piece5_lengthFrac, piece6_optionSuffix, piece7_frameSuffix });
-
-  const partNumber = `${piece1_prefix}${piece2_widthInt}${piece3_widthFrac}${piece4_lengthInt}${piece5_lengthFrac}${piece6_optionSuffix}${piece7_frameSuffix}`;
-  result.partNumber = partNumber;
-
-  debugInfo.partNumberPieces = {
-    piece1_prefix,
-    piece2_widthInt,
-    piece3_widthFrac,
-    piece4_lengthInt,
-    piece5_lengthFrac,
-    piece6_optionSuffix,
-    piece7_frameSuffix,
-  };
-  debugInfo.partNumber = partNumber;
 
   // --- 3. Price Calculation ---
   let price = 0;

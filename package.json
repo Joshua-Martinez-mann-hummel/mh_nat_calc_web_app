@@ -9,12 +9,14 @@
     "build:logic": "rimraf ./dist/logic && tsc --project tsconfig.logic.json",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test:excel": "rimraf ./src/testing/results_pleats_excel.csv && python ./src/testing/test_pleats_excel.py",
-    "test:app:slow": "rimraf ./src/testing/results_pleats_app.csv && python ./src/testing/test_pleats_calc.py",
-    "test:logic": "npm run build:logic && rimraf ./src/testing/results_pleats_app.csv && python ./src/testing/test_pleats_logic.py",
-    "test:compare": "rimraf ./src/testing/comparison_summary.csv && python ./src/testing/compare_results.py",
-    "test:all:fast": "npm run test:excel && npm run test:logic && npm run test:compare",
-    "test:all:slow": "npm run test:excel && npm run test:app:slow && npm run test:compare"
+    "test:pleatsExcel": "rimraf ./src/testing/PleatsTesting/results_pleats_excel.csv && python ./src/testing/PleatsTesting/test_pleats_excel.py",
+    "test:pleatsLogic": "npm run build:logic && rimraf ./src/testing/PleatsTesting/results_pleats_app.csv && python ./src/testing/PleatsTesting/test_pleats_logic.py",
+    "test:pleatsCompare": "rimraf ./src/testing/PleatsTesting/comparison_summary.csv && python ./src/testing/PleatsTesting/compare_results.py",
+    "test:all:pleats": "npm run test:pleatsExcel && npm run test:pleatsLogic && npm run test:pleatsCompare",
+    "test:sleevesExcel": "rimraf ./src/testing/SleevesTesting/results_sleeves_excel.csv && python ./src/testing/SleevesTesting/test_sleeves_excel.py",
+    "test:sleevesLogic": "npm run build:logic && rimraf ./src/testing/SleevesTesting/results_sleeves_app.csv && python ./src/testing/SleevesTesting/test_sleeves_logic.py",
+    "test:sleevesCompare": "rimraf ./src/testing/SleevesTesting/comparison_summary.csv && python ./src/testing/SleevesTesting/compare_sleeves_results.py",
+    "test:all:sleeves": "npm run test:sleevesExcel && npm run test:sleevesLogic && npm run test:sleevesCompare"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",

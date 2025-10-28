@@ -1,0 +1,545 @@
+2025-10-28 11:57:43,085 - INFO - 🚀 Starting Sleeves LOGIC test automation...
+2025-10-28 11:57:43,107 - INFO - ✅ Found 90 test cases in 'C:\Users\10113120\Documents\pricing-calc\src\testing\SleevesTesting\results_sleeves_excel.csv'.
+2025-10-28 11:57:43,108 - WARNING - --- Running Test Case #1/90 ---
+2025-10-28 11:57:43,108 - INFO - Inputs: W=30.5, L=70.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:43,426 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:43,426 - INFO -       [CAPTURE] Part Number: '07030D70C'
+2025-10-28 11:57:43,427 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:43,427 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:43,427 - WARNING - --- Running Test Case #2/90 ---
+2025-10-28 11:57:43,427 - INFO - Inputs: W=7.25, L=113.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:43,628 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:43,628 - INFO -       [CAPTURE] Part Number: '07007B113F'
+2025-10-28 11:57:43,628 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:43,628 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:43,628 - WARNING - --- Running Test Case #3/90 ---
+2025-10-28 11:57:43,628 - INFO - Inputs: W=24.125, L=93.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:43,829 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:43,829 - INFO -       [CAPTURE] Part Number: '07024A93F'
+2025-10-28 11:57:43,830 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:43,830 - INFO -       [CAPTURE] Carton Qty: '13'
+2025-10-28 11:57:43,830 - WARNING - --- Running Test Case #4/90 ---
+2025-10-28 11:57:43,830 - INFO - Inputs: W=22.625, L=70.5, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:44,050 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:44,050 - INFO -       [CAPTURE] Part Number: '07022F70D'
+2025-10-28 11:57:44,050 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:44,051 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:44,051 - WARNING - --- Running Test Case #5/90 ---
+2025-10-28 11:57:44,051 - INFO - Inputs: W=27.625, L=72.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:44,239 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:44,239 - INFO -       [CAPTURE] Part Number: '07027F72G'
+2025-10-28 11:57:44,239 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:44,239 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:44,240 - WARNING - --- Running Test Case #6/90 ---
+2025-10-28 11:57:44,240 - INFO - Inputs: W=8.625, L=87.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:44,430 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:44,430 - INFO -       [CAPTURE] Part Number: '07008F87B'
+2025-10-28 11:57:44,430 - INFO -       [CAPTURE] Price: '9.17'
+2025-10-28 11:57:44,430 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:44,430 - WARNING - --- Running Test Case #7/90 ---
+2025-10-28 11:57:44,431 - INFO - Inputs: W=21.625, L=8.0, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:44,615 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:44,615 - INFO -       [CAPTURE] Part Number: '07021F08'
+2025-10-28 11:57:44,615 - INFO -       [CAPTURE] Price: '2.43'
+2025-10-28 11:57:44,615 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:44,616 - WARNING - --- Running Test Case #8/90 ---
+2025-10-28 11:57:44,616 - INFO - Inputs: W=17.5, L=66.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:44,834 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:44,834 - INFO -       [CAPTURE] Part Number: '07017D66F'
+2025-10-28 11:57:44,834 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:44,834 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:44,834 - WARNING - --- Running Test Case #9/90 ---
+2025-10-28 11:57:44,835 - INFO - Inputs: W=31.0, L=73.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,028 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,028 - INFO -       [CAPTURE] Part Number: '0703173C'
+2025-10-28 11:57:45,028 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:45,028 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:45,028 - WARNING - --- Running Test Case #10/90 ---
+2025-10-28 11:57:45,028 - INFO - Inputs: W=21.5, L=98.875, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,213 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,213 - INFO -       [CAPTURE] Part Number: '07021D98H'
+2025-10-28 11:57:45,213 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:45,213 - INFO -       [CAPTURE] Carton Qty: '13'
+2025-10-28 11:57:45,213 - WARNING - --- Running Test Case #11/90 ---
+2025-10-28 11:57:45,213 - INFO - Inputs: W=8.0, L=112.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,400 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,400 - INFO -       [CAPTURE] Part Number: '07008112B'
+2025-10-28 11:57:45,400 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:45,400 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:45,401 - WARNING - --- Running Test Case #12/90 ---
+2025-10-28 11:57:45,401 - INFO - Inputs: W=11.25, L=110.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,621 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,621 - INFO -       [CAPTURE] Part Number: '07011B110B'
+2025-10-28 11:57:45,621 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:45,621 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:45,622 - WARNING - --- Running Test Case #13/90 ---
+2025-10-28 11:57:45,622 - INFO - Inputs: W=5.75, L=64.0, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,809 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,809 - INFO -       [CAPTURE] Part Number: '07005G64'
+2025-10-28 11:57:45,809 - INFO -       [CAPTURE] Price: '4.59'
+2025-10-28 11:57:45,809 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:45,809 - WARNING - --- Running Test Case #14/90 ---
+2025-10-28 11:57:45,809 - INFO - Inputs: W=14.875, L=78.125, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:45,993 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:45,993 - INFO -       [CAPTURE] Part Number: '07014H78A'
+2025-10-28 11:57:45,993 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:45,993 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:45,993 - WARNING - --- Running Test Case #15/90 ---
+2025-10-28 11:57:45,993 - INFO - Inputs: W=21.25, L=77.5, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:46,178 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:46,178 - INFO -       [CAPTURE] Part Number: '07021B77D'
+2025-10-28 11:57:46,178 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:46,178 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:46,179 - WARNING - --- Running Test Case #16/90 ---
+2025-10-28 11:57:46,179 - INFO - Inputs: W=18.875, L=98.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:46,366 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:46,366 - INFO -       [CAPTURE] Part Number: '07018H98G'
+2025-10-28 11:57:46,366 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:46,366 - INFO -       [CAPTURE] Carton Qty: '13'
+2025-10-28 11:57:46,367 - WARNING - --- Running Test Case #17/90 ---
+2025-10-28 11:57:46,367 - INFO - Inputs: W=33.625, L=32.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:46,553 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:46,553 - INFO -       [CAPTURE] Part Number: '07033F32B'
+2025-10-28 11:57:46,553 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:46,553 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:46,553 - WARNING - --- Running Test Case #18/90 ---
+2025-10-28 11:57:46,554 - INFO - Inputs: W=14.125, L=89.875, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:46,740 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:46,740 - INFO -       [CAPTURE] Part Number: '07014A89H'
+2025-10-28 11:57:46,740 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:46,740 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:46,741 - WARNING - --- Running Test Case #19/90 ---
+2025-10-28 11:57:46,741 - INFO - Inputs: W=18.75, L=106.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:46,924 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:46,924 - INFO -       [CAPTURE] Part Number: '07018G106C'
+2025-10-28 11:57:46,924 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:46,924 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:46,925 - WARNING - --- Running Test Case #20/90 ---
+2025-10-28 11:57:46,925 - INFO - Inputs: W=31.25, L=69.0, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:47,108 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:47,108 - INFO -       [CAPTURE] Part Number: '07031B69'
+2025-10-28 11:57:47,108 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:47,108 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:47,108 - WARNING - --- Running Test Case #21/90 ---
+2025-10-28 11:57:47,108 - INFO - Inputs: W=31.5, L=4.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:47,296 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:47,296 - INFO -       [CAPTURE] Part Number: '07031D04B'
+2025-10-28 11:57:47,296 - INFO -       [CAPTURE] Price: 'Length is below minimum of 4.5".'
+2025-10-28 11:57:47,296 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:47,297 - WARNING - --- Running Test Case #22/90 ---
+2025-10-28 11:57:47,297 - INFO - Inputs: W=23.625, L=121.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:47,483 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:47,483 - INFO -       [CAPTURE] Part Number: '07023F121G'
+2025-10-28 11:57:47,483 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:47,483 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:47,483 - WARNING - --- Running Test Case #23/90 ---
+2025-10-28 11:57:47,483 - INFO - Inputs: W=8.875, L=27.125, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:47,669 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:47,669 - INFO -       [CAPTURE] Part Number: '07008H27A'
+2025-10-28 11:57:47,669 - INFO -       [CAPTURE] Price: '3.21'
+2025-10-28 11:57:47,669 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:47,669 - WARNING - --- Running Test Case #24/90 ---
+2025-10-28 11:57:47,670 - INFO - Inputs: W=6.625, L=110.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:47,857 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:47,857 - INFO -       [CAPTURE] Part Number: '07006F110G'
+2025-10-28 11:57:47,857 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:47,857 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:47,857 - WARNING - --- Running Test Case #25/90 ---
+2025-10-28 11:57:47,858 - INFO - Inputs: W=17.625, L=55.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:48,040 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:48,041 - INFO -       [CAPTURE] Part Number: '07017F55C'
+2025-10-28 11:57:48,041 - INFO -       [CAPTURE] Price: '11.88'
+2025-10-28 11:57:48,041 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:48,041 - WARNING - --- Running Test Case #26/90 ---
+2025-10-28 11:57:48,041 - INFO - Inputs: W=20.125, L=67.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:48,225 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:48,225 - INFO -       [CAPTURE] Part Number: '07020A67F'
+2025-10-28 11:57:48,225 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:48,225 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:48,226 - WARNING - --- Running Test Case #27/90 ---
+2025-10-28 11:57:48,226 - INFO - Inputs: W=32.875, L=49.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:48,452 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:48,452 - INFO -       [CAPTURE] Part Number: '07032H49C'
+2025-10-28 11:57:48,452 - INFO -       [CAPTURE] Price: '12.81'
+2025-10-28 11:57:48,452 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:48,453 - WARNING - --- Running Test Case #28/90 ---
+2025-10-28 11:57:48,453 - INFO - Inputs: W=30.25, L=17.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:48,673 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:48,673 - INFO -       [CAPTURE] Part Number: '07030B17F'
+2025-10-28 11:57:48,673 - INFO -       [CAPTURE] Price: '6.59'
+2025-10-28 11:57:48,673 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:48,674 - WARNING - --- Running Test Case #29/90 ---
+2025-10-28 11:57:48,674 - INFO - Inputs: W=7.875, L=34.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:48,862 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:48,862 - INFO -       [CAPTURE] Part Number: '07007H34G'
+2025-10-28 11:57:48,862 - INFO -       [CAPTURE] Price: '3.47'
+2025-10-28 11:57:48,862 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:48,863 - WARNING - --- Running Test Case #30/90 ---
+2025-10-28 11:57:48,863 - INFO - Inputs: W=11.0, L=69.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:49,052 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:49,052 - INFO -       [CAPTURE] Part Number: '0701169F'
+2025-10-28 11:57:49,052 - INFO -       [CAPTURE] Price: '9.31'
+2025-10-28 11:57:49,052 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:49,052 - WARNING - --- Running Test Case #31/90 ---
+2025-10-28 11:57:49,053 - INFO - Inputs: W=7.5, L=109.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:49,239 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:49,239 - INFO -       [CAPTURE] Part Number: '07007D109FAT'
+2025-10-28 11:57:49,239 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:49,239 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:49,240 - WARNING - --- Running Test Case #32/90 ---
+2025-10-28 11:57:49,240 - INFO - Inputs: W=15.25, L=93.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:49,466 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:49,466 - INFO -       [CAPTURE] Part Number: '07015B93FAT'
+2025-10-28 11:57:49,466 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:49,466 - INFO -       [CAPTURE] Carton Qty: '13'
+2025-10-28 11:57:49,466 - WARNING - --- Running Test Case #33/90 ---
+2025-10-28 11:57:49,467 - INFO - Inputs: W=8.75, L=20.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:49,651 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:49,651 - INFO -       [CAPTURE] Part Number: '07008G20CAT'
+2025-10-28 11:57:49,651 - INFO -       [CAPTURE] Price: '2.62'
+2025-10-28 11:57:49,651 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:49,651 - WARNING - --- Running Test Case #34/90 ---
+2025-10-28 11:57:49,651 - INFO - Inputs: W=20.5, L=120.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:49,868 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:49,869 - INFO -       [CAPTURE] Part Number: '07020D120FAT'
+2025-10-28 11:57:49,869 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:49,869 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:49,869 - WARNING - --- Running Test Case #35/90 ---
+2025-10-28 11:57:49,869 - INFO - Inputs: W=28.5, L=25.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:50,055 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:50,055 - INFO -       [CAPTURE] Part Number: '07028D25BAT'
+2025-10-28 11:57:50,055 - INFO -       [CAPTURE] Price: '9.79'
+2025-10-28 11:57:50,055 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:50,055 - WARNING - --- Running Test Case #36/90 ---
+2025-10-28 11:57:50,055 - INFO - Inputs: W=13.875, L=48.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:50,251 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:50,251 - INFO -       [CAPTURE] Part Number: '07013H48GAT'
+2025-10-28 11:57:50,251 - INFO -       [CAPTURE] Price: '9.31'
+2025-10-28 11:57:50,251 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:50,251 - WARNING - --- Running Test Case #37/90 ---
+2025-10-28 11:57:50,252 - INFO - Inputs: W=16.625, L=57.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:50,495 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:50,495 - INFO -       [CAPTURE] Part Number: '07016F57GAT'
+2025-10-28 11:57:50,495 - INFO -       [CAPTURE] Price: '12.99'
+2025-10-28 11:57:50,495 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:50,495 - WARNING - --- Running Test Case #38/90 ---
+2025-10-28 11:57:50,496 - INFO - Inputs: W=4.375, L=25.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:50,683 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:50,683 - INFO -       [CAPTURE] Part Number: '07004C25GAT'
+2025-10-28 11:57:50,683 - INFO -       [CAPTURE] Price: 'Width is below minimum of 4.5".'
+2025-10-28 11:57:50,683 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:50,684 - WARNING - --- Running Test Case #39/90 ---
+2025-10-28 11:57:50,684 - INFO - Inputs: W=4.5, L=78.875, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:50,869 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:50,869 - INFO -       [CAPTURE] Part Number: '07004D78HAT'
+2025-10-28 11:57:50,869 - INFO -       [CAPTURE] Price: '4.98'
+2025-10-28 11:57:50,869 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:50,870 - WARNING - --- Running Test Case #40/90 ---
+2025-10-28 11:57:50,870 - INFO - Inputs: W=6.0, L=117.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:51,090 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:51,090 - INFO -       [CAPTURE] Part Number: '07006117CAT'
+2025-10-28 11:57:51,090 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:51,090 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:51,090 - WARNING - --- Running Test Case #41/90 ---
+2025-10-28 11:57:51,091 - INFO - Inputs: W=23.125, L=113.0, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:51,278 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:51,278 - INFO -       [CAPTURE] Part Number: '07023A113AT'
+2025-10-28 11:57:51,278 - INFO -       [CAPTURE] Price: 'Length is above maximum of 100".'
+2025-10-28 11:57:51,278 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:51,278 - WARNING - --- Running Test Case #42/90 ---
+2025-10-28 11:57:51,279 - INFO - Inputs: W=28.875, L=46.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:51,464 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:51,465 - INFO -       [CAPTURE] Part Number: '07028H46GAT'
+2025-10-28 11:57:51,465 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:51,465 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:51,465 - WARNING - --- Running Test Case #43/90 ---
+2025-10-28 11:57:51,465 - INFO - Inputs: W=26.125, L=6.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:51,649 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:51,650 - INFO -       [CAPTURE] Part Number: '07026A06FAT'
+2025-10-28 11:57:51,650 - INFO -       [CAPTURE] Price: '2.62'
+2025-10-28 11:57:51,650 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:51,650 - WARNING - --- Running Test Case #44/90 ---
+2025-10-28 11:57:51,650 - INFO - Inputs: W=22.625, L=56.5, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:51,841 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:51,841 - INFO -       [CAPTURE] Part Number: '07022F56DAT'
+2025-10-28 11:57:51,841 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:51,841 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:51,842 - WARNING - --- Running Test Case #45/90 ---
+2025-10-28 11:57:51,842 - INFO - Inputs: W=14.625, L=81.5, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,026 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,026 - INFO -       [CAPTURE] Part Number: '07014F81DAT'
+2025-10-28 11:57:52,026 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:52,026 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:52,026 - WARNING - --- Running Test Case #46/90 ---
+2025-10-28 11:57:52,027 - INFO - Inputs: W=8.125, L=57.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,209 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,210 - INFO -       [CAPTURE] Part Number: '07008A57FAT'
+2025-10-28 11:57:52,210 - INFO -       [CAPTURE] Price: '6.42'
+2025-10-28 11:57:52,210 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:52,210 - WARNING - --- Running Test Case #47/90 ---
+2025-10-28 11:57:52,210 - INFO - Inputs: W=28.5, L=52.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,398 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,398 - INFO -       [CAPTURE] Part Number: '07028D52CAT'
+2025-10-28 11:57:52,398 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:52,398 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:52,399 - WARNING - --- Running Test Case #48/90 ---
+2025-10-28 11:57:52,399 - INFO - Inputs: W=28.0, L=8.875, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,581 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,581 - INFO -       [CAPTURE] Part Number: '0702808HAT'
+2025-10-28 11:57:52,581 - INFO -       [CAPTURE] Price: '3.6'
+2025-10-28 11:57:52,582 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:52,582 - WARNING - --- Running Test Case #49/90 ---
+2025-10-28 11:57:52,582 - INFO - Inputs: W=24.5, L=12.5, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,776 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,776 - INFO -       [CAPTURE] Part Number: '07024D12DAT'
+2025-10-28 11:57:52,776 - INFO -       [CAPTURE] Price: '4.33'
+2025-10-28 11:57:52,776 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:52,777 - WARNING - --- Running Test Case #50/90 ---
+2025-10-28 11:57:52,777 - INFO - Inputs: W=30.125, L=63.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:52,976 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:52,976 - INFO -       [CAPTURE] Part Number: '07030A63FAT'
+2025-10-28 11:57:52,976 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:52,976 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:52,976 - WARNING - --- Running Test Case #51/90 ---
+2025-10-28 11:57:52,977 - INFO - Inputs: W=27.25, L=50.25, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:53,171 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:53,171 - INFO -       [CAPTURE] Part Number: '07027B50BAT'
+2025-10-28 11:57:53,172 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:53,172 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:53,172 - WARNING - --- Running Test Case #52/90 ---
+2025-10-28 11:57:53,172 - INFO - Inputs: W=26.75, L=28.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:53,445 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:53,445 - INFO -       [CAPTURE] Part Number: '07026G28FAT'
+2025-10-28 11:57:53,446 - INFO -       [CAPTURE] Price: '10.43'
+2025-10-28 11:57:53,446 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:53,446 - WARNING - --- Running Test Case #53/90 ---
+2025-10-28 11:57:53,446 - INFO - Inputs: W=5.75, L=36.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:53,680 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:53,680 - INFO -       [CAPTURE] Part Number: '07005G36GAT'
+2025-10-28 11:57:53,680 - INFO -       [CAPTURE] Price: '3.05'
+2025-10-28 11:57:53,680 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:53,681 - WARNING - --- Running Test Case #54/90 ---
+2025-10-28 11:57:53,681 - INFO - Inputs: W=17.375, L=18.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:53,887 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:53,887 - INFO -       [CAPTURE] Part Number: '07017C18FAT'
+2025-10-28 11:57:53,887 - INFO -       [CAPTURE] Price: '4.5'
+2025-10-28 11:57:53,887 - INFO -       [CAPTURE] Carton Qty: '50'
+2025-10-28 11:57:53,887 - WARNING - --- Running Test Case #55/90 ---
+2025-10-28 11:57:53,888 - INFO - Inputs: W=29.125, L=66.625, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:54,076 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:54,076 - INFO -       [CAPTURE] Part Number: '07029A66FAT'
+2025-10-28 11:57:54,076 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:54,076 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:54,077 - WARNING - --- Running Test Case #56/90 ---
+2025-10-28 11:57:54,077 - INFO - Inputs: W=7.75, L=59.75, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:54,267 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:54,267 - INFO -       [CAPTURE] Part Number: '07007G59GAT'
+2025-10-28 11:57:54,267 - INFO -       [CAPTURE] Price: '6.42'
+2025-10-28 11:57:54,267 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:54,267 - WARNING - --- Running Test Case #57/90 ---
+2025-10-28 11:57:54,268 - INFO - Inputs: W=9.125, L=92.875, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:54,455 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:54,455 - INFO -       [CAPTURE] Part Number: '07009A92HAT'
+2025-10-28 11:57:54,455 - INFO -       [CAPTURE] Price: '11.55'
+2025-10-28 11:57:54,455 - INFO -       [CAPTURE] Carton Qty: '13'
+2025-10-28 11:57:54,455 - WARNING - --- Running Test Case #58/90 ---
+2025-10-28 11:57:54,455 - INFO - Inputs: W=25.5, L=35.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:54,678 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:54,678 - INFO -       [CAPTURE] Part Number: '07025D35CAT'
+2025-10-28 11:57:54,678 - INFO -       [CAPTURE] Price: '12.34'
+2025-10-28 11:57:54,678 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:54,678 - WARNING - --- Running Test Case #59/90 ---
+2025-10-28 11:57:54,678 - INFO - Inputs: W=18.625, L=52.375, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:54,868 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:54,868 - INFO -       [CAPTURE] Part Number: '07018F52CAT'
+2025-10-28 11:57:54,868 - INFO -       [CAPTURE] Price: '13.31'
+2025-10-28 11:57:54,868 - INFO -       [CAPTURE] Carton Qty: '25'
+2025-10-28 11:57:54,868 - WARNING - --- Running Test Case #60/90 ---
+2025-10-28 11:57:54,869 - INFO - Inputs: W=32.25, L=69.0, Prod='Tri-Dek #3 2-Ply Pre-Cut Sleeves', Opt='Antimicrobial'
+2025-10-28 11:57:55,058 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,058 - INFO -       [CAPTURE] Part Number: '07032B69AT'
+2025-10-28 11:57:55,059 - INFO -       [CAPTURE] Price: '14.34'
+2025-10-28 11:57:55,059 - INFO -       [CAPTURE] Carton Qty: '17'
+2025-10-28 11:57:55,059 - WARNING - --- Running Test Case #61/90 ---
+2025-10-28 11:57:55,059 - INFO - Inputs: W=27.5, L=87.375, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:55,249 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,249 - INFO -       [CAPTURE] Part Number: '07227D87C-CW'
+2025-10-28 11:57:55,249 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:55,249 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:55,249 - WARNING - --- Running Test Case #62/90 ---
+2025-10-28 11:57:55,250 - INFO - Inputs: W=20.5, L=83.25, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:55,446 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,446 - INFO -       [CAPTURE] Part Number: '07220D83B-CW'
+2025-10-28 11:57:55,446 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:55,446 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:55,446 - WARNING - --- Running Test Case #63/90 ---
+2025-10-28 11:57:55,446 - INFO - Inputs: W=23.625, L=33.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:55,595 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,595 - INFO -       [CAPTURE] Part Number: '07223F33F-2CW'
+2025-10-28 11:57:55,595 - INFO -       [CAPTURE] Price: '6.23'
+2025-10-28 11:57:55,596 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:55,596 - WARNING - --- Running Test Case #64/90 ---
+2025-10-28 11:57:55,596 - INFO - Inputs: W=20.75, L=70.75, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:55,783 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,783 - INFO -       [CAPTURE] Part Number: '07220G70G-4CW'
+2025-10-28 11:57:55,783 - INFO -       [CAPTURE] Price: '11.79'
+2025-10-28 11:57:55,783 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:55,783 - WARNING - --- Running Test Case #65/90 ---
+2025-10-28 11:57:55,783 - INFO - Inputs: W=10.375, L=38.875, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:55,969 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:55,969 - INFO -       [CAPTURE] Part Number: '07210C38H-2CW'
+2025-10-28 11:57:55,969 - INFO -       [CAPTURE] Price: '3.11'
+2025-10-28 11:57:55,969 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:55,969 - WARNING - --- Running Test Case #66/90 ---
+2025-10-28 11:57:55,969 - INFO - Inputs: W=32.0, L=49.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:56,153 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:56,153 - INFO -       [CAPTURE] Part Number: '0723249F-3CW'
+2025-10-28 11:57:56,153 - INFO -       [CAPTURE] Price: '13.08'
+2025-10-28 11:57:56,153 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:56,153 - WARNING - --- Running Test Case #67/90 ---
+2025-10-28 11:57:56,154 - INFO - Inputs: W=8.125, L=19.875, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:56,347 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:56,347 - INFO -       [CAPTURE] Part Number: '07208A19H-1CW'
+2025-10-28 11:57:56,347 - INFO -       [CAPTURE] Price: '1.83'
+2025-10-28 11:57:56,347 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:56,347 - WARNING - --- Running Test Case #68/90 ---
+2025-10-28 11:57:56,347 - INFO - Inputs: W=12.625, L=117.375, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:56,532 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:56,533 - INFO -       [CAPTURE] Part Number: '07212F117C-CW'
+2025-10-28 11:57:56,533 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:56,533 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:56,533 - WARNING - --- Running Test Case #69/90 ---
+2025-10-28 11:57:56,534 - INFO - Inputs: W=27.375, L=36.0, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:56,724 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:56,724 - INFO -       [CAPTURE] Part Number: '07227C36-2CW'
+2025-10-28 11:57:56,724 - INFO -       [CAPTURE] Price: '8.33'
+2025-10-28 11:57:56,725 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:56,725 - WARNING - --- Running Test Case #70/90 ---
+2025-10-28 11:57:56,725 - INFO - Inputs: W=10.875, L=75.125, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:56,922 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:56,922 - INFO -       [CAPTURE] Part Number: '07210H75A-4CW'
+2025-10-28 11:57:56,922 - INFO -       [CAPTURE] Price: '8.33'
+2025-10-28 11:57:56,922 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:56,923 - WARNING - --- Running Test Case #71/90 ---
+2025-10-28 11:57:56,923 - INFO - Inputs: W=5.125, L=110.125, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:57,107 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:57,107 - INFO -       [CAPTURE] Part Number: '07205A110A-CW'
+2025-10-28 11:57:57,107 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:57,107 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:57,107 - WARNING - --- Running Test Case #72/90 ---
+2025-10-28 11:57:57,107 - INFO - Inputs: W=33.0, L=92.5, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:57,327 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:57,328 - INFO -       [CAPTURE] Part Number: '0723392D-CW'
+2025-10-28 11:57:57,328 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:57,328 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:57,328 - WARNING - --- Running Test Case #73/90 ---
+2025-10-28 11:57:57,328 - INFO - Inputs: W=20.25, L=83.5, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:57,520 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:57,520 - INFO -       [CAPTURE] Part Number: '07220B83D-CW'
+2025-10-28 11:57:57,520 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:57,520 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:57,520 - WARNING - --- Running Test Case #74/90 ---
+2025-10-28 11:57:57,521 - INFO - Inputs: W=32.0, L=82.125, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:57,711 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:57,711 - INFO -       [CAPTURE] Part Number: '0723282A-CW'
+2025-10-28 11:57:57,711 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:57,711 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:57,711 - WARNING - --- Running Test Case #75/90 ---
+2025-10-28 11:57:57,712 - INFO - Inputs: W=19.125, L=65.375, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:57,898 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:57,898 - INFO -       [CAPTURE] Part Number: '07219A65C-3CW'
+2025-10-28 11:57:57,898 - INFO -       [CAPTURE] Price: '11.79'
+2025-10-28 11:57:57,898 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:57,898 - WARNING - --- Running Test Case #76/90 ---
+2025-10-28 11:57:57,899 - INFO - Inputs: W=17.625, L=30.0, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:58,081 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:58,081 - INFO -       [CAPTURE] Part Number: '07217F30-2CW'
+2025-10-28 11:57:58,082 - INFO -       [CAPTURE] Price: '3.11'
+2025-10-28 11:57:58,082 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:58,082 - WARNING - --- Running Test Case #77/90 ---
+2025-10-28 11:57:58,082 - INFO - Inputs: W=19.625, L=80.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:58,273 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:58,273 - INFO -       [CAPTURE] Part Number: '07219F80F-CW'
+2025-10-28 11:57:58,273 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:58,273 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:58,273 - WARNING - --- Running Test Case #78/90 ---
+2025-10-28 11:57:58,273 - INFO - Inputs: W=9.375, L=48.875, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:58,456 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:58,456 - INFO -       [CAPTURE] Part Number: '07209C48H-3CW'
+2025-10-28 11:57:58,456 - INFO -       [CAPTURE] Price: '6.23'
+2025-10-28 11:57:58,457 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:58,457 - WARNING - --- Running Test Case #79/90 ---
+2025-10-28 11:57:58,457 - INFO - Inputs: W=4.5, L=59.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:58,686 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:58,686 - INFO -       [CAPTURE] Part Number: '07204D59F-3CW'
+2025-10-28 11:57:58,686 - INFO -       [CAPTURE] Price: '3.11'
+2025-10-28 11:57:58,686 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:58,687 - WARNING - --- Running Test Case #80/90 ---
+2025-10-28 11:57:58,687 - INFO - Inputs: W=8.5, L=76.375, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:58,875 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:58,875 - INFO -       [CAPTURE] Part Number: '07208D76C-4CW'
+2025-10-28 11:57:58,875 - INFO -       [CAPTURE] Price: 'Frame dimensions out of range for pricing.'
+2025-10-28 11:57:58,875 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:58,875 - WARNING - --- Running Test Case #81/90 ---
+2025-10-28 11:57:58,876 - INFO - Inputs: W=8.5, L=24.5, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:59,074 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:59,074 - INFO -       [CAPTURE] Part Number: '07208D24D-2CW'
+2025-10-28 11:57:59,074 - INFO -       [CAPTURE] Price: '3.11'
+2025-10-28 11:57:59,074 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:59,074 - WARNING - --- Running Test Case #82/90 ---
+2025-10-28 11:57:59,075 - INFO - Inputs: W=7.25, L=64.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:59,265 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:59,265 - INFO -       [CAPTURE] Part Number: '07207B64F-3CW'
+2025-10-28 11:57:59,265 - INFO -       [CAPTURE] Price: '6.23'
+2025-10-28 11:57:59,265 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:59,266 - WARNING - --- Running Test Case #83/90 ---
+2025-10-28 11:57:59,266 - INFO - Inputs: W=14.75, L=106.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:59,455 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:59,455 - INFO -       [CAPTURE] Part Number: '07214G106F-CW'
+2025-10-28 11:57:59,455 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:59,455 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:59,455 - WARNING - --- Running Test Case #84/90 ---
+2025-10-28 11:57:59,455 - INFO - Inputs: W=4.5, L=106.375, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:59,642 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:59,642 - INFO -       [CAPTURE] Part Number: '07204D106C-CW'
+2025-10-28 11:57:59,642 - INFO -       [CAPTURE] Price: 'Length is above maximum of 77.25".'
+2025-10-28 11:57:59,642 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:57:59,642 - WARNING - --- Running Test Case #85/90 ---
+2025-10-28 11:57:59,642 - INFO - Inputs: W=30.625, L=4.25, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:57:59,829 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:57:59,829 - INFO -       [CAPTURE] Part Number: '07230F04B-2CW'
+2025-10-28 11:57:59,829 - INFO -       [CAPTURE] Price: '1.83'
+2025-10-28 11:57:59,829 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:57:59,829 - WARNING - --- Running Test Case #86/90 ---
+2025-10-28 11:57:59,829 - INFO - Inputs: W=17.5, L=72.625, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:58:00,018 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:58:00,018 - INFO -       [CAPTURE] Part Number: '07217D72F-4CW'
+2025-10-28 11:58:00,018 - INFO -       [CAPTURE] Price: '11.79'
+2025-10-28 11:58:00,018 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:58:00,018 - WARNING - --- Running Test Case #87/90 ---
+2025-10-28 11:58:00,019 - INFO - Inputs: W=17.75, L=76.5, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:58:00,239 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:58:00,239 - INFO -       [CAPTURE] Part Number: '07217G76D-4CW'
+2025-10-28 11:58:00,239 - INFO -       [CAPTURE] Price: '11.79'
+2025-10-28 11:58:00,239 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:58:00,240 - WARNING - --- Running Test Case #88/90 ---
+2025-10-28 11:58:00,240 - INFO - Inputs: W=34.0, L=92.875, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:58:00,427 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:58:00,427 - INFO -       [CAPTURE] Part Number: '0723492H-CW'
+2025-10-28 11:58:00,427 - INFO -       [CAPTURE] Price: 'Width is above maximum of 33.25".; Length is above maximum of 77.25".'
+2025-10-28 11:58:00,427 - INFO -       [CAPTURE] Carton Qty: '0'
+2025-10-28 11:58:00,427 - WARNING - --- Running Test Case #89/90 ---
+2025-10-28 11:58:00,427 - INFO - Inputs: W=17.125, L=68.75, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:58:00,644 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:58:00,644 - INFO -       [CAPTURE] Part Number: '07217A68G-4CW'
+2025-10-28 11:58:00,644 - INFO -       [CAPTURE] Price: '8.33'
+2025-10-28 11:58:00,644 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:58:00,644 - WARNING - --- Running Test Case #90/90 ---
+2025-10-28 11:58:00,645 - INFO - Inputs: W=5.5, L=15.5, Prod='Wire Ring Frames for Pre-Cut Sleeves', Opt='Standard'
+2025-10-28 11:58:00,835 - INFO -    ✅ Logic executed successfully.
+2025-10-28 11:58:00,836 - INFO -       [CAPTURE] Part Number: '07205D15D-1CW'
+2025-10-28 11:58:00,836 - INFO -       [CAPTURE] Price: '1.83'
+2025-10-28 11:58:00,836 - INFO -       [CAPTURE] Carton Qty: '1'
+2025-10-28 11:58:00,842 - INFO - 
+
+✅ Test complete. Results saved to 'C:\Users\10113120\Documents\pricing-calc\src\testing\SleevesTesting\results_sleeves_app.csv'. Full logs in 'C:\Users\10113120\Documents\pricing-calc\src\testing\SleevesTesting\sleeves_logic_testing_logs.txt'.

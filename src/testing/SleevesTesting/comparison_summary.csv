@@ -1,0 +1,91 @@
+ProductName,Option,Width,Length,excel_part_number,app_part_number,part_number_match,excel_price,app_price,price_match,excel_carton_qty,app_carton_qty,carton_qty_match,excel_carton_price,app_carton_price,carton_price_match,overall_match
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.5,70.375,07030D70C,07030D70C,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.25,113.625,07007B113F,07007B113F,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.125,93.625,07024A93F,07024A93F,True,12.81,12.81,True,13.0,13,True,166.53,166.53,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.625,70.5,07022F70D,07022F70D,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.625,72.75,07027F72G,07027F72G,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.625,87.25,07008F87B,07008F87B,True,9.17,9.17,True,17.0,17,True,155.89,155.89,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.625,8.0,07021F08,07021F08,True,2.43,2.43,True,50.0,50,True,121.5,121.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.5,66.625,07017D66F,07017D66F,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.0,73.375,0703173C,0703173C,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.5,98.875,07021D98H,07021D98H,True,12.81,12.81,True,13.0,13,True,166.53,166.53,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.0,112.25,07008112B,07008112B,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.25,110.25,07011B110B,07011B110B,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.75,64.0,07005G64,07005G64,True,4.59,4.59,True,17.0,17,True,78.03,78.03,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.875,78.125,07014H78A,07014H78A,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.25,77.5,07021B77D,07021B77D,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.875,98.75,07018H98G,07018H98G,True,12.81,12.81,True,13.0,13,True,166.53,166.53,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,32.25,07033F32B,07033F32B,True,12.81,12.81,True,25.0,25,True,320.25,320.25,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.125,89.875,07014A89H,07014A89H,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.75,106.375,07018G106C,07018G106C,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.25,69.0,07031B69,07031B69,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.5,4.25,07031D04B,07031D04B,True,0.0,"Length is below minimum of 4.5"".",True,50.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.625,121.75,07023F121G,07023F121G,True,0.0,"Length is above maximum of 100"".",True,0.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.875,27.125,07008H27A,07008H27A,True,3.21,3.21,True,25.0,25,True,80.25,80.25,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.625,110.75,07006F110G,07006F110G,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.625,55.375,07017F55C,07017F55C,True,11.88,11.88,True,25.0,25,True,297.0,297.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.125,67.625,07020A67F,07020A67F,True,12.81,12.81,True,17.0,17,True,217.77,217.77,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.875,49.375,07032H49C,07032H49C,True,12.81,12.81,True,25.0,25,True,320.25,320.25,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.25,17.625,07030B17F,07030B17F,True,6.59,6.59,True,50.0,50,True,329.5,329.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.875,34.75,07007H34G,07007H34G,True,3.47,3.47,True,25.0,25,True,86.75,86.75,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,69.625,0701169F,0701169F,True,9.31,9.31,True,17.0,17,True,158.27,158.27,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.5,109.625,07007D109FAT,07007D109FAT,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.25,93.625,07015B93FAT,07015B93FAT,True,14.34,14.34,True,13.0,13,True,186.42,186.42,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.75,20.375,07008G20CAT,07008G20CAT,True,2.62,2.62,True,50.0,50,True,131.0,131.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.5,120.625,07020D120FAT,07020D120FAT,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.5,25.25,07028D25BAT,07028D25BAT,True,9.79,9.79,True,50.0,50,True,489.5,489.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.875,48.75,07013H48GAT,07013H48GAT,True,9.31,9.31,True,25.0,25,True,232.75,232.75,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,16.625,57.75,07016F57GAT,07016F57GAT,True,12.99,12.99,True,25.0,25,True,324.75,324.75,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.375,25.75,07004C25GAT,07004C25GAT,True,0.0,"Width is below minimum of 4.5"".",True,50.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.5,78.875,07004D78HAT,07004D78HAT,True,4.98,4.98,True,17.0,17,True,84.66,84.66,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.0,117.375,07006117CAT,07006117CAT,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.125,113.0,07023A113AT,07023A113AT,True,0.0,"Length is above maximum of 100"".",True,13.0,0,True,0.0,0.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.875,46.75,07028H46GAT,07028H46GAT,True,14.34,14.34,True,25.0,25,True,358.5,358.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.125,6.625,07026A06FAT,07026A06FAT,True,2.62,2.62,True,50.0,50,True,131.0,131.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.625,56.5,07022F56DAT,07022F56DAT,True,14.34,14.34,True,25.0,25,True,358.5,358.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.625,81.5,07014F81DAT,07014F81DAT,True,14.34,14.34,True,17.0,17,True,243.78,243.78,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.125,57.625,07008A57FAT,07008A57FAT,True,6.42,6.42,True,25.0,25,True,160.5,160.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.5,52.375,07028D52CAT,07028D52CAT,True,14.34,14.34,True,25.0,25,True,358.5,358.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.0,8.875,0702808HAT,0702808HAT,True,3.6,3.6,True,50.0,50,True,180.0,180.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.5,12.5,07024D12DAT,07024D12DAT,True,4.33,4.33,True,50.0,50,True,216.5,216.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.125,63.625,07030A63FAT,07030A63FAT,True,14.34,14.34,True,17.0,17,True,243.78,243.78,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.25,50.25,07027B50BAT,07027B50BAT,True,14.34,14.34,True,25.0,25,True,358.5,358.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,28.625,07026G28FAT,07026G28FAT,True,10.43,10.43,True,25.0,25,True,260.75,260.75,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.75,36.75,07005G36GAT,07005G36GAT,True,3.05,3.05,True,25.0,25,True,76.25,76.25,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.375,18.625,07017C18FAT,07017C18FAT,True,4.5,4.5,True,50.0,50,True,225.0,225.0,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.125,66.625,07029A66FAT,07029A66FAT,True,14.34,14.34,True,17.0,17,True,243.78,243.78,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.75,59.75,07007G59GAT,07007G59GAT,True,6.42,6.42,True,25.0,25,True,160.5,160.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.125,92.875,07009A92HAT,07009A92HAT,True,11.55,11.55,True,13.0,13,True,150.15,150.15,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.5,35.375,07025D35CAT,07025D35CAT,True,12.34,12.34,True,25.0,25,True,308.5,308.5,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.625,52.375,07018F52CAT,07018F52CAT,True,13.31,13.31,True,25.0,25,True,332.75,332.75,True,True
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,32.25,69.0,07032B69AT,07032B69AT,True,14.34,14.34,True,17.0,17,True,243.78,243.78,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.5,87.375,07227D87C-CW,07227D87C-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.5,83.25,07220D83B-CW,07220D83B-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.625,33.625,07223F33F-2CW,07223F33F-2CW,True,6.23,6.23,True,1.0,1,True,6.23,6.23,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.75,70.75,07220G70G-4CW,07220G70G-4CW,True,11.79,11.79,True,1.0,1,True,11.79,11.79,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.375,38.875,07210C38H-2CW,07210C38H-2CW,True,3.11,3.11,True,1.0,1,True,3.11,3.11,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,49.625,0723249F-3CW,0723249F-3CW,True,13.08,13.08,True,1.0,1,True,13.08,13.08,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.125,19.875,07208A19H-1CW,07208A19H-1CW,True,1.83,1.83,True,1.0,1,True,1.83,1.83,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.625,117.375,07212F117C-CW,07212F117C-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.375,36.0,07227C36-2CW,07227C36-2CW,True,8.33,8.33,True,1.0,1,True,8.33,8.33,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.875,75.125,07210H75A-4CW,07210H75A-4CW,True,8.33,8.33,True,1.0,1,True,8.33,8.33,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.125,110.125,07205A110A-CW,07205A110A-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.0,92.5,0723392D-CW,0723392D-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.25,83.5,07220B83D-CW,07220B83D-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,82.125,0723282A-CW,0723282A-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.125,65.375,07219A65C-3CW,07219A65C-3CW,True,11.79,11.79,True,1.0,1,True,11.79,11.79,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.625,30.0,07217F30-2CW,07217F30-2CW,True,3.11,3.11,True,1.0,1,True,3.11,3.11,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.625,80.625,07219F80F-CW,07219F80F-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.375,48.875,07209C48H-3CW,07209C48H-3CW,True,6.23,6.23,True,1.0,1,True,6.23,6.23,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,4.5,59.625,07204D59F-3CW,07204D59F-3CW,True,3.11,3.11,True,1.0,1,True,3.11,3.11,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,76.375,07208D76C-4CW,07208D76C-4CW,True,0.0,Frame dimensions out of range for pricing.,True,1.0,1,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,24.5,07208D24D-2CW,07208D24D-2CW,True,3.11,3.11,True,1.0,1,True,3.11,3.11,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.25,64.625,07207B64F-3CW,07207B64F-3CW,True,6.23,6.23,True,1.0,1,True,6.23,6.23,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.75,106.625,07214G106F-CW,07214G106F-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,4.5,106.375,07204D106C-CW,07204D106C-CW,True,0.0,"Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.625,4.25,07230F04B-2CW,07230F04B-2CW,True,1.83,1.83,True,1.0,1,True,1.83,1.83,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.5,72.625,07217D72F-4CW,07217D72F-4CW,True,11.79,11.79,True,1.0,1,True,11.79,11.79,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.75,76.5,07217G76D-4CW,07217G76D-4CW,True,11.79,11.79,True,1.0,1,True,11.79,11.79,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.0,92.875,0723492H-CW,0723492H-CW,True,0.0,"Width is above maximum of 33.25"".; Length is above maximum of 77.25"".",True,1.0,0,True,0.0,0.0,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.125,68.75,07217A68G-4CW,07217A68G-4CW,True,8.33,8.33,True,1.0,1,True,8.33,8.33,True,True
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.5,15.5,07205D15D-1CW,07205D15D-1CW,True,1.83,1.83,True,1.0,1,True,1.83,1.83,True,True

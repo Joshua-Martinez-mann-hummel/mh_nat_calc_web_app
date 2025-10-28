@@ -12,7 +12,7 @@ import type {
 
 // Import CSV files as URL assets
 import sleevesProductMasterUrl from '/src/data/SleevesData/SleevesProductMaster.csv?url';
-import sleevesSleevePricingUrl from '/src/data/SleevesData/SleevesSleevePricing.csv?url';
+import sleevesSleevePricingUrl from '/src/data/SleevesData/SleevesPricing.csv?url';
 import sleevesFramePricingUrl from '/src/data/SleevesData/SleevesFramePricing.csv?url';
 import sleevesCrossWireRulesUrl from '/src/data/SleevesData/SleevesCrossWireRules.csv?url';
 import sleevesCartonQtyUrl from '/src/data/SleevesData/SleevesCartonQty.csv?url';
