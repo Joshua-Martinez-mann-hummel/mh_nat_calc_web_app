@@ -15,7 +15,8 @@ OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_sleeves_excel.csv")
 
 SHEET_NAME = "Sleeves Calc" 
 
-NUM_TESTS_PER_COMBINATION = 30
+TEST_ALL_COMBINATIONS = False # Set to True to test all combinations, False for random sampling
+NUM_TESTS_PER_COMBINATION = 250 # Number of random (Width, Length) whole number pairs to test per product family
 SECONDS_PER_TEST_CASE = 0.4
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
@@ -93,44 +94,64 @@ def main():
         results = []
         test_cases = []
 
-        print("\nGenerating test cases in-memory...")
-        for name in product_names:
-            ws["F8"].value = name
-            time.sleep(0.2)  # Pause for dependent dropdown to update
-            
-            available_options = get_dropdown_values(ws, "F10")
-            print(f"  - For '{name}', found options: {available_options}")
+        if TEST_ALL_COMBINATIONS:
+            print("\nGenerating all possible test case combinations in-memory...")
+            width_whole_options = [int(v) for v in get_dropdown_values(ws, "F13") if v is not None]
+            length_whole_options = [int(v) for v in get_dropdown_values(ws, "F14") if v is not None]
+            width_fraction_options = DECIMAL_OPTIONS
+            length_fraction_options = DECIMAL_OPTIONS
 
-            # Set width and length ranges based on product name
-            current_width_range = WIDTH_RANGE
-            current_length_range = LENGTH_RANGE
+            for name in product_names:
+                ws["F8"].value = name
+                time.sleep(0.2)
+                available_options = get_dropdown_values(ws, "F10")
+                
+                filtered_options = available_options
+                if name != 'Tri-Dek #3 2-Ply Pre-Cut Sleeves' and 'Antimicrobial' in filtered_options:
+                    filtered_options = [opt for opt in filtered_options if opt != 'Antimicrobial']
 
-            if name == 'Tri Dek #3 2-Ply Pre-Cut Sleeves':
-                current_width_range = (4, 60)
-                current_length_range = (4, 100)
-            elif name == 'Wire Ring Frames for Pre-Cut Sleeves':
-                current_width_range = (3, 34)
-                current_length_range = (4, 77)
-
-            # Filter options: Antimicrobial only for Tri-Dek
-            filtered_options = available_options
-            if name != 'Tri-Dek #3 2-Ply Pre-Cut Sleeves' and 'Antimicrobial' in filtered_options:
-                filtered_options = [opt for opt in filtered_options if opt != 'Antimicrobial']
-            
-            if not filtered_options: # If no valid options remain, skip this product
-                print(f"    No valid options for '{name}' after filtering. Skipping.")
-                continue
-
-            for option in filtered_options:
-                for _ in range(NUM_TESTS_PER_COMBINATION):
-                    width_whole, width_dec = random_dimension(*current_width_range)
-                    length_whole, length_dec = random_dimension(*LENGTH_RANGE)
+                combinations = itertools.product(
+                    [name], filtered_options, width_whole_options, width_fraction_options, length_whole_options, length_fraction_options
+                )
+                for combo in combinations:
                     test_cases.append({
-                        "name": name,
-                        "option": option,
-                        "width_whole": width_whole, "width_dec": width_dec,
-                        "length_whole": length_whole, "length_dec": length_dec,
+                        "name": combo[0], "option": combo[1],
+                        "width_whole": combo[2], "width_dec": combo[3],
+                        "length_whole": combo[4], "length_dec": combo[5],
                     })
+        else:
+            print("\nGenerating random test cases in-memory...")
+            for name in product_names:
+                ws["F8"].value = name
+                time.sleep(0.2)  # Pause for dependent dropdown to update
+                
+                available_options = get_dropdown_values(ws, "F10")
+                print(f"  - For '{name}', found options: {available_options}")
+
+                # Set width and length ranges based on product name
+                current_width_range = WIDTH_RANGE
+                current_length_range = LENGTH_RANGE
+
+                if name == 'Tri Dek #3 2-Ply Pre-Cut Sleeves':
+                    current_width_range = (4, 60)
+                    current_length_range = (4, 100)
+                elif name == 'Wire Ring Frames for Pre-Cut Sleeves':
+                    current_width_range = (3, 34)
+                    current_length_range = (4, 77)
+
+                filtered_options = available_options
+                if name != 'Tri-Dek #3 2-Ply Pre-Cut Sleeves' and 'Antimicrobial' in filtered_options:
+                    filtered_options = [opt for opt in filtered_options if opt != 'Antimicrobial']
+                
+                for option in filtered_options:
+                    for _ in range(NUM_TESTS_PER_COMBINATION):
+                        width_whole, width_dec = random_dimension(*current_width_range)
+                        length_whole, length_dec = random_dimension(*current_length_range)
+                        test_cases.append({
+                            "name": name, "option": option,
+                            "width_whole": width_whole, "width_dec": width_dec,
+                            "length_whole": length_whole, "length_dec": length_dec,
+                        })
 
         print(f"Generated {len(test_cases)} total test cases.")
 
@@ -144,11 +165,11 @@ def main():
             
             # Populate Inputs
             ws["F8"].value = case["name"]
+            ws["F10"].value = case["option"]
             ws["F13"].value = case["width_whole"]
             ws["G13"].value = case["width_dec"]
             ws["F14"].value = case["length_whole"]
             ws["G14"].value = case["length_dec"]
-            ws["F10"].value = case["option"]
 
             wb.app.calculate()
             time.sleep(0.1)

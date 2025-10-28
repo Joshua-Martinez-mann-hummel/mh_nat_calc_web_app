@@ -1,91 +1,751 @@
 ProductName,Option,Width,Length,Part_Number,Price,Carton_Qty,Carton_Price
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.5,70.375,07030D70C,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.25,113.625,07007B113F,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.125,93.625,07024A93F,12.81,13.0,166.53
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.625,70.5,07022F70D,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.625,72.75,07027F72G,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.625,87.25,07008F87B,9.17,17.0,155.89
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.625,8.0,07021F08,2.43,50.0,121.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.5,66.625,07017D66F,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.0,73.375,0703173C,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.5,98.875,07021D98H,12.81,13.0,166.53
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.0,112.25,07008112B,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.25,110.25,07011B110B,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.75,64.0,07005G64,4.59,17.0,78.03
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.875,78.125,07014H78A,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.25,77.5,07021B77D,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.875,98.75,07018H98G,12.81,13.0,166.53
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,32.25,07033F32B,12.81,25.0,320.25
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.125,89.875,07014A89H,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.75,106.375,07018G106C,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.25,69.0,07031B69,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.5,4.25,07031D04B,0.0,50.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.625,121.75,07023F121G,0.0,0.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.875,27.125,07008H27A,3.21,25.0,80.25
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.625,110.75,07006F110G,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.625,55.375,07017F55C,11.88,25.0,297.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.125,67.625,07020A67F,12.81,17.0,217.77
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.875,49.375,07032H49C,12.81,25.0,320.25
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.25,17.625,07030B17F,6.59,50.0,329.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.875,34.75,07007H34G,3.47,25.0,86.75
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,69.625,0701169F,9.31,17.0,158.27
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.5,109.625,07007D109FAT,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.25,93.625,07015B93FAT,14.34,13.0,186.42
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.75,20.375,07008G20CAT,2.62,50.0,131.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.5,120.625,07020D120FAT,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.5,25.25,07028D25BAT,9.79,50.0,489.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.875,48.75,07013H48GAT,9.31,25.0,232.75
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,16.625,57.75,07016F57GAT,12.99,25.0,324.75
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.375,25.75,07004C25GAT,0.0,50.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.5,78.875,07004D78HAT,4.98,17.0,84.66
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.0,117.375,07006117CAT,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.125,113.0,07023A113AT,0.0,13.0,0.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.875,46.75,07028H46GAT,14.34,25.0,358.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.125,6.625,07026A06FAT,2.62,50.0,131.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.625,56.5,07022F56DAT,14.34,25.0,358.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.625,81.5,07014F81DAT,14.34,17.0,243.78
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.125,57.625,07008A57FAT,6.42,25.0,160.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.5,52.375,07028D52CAT,14.34,25.0,358.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.0,8.875,0702808HAT,3.6,50.0,180.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.5,12.5,07024D12DAT,4.33,50.0,216.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.125,63.625,07030A63FAT,14.34,17.0,243.78
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.25,50.25,07027B50BAT,14.34,25.0,358.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,28.625,07026G28FAT,10.43,25.0,260.75
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.75,36.75,07005G36GAT,3.05,25.0,76.25
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.375,18.625,07017C18FAT,4.5,50.0,225.0
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.125,66.625,07029A66FAT,14.34,17.0,243.78
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.75,59.75,07007G59GAT,6.42,25.0,160.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.125,92.875,07009A92HAT,11.55,13.0,150.15
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.5,35.375,07025D35CAT,12.34,25.0,308.5
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.625,52.375,07018F52CAT,13.31,25.0,332.75
-Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,32.25,69.0,07032B69AT,14.34,17.0,243.78
-Wire Ring Frames for Pre-Cut Sleeves,Standard,27.5,87.375,07227D87C-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,20.5,83.25,07220D83B-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,23.625,33.625,07223F33F-2CW,6.23,1.0,6.23
-Wire Ring Frames for Pre-Cut Sleeves,Standard,20.75,70.75,07220G70G-4CW,11.79,1.0,11.79
-Wire Ring Frames for Pre-Cut Sleeves,Standard,10.375,38.875,07210C38H-2CW,3.11,1.0,3.11
-Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,49.625,0723249F-3CW,13.08,1.0,13.08
-Wire Ring Frames for Pre-Cut Sleeves,Standard,8.125,19.875,07208A19H-1CW,1.83,1.0,1.83
-Wire Ring Frames for Pre-Cut Sleeves,Standard,12.625,117.375,07212F117C-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,27.375,36.0,07227C36-2CW,8.33,1.0,8.33
-Wire Ring Frames for Pre-Cut Sleeves,Standard,10.875,75.125,07210H75A-4CW,8.33,1.0,8.33
-Wire Ring Frames for Pre-Cut Sleeves,Standard,5.125,110.125,07205A110A-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,33.0,92.5,0723392D-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,20.25,83.5,07220B83D-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,82.125,0723282A-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,19.125,65.375,07219A65C-3CW,11.79,1.0,11.79
-Wire Ring Frames for Pre-Cut Sleeves,Standard,17.625,30.0,07217F30-2CW,3.11,1.0,3.11
-Wire Ring Frames for Pre-Cut Sleeves,Standard,19.625,80.625,07219F80F-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,9.375,48.875,07209C48H-3CW,6.23,1.0,6.23
-Wire Ring Frames for Pre-Cut Sleeves,Standard,4.5,59.625,07204D59F-3CW,3.11,1.0,3.11
-Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,76.375,07208D76C-4CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,24.5,07208D24D-2CW,3.11,1.0,3.11
-Wire Ring Frames for Pre-Cut Sleeves,Standard,7.25,64.625,07207B64F-3CW,6.23,1.0,6.23
-Wire Ring Frames for Pre-Cut Sleeves,Standard,14.75,106.625,07214G106F-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,4.5,106.375,07204D106C-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,30.625,4.25,07230F04B-2CW,1.83,1.0,1.83
-Wire Ring Frames for Pre-Cut Sleeves,Standard,17.5,72.625,07217D72F-4CW,11.79,1.0,11.79
-Wire Ring Frames for Pre-Cut Sleeves,Standard,17.75,76.5,07217G76D-4CW,11.79,1.0,11.79
-Wire Ring Frames for Pre-Cut Sleeves,Standard,34.0,92.875,0723492H-CW,0.0,1.0,0.0
-Wire Ring Frames for Pre-Cut Sleeves,Standard,17.125,68.75,07217A68G-4CW,8.33,1.0,8.33
-Wire Ring Frames for Pre-Cut Sleeves,Standard,5.5,15.5,07205D15D-1CW,1.83,1.0,1.83
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.75,25.5,07026G25D,8.31,50.0,415.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.375,68.125,07012C68A,10.31,17.0,175.27
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.75,7.0,07010G07,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.75,120.0,07030G120,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.625,98.0,07017F98,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.75,100.625,07018G100F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.5,24.875,07024D24H,7.45,50.0,372.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.5,15.5,07017D15D,3.47,50.0,173.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.0,11.625,0701811F,2.82,50.0,141.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.25,69.0,07011B69,9.45,17.0,160.65
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,25.125,118.75,07025A118G,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.5,18.5,07031D18D,7.16,50.0,358.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.875,62.625,07005H62F,4.59,17.0,78.03
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.5,47.5,07032D47D,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.625,30.125,07013F30A,5.16,25.0,129.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.625,33.0,07006F33,2.95,25.0,73.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.125,42.625,07019A42F,9.88,25.0,247.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.625,73.125,07008F73A,7.74,17.0,131.58
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.25,31.375,07022B31C,8.59,25.0,214.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.375,66.375,07032C66C,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,25.875,78.75,07025H78G,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.625,87.5,07009F87D,10.31,17.0,175.27
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.125,14.5,07026A14D,4.73,50.0,236.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.875,41.625,07011H41F,6.16,25.0,154.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.75,108.25,07022G108B,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.375,8.0,07012C08,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.125,107.875,07033A107H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.75,74.375,07029G74C,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.75,110.5,07024G110D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.625,19.75,07022F19G,5.59,50.0,279.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,6.25,07033F06B,2.82,50.0,141.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.75,7.0,07010G07,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.75,75.5,07009G75D,9.02,17.0,153.34
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.125,68.0,07009A68,7.59,17.0,129.03
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.625,28.375,07014F28C,5.16,25.0,129.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.25,77.5,07019B77D,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.625,39.375,07019F39C,9.45,25.0,236.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.5,116.125,07022D116A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.0,38.5,0703338D,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.0,45.0,0701645,8.74,25.0,218.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.625,65.5,07030F65D,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.5,91.5,07017D91D,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,34.0,38.375,0703438C,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.125,83.0,07026A83,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.375,42.375,07016C42C,8.45,25.0,211.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.5,41.375,07011D41C,5.88,25.0,147.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.375,70.0,07022C70,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.5,115.5,07021D115D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.625,107.625,07012F107F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.5,43.0,07022D43,11.74,25.0,293.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.625,88.375,07005F88C,6.16,17.0,104.72
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,4.875,78.375,07004H78C,4.73,17.0,80.41
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.0,120.25,07010120B,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.0,54.125,0703354A,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.0,46.375,0702346C,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.25,85.0,07030B85,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.75,77.875,07026G77H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.125,16.5,07005A16D,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.125,70.25,07006A70B,5.3,17.0,90.1
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,4.75,36.625,07004G36F,2.43,25.0,60.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.0,112.25,07029112B,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.5,26.5,07017D26D,5.73,50.0,286.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.375,115.125,07010C115A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.375,116.875,07027C116H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.375,49.625,07008C49F,5.16,25.0,129.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.5,80.375,07009D80C,9.31,17.0,158.27
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.125,13.125,07010A13A,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.625,57.25,07013F57B,9.45,25.0,236.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.375,38.25,07021C38B,10.02,25.0,250.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.125,38.875,07008A38H,4.02,25.0,100.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.75,91.125,07008G91A,9.74,13.0,126.62
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,34.375,105.625,07034C105F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.25,117.5,07019B117D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.75,82.375,07008G82C,8.88,17.0,150.96
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.25,64.25,07007B64B,5.73,17.0,97.41
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.25,8.875,07019B08H,2.43,50.0,121.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.25,47.375,07019B47C,11.02,25.0,275.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.625,15.875,07021F15H,4.3,50.0,215.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.0,28.5,0702928D,10.02,25.0,250.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.75,97.625,07026G97F,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.875,104.25,07030H104B,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,25.875,118.875,07025H118H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.625,89.125,07030F89A,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.25,49.125,07009B49A,5.59,25.0,139.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,28.875,89.25,07028H89B,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.75,121.75,07007G121G,0.0,0.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.0,33.0,0701433,5.73,25.0,143.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.375,33.0,07014C33,5.88,25.0,147.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.5,46.75,07029D46G,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.125,66.875,07029A66H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.625,107.875,07015F107H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.625,63.25,07026F63B,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.75,54.75,07015G54G,10.45,25.0,261.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.0,120.625,07010120F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,34.125,86.75,07034A86G,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.75,98.625,07019G98F,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.375,29.125,07006C29A,2.56,25.0,64.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.75,71.25,07016G71B,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.75,94.125,07017G94A,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.75,19.25,07010G19B,2.82,50.0,141.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.625,103.5,07010F103D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.625,24.25,07008F24B,2.82,50.0,141.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.5,57.625,07031D57F,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.625,79.0,07012F79,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.875,102.0,07020H102,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.125,4.625,07014A04F,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.125,50.875,07029A50H,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.375,58.5,07011C58D,8.16,25.0,204.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.5,86.5,07013D86D,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.625,13.75,07026F13G,4.59,50.0,229.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.25,51.5,07014B51D,9.02,25.0,225.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,93.625,0701193F,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,13.75,0701113G,2.17,50.0,108.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.875,112.0,07021H112,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.625,84.375,07022F84C,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.0,104.625,07008104F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.875,50.75,07030H50G,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.25,67.125,07015B67A,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.25,40.875,07024B40H,12.03,25.0,300.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.875,82.875,07016H82H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.75,63.75,07012G63G,9.88,17.0,167.96
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.875,20.625,07012H20F,3.47,50.0,173.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.875,14.125,07017H14A,3.21,50.0,160.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.5,40.0,07020D40,10.02,25.0,250.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.625,95.25,07019F95B,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.25,88.5,07019B88D,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.375,52.25,07027C52B,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.75,14.75,07015G14G,3.08,50.0,154.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.5,85.0,07023D85,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,50.25,0701150B,6.88,25.0,172.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.375,9.75,07006C09G,2.03,50.0,101.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.0,46.25,0702646B,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.75,36.375,07022G36C,10.02,25.0,250.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.375,121.875,07029C121H,0.0,0.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.375,107.5,07011C107D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,25.0,58.25,0702558B,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.375,57.5,07013C57D,9.45,25.0,236.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.5,108.0,07006D108,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.625,23.5,07023F23D,6.88,50.0,344.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.0,59.625,0701859F,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.875,23.625,07020H23F,6.16,50.0,308.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.75,75.625,07008G75F,8.16,17.0,138.72
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,4.125,51.125,07004A51A,0.0,25.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.75,83.625,07013G83F,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,14.0,94.75,0701494G,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,102.875,07033F102H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.375,14.875,07024C14H,4.59,50.0,229.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.5,77.0,07006D77,6.16,17.0,104.72
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.5,93.0,07009D93,10.74,13.0,139.62
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.75,90.375,07029G90C,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.125,53.375,07021A53C,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.875,16.125,07029H16A,6.02,50.0,301.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.0,102.0,07033102,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.75,41.0,07016G41,8.45,25.0,211.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,34.75,65.0,07034G65,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.5,118.125,07012D118A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,28.0,116.75,07028116G,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.875,83.125,07006H83A,7.02,17.0,119.34
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.375,44.375,07030C44C,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.625,40.875,07027F40H,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.75,109.75,07008G109G,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.125,61.375,07007A61C,5.45,17.0,92.65
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.75,66.0,07008G66,7.16,17.0,121.72
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,100.625,07033F100F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.0,82.375,0700782C,7.16,17.0,121.72
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.0,16.5,0701116D,2.56,50.0,128.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.625,69.125,07032F69A,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.75,86.875,07031G86H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.125,18.375,07022A18C,5.02,50.0,251.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.75,31.25,07021G31B,8.31,25.0,207.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.75,51.625,07016G51F,10.6,25.0,265.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.375,60.375,07005C60C,4.16,25.0,104.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.75,11.875,07015G11H,2.56,50.0,128.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.875,10.875,07020H10H,2.95,50.0,147.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.875,67.875,07026H67H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.375,98.375,07027C98C,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,4.125,68.375,07004A68C,0.0,17.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.375,29.25,07026C29B,9.45,25.0,236.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.375,116.125,07029C116A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.875,72.875,07022H72H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.125,105.875,07027A105H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.25,41.875,07013B41H,6.88,25.0,172.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.0,47.375,0702047C,11.45,25.0,286.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.125,75.5,07027A75D,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.0,45.5,0701845D,10.02,25.0,250.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.375,71.625,07010C71F,9.02,17.0,153.34
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.25,44.0,07020B44,10.88,25.0,272.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.625,23.125,07011F23A,3.47,50.0,173.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.125,77.0,07016A77,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.625,9.0,07016F09,2.17,50.0,108.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.625,106.5,07024F106D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.5,73.0,07015D73,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.875,44.0,07027H44,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.75,113.375,07019G113C,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,34.75,18.5,07034G18D,7.88,50.0,394.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.625,7.5,07033F07D,3.21,50.0,160.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.625,37.125,07030F37A,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.625,101.875,07022F101H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,25.375,111.5,07025C111D,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.875,60.625,07008H60F,6.59,25.0,164.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.625,36.75,07007F36G,3.6,25.0,90.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.625,47.5,07009F47D,5.73,25.0,143.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,29.5,31.0,07029D31,11.17,25.0,279.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.0,17.0,0701517,3.34,50.0,167.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,5.625,70.375,07005F70C,4.88,17.0,82.96
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.75,90.125,07032G90A,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.0,97.25,0701897B,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.375,38.875,07024C38H,11.45,25.0,286.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.125,117.375,07032A117C,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.625,98.75,07011F98G,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.375,101.125,07006C101A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,20.75,21.375,07020G21C,5.45,50.0,272.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,13.75,60.5,07013G60D,10.17,25.0,254.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.875,86.875,07024H86H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.625,54.25,07012F54B,8.45,25.0,211.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.625,13.625,07016F13F,2.95,50.0,147.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,22.75,18.375,07022G18C,5.16,50.0,258.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,8.5,32.5,07008D32D,3.47,25.0,86.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.5,89.875,07021D89H,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.25,42.875,07006B42H,3.47,25.0,86.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,9.0,66.5,0700966D,7.31,17.0,124.27
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.25,80.0,07017B80,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,26.625,43.75,07026F43G,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.875,63.875,07010H63H,8.45,17.0,143.65
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.625,89.0,07030F89,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,30.625,37.0,07030F37,12.81,25.0,320.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,31.0,16.0,0703116,6.16,50.0,308.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,10.375,94.0,07010C94,11.88,13.0,154.44
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,19.875,72.125,07019H72A,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.875,39.5,07023H39D,11.45,25.0,286.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.0,98.75,0702498G,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,7.625,35.625,07007F35F,3.47,25.0,86.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,16.0,117.0,07016117,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,33.0,7.75,0703307G,3.34,50.0,167.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.75,106.625,07024G106F,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.75,78.375,07011G78C,11.17,17.0,189.89
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,15.125,59.5,07015A59D,10.88,25.0,272.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,21.75,107.125,07021G107A,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.125,36.625,07012A36F,5.45,25.0,136.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,32.25,28.75,07032B28G,11.31,25.0,282.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,6.875,71.5,07006H71D,6.02,17.0,102.34
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,27.875,33.75,07027H33G,11.45,25.0,286.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,24.75,115.875,07024G115H,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.125,38.625,07018A38F,8.59,25.0,214.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,11.375,35.0,07011C35,5.02,25.0,125.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,17.0,80.25,0701780B,12.81,17.0,217.77
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,4.5,76.875,07004D76H,4.3,17.0,73.1
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,18.25,99.625,07018B99F,12.81,13.0,166.53
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,12.0,12.625,0701212F,2.17,50.0,108.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Standard,23.5,109.0,07023D109,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.25,10.5,07033B10DAT,4.98,50.0,249.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.375,27.875,07023C27HAT,8.98,25.0,224.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.375,116.75,07031C116GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.375,108.625,07031C108FAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.0,26.875,0703426HAT,12.51,50.0,625.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.125,87.875,07009A87HAT,10.91,17.0,185.47
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.875,14.5,07034H14DAT,7.07,50.0,353.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.75,62.75,07004G62GAT,4.18,17.0,71.06
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.625,38.875,07006F38HAT,3.74,25.0,93.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.75,7.75,07014G07GAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.25,41.375,07017B41CAT,9.79,25.0,244.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.75,110.25,07018G110BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.25,30.125,07009B30AAT,4.03,25.0,100.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.5,5.0,07027D05AT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.125,21.5,07034A21DAT,10.1,50.0,505.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.25,53.625,07033B53FAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.625,74.75,07017F74GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.75,91.5,07014G91DAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,84.0,07026G84AT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.5,55.25,07008D55BAT,6.59,25.0,164.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.25,119.25,07004B119BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.25,61.25,07015B61BAT,12.67,17.0,215.39
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.875,105.0,07033H105AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.25,115.75,07031B115GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.375,52.625,07015C52FAT,11.07,25.0,276.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.5,94.875,07024D94HAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.0,116.75,07029116GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.0,74.125,0701574AAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.0,113.25,07029113BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.5,41.0,07020D41AT,11.55,25.0,288.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.75,104.75,07007G104GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.75,97.625,07015G97FAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.25,116.0,07026B116AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.25,26.75,07005B26GAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.875,11.375,07009H11CAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.125,14.875,07023A14HAT,4.82,50.0,241.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.375,41.375,07009C41CAT,5.47,25.0,136.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.375,4.375,07030C04CAT,0.0,50.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.375,109.875,07020C109HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,16.5,66.125,07016D66AAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.25,32.625,07027B32FAT,12.19,25.0,304.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.875,59.5,07013H59DAT,11.22,25.0,280.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,12.125,24.75,07012A24GAT,4.18,50.0,209.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.875,45.5,07026H45DAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.125,22.25,07022A22BAT,6.74,50.0,337.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.125,60.0,07031A60AT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.0,116.25,07034116BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.25,51.125,07006B51AAT,4.5,25.0,112.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.75,84.875,07022G84HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.625,19.625,07009F19FAT,2.76,50.0,138.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,121.75,07026G121GAT,0.0,0.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.75,58.125,07022G58AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.5,52.125,07033D52AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.5,6.25,07024D06BAT,2.34,50.0,117.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.875,20.25,07030H20BAT,8.67,50.0,433.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,16.5,78.625,07016D78FAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,11.875,105.25,07011H105BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.25,57.25,07025B57BAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.0,15.0,0700415AT,0.0,50.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.375,20.625,07033C20FAT,9.46,50.0,473.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.125,34.375,07018A34CAT,8.5,25.0,212.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.0,23.25,0700423BAT,0.0,50.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.125,32.125,07029A32AAT,12.67,25.0,316.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,32.5,103.125,07032D103AAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.875,69.375,07014H69CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.875,102.0,07029H102AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.125,36.125,07014A36AAT,7.07,25.0,176.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.0,92.0,0700592AT,6.42,13.0,83.46
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.0,87.25,0702687BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,33.25,121.625,07033B121FAT,0.0,0.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.25,49.25,07020B49BAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.0,79.125,0702479AAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,10.875,21.75,07010H21GAT,3.45,50.0,172.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.125,61.5,07018A61DAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,16.125,113.75,07016A113GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.75,112.25,07006G112BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.875,42.0,07029H42AT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.75,14.0,07013G14AT,2.91,50.0,145.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.0,43.75,0702443GAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.125,101.0,07015A101AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.375,98.5,07013C98DAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.75,79.875,07004G79HAT,5.3,17.0,90.1
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.125,32.75,07034A32GAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,11.375,55.375,07011C55CAT,8.67,25.0,216.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.0,27.625,0700927FAT,3.6,25.0,90.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.875,94.75,07018H94GAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.5,109.625,07024D109FAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.75,34.625,07024G34FAT,11.7,25.0,292.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.875,52.5,07034H52DAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,19.875,94.0,07019H94AT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.5,25.875,07006D25HAT,2.48,50.0,124.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.5,33.875,07015D33HAT,7.22,25.0,180.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.5,23.75,07004D23GAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.75,65.5,07029G65DAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.0,77.5,0700777DAT,7.54,17.0,128.18
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.0,100.875,07007100HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.625,94.875,07020F94HAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,21.625,110.75,07021F110GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.5,39.125,07005D39AAT,3.05,25.0,76.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,21.75,74.75,07021G74GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.75,5.875,07028G05HAT,2.62,50.0,131.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.5,33.25,07022D33BAT,10.27,25.0,256.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.125,61.25,07024A61BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.375,106.875,07007C106HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.125,68.625,07030A68FAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,12.375,94.75,07012C94GAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.125,48.75,07009A48GAT,6.26,25.0,156.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.0,92.375,0703492CAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.125,120.375,07022A120CAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.875,86.75,07018H86GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.75,4.5,07009G04DAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.375,112.75,07034C112GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.125,47.75,07017A47GAT,11.22,25.0,280.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.875,72.375,07004H72CAT,4.98,17.0,84.66
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.5,33.625,07004D33FAT,2.34,25.0,58.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.125,17.25,07024A17BAT,5.78,50.0,289.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,19.75,106.875,07019G106HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.125,119.125,07023A119AAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.0,112.25,07008112BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.5,113.0,07026D113AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.5,113.875,07009D113HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.5,103.25,07008D103BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.75,74.0,07025G74AT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.375,102.25,07030C102BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.0,55.875,0702255HAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.25,58.75,07005B58GAT,4.33,25.0,108.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.875,43.0,07008H43AT,5.3,25.0,132.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.375,62.75,07020C62GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.625,40.375,07020F40CAT,11.39,25.0,284.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.0,11.125,0702811AAT,4.33,50.0,216.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.25,6.75,07020B06GAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,101.875,07026G101HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,10.0,26.25,0701026BAT,3.74,50.0,187.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,4.875,32.5,07004H32DAT,2.48,25.0,62.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.5,116.25,07018D116BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.875,80.875,07014H80HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.5,9.125,07008D09AAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.0,40.875,0700640HAT,3.6,25.0,90.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.0,86.75,0702086GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.125,21.0,07013A21AT,3.89,50.0,194.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.625,32.375,07028F32CAT,12.67,25.0,316.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.625,100.0,07009F100AT,13.15,13.0,170.95
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.5,106.125,07026D106AAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.25,39.125,07026B39AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.75,63.375,07018G63CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.375,45.875,07020C45HAT,12.67,25.0,316.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.25,8.5,07022B08DAT,2.76,50.0,138.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.375,85.75,07026C85GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.5,37.25,07005D37BAT,3.05,25.0,76.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.125,17.0,07008A17AT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.75,75.875,07025G75HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.0,75.375,0700575CAT,5.3,17.0,90.1
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,21.875,41.625,07021H41FAT,12.34,25.0,308.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.75,63.875,07017G63HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,12.125,115.75,07012A115GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,10.375,115.375,07010C115CAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.625,102.125,07017F102AAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.125,100.875,07014A100HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.375,17.75,07023C17GAT,5.78,50.0,289.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.75,84.75,07026G84GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.375,78.25,07028C78BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.125,10.625,07007A10FAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.125,64.25,07028A64BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.75,110.5,07005G110DAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.25,39.25,07008B39BAT,4.5,25.0,112.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.0,94.625,0702694FAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.25,53.25,07013B53BAT,9.62,25.0,240.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.5,76.75,07017D76GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,11.625,68.75,07011F68GAT,10.91,17.0,185.47
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.625,67.5,07009F67DAT,8.98,17.0,152.66
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.125,8.0,07029A08AT,3.45,50.0,172.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.125,106.25,07024A106BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.625,58.875,07009F58HAT,7.86,25.0,196.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,11.125,15.0,07011A15AT,2.48,50.0,124.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.875,51.5,07030H51DAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.25,47.625,07007B47FAT,4.82,25.0,120.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.0,34.875,0702634HAT,12.34,25.0,308.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.75,34.0,07008G34AT,4.18,25.0,104.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.375,75.5,07017C75DAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,10.375,73.875,07010C73HAT,10.43,17.0,177.31
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,19.75,54.125,07019G54AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.125,13.125,07006A13AAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,19.0,27.125,0701927AAT,7.07,25.0,176.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,13.25,70.75,07013B70GAT,12.82,17.0,217.94
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.625,108.125,07029F108AAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.25,20.375,07029B20CAT,8.19,50.0,409.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,12.0,62.5,0701262DAT,10.27,17.0,174.59
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.875,23.5,07015H23DAT,5.3,50.0,265.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.625,41.125,07027F41AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.5,6.75,07007D06GAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.25,120.875,07014B120HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.25,57.875,07008B57HAT,6.59,25.0,164.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,18.75,35.0,07018G35AT,8.98,25.0,224.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,19.875,101.0,07019H101AT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.375,5.375,07022C05CAT,2.19,50.0,109.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.125,67.5,07006A67DAT,5.78,17.0,98.26
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.75,54.0,07008G54AT,6.59,25.0,164.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,23.5,79.875,07023D79HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.5,104.75,07014D104GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.375,41.875,07026C41HAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.625,83.625,07014F83FAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.875,29.75,07015H29GAT,6.59,25.0,164.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.25,106.875,07006B106HAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.0,76.375,0701476CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.0,52.625,0701452FAT,10.1,25.0,252.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.875,16.25,07028H16BAT,6.59,50.0,329.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.125,29.375,07005A29CAT,2.34,25.0,58.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.5,69.25,07027D69BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.25,71.875,07034B71HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.875,62.375,07020H62CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,15.375,111.25,07015C111BAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,7.375,41.0,07007C41AT,4.33,25.0,108.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.75,70.625,07006G70FAT,6.59,17.0,112.03
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.375,68.125,07020C68AAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,10.375,68.375,07010C68CAT,9.79,17.0,166.43
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.125,67.5,07009A67DAT,8.5,17.0,144.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,21.625,83.0,07021F83AT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.5,75.75,07034D75GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,28.75,5.125,07028G05AAT,2.34,50.0,117.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,34.125,86.375,07034A86CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.625,43.875,07008F43HAT,5.3,25.0,132.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,14.5,40.75,07014D40GAT,8.19,25.0,204.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.875,104.75,07030H104GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,30.25,56.125,07030B56AAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.875,98.625,07031H98FAT,14.34,13.0,186.42
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,21.0,47.875,0702147HAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.75,49.875,07008G49HAT,6.1,25.0,152.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.25,102.75,07009B102GAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.625,56.0,07009F56AT,7.38,25.0,184.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,17.25,87.75,07017B87GAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.75,55.375,07025G55CAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.625,32.875,07006F32HAT,3.19,25.0,79.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.0,47.75,0700847GAT,5.3,25.0,132.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,22.375,89.25,07022C89BAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.5,57.75,07031D57GAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,27.625,24.125,07027F24AAT,9.14,50.0,457.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,6.25,33.5,07006B33DAT,3.05,25.0,76.25
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,24.0,41.375,0702441CAT,13.47,25.0,336.75
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,11.625,50.5,07011F50DAT,8.02,25.0,200.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.625,88.75,07005F88GAT,6.9,17.0,117.3
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.375,78.625,07031C78FAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,20.875,49.25,07020H49BAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,9.25,44.875,07009B44HAT,5.78,25.0,144.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,26.875,115.375,07026H115CAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,31.0,65.375,0703165CAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.625,100.5,07008F100DAT,0.0,13.0,0.0
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,25.5,46.875,07025D46HAT,14.34,25.0,358.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,29.5,81.875,07029D81HAT,14.34,17.0,243.78
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,5.625,32.0,07005F32AT,2.62,25.0,65.5
+Tri-Dek #3 2-Ply Pre-Cut Sleeves,Antimicrobial,8.0,30.125,0700830AAT,3.6,25.0,90.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.5,31.625,07214D31F-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.75,26.0,07220G26-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.625,61.125,07220F61A-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.0,25.0,0721225-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.0,38.25,0723038B-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.375,11.125,07217C11A-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.375,39.25,07211C39B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.875,77.125,07226H77A-4CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,21.0,0723221-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.375,24.625,07209C24F-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.5,31.5,07218D31D-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.75,28.375,07205G28C-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.25,71.125,07225B71A-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.125,4.0,07213A04-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.75,16.25,07222G16B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.5,19.25,07218D19B-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.875,56.625,07226H56F-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.375,13.75,07230C13G-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.75,39.125,07209G39A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.125,50.25,07216A50B-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.75,65.0,07212G65-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.375,63.875,07228C63H-3CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.75,36.375,07223G36C-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.625,29.75,07233F29G-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.5,37.0,07221D37-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.5,18.0,07229D18-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.0,71.625,0721371F-4CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.625,7.75,07227F07G-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.75,31.5,07221G31D-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.25,43.375,07228B43C-2CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.25,49.375,07226B49C-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.75,49.125,07205G49A-3CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.25,31.375,07210B31C-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.0,6.625,0720506F-0CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.875,65.125,07210H65A-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.0,6.5,0721306D-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.125,51.625,07219A51F-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.375,7.25,07226C07B-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.875,76.25,07218H76B-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.375,52.5,07208C52D-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.75,28.75,07229G28G-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.75,8.625,07230G08F-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.5,54.75,07234D54G-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.75,43.5,07219G43D-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.625,28.125,07205F28A-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,24.375,19.875,07224C19H-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,68.75,0723268G-4CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.25,7.5,07226B07D-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.25,68.875,07208B68H-4CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.625,26.375,07221F26C-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.0,12.25,0723112B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.375,52.0,07229C52-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.0,19.875,0721619H-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.625,8.625,07221F08F-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.75,26.25,07228G26B-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.125,77.0,07205A77-4CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.0,68.25,0723468B-4CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.125,56.625,07226A56F-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.125,4.375,07214A04C-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.125,59.0,07214A59-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.75,55.25,07209G55B-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.875,17.625,07207H17F-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.0,33.125,0720933A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.125,36.75,07221A36G-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,4.375,60.375,07204C60C-3CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.375,49.375,07214C49C-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.875,15.5,07208H15D-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.0,15.875,0721215H-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.75,62.5,07208G62D-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.125,73.0,07220A73-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.0,19.25,0722319B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.625,38.625,07232F38F-2CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.75,50.25,07203G50B-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.0,74.5,0722174D-4CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.625,69.875,07221F69H-4CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.125,5.0,07210A05-0CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,15.125,63.375,07215A63C-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.625,50.0,07223F50-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.875,40.25,07205H40B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.0,38.875,0722538H-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.5,57.75,07227D57G-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,4.25,16.625,07204B16F-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.125,76.375,07225A76C-4CW,14.09,1.0,14.09
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.125,70.0,07230A70-4CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.875,31.25,07216H31B-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,24.0,33.0,0722433-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.375,33.125,07227C33A-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.0,60.0,0722960-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.875,32.0,07225H32-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.75,59.625,07225G59F-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.625,52.5,07210F52D-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.75,76.875,07228G76H-4CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.375,35.25,07233C35B-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.375,42.875,07225C42H-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.0,17.5,0723317D-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.75,26.5,07233G26D-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.875,51.25,07217H51B-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.5,19.375,07232D19C-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.0,17.0,0723017-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.375,23.25,07212C23B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.5,23.875,07228D23H-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.25,39.125,07208B39A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.125,42.125,07223A42A-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,15.0,15.875,0721515H-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.125,64.25,07220A64B-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.75,76.375,07233G76C-4CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.625,18.125,07220F18A-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.375,67.5,07223C67D-4CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.125,27.75,07229A27G-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.625,72.75,07225F72G-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.375,17.0,07203C17-1CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.875,9.5,07227H09D-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.25,65.0,07233B65-3CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.125,53.875,07232A53H-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.75,73.375,07206G73C-4CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.375,55.0,07222C55-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.25,63.875,07228B63H-3CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,26.625,30.625,07226F30F-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.875,19.5,07213H19D-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.25,49.125,07233B49A-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.125,38.375,07210A38C-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,21.25,24.125,07221B24A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.5,17.5,07233D17D-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.875,7.75,07214H07G-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.375,44.375,07210C44C-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.375,27.375,07210C27C-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.0,73.625,0721873F-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.25,27.25,07222B27B-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.5,4.875,07203D04H-0CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,71.5,07208D71D-4CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.375,36.5,07205C36D-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.75,7.375,07230G07C-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.25,9.375,07206B09C-0CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.75,52.75,07222G52G-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.125,28.625,07209A28F-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.625,45.875,07205F45H-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.125,47.75,07212A47G-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.375,24.0,07216C24-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.875,12.25,07209H12B-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.375,14.625,07231C14F-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.125,50.125,07230A50A-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,24.625,50.5,07224F50D-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.875,4.375,07231H04C-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.5,32.625,07230D32F-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,10.875,22.25,07210H22B-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.375,43.125,07216C43A-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.5,46.375,07216D46C-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.0,57.875,0721157H-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.5,35.5,07228D35D-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.25,16.375,07214B16C-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.5,56.75,07206D56G-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.125,45.375,07211A45C-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.5,29.0,07233D29-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.875,31.5,07218H31D-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.375,60.875,07214C60H-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.75,55.625,07207G55F-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.125,53.5,07212A53D-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.125,41.875,07218A41H-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.0,17.0,0723217-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.375,34.75,07205C34G-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.75,45.75,07233G45G-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.375,16.5,07223C16D-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.875,8.25,07214H08B-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.625,45.0,07207F45-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.75,31.125,07213G31A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.125,32.625,07222A32F-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.75,55.75,07203G55G-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.625,49.875,07225F49H-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.25,49.625,07227B49F-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,13.375,75.5,07213C75D-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.5,55.625,07208D55F-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.625,70.5,07216F70D-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.125,65.5,07231A65D-3CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.375,72.625,07228C72F-4CW,14.95,1.0,14.95
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.75,38.75,07220G38G-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.0,14.75,0722714G-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.25,55.125,07214B55A-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.0,51.375,0720651C-3CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.0,6.125,0721606A-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,24.625,71.125,07224F71A-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.625,67.125,07207F67A-4CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.375,37.0,07233C37-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.5,67.5,07233D67D-4CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.125,46.0,07211A46-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,25.875,67.875,07225H67H-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.75,52.25,07205G52B-3CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.625,57.875,07232F57H-3CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.875,31.375,07229H31C-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.125,47.5,07211A47D-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.75,40.625,07220G40F-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,33.125,13.25,07233A13B-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.125,54.75,07217A54G-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.75,50.625,07207G50F-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.625,19.125,07219F19A-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.875,19.75,07203H19G-1CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.375,66.875,07206C66H-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.625,13.875,07219F13H-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,4.625,34.375,07204F34C-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.25,37.5,07229B37D-2CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.875,54.5,07208H54D-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.125,56.75,07234A56G-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.25,55.625,07218B55F-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.875,74.25,07214H74B-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.125,76.0,07231A76-4CW,15.64,1.0,15.64
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.375,4.625,07212C04F-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.0,66.375,0720566C-3CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,7.125,58.625,07207A58F-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.375,30.75,07218C30G-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.125,57.75,07228A57G-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.125,56.25,07234A56B-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.0,43.5,0721143D-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.125,52.75,07211A52G-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.75,40.625,07217G40F-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.375,65.125,07206C65A-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,24.625,35.25,07224F35B-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.125,8.375,07230A08C-2CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.625,76.125,07203F76A-4CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.5,47.75,07212D47G-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.625,20.375,07227F20C-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.875,66.0,07218H66-3CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.875,57.0,07227H57-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,22.625,21.125,07222F21A-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,34.0,31.375,0723431C-2CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,17.125,68.0,07217A68-4CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,20.0,54.25,0722054B-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.125,55.375,07219A55C-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,32.25,21.375,07232B21C-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,12.25,65.5,07212B65D-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.75,16.125,07216G16A-1CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.625,55.875,07219F55H-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,23.875,73.75,07223H73G-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,29.25,53.5,07229B53D-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.5,40.875,07211D40H-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.625,58.625,07209F58F-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,27.0,69.375,0722769C-4CW,13.81,1.0,13.81
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.125,50.875,07214A50H-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,9.375,54.375,07209C54C-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,11.125,5.875,07211A05H-0CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.375,6.125,07208C06A-0CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,18.0,74.125,0721874A-4CW,11.79,1.0,11.79
+Wire Ring Frames for Pre-Cut Sleeves,Standard,19.75,47.75,07219G47G-3CW,8.33,1.0,8.33
+Wire Ring Frames for Pre-Cut Sleeves,Standard,30.625,64.0,07230F64-3CW,14.09,1.0,14.09
+Wire Ring Frames for Pre-Cut Sleeves,Standard,8.375,19.375,07208C19C-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,28.75,53.0,07228G53-3CW,13.08,1.0,13.08
+Wire Ring Frames for Pre-Cut Sleeves,Standard,16.25,9.875,07216B09H-1CW,1.83,1.0,1.83
+Wire Ring Frames for Pre-Cut Sleeves,Standard,3.75,51.375,07203G51C-3CW,0.0,1.0,0.0
+Wire Ring Frames for Pre-Cut Sleeves,Standard,5.625,39.875,07205F39H-2CW,3.11,1.0,3.11
+Wire Ring Frames for Pre-Cut Sleeves,Standard,31.0,24.25,0723124B-2CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,14.375,50.375,07214C50C-3CW,6.23,1.0,6.23
+Wire Ring Frames for Pre-Cut Sleeves,Standard,6.125,35.25,07206A35B-2CW,3.11,1.0,3.11
