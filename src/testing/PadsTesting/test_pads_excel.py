@@ -11,17 +11,27 @@ import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', '..', 'raw_calc.xlsm')
-OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_sleeves_excel.csv")
+OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pads_excel.csv")
 
-SHEET_NAME = "Sleeves Calc" 
+SHEET_NAME = "Pads Calc" 
 
 TEST_ALL_COMBINATIONS = False # Set to True to test all combinations, False for random sampling
-NUM_TESTS_PER_COMBINATION = 250  # Number of random (Width, Length) whole number pairs to test per product family
+NUM_TESTS_PER_COMBINATION = 125  # Number of random (Width, Length) whole number pairs to test per product family
 SECONDS_PER_TEST_CASE = 0.4
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
-WIDTH_RANGE = (4, 34)
-LENGTH_RANGE = (4, 121)
+
+WIDTH_RANGES = {
+    "Tri-Dek #3 Media Pad": (4, 70),
+    "Tri-Dek #5 Media Pad": (4, 84),
+    "Tri-Dek #7 Media Pad": (4, 96),
+    "Tri-Dek #10 Media Pad": (4, 250),
+    "Tri-Dek 2-Ply 15/40 Media Pad": (4, 250),
+    "Tri-Dek 3-Ply 6/15/40 Media Pad": (4, 250),
+    "Tri-Dek 3-Ply 15/40+3 Media Pad": (5, 250),
+    "Tri-Dek 4-Ply 6/40+3 Media Pad": (5, 250),
+    "Tri-Dek #8 MERV 8 Pads": (4, 78)
+}
 
 EXCEL_ERROR_STRINGS = [
     'Contact Customer Service',
@@ -30,6 +40,9 @@ EXCEL_ERROR_STRINGS = [
     'length is out of range',
     '#N/A',
     '#VALUE!',
+    'Call for Quote',
+    'Discontinued',
+    'Special Price'
 ]
 
 # ----------------------------------------------------
@@ -88,65 +101,31 @@ def main():
         wb = xw.Book(WORKBOOK_PATH)
         ws = wb.sheets[SHEET_NAME]
 
-        product_names = get_dropdown_values(ws, "F8")
+        product_names = get_dropdown_values(ws, "F7")
         print("📦 Product Names:", product_names)
 
         results = []
         test_cases = []
 
         if TEST_ALL_COMBINATIONS:
-            print("\nGenerating all possible test case combinations in-memory...")
-            width_whole_options = [int(v) for v in get_dropdown_values(ws, "F13") if v is not None]
-            length_whole_options = [int(v) for v in get_dropdown_values(ws, "F14") if v is not None]
-            width_fraction_options = DECIMAL_OPTIONS
-            length_fraction_options = DECIMAL_OPTIONS
-
-            for name in product_names:
-                ws["F8"].value = name
-                time.sleep(0.2)
-                available_options = get_dropdown_values(ws, "F10")
-                
-                filtered_options = available_options
-                if name != 'Tri-Dek #3 2-Ply Pre-Cut Sleeves' and 'Antimicrobial' in filtered_options:
-                    filtered_options = [opt for opt in filtered_options if opt != 'Antimicrobial']
-
-                combinations = itertools.product(
-                    [name], filtered_options, width_whole_options, width_fraction_options, length_whole_options, length_fraction_options
-                )
-                for combo in combinations:
-                    test_cases.append({
-                        "name": combo[0], "option": combo[1],
-                        "width_whole": combo[2], "width_dec": combo[3],
-                        "length_whole": combo[4], "length_dec": combo[5],
-                    })
+            print("\nGenerating all possible test case combinations in-memory... (Not implemented for Pads)")
+            # This part is complex and might not be needed. Sticking to random for now.
+            pass
         else:
             print("\nGenerating random test cases in-memory...")
             for name in product_names:
-                ws["F8"].value = name
+                ws["F7"].value = name
                 time.sleep(0.2)  # Pause for dependent dropdown to update
                 
-                available_options = get_dropdown_values(ws, "F10")
+                available_options = get_dropdown_values(ws, "F9")
                 print(f"  - For '{name}', found options: {available_options}")
 
-                # Set width and length ranges based on product name
-                current_width_range = WIDTH_RANGE
-                current_length_range = LENGTH_RANGE
-
-                if name == 'Tri Dek #3 2-Ply Pre-Cut Sleeves':
-                    current_width_range = (4, 60)
-                    current_length_range = (4, 100)
-                elif name == 'Wire Ring Frames for Pre-Cut Sleeves':
-                    current_width_range = (3, 34)
-                    current_length_range = (4, 77)
-
-                filtered_options = available_options
-                if name != 'Tri-Dek #3 2-Ply Pre-Cut Sleeves' and 'Antimicrobial' in filtered_options:
-                    filtered_options = [opt for opt in filtered_options if opt != 'Antimicrobial']
+                current_width_range = WIDTH_RANGES.get(name, (4, 72)) # Default to (4, 72) if not found
                 
-                for option in filtered_options:
+                for option in available_options:
                     for _ in range(NUM_TESTS_PER_COMBINATION):
                         width_whole, width_dec = random_dimension(*current_width_range)
-                        length_whole, length_dec = random_dimension(*current_length_range)
+                        length_whole, length_dec = random_dimension(4, 250) # Use a wide range for length
                         test_cases.append({
                             "name": name, "option": option,
                             "width_whole": width_whole, "width_dec": width_dec,
@@ -164,22 +143,22 @@ def main():
             print(f"  Processing case {i+1}/{len(test_cases)} for '{case['name']}'...", end='\r')
             
             # Populate Inputs
-            ws["F8"].value = case["name"]
-            ws["F10"].value = case["option"]
-            ws["F13"].value = case["width_whole"]
-            ws["G13"].value = case["width_dec"]
-            ws["F14"].value = case["length_whole"]
-            ws["G14"].value = case["length_dec"]
+            ws["F7"].value = case["name"]
+            ws["F9"].value = case["option"]
+            ws["F12"].value = case["width_whole"]
+            ws["G12"].value = case["width_dec"]
+            ws["F13"].value = case["length_whole"]
+            ws["G13"].value = case["length_dec"]
 
             wb.app.calculate()
             time.sleep(0.1)
 
             # Read Outputs
             try:
-                part_number = ws["F16"].api.Text
-                price_text = ws["F18"].api.Text
-                carton_qty_text = ws["F22"].api.Text
-                carton_price_text = ws["F23"].api.Text
+                part_number = ws["F15"].api.Text
+                price_text = ws["F17"].api.Text
+                carton_qty_text = ws["F21"].api.Text
+                carton_price_text = ws["F22"].api.Text
                 
                 price = parse_excel_output_value(price_text)
                 carton_qty = parse_excel_output_value(carton_qty_text)
@@ -187,12 +166,11 @@ def main():
                 
             except Exception as e:
                 print(f"\n   [DEBUG] Error reading text: {e}. Falling back to .value")
-                part_number = ws["F17"].value or ""
-                price = parse_excel_output_value(ws["F19"].value)
+                part_number = ws["F15"].value or ""
+                price = parse_excel_output_value(ws["F17"].value)
                 carton_qty = parse_excel_output_value(ws["F21"].value)
                 carton_price = parse_excel_output_value(ws["F22"].value)
 
-            # Ensure we don't write NaN values to the CSV.
             if isinstance(price, (int, float)): price = 0 if pd.isna(price) else price
             if isinstance(carton_qty, (int, float)): carton_qty = 0 if pd.isna(carton_qty) else carton_qty
             if isinstance(carton_price, (int, float)): carton_price = 0 if pd.isna(carton_price) else carton_price

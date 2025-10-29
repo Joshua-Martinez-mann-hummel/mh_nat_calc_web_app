@@ -16,7 +16,11 @@
     "test:sleevesExcel": "rimraf ./src/testing/SleevesTesting/results_sleeves_excel.csv && python ./src/testing/SleevesTesting/test_sleeves_excel.py",
     "test:sleevesLogic": "npm run build:logic && rimraf ./src/testing/SleevesTesting/results_sleeves_app.csv && python ./src/testing/SleevesTesting/test_sleeves_logic.py",
     "test:sleevesCompare": "rimraf ./src/testing/SleevesTesting/comparison_summary.csv && python ./src/testing/SleevesTesting/compare_sleeves_results.py",
-    "test:all:sleeves": "npm run test:sleevesExcel && npm run test:sleevesLogic && npm run test:sleevesCompare"
+    "test:all:sleeves": "npm run test:sleevesExcel && npm run test:sleevesLogic && npm run test:sleevesCompare",
+    "test:padsExcel": "rimraf ./src/testing/PadsTesting/results_pads_excel.csv && python ./src/testing/PadsTesting/test_pads_excel.py",
+    "test:padsLogic": "npm run build:logic && rimraf ./src/testing/PadsTesting/results_pads_app.csv && python ./src/testing/PadsTesting/test_pads_logic.py",
+    "test:padsCompare": "rimraf ./src/testing/PadsTesting/comparison_summary.csv && python ./src/testing/PadsTesting/compare_pads_results.py",
+    "test:all:pads": "npm run test:padsExcel && npm run test:padsLogic && npm run test:padsCompare"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",

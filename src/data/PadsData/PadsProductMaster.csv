@@ -1,0 +1,10 @@
+Product Family,Type,Brand Name,Ply,Depth,Prefix,Custom?,Min,Max
+Pads,Media,Tri-Dek #3,1,0.25,130,Yes,4,256
+Pads,Media,Tri-Dek #5,1,0.5,132,Yes,4,256
+Pads,Media,Tri-Dek #7,1,1,134,Yes,4,256
+Pads,Media,Tri-Dek #10,1,2,152,Yes,4,256
+Pads,Media,Tri-Dek 2-Ply 15/40,2,,136,Yes,4,256
+Pads,Media,Tri-Dek 3-Ply 6/15/40,3,,176,Yes,4,256
+Pads,Media,Tri-Dek 3-Ply 15/40+3,3,,140,Yes,5,256
+Pads,Media,Tri-Dek 4-Ply 6/40+3,4,,143,Yes,5,256
+Pads,MERV 8,Tri-Dek #8,,,170,Yes,4,256
