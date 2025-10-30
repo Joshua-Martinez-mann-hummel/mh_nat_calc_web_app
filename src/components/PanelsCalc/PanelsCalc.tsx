@@ -1,89 +1,191 @@
-import { useState, useEffect } from 'react';
-// Corrected the relative paths to be more explicit for the build tool.
-import CalculatorTemplate from '../../components/ui/CalculatorTemplate.tsx';
-import FormField from '../../components/ui/FormField.tsx';
-import PricingResult from '../../components/ui/PricingResult.tsx';
+import React, { useState, useEffect, useMemo } from 'react';
+import CalculatorTemplate from '../ui/CalculatorTemplate';
+import FormField from '../ui/FormField';
+import PricingResult from '../ui/PricingResult';
+import { usePanelsData } from '../../hooks/usePanelsData';
+import { calculatePanelsLinks } from '../../logic/panelsLogic';
+import type {
+  PanelsLinksInputs,
+  PanelsLinksResult,
+} from '../../data/PanelsData/panelsDataTypes';
 
 // Define the component's props interface
 interface PanelsCalcProps {
-    onCalculate: (productType: string, config: object, price: number, quoteDetails: object) => void;
+  onCalculate: (
+    productType: string,
+    config: object,
+    price: number,
+    quoteDetails: object
+  ) => void;
 }
 
-const initialPanelsQuote = { 'Range of Link Width': 'N/A', 'Part Number': 'N/A', 'Price': 0, 'Carton Quantity': 0, 'Carton Price': 0 };
+const initialInputs: PanelsLinksInputs = {
+  productFamily: '',
+  addOn: 'Standard',
+  type: 'Panel',
+  numberOfPanels: 2,
+  isExact: false,
+  heightWhole: 24,
+  heightFraction: 0,
+  widthWhole: 12,
+  widthFraction: 0,
+};
+
+const initialResult: PanelsLinksResult = {
+  partNumber: 'N/A',
+  price: 0,
+  rangeOfLinkWidth: 'N/A',
+  cartonQty: 0,
+  cartonPrice: 0,
+  errors: [],
+};
 
 function PanelsCalc({ onCalculate }: PanelsCalcProps) {
-  const [productFamily, setProductFamily] = useState('Tri-Dek FC Panel');
-  const [addOn, setAddOn] = useState('none');
-  const [type, setType] = useState('panel');
-  const [numPanels, setNumPanels] = useState(1);
-  const [isExact, setIsExact] = useState('no');
-  const [width, setWidth] = useState('');
-  const [height, setHeight] = useState('');
-  const [pricingResult, setPricingResult] = useState(initialPanelsQuote);
+  const { data, isLoading, error } = usePanelsData();
+  const [inputs, setInputs] = useState<PanelsLinksInputs>(initialInputs);
+  const [pricingResult, setPricingResult] =
+    useState<PanelsLinksResult>(initialResult);
 
-  const generateQuote = () => {
-    const numWidth = parseFloat(width) || 0;
-    const numHeight = parseFloat(height) || 0;
-
-    if (numWidth === 0 || numHeight === 0) {
-      setPricingResult(initialPanelsQuote);
-      return;
-    }
-    
-    let basePrice = 50;
-    if (productFamily.includes('2-Ply')) basePrice = 60;
-    if (productFamily.includes('3-Ply')) basePrice = 75;
-    if (productFamily.includes('4-ply')) basePrice = 90;
-    const area = numWidth * numHeight;
-    const addOnMultiplier = addOn === 'antimicrobial' ? 1.20 : 1.0;
-    const exactMultiplier = isExact === 'yes' ? 1.10 : 1.0;
-    let finalPrice = basePrice + (area * 0.95);
-    if (type === 'link') {
-      finalPrice *= (numPanels * 0.9);
-    }
-    const price = finalPrice * addOnMultiplier * exactMultiplier;
-
-    const partNumber = `PA-${productFamily.substring(0,2).toUpperCase()}-${Math.floor(1000 + numWidth)}`;
-    const cartonQuantity = 10;
-    const cartonPrice = price * cartonQuantity * 0.95;
-    const linkWidthRange = `${(numWidth * 0.8).toFixed(1)}" - ${(numWidth * 1.2).toFixed(1)}"`;
-
-    setPricingResult({ 'Range of Link Width': linkWidthRange, 'Part Number': partNumber, 'Price': price, 'Carton Quantity': cartonQuantity, 'Carton Price': cartonPrice });
-  };
-  
+  // Set initial product family once data is loaded
   useEffect(() => {
-    if (type === 'panel') setNumPanels(1);
-    generateQuote();
-  }, [productFamily, addOn, type, numPanels, isExact, width, height]);
-  
+    if (data?.productInfo) {
+      const firstProduct = data.productInfo.keys().next().value;
+      if (firstProduct) {
+        setInputs((prev) => ({ ...prev, productFamily: firstProduct }));
+      }
+    }
+  }, [data]);
+
+  // Main calculation effect
+  useEffect(() => {
+    if (data && inputs.productFamily) {
+      const result = calculatePanelsLinks(inputs, data);
+      setPricingResult(result);
+    } else {
+      setPricingResult(initialResult);
+    }
+  }, [inputs, data]);
+
+  // Derived state for UI display, handling errors and notes
+  const { displayResult, displayNote } = useMemo(() => {
+    if (!pricingResult) {
+      return { displayResult: {}, displayNote: undefined };
+    }
+
+    const result = {
+      'Part Number': pricingResult.partNumber,
+      Price: pricingResult.price,
+      'Carton Quantity': pricingResult.cartonQty,
+      'Carton Price': pricingResult.cartonPrice,
+      'Range of Link Width': pricingResult.rangeOfLinkWidth,
+    };
+
+    // If there are errors, show them as a note and zero out prices.
+    if (pricingResult.errors.length > 0) {
+      result.Price = 0;
+      result['Carton Quantity'] = 0;
+      result['Carton Price'] = 0;
+    }
+
+    const note =
+      pricingResult.errors.length > 0
+        ? pricingResult.errors.join(', ')
+        : undefined;
+
+    return { displayResult: result, displayNote: note };
+  }, [pricingResult]);
+
   const handleAddToDashboard = () => {
-    if(pricingResult && pricingResult.Price > 0) {
-      let config: any = { productFamily, addOn, type, isExact, width, height };
-      if (type === 'link') config.numPanels = numPanels;
-      onCalculate('panels', config, pricingResult.Price, {
-        partNumber: pricingResult['Part Number'],
-        cartonQuantity: pricingResult['Carton Quantity'],
-        cartonPrice: pricingResult['Carton Price'],
-      });
+    if (pricingResult && pricingResult.price > 0) {
+      onCalculate('panels', inputs, pricingResult.price, pricingResult);
     }
   };
-  
+
+  // Generic change handler for all inputs
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value, type } = e.target;
+
+    if (type === 'checkbox') {
+      const { checked } = e.target as HTMLInputElement;
+      setInputs((prev) => ({ ...prev, [name]: checked }));
+    } else {
+      // Use dynamic typing from papaparse for numeric values
+      const isNumeric =
+        e.target.getAttribute('type') === 'number' ||
+        !isNaN(parseFloat(value));
+      setInputs((prev) => ({
+        ...prev,
+        [name]: isNumeric ? parseFloat(value) : value,
+      }));
+    }
+  };
+
+  // Loading and error states
+  if (isLoading) return <div>Loading Panels-Links Data...</div>;
+  if (error) return <div>Error loading data: {error.message}</div>;
+  if (!data) return <div>No data available.</div>;
+
+  // Generate integer lists for dropdowns
+  const generateIntList = (min: number, max: number) =>
+    Array.from({ length: max - min + 1 }, (_, i) => min + i);
+
   return (
-    <CalculatorTemplate 
+    <CalculatorTemplate
       title="Panels-Links Calculator"
       description="Configure panel type and link count for pricing"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-4">
-          <FormField label="Product Family"><select value={productFamily} onChange={(e) => setProductFamily(e.target.value)} className="w-full p-3 border rounded-md bg-white"><option>Tri-Dek FC Panel</option><option>Tri-Dek 3/67 2-Ply</option><option>Tri-Dek 15/40 3-Ply</option><option>Tri-Dek 4-ply XL</option></select></FormField>
-          <FormField label="Optional Add-on"><select value={addOn} onChange={(e) => setAddOn(e.target.value)} className="w-full p-3 border rounded-md bg-white"><option value="none">None</option><option value="antimicrobial">Antimicrobial</option></select></FormField>
-          <FormField label="Type"><div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="type" value="panel" checked={type === 'panel'} onChange={(e) => setType(e.target.value)} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"/><span className="ml-2">Panel</span></label><label className="flex items-center"><input type="radio" name="type" value="link" checked={type === 'link'} onChange={(e) => setType(e.target.value)} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"/><span className="ml-2">Link</span></label></div></FormField>
-          {type === 'link' && (<FormField label="Number of Panels"><input type="number" value={numPanels} onChange={(e) => setNumPanels(Math.max(1, parseInt(e.target.value) || 1))} placeholder="e.g., 3" className="w-full p-3 border rounded-md" min="1"/></FormField>)}
-          <FormField label="Width (inches)"><input type="number" value={width} onChange={(e) => setWidth(e.target.value)} placeholder="e.g., 48.5" className="w-full p-3 border rounded-md" step="any"/></FormField>
-          <FormField label="Height (inches)"><input type="number" value={height} onChange={(e) => setHeight(e.target.value)} placeholder="e.g., 24.75" className="w-full p-3 border rounded-md" step="any"/></FormField>
-          <FormField label="Made Exact?"><div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="isExactPanel" value="yes" checked={isExact === 'yes'} onChange={(e) => setIsExact(e.target.value)} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"/><span className="ml-2">Yes</span></label><label className="flex items-center"><input type="radio" name="isExactPanel" value="no" checked={isExact === 'no'} onChange={(e) => setIsExact(e.target.value)} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"/><span className="ml-2">No</span></label></div></FormField>
+          <FormField label="Product Family">
+            <select name="productFamily" value={inputs.productFamily} onChange={handleChange} className="w-full p-3 border rounded-md bg-white">
+              {Array.from(data.productInfo.keys()).map((name) => (<option key={name} value={name}>{name}</option>))}
+            </select>
+          </FormField>
+          <FormField label="Optional Add-on">
+            <select name="addOn" value={inputs.addOn} onChange={handleChange} className="w-full p-3 border rounded-md bg-white">
+              <option value="Standard">Standard</option><option value="Antimicrobial">Antimicrobial</option>
+            </select>
+          </FormField>
+          <FormField label="Type">
+            <select name="type" value={inputs.type} onChange={handleChange} className="w-full p-3 border rounded-md bg-white">
+              <option value="Panel">Panel</option><option value="Link">Link</option>
+            </select>
+          </FormField>
+          {inputs.type === 'Link' && (
+            <FormField label="Number of Panels">
+              <input type="number" name="numberOfPanels" value={inputs.numberOfPanels} onChange={handleChange} placeholder="e.g., 3" className="w-full p-3 border rounded-md" min="2"/>
+            </FormField>
+          )}
+          <FormField label="Height (inches)">
+            <div className="flex space-x-2">
+              <select name="heightWhole" value={inputs.heightWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                {generateIntList(3, 77).map((val) => (<option key={`h-int-${val}`} value={val}>{val}</option>))}
+              </select>
+              <select name="heightFraction" value={inputs.heightFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                {Array.from(data.fractionalCodes.keys()).map((val) => (<option key={`h-frac-${val}`} value={val}>{`${val}"`}</option>))}
+              </select>
+            </div>
+          </FormField>
+          <FormField label="Width (inches)">
+            <div className="flex space-x-2">
+              <select name="widthWhole" value={inputs.widthWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                {generateIntList(3, 51).map((val) => (<option key={`w-int-${val}`} value={val}>{val}</option>))}
+              </select>
+              <select name="widthFraction" value={inputs.widthFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                {Array.from(data.fractionalCodes.keys()).map((val) => (<option key={`w-frac-${val}`} value={val}>{`${val}"`}</option>))}
+              </select>
+            </div>
+          </FormField>
+          <FormField label="Made Exact?">
+            <div className="flex items-center">
+              <input type="checkbox" name="isExact" checked={inputs.isExact} onChange={handleChange} className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
+              <span className="ml-2 text-gray-700">Yes, dimensions are exact</span>
+            </div>
+          </FormField>
         </div>
-        <PricingResult results={pricingResult} onCalculate={handleAddToDashboard} />
+        <PricingResult results={displayResult} note={displayNote} onCalculate={handleAddToDashboard}/>
       </div>
     </CalculatorTemplate>
   );
