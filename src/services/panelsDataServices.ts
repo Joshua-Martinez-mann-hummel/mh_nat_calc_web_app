@@ -3,7 +3,7 @@
  * This service follows the same architecture as the other calculator data services.
  */
 
-import Papa from 'papaparse';
+import Papa, { ParseResult } from 'papaparse';
 import type {
   PanelsLinksData,
   PanelCustomPriceRow,
@@ -29,9 +29,9 @@ const fetchAndParseCSV = <T>(filePath: string, configOverrides: Papa.ParseConfig
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
-      transformHeader: (header) => header.trim(),
+      transformHeader: (header: string) => header.trim(),
       ...configOverrides,
-      complete: (results) => {
+      complete: (results: ParseResult<T>) => {
         if (results.errors.length) {
           reject(
             new Error(`Error parsing ${filePath}: ${results.errors[0].message}`)

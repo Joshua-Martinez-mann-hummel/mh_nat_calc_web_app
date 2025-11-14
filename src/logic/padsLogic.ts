@@ -1,6 +1,5 @@
 // Based on the template from src/logic/sleevesLogic.ts
 import type {
-  PadsInputs,
   PadsData,
   PadsResult,
 } from '../data/PadsData/padsDataTypes.ts';
@@ -52,7 +51,7 @@ export const calculatePads = (inputs: PadsInputsWithOption, data: PadsData): Pad
     errors.push(errorMsg);
     debugInfo.priceCalculation.push({ Step: 'Validation', Value: 'Failed', Details: errorMsg });
   }
-  const { prefix, atOptionAvailable, min, max } = currentProductInfo;
+  const { prefix, min, max } = currentProductInfo;
   
   const totalWidth = widthWhole + widthFraction;
   const totalLength = lengthWhole + lengthFraction;

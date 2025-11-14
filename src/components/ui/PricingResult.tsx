@@ -1,13 +1,14 @@
-import React from 'react';
+
 
 // Define the component's props interface
 interface PricingResultProps {
   results: Record<string, any> | null;
   onCalculate: () => void;
+  note?: string;
 }
 
 // This component displays the calculated quote and the "Add to Dashboard" button.
-function PricingResult({ results, onCalculate }: PricingResultProps) {
+function PricingResult({ results, onCalculate, note }: PricingResultProps) {
   const isCalculated = results && results.Price > 0;
 
   const formatValue = (key: string, value: any) => {
@@ -35,6 +36,12 @@ function PricingResult({ results, onCalculate }: PricingResultProps) {
             <span className={`font-medium ${label.toLowerCase().includes('price') ? 'text-green-600' : 'text-gray-900'}`}>{formatValue(label, value)}</span>
           </div>
         ))}
+        {note && (
+          <div className="flex justify-between text-sm">
+            <span className="text-gray-600">Note:</span>
+            <span className="text-gray-900 font-medium">{note}</span>
+          </div>
+        )}
       </div>
       <button 
         onClick={onCalculate}

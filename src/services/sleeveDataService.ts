@@ -1,4 +1,4 @@
-import Papa from 'papaparse';
+import Papa, { ParseResult } from 'papaparse';
 import type {
   SleevesData,
   SleeveProduct,
@@ -26,7 +26,7 @@ const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
-      complete: (results) => resolve(results.data),
+      complete: (results: ParseResult<T>) => resolve(results.data),
       error: (error: any) => reject(error),
     });
   });

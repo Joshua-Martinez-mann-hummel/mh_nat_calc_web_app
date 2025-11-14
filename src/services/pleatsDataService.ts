@@ -22,7 +22,7 @@ export const loadAndParseData = async (): Promise<PricingData> => {
         skipEmptyLines: true,
         dynamicTyping: true, // Automatically converts numbers
         complete: (results: Papa.ParseResult<any>) => resolve(results.data),
-       error: (error) => reject(error),
+       error: (error: Papa.ParseError) => reject(error),
       });
     });
   };

@@ -263,7 +263,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                     onChange={(e) => setInputs({ ...inputs, widthFraction: parseFloat(e.target.value) })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
-                    {Array.from(data.fractionalCodes.entries()).map(([decimal, code]) => (
+                    {Array.from(data.fractionalCodes.entries()).map(([decimal]) => (
                       <option key={`w-frac-${decimal}`} value={decimal}>{`${decimal}"`}</option>
                     ))}
                   </select>
@@ -285,7 +285,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                     onChange={(e) => setInputs({ ...inputs, lengthFraction: parseFloat(e.target.value) })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
-                    {Array.from(data.fractionalCodes.entries()).map(([decimal, code]) => (
+                    {Array.from(data.fractionalCodes.entries()).map(([decimal]) => (
                       <option key={`l-frac-${decimal}`} value={decimal}>{`${decimal}"`}</option>
                     ))}
                   </select>

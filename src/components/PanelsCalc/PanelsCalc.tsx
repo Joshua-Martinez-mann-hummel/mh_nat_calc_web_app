@@ -38,6 +38,7 @@ const initialResult: PanelsLinksResult = {
   cartonQty: 0,
   cartonPrice: 0,
   errors: [],
+  debugInfo: {},
 };
 
 function PanelsCalc({ onCalculate }: PanelsCalcProps) {
@@ -88,27 +89,21 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
       return { displayResult: {}, displayNote: undefined };
     }
 
-    const result = {
-      'Part Number': pricingResult.partNumber,
-      Price: pricingResult.price,
-      'Carton Quantity': pricingResult.cartonQty,
-      'Carton Price': pricingResult.cartonPrice,
-      'Range of Link Width': pricingResult.rangeOfLinkWidth,
-    };
+    const hasErrors = pricingResult.errors.length > 0;
 
-    const note =
-      pricingResult.errors.length > 0
-        ? pricingResult.errors.join(', ')
-        : undefined;
+    const result = hasErrors
+      ? {}
+      : {
+          'Part Number': pricingResult.partNumber,
+          Price: pricingResult.price,
+          'Carton Quantity': pricingResult.cartonQty,
+          'Carton Price': pricingResult.cartonPrice,
+          'Range of Link Width': pricingResult.rangeOfLinkWidth,
+        };
 
-    // If there are errors, show the first error as the price and zero out other fields.
-    if (note) {
-      result.Price = note;
-      result['Carton Quantity'] = 0;
-      result['Carton Price'] = 0;
-    }
+    const note = hasErrors ? pricingResult.errors.join(', ') : undefined;
 
-    return { displayResult: result, displayNote: undefined }; // Note is now part of the result.
+    return { displayResult: result, displayNote: note };
   }, [pricingResult]);
 
   const handleAddToDashboard = () => {

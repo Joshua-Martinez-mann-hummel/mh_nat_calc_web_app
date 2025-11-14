@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import CalculatorTemplate from '../ui/CalculatorTemplate';
 import FormField from '../ui/FormField';
 import PricingResult from '../ui/PricingResult';
-import { usePricingData, type PricingData } from '../../hooks/usePricingData';
+import { usePricingData } from '../../hooks/usePricingData';
+import type { PricingData } from '../../data/PleatsData/pleatsDataTypes';
 import { calculatePleatPrice, type PleatInputs, type PleatPricingResult } from '../../logic/pleatLogic';
 
 interface PleatsCalcProps {
