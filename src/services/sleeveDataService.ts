@@ -1,4 +1,4 @@
-import Papa, { ParseResult } from 'papaparse';
+import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
 import type {
   SleevesData,
   SleeveProduct,
@@ -21,14 +21,15 @@ import sleevesValidationRulesUrl from '/src/data/SleevesData/SleevesValidationRu
 
 const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
   return new Promise<T[]>((resolve, reject) => {
-    Papa.parse<T>(filePath, {
+    const config: ParseRemoteConfig<T> = {
       download: true, // Let PapaParse fetch the file from the URL
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
       complete: (results: ParseResult<T>) => resolve(results.data),
-      error: (error: any) => reject(error),
-    });
+      error: (error: Error) => reject(error),
+    };
+    Papa.parse<T>(filePath, config);
   });
 };
 

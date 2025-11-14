@@ -1,5 +1,5 @@
 // Based on the template from src/services/sleeveDataService.ts
-import Papa, { ParseResult } from 'papaparse';
+import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
 import type {
   PadsData,
   ProductInfo,
@@ -22,14 +22,15 @@ import cartonQtyOver26Url from '/src/data/PadsData/padsCartonQty_over26.csv?url'
  */
 const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
   return new Promise<T[]>((resolve, reject) => {
-    Papa.parse<T>(filePath, {
+    const config: ParseRemoteConfig<T> = {
       download: true,
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
       complete: (results: ParseResult<T>) => resolve(results.data),
-      error: (error: any) => reject(error),
-    });
+      error: (error: Error) => reject(error),
+    };
+    Papa.parse<T>(filePath, config);
   });
 };
 

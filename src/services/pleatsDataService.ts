@@ -1,6 +1,6 @@
 // This file is responsible for fetching the raw CSV data from your project and converting it into a usable JavaScript object.
 
-import Papa from 'papaparse';
+import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
 import type { PricingData } from '../data/PleatsData/pleatsDataTypes';
 
 // Import the CSV files as URL assets. Vite will generate the correct public URLs.
@@ -16,14 +16,15 @@ import fractionalCodesUrl from '/src/data/PleatsData/Fractional_Codes.csv?url';
 export const loadAndParseData = async (): Promise<PricingData> => {
   const fetchAndParse = (filePath: string): Promise<any[]> => {
     return new Promise((resolve, reject) => {
-      Papa.parse<any>(filePath, {
+      const config: ParseRemoteConfig<any> = {
         download: true,
         header: true,
         skipEmptyLines: true,
         dynamicTyping: true, // Automatically converts numbers
-        complete: (results: Papa.ParseResult<any>) => resolve(results.data),
-       error: (error: Papa.ParseError) => reject(error),
-      });
+        complete: (results: ParseResult<any>) => resolve(results.data),
+        error: (error: Error) => reject(error),
+      };
+      Papa.parse<any>(filePath, config);
     });
   };
 

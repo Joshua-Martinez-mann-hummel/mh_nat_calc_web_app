@@ -3,7 +3,7 @@
  * This service follows the same architecture as the other calculator data services.
  */
 
-import Papa, { ParseResult } from 'papaparse';
+import Papa, { type ParseConfig, type ParseRemoteConfig } from 'papaparse';
 import type {
   PanelsLinksData,
   PanelCustomPriceRow,
@@ -22,17 +22,17 @@ import customPriceListUrl from '/src/data/PanelsData/PanelsPricing.csv?url';
  * @param filePath The URL of the CSV file.
  * @returns A promise that resolves to an array of parsed objects.
  */
-const fetchAndParseCSV = <T>(filePath: string, configOverrides: Papa.ParseConfig = {}): Promise<T[]> => {
+const fetchAndParseCSV = <T>(filePath: string, configOverrides: ParseConfig = {}): Promise<T[]> => {
   return new Promise((resolve, reject) => {
-    const config: Papa.ParseConfig = {
+    const config: ParseRemoteConfig<T> = {
       download: true,
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
-      transformHeader: (header: string) => header.trim(),
+      transformHeader: (header) => header.trim(),
       ...configOverrides,
-      complete: (results: ParseResult<T>) => {
-        if (results.errors.length) {
+      complete: (results) => {
+        if (results.errors && results.errors.length) {
           reject(
             new Error(`Error parsing ${filePath}: ${results.errors[0].message}`)
           );
@@ -40,7 +40,7 @@ const fetchAndParseCSV = <T>(filePath: string, configOverrides: Papa.ParseConfig
           resolve(results.data);
         }
       },
-      error: (error: any) => reject(new Error(`Failed to fetch ${filePath}: ${error.message}`)),
+      error: (error: Error) => reject(new Error(`Failed to fetch or parse ${filePath}: ${error.message}`)),
     };
     Papa.parse<T>(filePath, config);
   });
