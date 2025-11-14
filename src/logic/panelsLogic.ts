@@ -65,6 +65,8 @@ const checkRelaxedDimensionRule = (rule: string, value: number): boolean => {
 /**
  * Helper function to find the correct custom price from the price list.
  * It filters the list based on product type, dimensions, and face value.
+ * This logic is more complex as it must replicate Excel's "first-match"
+ * for dimension, and its "lookup-last" behavior for FaceValue.
  */
 const findCustomPrice = (
   customPriceList: PanelCustomPriceRow[],
@@ -75,62 +77,94 @@ const findCustomPrice = (
 ): { priceCustomStandard: number; PriceCustomAt: string } | null => {
   console.log(`[PanelsLogic]   [findCustomPrice] Searching for match with: prefix='${prefix}', H=${totalHeight}, W=${totalWidth}, FaceValue=${faceValue}`);
 
-  const matchingRow = customPriceList.find((row) => {
+  let matchingRow: PanelCustomPriceRow | null = null;
+
+  for (let i = 0; i < customPriceList.length; i++) {
+    const row = customPriceList[i];
+
+    // 1. Check Type
     const isTypeMatch = row.type === prefix;
-    if (!isTypeMatch) return false;
-
-    // Check FaceValue first
-    const isFaceValueMatch = faceValue >= row.rangeFrom && faceValue <= row.rangeTo;
-
-    // Stop early if Type or FaceValue don't match
-    if (!isFaceValueMatch) {
-      return false;
-    }
+    if (!isTypeMatch) continue; // Not our product, skip
 
     console.log(`[PanelsLogic]     [findCustomPrice] Checking row for type '${row.type}' (H rule: '${row.height}', W rule: '${row.width}', Face range: ${row.rangeFrom}-${row.rangeTo})`);
 
-    // Get the initial match results
+    // 2. Check Dimensions (with Relaxed Fix)
     let isHeightMatch = checkDimensionRule(row.height, totalHeight);
     let isWidthMatch = checkDimensionRule(row.width, totalWidth);
 
-    // --- START GENERALIZED FIX ---
+    // --- START FIX ---
+    // If H or W (or both) failed, try relaxing them
+    if (!isHeightMatch || !isWidthMatch) {
+        console.log(`[PanelsLogic]         -> Strict H/W match failed. Attempting relaxed check...`);
+        if (!isHeightMatch) {
+            isHeightMatch = checkRelaxedDimensionRule(row.height, totalHeight);
+            console.log(`[PanelsLogic]           -> Relaxed H result: ${isHeightMatch}`);
+        }
+        if (!isWidthMatch) {
+            isWidthMatch = checkRelaxedDimensionRule(row.width, totalWidth);
+            console.log(`[PanelsLogic]           -> Relaxed W result: ${isWidthMatch}`);
+        }
+    }
+    // --- END FIX ---
 
-    // This condition checks for:
-    // 1. FaceValue matched
-    // 2. EITHER Height or Width matched
-    // 3. But NOT BOTH (meaning one of them failed)
-    const isPartialDimensionMatch = isFaceValueMatch && (isHeightMatch || isWidthMatch) && !(isHeightMatch && isWidthMatch);
+    // After EITHER strict OR relaxed checks, if dimensions don't match, this isn't our bucket.
+    if (!isHeightMatch || !isWidthMatch) {
+      console.log(`[PanelsLogic]         -> H/W Dim Match? false.`);
+      continue;
+    }
 
-    if (isPartialDimensionMatch) {
-      if (!isHeightMatch) {
-        // Height failed, Width passed. Let's try relaxing the Height rule.
-        console.log(`[PanelsLogic]       [findCustomPrice] W/Face matched but H failed. Retrying H with relaxed lower bound.`);
-        isHeightMatch = checkRelaxedDimensionRule(row.height, totalHeight);
-      } else { // !isWidthMatch
-        // Width failed, Height passed. Let's try relaxing the Width rule.
-        console.log(`[PanelsLogic]       [findCustomPrice] H/Face matched but W failed. Retrying W with relaxed lower bound.`);
-        isWidthMatch = checkRelaxedDimensionRule(row.width, totalWidth);
+    // --- COMMITMENT POINT ---
+    // If we are here, H and W MATCH. 
+    // This is our dimension bucket. We now ONLY check FaceValue.
+    console.log(`[PanelsLogic]         -> H/W Dim Match? true. Committing to this dimension bucket.`);
+
+    // 3. Check Face Value
+    const isFaceValueMatch = faceValue >= row.rangeFrom && faceValue <= row.rangeTo;
+
+    if (isFaceValueMatch) {
+      // This is a perfect match
+      console.log(`[PanelsLogic]         -> Face Value Match? true.`);
+      matchingRow = row;
+      break; // Found it
+    }
+
+    // 4. Replicate Excel's LOOKUP bug (if FaceValue is too high)
+    if (faceValue > row.rangeTo) {
+      console.log(`[PanelsLogic]         -> Face Value ${faceValue} > ${row.rangeTo}. Peeking at next row...`);
+      const nextRow = (i + 1 < customPriceList.length) ? customPriceList[i + 1] : null;
+
+      // Check if the next row is a *different* dimension bucket
+      if (
+        !nextRow ||
+        nextRow.type !== row.type ||
+        nextRow.height !== row.height ||
+        nextRow.width !== row.width
+      ) {
+        // This is the LAST face-value-tier for this dimension-bucket.
+        // And our FaceValue is too high. This is the Excel LOOKUP behavior.
+        console.log(`[PanelsLogic]         -> Next row is a new bucket. Applying Excel LOOKUP behavior on current row.`);
+        matchingRow = row;
+        break; // Found it
       }
     }
-    // --- END GENERALIZED FIX ---
 
-    console.log(`[PanelsLogic]         -> Height Match? ${isHeightMatch}, Width Match? ${isWidthMatch}, Face Value Match? ${isFaceValueMatch}`);
+    // If we get here, our FaceValue was too low for this tier (e.g., 613 vs 700-800).
+    // The loop will continue to the next row (which must be the next FaceValue tier
+    // in the *same* dimension bucket).
+    console.log(`[PanelsLogic]         -> Face Value Match? false. Continuing search in bucket.`);
+  }
 
-    // Final check: all three must be true to be a match
-    return isHeightMatch && isWidthMatch && isFaceValueMatch;
-  });
+  // --- End of Loop ---
 
   if (matchingRow) {
     console.log(`[PanelsLogic]   [findCustomPrice] ✅ Found a matching row:`, matchingRow);
-  }
-
-  if (matchingRow) {
     return {
       priceCustomStandard: matchingRow.priceCustomStandard,
       PriceCustomAt: matchingRow.PriceCustomAt,
     };
   }
 
+  console.log(`[PanelsLogic]   [findCustomPrice] ❌ No matching row found after all checks.`);
   return null;
 };
 
@@ -307,28 +341,33 @@ export const calculatePanelsLinks = (
     debugInfo.pricePath = 'A';
     console.log(`[PanelsLogic] Validation failed. Errors: ${errors.join(', ')}`);
   }
-  // --- END REPLACEMENT ---
-  
-  if (!isExact) {
+  // --- END REPLACEMENT ---  
+  if (!isExact && errors.length === 0) { // Only check for overrides if no validation errors occurred
     console.log('--------------------------------');
     console.log('[PanelsLogic] Path A: Checking for standard override (isExact is false).');
     const dimensionKey = `${heightWhole}X${widthWhole}`;
     const overrideValue = standardOverrides.get(dimensionKey);
     debugInfo.standardCheck = { dimensionKey, overrideValue: overrideValue ?? 'N/A' };
     console.log(`[PanelsLogic] Path A: DimensionKey='${dimensionKey}', OverrideValue='${overrideValue ?? 'N/A'}'`);
-
+    
     if (overrideValue) {
+      // An override was found. This ALWAYS stops Path B.
       pricePath = 'A';
       debugInfo.pricePath = 'A';
       console.log('[PanelsLogic] Path A: Found override. Setting price path to A.');
+      
       const parsedPrice = parseFloat(overrideValue);
+
       if (isNaN(parsedPrice)) {
-        // Value is a string like "Standard Part #..."
+        // Value is text ("Standard Part #..."). This IS the result.
+        // It's an error message for the user.
+        console.log(`[PanelsLogic] Path A: Override value is text. Pushing as error.`);
         errors.push(overrideValue);
-        console.error(`[PanelsLogic] Path A: Override value is not a number. Pushing error: ${overrideValue}`);
+        // Price will remain 0, which is correct.
       } else {
+        // This is a REAL price override.
         price = parsedPrice;
-        console.log(`[PanelsLogic] Path A: Price set from override: ${price}`);
+        console.log(`[PanelsLogic] Path A: Found standard override price: ${price}.`);
       }
     }
   }

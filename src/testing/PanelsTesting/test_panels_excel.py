@@ -20,7 +20,7 @@ SECONDS_PER_TEST_CASE = 0.4
 
 DECIMAL_OPTIONS = [0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]
 HEIGHT_RANGE = (4, 77)
-WIDTH_RANGE = (4, 51)
+WIDTH_RANGE = (4, 77) # Increased to match the application's max width validation
 NUM_PANELS_RANGE = (2, 10)
 
 EXCEL_ERROR_STRINGS = [

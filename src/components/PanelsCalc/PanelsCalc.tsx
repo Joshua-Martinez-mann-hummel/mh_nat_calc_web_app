@@ -96,19 +96,19 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
       'Range of Link Width': pricingResult.rangeOfLinkWidth,
     };
 
-    // If there are errors, show them as a note and zero out prices.
-    if (pricingResult.errors.length > 0) {
-      result.Price = 0;
-      result['Carton Quantity'] = 0;
-      result['Carton Price'] = 0;
-    }
-
     const note =
       pricingResult.errors.length > 0
         ? pricingResult.errors.join(', ')
         : undefined;
 
-    return { displayResult: result, displayNote: note };
+    // If there are errors, show the first error as the price and zero out other fields.
+    if (note) {
+      result.Price = note;
+      result['Carton Quantity'] = 0;
+      result['Carton Price'] = 0;
+    }
+
+    return { displayResult: result, displayNote: undefined }; // Note is now part of the result.
   }, [pricingResult]);
 
   const handleAddToDashboard = () => {
@@ -242,7 +242,7 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
               <FormField label="Width (inches)">
                 <div className="flex space-x-2">
                   <select name="widthWhole" value={inputs.widthWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
-                    {generateIntList(3, 51).map((val) => (<option key={`w-int-${val}`} value={val}>{val}</option>))}
+                    {generateIntList(3, 77).map((val) => (<option key={`w-int-${val}`} value={val}>{val}</option>))}
                   </select>
                   <select name="widthFraction" value={inputs.widthFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
                     {[0, ...Array.from(data.fractionalCodes.keys())].map((val) => (<option key={`w-frac-${val}`} value={val}>{`${val}"`}</option>))}
