@@ -10,10 +10,10 @@ import type {
 } from '../data/PanelsData/panelsDataTypes';
 
 // Import CSV files as URL assets, which Vite will handle.
-import productInfoUrl from '/src/data/PanelsData/PanelsProductMaster.csv?url';
 import standardOverridesUrl from '/src/data/PanelsData/PanelsPriceExceptions.csv?url';
 import fractionalCodesUrl from '/src/data/PanelsData/PanelsFractionalCodes.csv?url';
 import linkTiersUrl from '/src/data/PanelsData/PanelsLinkTiers.csv?url';
+import productInfoUrl from '/src/data/PanelsData/PanelsProductMaster.csv?url';
 import customPriceListUrl from '/src/data/PanelsData/PanelsPricing.csv?url';
 
 /**
@@ -22,14 +22,15 @@ import customPriceListUrl from '/src/data/PanelsData/PanelsPricing.csv?url';
  * @param filePath The URL of the CSV file.
  * @returns A promise that resolves to an array of parsed objects.
  */
-const fetchAndParseCSV = <T>(filePath: string): Promise<T[]> => {
+const fetchAndParseCSV = <T>(filePath: string, configOverrides: Papa.ParseConfig = {}): Promise<T[]> => {
   return new Promise((resolve, reject) => {
-    Papa.parse<T>(filePath, {
+    const config: Papa.ParseConfig = {
       download: true,
       header: true,
       skipEmptyLines: true,
       dynamicTyping: true,
       transformHeader: (header) => header.trim(),
+      ...configOverrides,
       complete: (results) => {
         if (results.errors.length) {
           reject(
@@ -40,7 +41,8 @@ const fetchAndParseCSV = <T>(filePath: string): Promise<T[]> => {
         }
       },
       error: (error: any) => reject(new Error(`Failed to fetch ${filePath}: ${error.message}`)),
-    });
+    };
+    Papa.parse<T>(filePath, config);
   });
 };
 
@@ -59,16 +61,23 @@ export const loadPanelsData = async (): Promise<PanelsLinksData> => {
       linkTiersData,
       customPriceListData,
     ] = await Promise.all([
-      fetchAndParseCSV<{ productName: string; prefix: string }>(productInfoUrl),
+      // Fetch product info, disabling dynamic typing on 'prefix' to keep leading zeros.
+      fetchAndParseCSV<{ productName: string; prefix: string }>(productInfoUrl, {
+        dynamicTyping: { prefix: false },
+      }),
       fetchAndParseCSV<{ dimensionKey: string; price: string }>(standardOverridesUrl),
       fetchAndParseCSV<{ fraction: number; code: string }>(fractionalCodesUrl),
       fetchAndParseCSV<{ lengthMax: number; btnPanels: number }>(linkTiersUrl),
-      fetchAndParseCSV<PanelCustomPriceRow>(customPriceListUrl),
+      // Disable dynamic typing for the 'type' column to preserve leading zeros (e.g., "031").
+      // This ensures the prefix remains a string and matches the hard-coded productInfo map.
+      fetchAndParseCSV<PanelCustomPriceRow>(customPriceListUrl, {
+        dynamicTyping: { type: false },
+      }),
     ]);
 
-    // 1. Product Info: Map<productName, prefix>
+    // 1. Product Info: Map<productName, prefix> from CSV
     const productInfo = new Map<string, string>(
-      productInfoData.map((item) => [item.productName, String(item.prefix)])
+      productInfoData.map((item) => [item.productName, item.prefix])
     );
 
     // 2. Standard Overrides: Map<dimensionKey, price>

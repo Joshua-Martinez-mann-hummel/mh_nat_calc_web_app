@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:logic": "rimraf ./dist/logic && tsc --project tsconfig.logic.json",
+    "build:logic": "rimraf ./dist/logic && tsc --build --force tsconfig.logic.json",
     "lint": "eslint .",
     "preview": "vite preview",
     "test:pleatsExcel": "rimraf ./src/testing/PleatsTesting/results_pleats_excel.csv && python ./src/testing/PleatsTesting/test_pleats_excel.py",
@@ -20,7 +20,11 @@
     "test:padsExcel": "rimraf ./src/testing/PadsTesting/results_pads_excel.csv && python ./src/testing/PadsTesting/test_pads_excel.py",
     "test:padsLogic": "npm run build:logic && rimraf ./src/testing/PadsTesting/results_pads_app.csv && python ./src/testing/PadsTesting/test_pads_logic.py",
     "test:padsCompare": "rimraf ./src/testing/PadsTesting/comparison_summary.csv && python ./src/testing/PadsTesting/compare_pads_results.py",
-    "test:all:pads": "npm run test:padsExcel && npm run test:padsLogic && npm run test:padsCompare"
+    "test:all:pads": "npm run test:padsExcel && npm run test:padsLogic && npm run test:padsCompare",
+    "test:panelsExcel": "rimraf ./src/testing/PanelsTesting/results_panels_excel.csv && python ./src/testing/PanelsTesting/test_panels_excel.py",
+    "test:panelsLogic": "npm run build:logic && rimraf ./src/testing/PanelsTesting/results_panels_app.csv && python ./src/testing/PanelsTesting/test_panels_logic.py",
+    "test:panelsCompare": "rimraf ./src/testing/PanelsTesting/comparison_summary.csv && python ./src/testing/PanelsTesting/compare_panels_results.py",
+    "test:all:panels": "npm run test:panelsExcel && npm run test:panelsLogic && npm run test:panelsCompare"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",
@@ -40,6 +44,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.4.0",
+    "rimraf": "^6.1.0",
     "tailwindcss": "^4.1.13",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.44.0",

@@ -56,4 +56,5 @@ export interface PanelsLinksResult {
   cartonQty: number;
   cartonPrice: number;
   errors: string[];
+  debugInfo: object;
 }

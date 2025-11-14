@@ -1,0 +1,1633 @@
+productFamily,addOn,type,isExact,numberOfPanels,heightWhole,heightFraction,widthWhole,widthFraction,rangeOfLinkWidth,partNumber,price,cartonQty,cartonPrice
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,7,0.0,49,0.75,,03107E49GE01,4.91,12.0,58.92
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,13,0.5,46,0.625,,03113DE46FE01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,17,0.625,25,0.75,,03117FE25GE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,16,0.25,7,0.125,,03107BE16AE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,8,0.625,7,0.625,,03107FE08FE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,17,0.75,40,0.875,,03117GE40HE01,5.53,12.0,66.36
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,5,0.625,17,0.25,,03105FE17BE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,13,0.875,22,0.625,,03113HE22FE01,3.98,12.0,47.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,10,0.125,13,0.125,,03110AE13AE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,19,0.875,14,0.0,,03114HE19E01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,24,0.125,45,0.625,,03124AE45FE01,5.75,12.0,69.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,8,0.5,36,0.875,,03108DE36HE01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,11,0.25,34,0.625,,03111BE34FE01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,23,0.75,13,0.625,,03113GE23FE01,3.98,12.0,47.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.625,36,0.75,,03112FE36GE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,5,0.5,32,0.0,,03105DE32E01,4.37,12.0,52.44
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,15,0.5,13,0.875,,03113DE15HE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,10,0.125,9,0.0,,03109AE10E01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,9,0.625,4,0.75,,03104FE09GE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,21,0.5,12,0.625,,03112DE21FE01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,17,0.125,21,0.0,,03117AE21E01,4.07,12.0,48.84
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,20,0.625,26,0.0,,03120FE26E01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,11,0.375,45,0.375,,03111CE45CE01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,24,0.0,40,0.25,,03124E40BE01,5.53,12.0,66.36
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,8,0.125,27,0.125,,03108AE27AE01,4.37,12.0,52.44
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.5,21,0.0,,03112DE21E01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.25,37,0.875,,03112BE37HE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,17,0.0,16,0.875,,03116E17HE01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,6,0.625,12,0.875,,03106FE12HE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,20,0.375,10,0.25,,03110CE20BE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,8,0.125,44,0.0,,03108AE44E01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.125,31,0.0,,03112AE31E01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,23,0.125,28,0.75,,03123AE28GE01,5.06,12.0,60.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,5,0.375,12,0.875,,03105CE12HE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,19,0.25,8,0.75,,03108BE19GE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,14,0.875,30,0.375,,03114HE30CE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,9,0.0,11,0.0,,03109E11E01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,24,0.0,26,0.5,,03124E26DE01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,10,0.25,45,0.5,,03110BE45DE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.0,26,0.375,,03112E26CE01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,19,0.625,33,0.875,,03119FE33HE01,5.06,12.0,60.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,13,0.875,31,0.5,,03113HE31DE01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,20,0.125,30,0.625,,03120AE30FE01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,7,0.5,23,0.0,,03107DE23E01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,16,0.5,50,0.5,,03116DE50DE01,5.85,12.0,70.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,10,0.75,6,0.375,,03106GE10CE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,8,0.5,31,0.125,,03108DE31AE01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,7,0.125,51,0.125,,03107AE51AE01,4.91,12.0,58.92
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,9,0.75,38,0.25,,03109GE38BE01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,12,0.25,11,0.25,,03111BE12BE01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,17,0.125,20,0.625,,03117A20F01,4.07,12.0,48.84
+Tri-Dek FC Panel,None (Standard),Panel,No,1,19,0.5,46,0.0,,03119D4601,5.53,12.0,66.36
+Tri-Dek FC Panel,None (Standard),Panel,No,1,6,0.875,16,0.625,,03106H16F01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,10,0.875,6,0.0,,03106H1001,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,8,0.5,37,0.5,,03108D37D01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,22,0.0,12,0.5,,0311222D01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,23,0.125,15,0.75,,03115A23G01,4.07,12.0,48.84
+Tri-Dek FC Panel,None (Standard),Panel,No,1,14,0.375,50,0.625,,03114C50F01,5.38,12.0,64.56
+Tri-Dek FC Panel,None (Standard),Panel,No,1,12,0.375,46,0.875,,03112C46H01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,14,0.5,41,0.25,,03114D41B01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,13,0.5,43,0.375,,03113D43C01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,15,0.375,4,0.125,,03104C15A01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,4,0.25,22,0.75,,03104B22G01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,22,0.25,7,0.625,,03107B22F01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,22,0.5,10,0.125,,03110D22A01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,17,0.125,42,0.75,,03117A42G01,5.53,12.0,66.36
+Tri-Dek FC Panel,None (Standard),Panel,No,1,14,0.875,14,0.0,,03114H1401,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,4,0.25,7,0.25,,03104B07B01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,20,0.25,4,0.875,,03104B20H01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,11,0.875,22,0.875,,03111H22H01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,24,0.625,7,0.375,,03107F24C01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,11,0.0,38,0.75,,0311138G01,4.75,12.0,57.0
+Tri-Dek FC Panel,None (Standard),Panel,No,1,19,0.0,17,0.625,,0311719F01,3.98,12.0,47.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,17,0.375,48,0.125,,03117C48A01,5.85,12.0,70.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,18,0.75,35,0.75,,03118G35G01,5.06,12.0,60.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,13,0.25,10,0.625,,03110B13F01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,23,0.625,10,0.625,,03110F23F01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,20,0.625,39,0.5,,03120F39D01,5.53,12.0,66.36
+Tri-Dek FC Panel,None (Standard),Panel,No,1,22,0.625,12,0.375,,03112F22C01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,7,0.25,49,0.5,,03107B49D01,4.91,12.0,58.92
+Tri-Dek FC Panel,None (Standard),Panel,No,1,10,0.25,18,0.875,,03110B18H01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,15,0.875,12,0.375,,03112H15C01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,19,0.0,49,0.75,,0311949G01,5.85,12.0,70.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,14,0.375,39,0.25,,03114C39B01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,7,0.5,8,0.125,,03107D08A01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,24,0.0,24,0.125,,0312424A01,4.41,12.0,52.92
+Tri-Dek FC Panel,None (Standard),Panel,No,1,9,0.75,28,0.5,,03109G28D01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,7,0.875,4,0.5,,03104H07D01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,9,0.25,31,0.25,,03109B31B01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,15,0.75,15,0.25,,03115G15B01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,9,0.25,34,0.625,,03109B34F01,4.6,12.0,55.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,12,0.0,47,0.0,,031124701,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,7,0.75,9,0.75,,03107G09G01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,12,0.375,49,0.5,,03112C49D01,5.15,12.0,61.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,19,0.625,25,0.625,,03119F25F01,4.98,12.0,59.76
+Tri-Dek FC Panel,None (Standard),Panel,No,1,20,0.125,14,0.625,,03114A20F01,3.9,12.0,46.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,24,0.375,17,0.625,,03117C24F01,4.15,12.0,49.8
+Tri-Dek FC Panel,None (Standard),Panel,No,1,6,0.375,12,0.875,,03106C12H01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Panel,No,1,18,0.25,48,0.125,,03118B48A01,5.85,12.0,70.2
+Tri-Dek FC Panel,None (Standard),Panel,No,1,24,0.0,8,0.125,,0310824A01,3.81,12.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,17,0.25,49,0.5,"95-101""",03117BE49DE02,11.7,6.0,70.2
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,24,0.875,18,0.875,"157-167""",03124HE18HE09,38.16,1.0,38.16
+Tri-Dek FC Panel,None (Standard),Link,Yes,4,5,0.5,17,0.375,"66-70""",03105DE17CE04,15.24,3.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,14,0.25,27,0.625,"238-248""",03114BE27FE09,41.4,1.0,41.4
+Tri-Dek FC Panel,None (Standard),Link,Yes,10,14,0.25,16,0.5,"155-165""",03114BE16DE10,38.1,1.0,38.1
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,14,0.375,42,0.0,"373-383""",03114CE42E09,44.82,1.0,44.82
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,6,0.125,27,0.625,"52-56""",03106AE27FE02,8.74,6.0,52.44
+Tri-Dek FC Panel,None (Standard),Link,Yes,6,5,0.375,7,0.875,"41-43""",03105CE07HE06,22.86,2.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,15,0.625,22,0.0,"106-114""",03115FE22E05,19.9,2.0,39.8
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,17,0.375,12,0.25,"93-99""",03117CE12BE08,30.48,1.0,30.48
+Tri-Dek FC Panel,None (Standard),Link,Yes,6,16,0.75,5,0.875,"29-31""",03116GE05HE06,22.86,2.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,10,18,0.375,18,0.625,"175-185""",03118CE18FE10,39.8,1.0,39.8
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,12,0.625,5,0.5,"39-41""",03112FE05DE08,30.48,1.0,30.48
+Tri-Dek FC Panel,None (Standard),Link,Yes,7,4,0.375,19,0.0,"128-138""",03104CE19E07,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,Yes,3,24,0.125,43,0.0,"124-134""",03124AE43E03,17.25,4.0,69.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,21,0.125,16,0.125,"123-133""",03121AE16AE08,31.84,1.0,31.84
+Tri-Dek FC Panel,None (Standard),Link,Yes,6,7,0.125,24,0.0,"139-149""",03107AE24E06,22.86,2.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,16,0.375,49,0.5,"95-101""",03116CE49DE02,11.7,6.0,70.2
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,17,0.125,25,0.75,"195-205""",03117AE25GE08,38.0,1.0,38.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,14,0.75,37,0.625,"72-76""",03114GE37FE02,9.96,6.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,4,0.0,34,0.0,"301-311""",03104E34E09,39.33,1.0,39.33
+Tri-Dek FC Panel,None (Standard),Link,Yes,4,22,0.125,11,0.0,"43-45""",03122AE11E04,15.24,3.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,12,0.875,45,0.0,"355-365""",03112HE45E08,39.84,1.0,39.84
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,8,0.25,16,0.875,"139-149""",03108BE16HE09,34.29,1.0,34.29
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,10,0.0,27,0.5,"130-140""",03110E27DE05,23.0,2.0,46.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,6,5,0.5,47,0.625,"277-287""",03105DE47FE06,27.6,2.0,55.2
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,12,0.0,12,0.875,"23-25""",03112E12HE02,7.62,6.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,4,17,0.875,29,0.375,"112-120""",03117HE29CE04,19.92,3.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,9,0.375,34,0.25,"301-311""",03109CE34BE09,41.4,1.0,41.4
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,20,0.75,48,0.625,"379-389""",03120GE48FE08,46.8,1.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,11,0.375,34,0.25,"165-175""",03111CE34BE05,23.0,2.0,46.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,23,0.5,4,0.5,"19-21""",03123DE04DE05,19.05,2.0,38.1
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,16,0.5,12,0.125,"58-62""",03116DE12AE05,19.05,2.0,38.1
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,20,0.25,30,0.75,"58-62""",03120BE30GE02,9.96,6.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,17,0.25,17,0.25,"82-88""",03117BE17BE05,19.5,2.0,39.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,3,21,0.625,46,0.125,"133-143""",03121FE46AE03,16.59,4.0,66.36
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,22,0.0,23,0.375,"45-47""",03122E23CE02,8.66,6.0,51.96
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,9,0.625,50,0.375,"395-405""",03109FE50CE08,39.28,1.0,39.28
+Tri-Dek FC Panel,None (Standard),Link,Yes,8,21,0.25,23,0.375,"179-189""",03121BE23CE08,33.92,1.0,33.92
+Tri-Dek FC Panel,None (Standard),Link,Yes,10,13,0.75,24,0.875,"235-245""",03113GE24HE10,39.8,1.0,39.8
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,11,0.5,29,0.375,"256-266""",03111DE29CE09,41.4,1.0,41.4
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,21,0.5,30,0.75,"265-275""",03121DE30GE09,45.54,1.0,45.54
+Tri-Dek FC Panel,None (Standard),Link,Yes,10,22,0.375,12,0.875,"116-124""",03122CE12HE10,39.0,1.0,39.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,6,5,0.25,17,0.625,"99-105""",03105BE17FE06,22.86,2.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,12,0.875,25,0.375,"121-129""",03112HE25CE05,23.0,2.0,46.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,5,21,0.625,45,0.375,"220-230""",03121FE45CE05,27.65,2.0,55.3
+Tri-Dek FC Panel,None (Standard),Link,Yes,3,17,0.375,9,0.25,"26-28""",03117CE09BE03,11.43,4.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,6,0.125,8,0.5,"70-74""",03106AE08DE09,34.29,1.0,34.29
+Tri-Dek FC Panel,None (Standard),Link,Yes,7,8,0.75,11,0.75,"74-80""",03108GE11GE07,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,Yes,9,6,0.25,30,0.125,"265-275""",03106BE30AE09,39.33,1.0,39.33
+Tri-Dek FC Panel,None (Standard),Link,No,3,13,0.75,21,0.5,"61-65""",03113G21D03,11.7,4.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,No,6,14,0.875,18,0.5,"104-112""",03114H18D06,23.4,2.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,No,7,21,0.75,11,0.0,"74-80""",03121G1107,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,No,3,12,0.75,17,0.375,"49-53""",03112G17C03,11.43,4.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,No,8,21,0.5,41,0.125,"323-333""",03121D41A08,44.24,1.0,44.24
+Tri-Dek FC Panel,None (Standard),Link,No,3,6,0.75,14,0.0,"41-43""",03106G1403,11.43,4.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,No,7,17,0.75,42,0.5,"289-299""",03117G42D07,38.71,1.0,38.71
+Tri-Dek FC Panel,None (Standard),Link,No,2,24,0.5,33,0.25,"64-68""",03124D33B02,11.06,6.0,66.36
+Tri-Dek FC Panel,None (Standard),Link,No,8,21,0.5,42,0.5,"331-341""",03121D42D08,44.24,1.0,44.24
+Tri-Dek FC Panel,None (Standard),Link,No,5,20,0.125,28,0.375,"135-145""",03120A28C05,24.9,2.0,49.8
+Tri-Dek FC Panel,None (Standard),Link,No,9,13,0.375,31,0.625,"274-284""",03113C31F09,42.75,1.0,42.75
+Tri-Dek FC Panel,None (Standard),Link,No,7,7,0.0,42,0.25,"289-299""",0310742B07,32.2,1.0,32.2
+Tri-Dek FC Panel,None (Standard),Link,No,6,14,0.0,40,0.5,"235-245""",0311440D06,29.88,2.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,No,8,18,0.625,9,0.875,"70-74""",03118F09H08,30.48,1.0,30.48
+Tri-Dek FC Panel,None (Standard),Link,No,9,20,0.875,8,0.75,"70-74""",03120H08G09,34.29,1.0,34.29
+Tri-Dek FC Panel,None (Standard),Link,No,4,7,0.0,10,0.625,"39-41""",0310710F04,15.24,3.0,45.72
+Tri-Dek FC Panel,None (Standard),Link,No,6,22,0.875,23,0.375,"133-143""",03122H23C06,25.98,2.0,51.96
+Tri-Dek FC Panel,None (Standard),Link,No,7,4,0.875,17,0.625,"115-123""",03104H17F07,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,No,6,21,0.25,13,0.5,"75-81""",03121B13D06,23.4,2.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,No,9,16,0.25,16,0.125,"139-149""",03116B16A09,35.1,1.0,35.1
+Tri-Dek FC Panel,None (Standard),Link,No,10,15,0.625,34,0.5,"335-345""",03115F34D10,49.8,1.0,49.8
+Tri-Dek FC Panel,None (Standard),Link,No,7,11,0.25,9,0.25,"61-65""",03111B09B07,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,No,3,13,0.25,39,0.0,"113-121""",03113B3903,14.94,4.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,No,3,21,0.5,48,0.5,"139-149""",03121D48D03,17.55,4.0,70.2
+Tri-Dek FC Panel,None (Standard),Link,No,8,7,0.75,48,0.0,"379-389""",03107G4808,39.28,1.0,39.28
+Tri-Dek FC Panel,None (Standard),Link,No,9,13,0.25,25,0.125,"220-230""",03113B25A09,41.4,1.0,41.4
+Tri-Dek FC Panel,None (Standard),Link,No,3,23,0.875,18,0.125,"52-56""",03123H18A03,12.45,4.0,49.8
+Tri-Dek FC Panel,None (Standard),Link,No,6,14,0.625,18,0.5,"104-112""",03114F18D06,23.4,2.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,No,10,23,0.375,30,0.0,"295-305""",03123C3010,55.3,1.0,55.3
+Tri-Dek FC Panel,None (Standard),Link,No,8,9,0.0,18,0.75,"139-149""",0310918G08,30.48,1.0,30.48
+Tri-Dek FC Panel,None (Standard),Link,No,2,24,0.625,24,0.875,"47-49""",03124F24H02,8.82,6.0,52.92
+Tri-Dek FC Panel,None (Standard),Link,No,5,15,0.625,33,0.625,"160-170""",03115F33F05,24.9,2.0,49.8
+Tri-Dek FC Panel,None (Standard),Link,No,8,17,0.0,22,0.375,"171-181""",0311722C08,32.56,1.0,32.56
+Tri-Dek FC Panel,None (Standard),Link,No,5,4,0.125,21,0.875,"101-109""",03104A21H05,19.05,2.0,38.1
+Tri-Dek FC Panel,None (Standard),Link,No,3,18,0.625,32,0.625,"93-99""",03118F32F03,14.94,4.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,No,4,18,0.75,38,0.375,"147-157""",03118G38C04,22.12,3.0,66.36
+Tri-Dek FC Panel,None (Standard),Link,No,4,11,0.875,29,0.625,"112-120""",03111H29F04,18.4,3.0,55.2
+Tri-Dek FC Panel,None (Standard),Link,No,9,14,0.5,13,0.625,"113-121""",03114D13F09,34.29,1.0,34.29
+Tri-Dek FC Panel,None (Standard),Link,No,4,10,0.5,25,0.5,"97-103""",03110D25D04,18.4,3.0,55.2
+Tri-Dek FC Panel,None (Standard),Link,No,3,4,0.5,41,0.125,"119-127""",03104D41A03,13.11,4.0,52.44
+Tri-Dek FC Panel,None (Standard),Link,No,9,13,0.375,34,0.875,"301-311""",03113C34H09,42.75,1.0,42.75
+Tri-Dek FC Panel,None (Standard),Link,No,3,18,0.125,28,0.75,"81-87""",03118A28G03,14.94,4.0,59.76
+Tri-Dek FC Panel,None (Standard),Link,No,7,19,0.25,44,0.875,"303-313""",03119B44H07,38.71,1.0,38.71
+Tri-Dek FC Panel,None (Standard),Link,No,7,5,0.875,17,0.5,"115-123""",03105H17D07,26.67,1.0,26.67
+Tri-Dek FC Panel,None (Standard),Link,No,3,18,0.75,44,0.75,"127-137""",03118G44G03,16.59,4.0,66.36
+Tri-Dek FC Panel,None (Standard),Link,No,5,15,0.125,34,0.5,"165-175""",03115A34D05,24.9,2.0,49.8
+Tri-Dek FC Panel,None (Standard),Link,No,4,12,0.125,22,0.25,"85-91""",03112A22B04,15.6,3.0,46.8
+Tri-Dek FC Panel,None (Standard),Link,No,8,14,0.625,28,0.75,"219-229""",03114F28G08,38.0,1.0,38.0
+Tri-Dek FC Panel,None (Standard),Link,No,4,12,0.25,39,0.75,"151-161""",03112B39G04,19.0,3.0,57.0
+Tri-Dek FC Panel,None (Standard),Link,No,10,13,0.125,18,0.875,"175-185""",03113A18H10,38.1,1.0,38.1
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,15,0.875,18,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,8,0.125,32,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,20,0.25,38,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,14,0.625,13,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,22,0.375,8,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,24,0.0,45,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,20,0.0,29,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,7,0.375,49,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,6,0.5,22,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,20,0.875,27,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,9,0.875,29,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,12,0.25,14,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,11,0.75,50,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,21,0.0,27,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,10,0.25,43,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,16,0.375,19,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,23,0.875,40,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,19,0.125,8,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,10,0.25,8,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,13,0.375,32,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,16,0.5,10,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,20,0.875,8,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,21,0.625,8,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,23,0.125,7,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,19,0.375,10,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,24,0.75,41,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,11,0.625,42,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,16,0.5,32,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,10,0.875,18,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,24,0.75,17,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,15,0.625,37,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,4,0.0,31,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,9,0.25,45,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,6,0.375,26,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,11,0.875,43,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,12,0.25,21,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,13,0.875,7,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,20,0.875,23,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,12,0.0,25,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,11,0.875,4,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,11,0.5,19,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,22,0.125,32,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,15,0.75,12,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,7,0.0,37,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,6,0.625,49,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,4,0.25,22,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,15,0.5,20,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,24,0.0,46,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,22,0.75,29,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,Yes,1,13,0.625,35,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,7,0.125,4,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,8,0.25,10,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,14,0.0,43,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,18,0.125,9,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,21,0.625,19,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,16,0.5,32,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,5,0.5,32,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,8,0.25,32,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,17,0.625,37,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,16,0.75,29,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,11,0.875,20,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,5,0.125,9,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,9,0.625,37,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,12,0.75,5,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,4,0.125,46,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,21,0.625,17,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,24,0.5,33,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,23,0.25,34,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,17,0.0,39,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,20,0.0,46,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,12,0.5,8,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,18,0.625,22,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,8,0.375,47,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,5,0.625,24,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,22,0.625,44,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,9,0.5,11,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,20,0.125,40,0.625,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,7,0.25,12,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,22,0.75,14,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,18,0.5,16,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,16,0.125,11,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,12,0.125,46,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,12,0.375,22,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,20,0.625,35,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,20,0.25,12,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,23,0.5,28,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,10,0.625,13,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,22,0.0,31,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,17,0.125,31,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,17,0.875,25,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,20,0.25,45,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,6,0.5,9,0.125,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,10,0.625,24,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,4,0.25,50,0.375,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,14,0.625,30,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,18,0.375,33,0.5,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,21,0.25,51,0.0,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,24,0.25,39,0.875,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,6,0.375,9,0.25,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Panel,No,1,6,0.25,10,0.75,,FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,2,5,0.75,36,0.625,"70-74""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,22,0.5,9,0.125,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,14,0.875,4,0.125,"19-21""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,2,10,0.625,14,0.125,"27-29""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,10,0.0,18,0.25,"104-112""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,15,0.75,51,0.375,"352-362""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,9,0.625,49,0.125,"240-250""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,7,0.625,38,0.125,"375-385""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,10,0.5,51,0.5,"301-311""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,2,11,0.625,38,0.25,"74-78""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,2,10,0.875,6,0.0,"11-13""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,8,19,0.125,50,0.875,"395-405""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,10,0.25,30,0.25,"145-155""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,9,4,0.75,45,0.0,"400-410""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,22,0.625,24,0.375,"139-149""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,2,18,0.875,11,0.375,"21-23""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,14,0.0,18,0.25,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,5,0.5,44,0.375,"259-269""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,19,0.25,40,0.625,"395-405""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,7,0.75,33,0.25,"226-236""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,5,0.5,49,0.125,"289-299""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,8,14,0.125,6,0.5,"47-49""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,20,0.75,27,0.875,"184-194""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,23,0.625,10,0.0,"58-62""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,8,0.25,10,0.0,"49-51""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,4,0.125,43,0.375,"210-220""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,9,16,0.0,35,0.25,"310-320""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,9,21,0.5,4,0.75,"35-37""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,12,0.125,26,0.25,"255-265""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,9,0.0,6,0.375,"35-37""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,21,0.25,7,0.5,"34-36""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,9,20,0.0,28,0.25,"247-257""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,3,4,0.25,10,0.0,"29-31""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,12,0.625,9,0.875,"52-56""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,8,24,0.75,17,0.875,"131-141""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,20,0.875,12,0.625,"116-124""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,20,0.375,33,0.625,"160-170""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,10,11,0.0,47,0.5,"465-475""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,17,0.125,42,0.125,"247-257""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,17,0.25,25,0.125,"145-155""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,4,0.875,25,0.75,"170-180""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,12,0.25,4,0.875,"27-29""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,19,0.25,18,0.75,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,8,14,0.5,49,0.0,"387-397""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,3,12,0.125,24,0.875,"70-74""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,7,14,0.625,27,0.375,"184-194""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,6,23,0.25,26,0.75,"151-161""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,4,0.0,5,0.625,"24-26""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,5,16,0.625,10,0.875,"49-51""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,Yes,3,15,0.875,12,0.125,"35-37""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,5,0.5,46,0.375,"409-419""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,10,13,0.75,17,0.875,"165-175""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,24,0.5,24,0.125,"163-173""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,6,19,0.875,11,0.0,"64-68""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,6,17,0.875,42,0.75,"247-257""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,10,0.625,19,0.875,"55-59""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,12,0.875,35,0.5,"240-250""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,21,0.75,26,0.5,"75-81""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,12,0.125,50,0.125,"345-355""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,10,13,0.625,49,0.25,"485-495""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,22,0.75,13,0.75,"88-94""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,21,0.375,48,0.75,"139-149""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,6,24,0.125,10,0.125,"58-62""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,19,0.375,11,0.625,"32-34""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,11,0.625,46,0.75,"133-143""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,4,7,0.25,24,0.875,"93-99""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,8,0.625,15,0.125,"44-46""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,5,5,0.875,27,0.0,"130-140""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,5,13,0.5,44,0.875,"215-225""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,2,17,0.5,45,0.875,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,4,20,0.625,46,0.625,"179-189""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,20,0.0,7,0.875,"61-65""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,5,5,0.25,42,0.5,"205-215""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,15,0.625,30,0.75,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,8,7,0.875,22,0.5,"171-181""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,5,18,0.125,18,0.0,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,8,12,0.0,17,0.125,"131-141""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,24,0.0,49,0.625,"338-348""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,19,0.875,10,0.75,"87-93""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,11,0.25,6,0.25,"17-19""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,6,17,0.0,26,0.125,"151-161""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,4,9,0.75,26,0.0,"100-108""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,6,10,0.875,7,0.625,"41-43""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,2,20,0.25,7,0.375,"13-15""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,4,15,0.5,30,0.875,"116-124""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,14,0.5,43,0.125,"124-134""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,5,10,0.375,24,0.5,"116-124""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,2,8,0.125,34,0.375,"66-70""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,7,17,0.875,34,0.5,"233-243""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,8,11,0.0,21,0.5,"163-173""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,13,0.875,22,0.25,"193-203""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,4,0.125,30,0.375,"265-275""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,10,21,0.625,10,0.625,"97-103""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,9,6,0.875,44,0.0,"391-401""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,3,5,0.5,45,0.0,"130-140""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,10,4,0.125,26,0.875,"255-265""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,4,18,0.875,17,0.5,"66-70""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,8,20,0.0,51,0.25,"403-413""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,2,19,0.375,39,0.125,"75-81""",FALSE,0.0,0.0,0.0
+Tri-Dek FC Panel,Antimicrobial,Link,No,8,9,0.5,9,0.5,"70-74""",FALSE,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,23,0.875,18,0.5,,05418HE23DE01,4.89,12.0,58.68
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,27,0.125,38,0.25,,05427AE38BE01,10.43,12.0,125.16
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,40,0.125,18,0.0,,05418AE40E01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,37,0.75,45,0.125,,05437GE45AE01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,37,0.75,47,0.625,,05437GE47FE01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,25,0.5,50,0.875,,05425DE50HE01,11.32,12.0,135.84
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,30,0.75,50,0.75,,05430GE50GE01,13.1,12.0,157.2
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,35,0.875,32,0.125,,05432HE35AE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,19,0.0,25,0.125,,05419E25AE01,5.59,12.0,67.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,14,0.625,9,0.0,,05409FE14E01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,36,0.75,46,0.875,,05436GE46HE01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,12,0.375,28,0.0,,05412CE28E01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,25,0.0,45,0.75,,05425E45GE01,11.32,12.0,135.84
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,30,0.875,10,0.25,,05410HE30BE01,7.09,12.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,44,0.875,24,0.625,,05424HE44FE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,44,0.0,28,0.5,,05428E44DE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,51,0.25,19,0.0,,05419BE51E01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,9,0.0,11,0.5,,05409E11DE01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,18,0.875,45,0.625,,05418HE45FE01,6.5,12.0,78.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,15,0.375,41,0.875,,05415CE41HE01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,4,0.625,6,0.875,,05404FE06HE01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,27,0.75,37,0.0,,05427GE37E01,10.43,12.0,125.16
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,22,0.25,18,0.125,,05418BE22AE01,4.89,12.0,58.68
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,12,0.0,42,0.75,,05412E42GE01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,37,0.125,8,0.375,,05408AE37CE01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,38,0.75,24,0.125,,05424GE38AE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,50,0.375,17,0.0,,05417CE50E01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,38,0.625,32,0.25,,05432FE38BE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,33,0.5,25,0.375,,05425DE33CE01,9.76,12.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,7,0.375,45,0.5,,05407CE45DE01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,46,0.125,36,0.0,,05436AE46E01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,32,0.125,7,0.0,,05407AE32E01,7.09,12.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,25,0.625,46,0.125,,05425FE46AE01,11.32,12.0,135.84
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,16,0.5,38,0.25,,05416DE38BE01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,42,0.125,33,0.625,,05433AE42FE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,8,0.125,45,0.5,,05408AE45DE01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,25,0.5,33,0.25,,05425DE33BE01,9.76,12.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,15,0.25,47,0.375,,05415BE47CE01,6.5,12.0,78.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,30,0.25,36,0.75,,05430BE36GE01,11.32,12.0,135.84
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,26,0.625,35,0.75,,05426FE35GE01,10.43,12.0,125.16
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,10,0.75,40,0.625,,05410GE40FE01,5.59,12.0,67.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,33,0.5,26,0.625,,05426DE33FE01,9.76,12.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,51,0.0,25,0.625,,05425E51FE01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,46,0.0,39,0.125,,05439E46AE01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,50,0.625,43,0.0,,05443FE50E01,21.85,12.0,262.2
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,7,0.25,45,0.625,,05407BE45FE01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,45,0.5,8,0.25,,05408DE45BE01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,20,0.625,51,0.625,,05420FE51FE01,6.88,12.0,82.56
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,20,0.25,39,0.75,,05420BE39GE01,6.5,12.0,78.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,11,0.375,13,0.375,,05411CE13CE01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,9,0.75,41,0.75,,05409G41G01,5.59,12.0,67.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,35,0.75,37,0.875,,05435G37H01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,22,0.5,12,0.625,,05412D22F01,4.59,12.0,55.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,38,0.25,9,0.875,,05409B38H01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,29,0.875,28,0.375,,05428H29C01,9.76,12.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,4,0.125,13,0.75,,05404A13G01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,31,0.25,5,0.625,,05405B31F01,7.09,12.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,9,0.625,25,0.375,,05409F25C01,5.14,12.0,61.68
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,36,0.5,31,0.375,,05431D36C01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,22,0.875,25,0.125,,05422H25A01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,16,0.625,35,0.875,,05416F35H01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,44,0.125,12,0.875,,05412A44H01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,43,0.0,12,0.75,,0541243G01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,35,0.125,33,0.25,,05433A35B01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,41,0.25,40,0.0,,05440B4101,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,36,0.5,32,0.625,,05432D36F01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,8,0.75,4,0.75,,05404G08G01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,12,0.5,28,0.25,,05412D28B01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,28,0.0,13,0.75,,0541328G01,7.75,12.0,93.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,28,0.125,9,0.125,,05409A28A01,7.09,12.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,37,0.25,21,0.375,,05421B37C01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,36,0.25,31,0.375,,05431B36C01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,9,0.125,28,0.5,,05409A28D01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,51,0.0,9,0.375,,0540951C01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,34,0.625,35,0.0,,05434F3501,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,16,0.5,19,0.0,,05416D1901,4.68,12.0,56.16
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,45,0.375,13,0.125,,05413C45A01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,38,0.625,11,0.0,,05411F3801,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,8,0.875,15,0.0,,05408H1501,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,36,0.375,51,0.0,,05436C5101,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,40,0.125,11,0.0,,05411A4001,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,32,0.625,15,0.0,,05415F3201,7.75,12.0,93.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,12,0.75,26,0.375,,05412G26C01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,50,0.125,8,0.625,,05408A50F01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,15,0.25,49,0.375,,05415B49C01,6.33,12.0,75.96
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,8,0.5,24,0.75,,05408D24G01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,37,0.625,20,0.0,,05420F3701,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,10,0.5,22,0.5,,05410D22D01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,11,0.125,45,0.5,,05411A45D01,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,49,0.25,38,0.125,,05438B49A01,18.55,12.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,7,0.5,15,0.25,,05407D15B01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,33,0.125,25,0.625,,05425A33F01,9.76,12.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,7,0.875,33,0.5,,05407H33D01,5.41,12.0,64.92
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,28,0.625,10,0.125,,05410F28A01,7.09,12.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,29,0.25,19,0.0,,05419B2901,8.42,12.0,101.04
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,13,0.875,13,0.625,,05413H13F01,4.49,12.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,13,0.75,42,0.0,,05413G4201,5.86,12.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,43,0.25,16,0.625,,05416B43F01,15.26,12.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,43,0.375,5,0.5,,05405C43D01,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,No,1,38,0.0,7,0.0,,054073801,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,6,34,0.375,13,0.0,"75-81""",05434CE13E06,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,15,0.125,8,0.25,"70-74""",05415AE08BE09,40.41,1.0,40.41
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,4,28,0.5,38,0.375,"147-157""",05428DE38CE04,41.72,3.0,125.16
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,30,0.5,30,0.5,"87-93""",05430DE30DE03,29.28,4.0,117.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,28,0.125,6,0.875,"47-49""",05428AE06HE08,56.72,1.0,56.72
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,6,0.75,47,0.375,"230-240""",05406GE47CE05,27.05,2.0,54.1
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,20,0.625,27,0.25,"78-84""",05420FE27BE03,17.58,4.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,22,0.875,43,0.625,"210-220""",05422HE43FE05,32.5,2.0,65.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,35,0.0,41,0.375,"364-374""",05435E41CE09,137.34,1.0,137.34
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,19,0.0,15,0.375,"73-77""",05419E15CE05,22.95,2.0,45.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,30,0.5,23,0.125,"111-119""",05430DE23AE05,45.45,2.0,90.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,4,20,0.875,31,0.75,"120-128""",05420HE31GE04,23.8,3.0,71.4
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,7,10,0.25,30,0.125,"205-215""",05410BE30AE07,37.87,1.0,37.87
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,50,0.75,48,0.5,"139-149""",05450GE48DE03,65.55,4.0,262.2
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,11,0.0,39,0.25,"113-121""",05411E39BE03,16.77,4.0,67.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,10,41,0.25,51,0.75,"505-515""",05441BE51GE10,218.5,1.0,218.5
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,7,0.875,27,0.5,"238-248""",05407HE27DE09,46.26,1.0,46.26
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,7,23,0.875,12,0.875,"81-87""",05423HE12HE07,32.76,1.0,32.76
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,4,42,0.5,4,0.75,"15-17""",05442DE04GE04,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,7,28,0.125,44,0.375,"303-313""",05428AE44CE07,79.24,1.0,79.24
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,48,0.5,43,0.125,"83-89""",05448DE43AE02,43.7,6.0,262.2
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,7,42,0.0,29,0.5,"198-208""",05442E29DE07,106.82,1.0,106.82
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,7,51,0.0,27,0.5,"184-194""",05451E27DE07,106.82,1.0,106.82
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,51,0.0,23,0.5,"202-212""",05451E23DE09,137.34,1.0,137.34
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,26,0.125,31,0.5,"243-253""",05426AE31DE08,78.08,1.0,78.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,20,0.875,25,0.5,"220-230""",05420HE25DE09,52.74,1.0,52.74
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,30,0.0,7,0.75,"34-36""",05430E07GE05,35.45,2.0,70.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,36,0.5,49,0.5,"436-446""",05436DE49DE09,166.95,1.0,166.95
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,15,0.0,41,0.625,"200-210""",05415E41FE05,29.3,2.0,58.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,8,0.75,20,0.125,"97-103""",05408GE20AE05,22.45,2.0,44.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,21,0.5,31,0.0,"149-161""",05421DE31E05,29.75,2.0,59.5
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,28,0.375,35,0.625,"68-72""",05428CE35FE02,20.86,6.0,125.16
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,12,0.0,29,0.0,"227-237""",05412E29E08,43.28,1.0,43.28
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,16,0.25,8,0.625,"23-25""",05416BE08FE03,13.47,4.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,3,39,0.375,11,0.5,"32-34""",05439CE11DE03,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,40,0.5,35,0.125,"310-320""",05440DE35AE09,137.34,1.0,137.34
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,19,0.875,44,0.0,"85-91""",05419HE44E02,13.0,6.0,78.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,10,36,0.75,32,0.875,"315-325""",05436GE32HE10,152.6,1.0,152.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,32,0.25,18,0.0,"35-37""",05432BE18E02,16.84,6.0,101.04
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,19,0.875,17,0.125,"131-141""",05419HE17AE08,37.44,1.0,37.44
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,9,37,0.25,27,0.375,"238-248""",05437BE27CE09,137.34,1.0,137.34
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,6,46,0.625,22,0.25,"127-137""",05446FE22BE06,91.56,2.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,6,6,0.75,26,0.625,"151-161""",05406GE26FE06,30.84,2.0,61.68
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,10,5,0.0,27,0.875,"265-275""",05405E27HE10,51.4,1.0,51.4
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,41,0.625,20,0.125,"155-165""",05441FE20AE08,122.08,1.0,122.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,12,0.5,44,0.25,"85-91""",05412DE44BE02,11.72,6.0,70.32
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,8,43,0.875,27,0.625,"211-221""",05443HE27FE08,122.08,1.0,122.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,10,11,0.625,11,0.75,"106-114""",05411FE11GE10,44.9,1.0,44.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,4,37,0.625,12,0.125,"47-49""",05437FE12AE04,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,5,31,0.25,25,0.125,"121-129""",05431BE25AE05,45.45,2.0,90.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,38,0.125,34,0.125,"199-209""",05438A34A06,91.56,2.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,5,51,0.0,4,0.0,"19-21""",054510405,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,10,17,0.75,13,0.125,"125-135""",05417G13A10,44.9,1.0,44.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,8,0.5,38,0.0,"299-309""",05408D3808,43.28,1.0,43.28
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,2,33,0.25,45,0.5,"87-93""",05433B45D02,26.2,6.0,157.2
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,9,44,0.25,27,0.25,"238-248""",05444B27B09,137.34,1.0,137.34
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,13,0.25,19,0.875,"110-118""",05413B19H06,27.54,2.0,55.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,39,0.25,42,0.625,"247-257""",05439B42F06,111.3,2.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,44,0.5,17,0.25,"131-141""",05444D17B08,122.08,1.0,122.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,50,0.5,7,0.75,"41-43""",05450D07G06,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,46,0.75,41,0.25,"119-127""",05446G41B03,55.65,4.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,10,21,0.0,25,0.875,"245-255""",0542125H10,58.6,1.0,58.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,25,0.0,46,0.375,"363-373""",0542546C08,90.56,1.0,90.56
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,9,26,0.0,22,0.375,"193-203""",0542622C09,75.78,1.0,75.78
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,36,0.375,36,0.375,"104-112""",05436C36C03,45.78,4.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,18,0.875,34,0.625,"267-277""",05418H34F08,47.6,1.0,47.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,10,35,0.75,34,0.0,"335-345""",05435G3410,152.6,1.0,152.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,10,0.5,38,0.375,"110-118""",05410D38C03,16.77,4.0,67.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,31,0.875,7,0.875,"20-22""",05431H07H03,21.27,4.0,85.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,42,0.875,11,0.25,"32-34""",05442H11B03,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,28,0.5,11,0.25,"74-80""",05428D11B07,49.63,1.0,49.63
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,33,0.875,16,0.875,"108-116""",05433H16H07,58.94,1.0,58.94
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,9,21,0.25,8,0.875,"70-74""",05421B08H09,40.41,1.0,40.41
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,39,0.875,19,0.125,"128-138""",05439H19A07,106.82,1.0,106.82
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,8,0.125,29,0.875,"227-237""",05408A29H08,41.12,1.0,41.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,5,25,0.5,9,0.5,"44-46""",05425D09D05,35.45,2.0,70.9
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,44,0.125,31,0.5,"212-222""",05444A31D07,106.82,1.0,106.82
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,25,0.625,10,0.875,"68-72""",05425F10H07,49.63,1.0,49.63
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,45,0.75,8,0.375,"23-25""",05445G08C03,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,10,30,0.75,27,0.75,"265-275""",05430G27G10,97.6,1.0,97.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,12,0.875,10,0.75,"29-31""",05412H10G03,13.47,4.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,37,0.125,31,0.125,"243-253""",05437A31A08,122.08,1.0,122.08
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,39,0.0,6,0.5,"47-49""",0543906D08,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,2,8,0.125,25,0.625,"49-51""",05408A25F02,10.28,6.0,61.68
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,30,0.625,36,0.875,"211-221""",05430F36H06,67.92,2.0,135.84
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,2,46,0.375,37,0.5,"72-76""",05446C37D02,37.1,6.0,222.6
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,4,50,0.875,40,0.375,"155-165""",05450H40C04,87.4,3.0,262.2
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,9,13,0.875,47,0.25,"418-428""",05413H47B09,53.55,1.0,53.55
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,43,0.375,27,0.375,"157-167""",05443C27C06,91.56,2.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,6,0.0,5,0.5,"39-41""",0540605D08,35.92,1.0,35.92
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,4,34,0.375,7,0.0,"27-29""",05434C0704,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,14,0.0,39,0.25,"268-278""",0541439B07,41.02,1.0,41.02
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,17,0.5,9,0.5,"26-28""",05417D09D03,13.47,4.0,53.88
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,8,12,0.625,5,0.0,"39-41""",05412F0508,35.92,1.0,35.92
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,28,0.75,14,0.125,"41-43""",05428G14A03,23.25,4.0,93.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,6,38,0.375,33,0.5,"193-203""",05438C33D06,91.56,2.0,183.12
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,3,22,0.125,23,0.125,"67-71""",05422A23A03,15.24,4.0,60.96
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,9,19,0.875,41,0.125,"364-374""",05419H41A09,58.5,1.0,58.5
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,7,17,0.125,51,0.0,"352-362""",05417A5107,48.16,1.0,48.16
+Tri-Dek 3/67 2-Ply,None (Standard),Link,No,2,41,0.5,35,0.25,"68-72""",05441D35B02,30.52,6.0,183.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,19,0.25,46,0.875,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,6,0.375,21,0.25,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,33,0.5,7,0.0,,FALSE,7.37,12.0,88.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,33,0.375,37,0.625,,FALSE,11.77,12.0,141.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,25,0.125,48,0.75,,FALSE,11.77,12.0,141.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,5,0.25,27,0.375,,FALSE,5.35,12.0,64.2
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,32,0.875,46,0.875,,FALSE,13.62,12.0,163.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,36,0.375,32,0.875,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,10,0.0,49,0.0,,FALSE,6.02,12.0,72.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,6,0.0,19,0.875,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,20,0.875,23,0.25,,FALSE,5.19,12.0,62.28
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,14,0.875,47,0.875,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,8,0.5,37,0.75,,FALSE,5.63,12.0,67.56
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,11,0.5,35,0.125,,FALSE,5.81,12.0,69.72
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,29,0.5,49,0.125,,FALSE,12.7,12.0,152.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,46,0.5,5,0.125,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,27,0.625,45,0.625,,FALSE,11.77,12.0,141.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,7,0.75,47,0.25,,FALSE,5.63,12.0,67.56
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,13,0.75,38,0.375,,FALSE,6.09,12.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,33,0.25,36,0.375,,FALSE,11.77,12.0,141.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,16,0.625,4,0.75,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,9,0.625,23,0.625,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,24,0.875,30,0.625,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,22,0.375,35,0.0,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,51,0.125,38,0.75,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,7,0.25,12,0.0,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,37,0.375,34,0.5,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,22,0.375,11,0.25,,FALSE,4.77,12.0,57.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,32,0.625,44,0.5,,FALSE,12.7,12.0,152.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,31,0.5,6,0.0,,FALSE,7.37,12.0,88.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,50,0.5,27,0.375,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,29,0.0,22,0.25,,FALSE,8.76,12.0,105.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,24,0.625,18,0.625,,FALSE,5.19,12.0,62.28
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,14,0.375,11,0.0,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,7,0.5,50,0.25,,FALSE,6.02,12.0,72.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,29,0.625,25,0.5,,FALSE,9.45,12.0,113.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,11,0.125,50,0.75,,FALSE,6.3,12.0,75.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,40,0.125,4,0.0,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,16,0.875,31,0.875,,FALSE,6.09,12.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,4,0.125,10,0.875,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,45,0.0,38,0.375,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,48,0.0,18,0.75,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,11,0.75,7,0.125,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,8,0.875,34,0.375,,FALSE,5.63,12.0,67.56
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,48,0.75,51,0.75,,FALSE,26.15,12.0,313.8
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,50,0.625,33,0.25,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,25,0.625,29,0.75,,FALSE,9.45,12.0,113.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,34,0.0,49,0.5,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,13,0.125,38,0.75,,FALSE,6.09,12.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,Yes,1,17,0.125,22,0.5,,FALSE,4.97,12.0,59.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,42,0.25,22,0.75,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,18,0.875,41,0.875,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,48,0.875,28,0.625,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,42,0.375,20,0.625,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,9,0.375,10,0.375,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,42,0.625,38,0.625,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,47,0.875,48,0.25,,FALSE,22.72,12.0,272.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,43,0.0,34,0.75,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,13,0.0,12,0.5,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,6,0.75,28,0.25,,FALSE,5.35,12.0,64.2
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,4,0.0,17,0.0,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,5,0.75,49,0.625,,FALSE,6.02,12.0,72.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,31,0.875,39,0.25,,FALSE,11.77,12.0,141.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,10,0.75,21,0.625,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,40,0.75,35,0.625,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,24,0.25,36,0.5,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,12,0.5,23,0.25,,FALSE,4.77,12.0,57.24
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,15,0.375,50,0.125,,FALSE,6.58,12.0,78.96
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,49,0.5,20,0.625,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,50,0.375,47,0.125,,FALSE,22.72,12.0,272.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,21,0.75,28,0.125,,FALSE,6.09,12.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,41,0.875,31,0.125,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,51,0.0,6,0.25,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,11,0.625,11,0.125,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,36,0.875,22,0.25,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,43,0.0,31,0.5,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,40,0.5,42,0.25,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,25,0.375,12,0.25,,FALSE,7.37,12.0,88.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,45,0.75,40,0.25,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,11,0.25,16,0.5,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,14,0.0,29,0.0,,FALSE,5.81,12.0,69.72
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,35,0.25,7,0.625,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,45,0.375,32,0.25,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,20,0.25,45,0.75,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,30,0.125,48,0.875,,FALSE,12.7,12.0,152.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,12,0.625,14,0.5,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,40,0.375,49,0.0,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,33,0.75,13,0.25,,FALSE,8.06,12.0,96.72
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,10,0.5,4,0.5,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,43,0.375,49,0.625,,FALSE,22.72,12.0,272.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,24,0.125,42,0.375,,FALSE,7.03,12.0,84.36
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,24,0.375,38,0.375,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,42,0.0,42,0.25,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,41,0.0,14,0.625,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,19,0.875,40,0.0,,FALSE,6.76,12.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,43,0.375,41,0.375,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,50,0.375,30,0.375,,FALSE,19.29,12.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,41,0.375,17,0.5,,FALSE,15.87,12.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,8,0.875,8,0.875,,FALSE,4.67,12.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Panel,No,1,20,0.25,51,0.75,,FALSE,7.16,12.0,85.92
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,9,29,0.75,46,0.875,"409-419""",05429GE46HE09AT,114.3,1.0,114.3
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,15,0.25,44,0.5,"85-91""",05415BE44DE02AT,12.38,6.0,74.28
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,38,0.125,39,0.125,"385-395""",05438AE39AE10AT,158.7,1.0,158.7
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,8,13,0.375,47,0.625,"371-381""",05413CE47FE08AT,48.72,1.0,48.72
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,34,0.625,8,0.5,"77-83""",05434FE08DE10AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,5,27,0.0,23,0.5,"111-119""",05427E23DE05AT,43.8,2.0,87.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,34,0.75,13,0.375,"38-40""",05434GE13CE03AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,42,0.125,46,0.125,"317-327""",05442AE46AE07AT,135.03,1.0,135.03
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,6,14,0.625,37,0.25,"217-227""",05414FE37BE06AT,36.54,2.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,9,0.625,21,0.0,"41-43""",05409FE21E02AT,9.34,6.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,9,40,0.625,5,0.0,"44-46""",05440FE05E09AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,8,35,0.625,42,0.125,"331-341""",05435FE42AE08AT,154.32,1.0,154.32
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,51,0.0,16,0.875,"62-66""",05451E16HE04AT,63.48,3.0,190.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,17,0.75,25,0.375,"170-180""",05417GE25CE07AT,40.67,1.0,40.67
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,7,0.625,39,0.375,"385-395""",05407FE39CE10AT,56.3,1.0,56.3
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,18,0.625,46,0.0,"89-95""",05418FE46E02AT,13.52,6.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,38,0.25,43,0.625,"296-306""",05438BE43FE07AT,135.03,1.0,135.03
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,42,0.625,6,0.75,"17-19""",05442FE06GE03AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,9,0.375,48,0.625,"475-485""",05409CE48FE10AT,60.2,1.0,60.2
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,6,19,0.25,28,0.25,"163-173""",05419BE28BE06AT,36.54,2.0,73.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,5,35,0.75,24,0.375,"116-124""",05435GE24CE05AT,79.35,2.0,158.7
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,5,20,0.375,32,0.75,"155-165""",05420CE32GE05AT,30.95,2.0,61.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,6,0.875,36,0.875,"104-112""",05406HE36HE03AT,16.89,4.0,67.56
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,18,0.375,8,0.375,"23-25""",05418CE08CE03AT,14.01,4.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,32,0.125,51,0.625,"199-209""",05432AE51FE04AT,54.48,3.0,163.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,6,37,0.5,51,0.375,"301-311""",05437DE51CE06AT,115.74,2.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,13,0.75,5,0.25,"19-21""",05413GE05BE04AT,18.68,3.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,29,0.75,29,0.0,"112-120""",05429GE29E04AT,40.6,3.0,121.8
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,15,0.25,31,0.125,"120-128""",05415BE31AE04AT,23.24,3.0,69.72
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,8,26,0.75,23,0.625,"179-189""",05426GE23FE08AT,70.08,1.0,70.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,37,0.625,10,0.625,"39-41""",05437FE10FE04AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,17,0.0,18,0.5,"52-56""",05417E18DE03AT,14.61,4.0,58.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,5,47,0.125,37,0.5,"180-190""",05447AE37DE05AT,96.45,2.0,192.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,7,0.75,35,0.125,"101-109""",05407GE35AE03AT,16.89,4.0,67.56
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,22,0.875,33,0.25,"325-335""",05422HE33BE10AT,67.6,1.0,67.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,7,0.0,28,0.125,"275-285""",05407E28AE10AT,53.5,1.0,53.5
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,47,0.125,15,0.625,"101-109""",05447AE15FE07AT,111.09,1.0,111.09
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,3,23,0.875,30,0.25,"87-93""",05423HE30BE03AT,20.28,4.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,8,20,0.875,43,0.75,"339-349""",05420HE43GE08AT,54.08,1.0,54.08
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,18,0.5,10,0.375,"39-41""",05418DE10CE04AT,18.68,3.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,9,32,0.5,36,0.5,"319-329""",05432DE36DE09AT,105.93,1.0,105.93
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,10,15,0.25,42,0.625,"415-425""",05415BE42FE10AT,61.9,1.0,61.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,32,0.75,10,0.625,"68-72""",05432GE10FE07AT,51.59,1.0,51.59
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,5,0.75,34,0.5,"233-243""",05405GE34DE07AT,37.45,1.0,37.45
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,33,0.625,5,0.375,"9-11""",05433FE05CE02AT,14.74,6.0,88.44
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,7,30,0.875,4,0.25,"27-29""",05430HE04BE07AT,51.59,1.0,51.59
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,4,38,0.625,8,0.625,"31-33""",05438FE08FE04AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,29,0.5,20,0.75,"39-41""",05429DE20GE02AT,17.52,6.0,105.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,2,50,0.125,34,0.625,"66-70""",05450AE34FE02AT,38.58,6.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,Yes,9,12,0.25,33,0.875,"292-302""",05412BE33HE09AT,52.29,1.0,52.29
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,50,0.625,11,0.625,"85-91""",05450F11F08AT,126.96,1.0,126.96
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,4,25,0.5,28,0.0,"108-116""",05425D2804AT,37.8,3.0,113.4
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,41,0.0,50,0.5,"345-355""",0544150D07AT,159.04,1.0,159.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,3,31,0.25,17,0.375,"49-53""",05431B17C03AT,26.28,4.0,105.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,12,0.875,37,0.375,"180-190""",05412H37C05AT,29.05,2.0,58.1
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,27,0.125,17,0.5,"148-158""",05427A17D09AT,72.54,1.0,72.54
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,2,16,0.875,48,0.625,"93-99""",05416H48F02AT,14.32,6.0,85.92
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,40,0.375,19,0.875,"147-157""",05440C19H08AT,126.96,1.0,126.96
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,19,0.5,6,0.375,"47-49""",05419D06C08AT,37.36,1.0,37.36
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,41,0.125,49,0.125,"387-397""",05441A49A08AT,181.76,1.0,181.76
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,24,0.5,32,0.5,"283-293""",05424D32D09AT,60.84,1.0,60.84
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,6,49,0.875,42,0.25,"247-257""",05449H42B06AT,136.32,2.0,272.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,25,0.625,33,0.75,"325-335""",05425F33G10AT,101.5,1.0,101.5
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,15,0.375,41,0.5,"364-374""",05415C41D09AT,54.81,1.0,54.81
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,26,0.625,18,0.375,"87-93""",05426F18C05AT,40.3,2.0,80.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,19,0.0,45,0.25,"445-455""",0541945B10AT,67.6,1.0,67.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,3,22,0.125,34,0.625,"99-105""",05422A34F03AT,20.28,4.0,81.12
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,12,0.875,49,0.75,"485-495""",05412H49G10AT,63.0,1.0,63.0
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,47,0.75,34,0.75,"267-277""",05447G34G08AT,154.32,1.0,154.32
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,33,0.75,45,0.125,"310-320""",05433G45A07AT,95.34,1.0,95.34
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,31,0.375,38,0.25,"337-347""",05431C38B09AT,105.93,1.0,105.93
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,31,0.625,4,0.375,"31-33""",05431F04C08AT,58.96,1.0,58.96
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,6,0.875,28,0.75,"135-145""",05406H28G05AT,26.75,2.0,53.5
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,44,0.75,18,0.5,"122-130""",05444G18D07AT,111.09,1.0,111.09
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,17,0.0,35,0.5,"240-250""",0541735D07AT,42.63,1.0,42.63
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,32,0.25,51,0.0,"505-515""",05432B5110AT,136.2,1.0,136.2
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,6,46,0.75,34,0.375,"199-209""",05446G34C06AT,115.74,2.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,28,0.5,12,0.75,"116-124""",05428D12G10AT,80.6,1.0,80.6
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,3,29,0.375,28,0.625,"81-87""",05429C28F03AT,30.45,4.0,121.8
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,6,8,0.75,8,0.0,"47-49""",05408G0806AT,28.02,2.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,9,0.5,26,0.75,"203-213""",05409D26G08AT,45.04,1.0,45.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,31,0.0,23,0.5,"225-235""",0543123D10AT,94.5,1.0,94.5
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,48,0.875,39,0.25,"307-317""",05448H39B08AT,154.32,1.0,154.32
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,29,0.0,29,0.5,"285-295""",0542929D10AT,101.5,1.0,101.5
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,47,0.5,45,0.875,"400-410""",05447D45H09AT,204.48,1.0,204.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,6,20,0.0,19,0.125,"110-118""",0542019A06AT,29.82,2.0,59.64
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,2,49,0.75,33,0.75,"64-68""",05449G33G02AT,38.58,6.0,231.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,39,0.0,11,0.0,"96-102""",054391109AT,#N/A,#N/A,#N/A
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,8,41,0.5,48,0.875,"379-389""",05441D48H08AT,181.76,1.0,181.76
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,24,0.125,28,0.5,"135-145""",05424A28D05AT,30.95,2.0,61.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,11,0.875,33,0.75,"226-236""",05411H33G07AT,40.67,1.0,40.67
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,45,0.125,43,0.75,"210-220""",05445A43G05AT,96.45,2.0,192.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,23,0.625,35,0.0,"310-320""",05423F3509AT,60.84,1.0,60.84
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,3,17,0.75,49,0.75,"142-152""",05417G49G03AT,21.48,4.0,85.92
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,3,8,0.25,14,0.625,"41-43""",05408B14F03AT,14.01,4.0,56.04
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,9,50,0.0,48,0.0,"427-437""",054504809AT,204.48,1.0,204.48
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,12,0.5,33,0.25,"325-335""",05412D33B10AT,58.1,1.0,58.1
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,7,42,0.0,44,0.625,"303-313""",0544244F07AT,135.03,1.0,135.03
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,5,42,0.625,43,0.0,"210-220""",05442F4305AT,96.45,2.0,192.9
+Tri-Dek 3/67 2-Ply,Antimicrobial,Link,No,10,29,0.875,43,0.75,"425-435""",05429H43G10AT,127.0,1.0,127.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,8,0.125,41,0.5,,05008AE41DE01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,34,0.5,9,0.375,,05009DE34CE01,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,29,0.25,30,0.375,,05029BE30CE01,10.63,12.0,127.56
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,43,0.375,12,0.0,,05012CE43E01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,23,0.375,28,0.875,,05023CE28HE01,6.49,12.0,77.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,20,0.625,14,0.25,,05014FE20BE01,4.99,12.0,59.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,40,0.125,49,0.75,,05040AE49GE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,16,0.25,38,0.0,,05016BE38E01,6.38,12.0,76.56
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,8,0.875,48,0.0,,05008HE48E01,6.31,12.0,75.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,50,0.25,31,0.375,,05031BE50CE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,19,0.75,25,0.5,,05019GE25DE01,6.38,12.0,76.56
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,29,0.375,41,0.5,,05029CE41DE01,12.34,12.0,148.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,35,0.125,34,0.125,,05034AE35AE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,47,0.875,42,0.375,,05042HE47CE01,23.82,12.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,4,0.375,31,0.25,,05004CE31BE01,5.6,12.0,67.2
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,5,0.875,18,0.125,,05005HE18AE01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,38,0.25,47,0.75,,05038BE47GE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,42,0.5,14,0.625,,05014DE42FE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,13,0.625,26,0.375,,05013FE26CE01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,45,0.375,42,0.75,,05042CE45GE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,17,0.125,47,0.125,,05017AE47AE01,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,5,0.375,49,0.125,,05005CE49AE01,6.31,12.0,75.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,11,0.625,32,0.625,,05011FE32FE01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,25,0.375,12,0.25,,05012CE25BE01,7.72,12.0,92.64
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,45,0.625,42,0.75,,05042FE45GE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,21,0.25,43,0.375,,05021BE43CE01,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,49,0.0,30,0.625,,05030E49FE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,46,0.0,47,0.375,,05046E47CE01,23.82,12.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,33,0.75,16,0.125,,05016GE33AE01,9.18,12.0,110.16
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,43,0.375,15,0.875,,05015CE43HE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,6,0.125,22,0.375,,05006AE22CE01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,31,0.5,42,0.375,,05031DE42CE01,13.31,12.0,159.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,10,0.125,33,0.75,,05010AE33GE01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,33,0.875,42,0.0,,05033HE42E01,13.31,12.0,159.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,39,0.25,36,0.5,,05036BE39DE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,36,0.625,10,0.0,,05010FE36E01,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,48,0.625,48,0.875,,05048FE48HE01,23.82,12.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,44,0.0,51,0.75,,05044E51GE01,23.82,12.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,30,0.375,21,0.0,,05021CE30E01,9.18,12.0,110.16
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,30,0.125,44,0.75,,05030AE44GE01,13.31,12.0,159.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,41,0.125,37,0.75,,05037AE41GE01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,6,0.25,46,0.5,,05006BE46DE01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,22,0.875,18,0.75,,05018HE22GE01,5.33,12.0,63.96
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,41,0.0,36,0.125,,05036E41AE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,47,0.0,29,0.25,,05029E47BE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,6,0.75,20,0.0,,05006GE20E01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,42,0.875,33,0.75,,05033HE42GE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,35,0.625,8,0.625,,05008FE35FE01,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,17,0.375,42,0.625,,05017CE42FE01,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,36,0.75,36,0.875,,05036GE36HE01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,10,0.875,14,0.75,,05010H14G01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,34,0.875,7,0.5,,05007H34D01,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,21,0.5,14,0.75,,05014D21G01,5.11,12.0,61.32
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,19,0.625,18,0.5,,05018F19D01,5.21,12.0,62.52
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,16,0.0,22,0.25,,0501622B01,5.21,12.0,62.52
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,24,0.125,44,0.875,,05024A44H01,7.37,12.0,88.44
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,39,0.5,16,0.0,,05016D3901,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,49,0.75,51,0.75,,05049G51G01,27.4,12.0,328.8
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,36,0.375,9,0.625,,05009C36F01,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,21,0.5,19,0.5,,05019D21D01,5.33,12.0,63.96
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,30,0.0,29,0.875,,0502930H01,10.63,12.0,127.56
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,27,0.125,13,0.875,,05013A27H01,8.45,12.0,101.4
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,20,0.0,24,0.0,,050202401,Standard Part # Use PriceBook or Portal,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,13,0.125,43,0.375,,05013A43C01,6.38,12.0,76.56
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,31,0.5,24,0.0,,05024D3101,9.91,12.0,118.92
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,50,0.375,38,0.625,,05038C50F01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,28,0.625,33,0.75,,05028F33G01,11.36,12.0,136.32
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,23,0.75,34,0.0,,05023G3401,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,13,0.875,19,0.125,,05013H19A01,4.99,12.0,59.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,25,0.625,15,0.625,,05015F25F01,8.45,12.0,101.4
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,14,0.875,14,0.875,,05014H14H01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,9,0.375,15,0.5,,05009C15D01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,8,0.25,37,0.125,,05008B37A01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,4,0.5,47,0.75,,05004D47G01,5.6,12.0,67.2
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,22,0.125,36,0.0,,05022A3601,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,39,0.5,35,0.125,,05035D39A01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,13,0.375,17,0.125,,05013C17A01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,47,0.5,36,0.5,,05036D47D01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,43,0.875,27,0.25,,05027H43B01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,12,0.375,8,0.125,,05008C12A01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,43,0.25,28,0.75,,05028B43G01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,5,0.875,27,0.625,,05005H27F01,5.6,12.0,67.2
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,13,0.875,22,0.125,,05013H22A01,5.11,12.0,61.32
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,5,0.625,50,0.125,,05005F50A01,6.31,12.0,75.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,10,0.625,19,0.75,,05010F19G01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,28,0.125,16,0.875,,05016A28H01,8.45,12.0,101.4
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,17,0.875,15,0.625,,05015H17F01,4.99,12.0,59.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,4,0.0,20,0.375,,0500420C01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,7,0.0,36,0.75,,0500736G01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,16,0.125,48,0.125,,05016A48A01,6.9,12.0,82.8
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,21,0.0,38,0.875,,0502138H01,7.09,12.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,9,0.25,28,0.75,,05009B28G01,5.89,12.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,32,0.125,42,0.125,,05032A42A01,13.31,12.0,159.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,27,0.125,51,0.625,,05027A51F01,13.31,12.0,159.72
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,19,0.875,6,0.5,,05006H19D01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,20,0.75,13,0.625,,05013G20F01,4.99,12.0,59.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,41,0.0,27,0.375,,0502741C01,16.64,12.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,13,0.75,19,0.25,,05013G19B01,4.99,12.0,59.88
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,41,0.75,41,0.875,,05041G41H01,20.23,12.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,No,1,4,0.125,9,0.375,,05004A09C01,4.89,12.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,9,45,0.375,17,0.0,"148-158""",05045CE17E09,149.76,1.0,149.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,19,0.75,31,0.0,"181-191""",05019GE31E06,38.28,2.0,76.56
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,31,0.75,38,0.125,"223-233""",05031GE38AE06,74.04,2.0,148.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,14,0.875,31,0.5,"60-64""",05014HE31DE02,12.2,6.0,73.2
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,13,0.5,25,0.75,"195-205""",05013DE25GE08,47.12,1.0,47.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,38,0.25,48,0.0,"379-389""",05038BE48E08,161.84,1.0,161.84
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,10,42,0.25,39,0.5,"385-395""",05042BE39DE10,202.3,1.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,9,28,0.125,30,0.625,"265-275""",05028AE30FE09,95.67,1.0,95.67
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,10,32,0.875,32,0.625,"315-325""",05032HE32FE10,113.6,1.0,113.6
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,23,0.5,19,0.0,"55-59""",05023DE19E03,15.99,4.0,63.96
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,38,0.75,20,0.25,"116-124""",05038GE20BE06,99.84,2.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,22,0.25,25,0.125,"195-205""",05022BE25AE08,51.04,1.0,51.04
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,30,0.875,28,0.75,"54-58""",05030HE28GE02,21.26,6.0,127.56
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,10,36,0.125,20,0.375,"195-205""",05036AE20CE10,166.4,1.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,34,0.25,9,0.0,"26-28""",05034BE09E03,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,4,25,0.875,5,0.125,"19-21""",05025HE05AE04,30.88,3.0,92.64
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,35,0.375,34,0.875,"165-175""",05035CE34HE05,83.2,2.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,19,0.0,18,0.375,"87-93""",05019E18CE05,26.05,2.0,52.1
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,24,0.625,19,0.0,"110-118""",05024FE19E06,32.58,2.0,65.16
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,25,0.5,50,0.625,"395-405""",05025DE50FE08,98.72,1.0,98.72
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,9,18,0.125,19,0.875,"166-176""",05018AE19HE09,46.89,1.0,46.89
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,8,0.0,33,0.0,"96-102""",05008E33E03,17.67,4.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,9,23,0.125,46,0.375,"409-419""",05023AE46CE09,66.33,1.0,66.33
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,19,0.5,39,0.0,"229-239""",05019DE39E06,42.54,2.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,32,0.625,45,0.375,"355-365""",05032FE45CE08,106.48,1.0,106.48
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,51,0.0,46,0.5,"133-143""",05051E46DE03,71.46,4.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,4,23,0.375,9,0.375,"35-37""",05023CE09CE04,19.56,3.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,10,50,0.375,40,0.75,"395-405""",05050CE40GE10,238.2,1.0,238.2
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,43,0.75,48,0.625,"235-245""",05043GE48FE05,119.1,2.0,238.2
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,36,0.0,44,0.125,"215-225""",05036E44AE05,101.15,2.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,19,0.375,33,0.875,"259-269""",05019CE33HE08,51.92,1.0,51.92
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,13,0.125,6,0.5,"11-13""",05013AE06DE02,9.78,6.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,47,0.625,50,0.5,"145-155""",05047FE50DE03,71.46,4.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,7,20,0.625,38,0.75,"261-271""",05020FE38GE07,49.63,1.0,49.63
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,42,0.125,10,0.25,"49-51""",05042AE10BE05,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,9,6,0.875,6,0.75,"52-56""",05006HE06GE09,44.01,1.0,44.01
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,11,0.5,14,0.5,"27-29""",05011DE14DE02,9.78,6.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,10,17,0.875,38,0.375,"375-385""",05017HE38CE10,64.9,1.0,64.9
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,40,0.375,39,0.125,"190-200""",05040CE39AE05,101.15,2.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,39,0.125,36,0.5,"283-293""",05039AE36DE08,133.12,1.0,133.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,35,0.75,31,0.375,"181-191""",05035GE31CE06,99.84,2.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,29,0.5,31,0.625,"60-64""",05029DE31FE02,21.26,6.0,127.56
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,23,0.25,21,0.875,"163-173""",05023BE21HE08,44.32,1.0,44.32
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,8,22,0.125,47,0.75,"371-381""",05022AE47GE08,58.96,1.0,58.96
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,4,22,0.5,25,0.0,"97-103""",05022DE25E04,25.52,3.0,76.56
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,6,51,0.0,34,0.375,"199-209""",05051E34CE06,121.38,2.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,33,0.25,29,0.875,"84-90""",05033BE29HE03,34.08,4.0,136.32
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,29,0.75,49,0.75,"240-250""",05029GE49GE05,66.55,2.0,133.1
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,3,41,0.875,27,0.25,"78-84""",05041HE27BE03,49.92,4.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,5,48,0.75,36,0.125,"175-185""",05048GE36AE05,101.15,2.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,5,51,0.25,38,0.375,"185-195""",05051B38C05,101.15,2.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,5,8,0.375,50,0.375,"245-255""",05008C50C05,31.55,2.0,63.1
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,47,0.625,30,0.75,"87-93""",05047F30G03,49.92,4.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,18,0.125,27,0.125,"211-221""",05018A27A08,48.8,1.0,48.8
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,4,47,0.125,40,0.75,"155-165""",05047A40G04,80.92,3.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,12,0.25,26,0.0,"255-265""",05012B2610,58.9,1.0,58.9
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,14,0.25,50,0.5,"395-405""",05014B50D08,55.2,1.0,55.2
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,2,32,0.75,32,0.75,"62-66""",05032G32G02,22.72,6.0,136.32
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,7,0.25,22,0.375,"64-68""",05007B22C03,14.67,4.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,9,28,0.375,37,0.75,"328-338""",05028C37G09,102.24,1.0,102.24
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,45,0.5,43,0.5,"253-263""",05045D43D06,121.38,2.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,12,0.75,37,0.0,"291-301""",05012G3708,48.8,1.0,48.8
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,36,0.0,31,0.5,"243-253""",0503631D08,133.12,1.0,133.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,9,0.625,31,0.0,"90-96""",05009F3103,17.67,4.0,70.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,12,0.875,6,0.25,"47-49""",05012H06B08,39.12,1.0,39.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,2,46,0.0,23,0.125,"45-47""",0504623A02,33.28,6.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,19,0.75,39,0.625,"229-239""",05019G39F06,42.54,2.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,9,17,0.625,47,0.875,"418-428""",05017F47H09,63.81,1.0,63.81
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,34,0.375,22,0.5,"171-181""",05034C22D08,133.12,1.0,133.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,23,0.75,39,0.625,"229-239""",05023G39F06,42.54,2.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,7,46,0.75,49,0.875,"338-348""",05046G49H07,166.74,1.0,166.74
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,7,14,0.5,6,0.25,"41-43""",05014D06B07,34.23,1.0,34.23
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,36,0.625,47,0.25,"277-287""",05036F47B06,121.38,2.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,33,0.5,17,0.75,"131-141""",05033D17G08,73.44,1.0,73.44
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,18,0.625,21,0.125,"61-65""",05018F21A03,15.63,4.0,62.52
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,5,26,0.75,17,0.5,"82-88""",05026G17D05,42.25,2.0,84.5
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,20,0.75,41,0.75,"119-127""",05020G41G03,21.27,4.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,42,0.75,49,0.375,"142-152""",05042G49C03,71.46,4.0,285.84
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,43,0.75,35,0.875,"275-285""",05043G35H08,161.84,1.0,161.84
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,4,43,0.375,16,0.625,"62-66""",05043C16F04,66.56,3.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,25,0.625,4,0.25,"11-13""",05025F04B03,23.16,4.0,92.64
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,41,0.75,18,0.875,"175-185""",05041G18H10,166.4,1.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,38,0.0,33,0.625,"325-335""",0503833F10,166.4,1.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,37,0.5,36,0.75,"355-365""",05037D36G10,166.4,1.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,4,23,0.0,34,0.375,"131-141""",0502334C04,28.36,3.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,4,21,0.75,41,0.25,"159-169""",05021G41B04,28.36,3.0,85.08
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,50,0.375,32,0.75,"315-325""",05050C32G10,202.3,1.0,202.3
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,50,0.0,21,0.375,"61-65""",0505021C03,49.92,4.0,199.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,14,0.75,27,0.625,"157-167""",05014G27F06,36.6,2.0,73.2
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,27,0.875,15,0.125,"44-46""",05027H15A03,25.35,4.0,101.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,40,0.625,41,0.5,"119-127""",05040F41D03,60.69,4.0,242.76
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,5,21,0.625,41,0.75,"200-210""",05021F41G05,35.45,2.0,70.9
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,7,34,0.625,30,0.75,"205-215""",05034F30G07,116.48,1.0,116.48
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,39,0.0,30,0.5,"295-305""",0503930D10,166.4,1.0,166.4
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,8,10,0.0,6,0.875,"47-49""",0501006H08,39.12,1.0,39.12
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,6,0.25,51,0.375,"148-158""",05006B51C03,18.93,4.0,75.72
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,6,40,0.75,5,0.25,"29-31""",05040G05B06,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,10,7,0.25,5,0.375,"49-51""",05007B05C10,48.9,1.0,48.9
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,3,19,0.75,10,0.25,"29-31""",05019G10B03,14.67,4.0,58.68
+Tri-Dek 15/40 3-Ply,None (Standard),Link,No,5,34,0.875,7,0.125,"34-36""",05034H07A05,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,11,0.625,17,0.75,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,9,0.375,25,0.625,,FALSE,5.82,12.0,69.84
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,47,0.125,12,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,46,0.625,12,0.375,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,49,0.125,19,0.875,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,11,0.75,18,0.125,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,51,0.0,16,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,43,0.0,34,0.25,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,42,0.5,24,0.5,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,41,0.0,41,0.0,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,49,0.5,16,0.125,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,24,0.75,20,0.875,,FALSE,5.76,12.0,69.12
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,20,0.625,22,0.0,,FALSE,5.65,12.0,67.8
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,43,0.25,29,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,28,0.875,16,0.0,,FALSE,8.79,12.0,105.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,47,0.75,39,0.625,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,49,0.875,51,0.0,,FALSE,28.5,12.0,342.0
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,30,0.375,4,0.625,,FALSE,8.03,12.0,96.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,12,0.375,32,0.75,,FALSE,6.34,12.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,12,0.75,19,0.875,,FALSE,5.19,12.0,62.28
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,7,0.625,21,0.375,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,12,0.0,5,0.25,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,24,0.0,25,0.125,,FALSE,6.64,12.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,39,0.625,35,0.0,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,49,0.0,28,0.0,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,24,0.75,26,0.0,,FALSE,6.64,12.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,4,0.0,49,0.375,,FALSE,6.56,12.0,78.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,31,0.125,42,0.375,,FALSE,13.84,12.0,166.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,48,0.875,7,0.0,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,22,0.125,38,0.375,,FALSE,7.37,12.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,46,0.375,22,0.25,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,49,0.125,47,0.75,,FALSE,24.77,12.0,297.24
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,39,0.875,7,0.5,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,19,0.0,9,0.375,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,47,0.25,29,0.875,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,7,0.125,36,0.25,,FALSE,6.13,12.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,6,0.125,18,0.875,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,28,0.0,23,0.875,,FALSE,10.31,12.0,123.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,17,0.25,46,0.75,,FALSE,7.37,12.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,10,0.25,44,0.375,,FALSE,6.34,12.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,45,0.125,24,0.25,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,5,0.625,45,0.5,,FALSE,6.13,12.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,30,0.375,4,0.75,,FALSE,8.03,12.0,96.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,5,0.25,5,0.375,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,36,0.875,50,0.875,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,46,0.0,40,0.375,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,13,0.5,44,0.0,,FALSE,6.64,12.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,36,0.125,10,0.875,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,39,0.375,31,0.0,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,Yes,1,11,0.25,4,0.375,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,11,0.75,18,0.125,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,22,0.25,4,0.125,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,38,0.125,33,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,40,0.5,21,0.0,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,50,0.625,51,0.75,,FALSE,28.5,12.0,342.0
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,33,0.875,19,0.125,,FALSE,9.55,12.0,114.6
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,36,0.125,43,0.875,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,37,0.25,15,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,45,0.875,13,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,5,0.75,10,0.5,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,11,0.5,20,0.25,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,4,0.75,9,0.125,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,17,0.0,50,0.75,,FALSE,7.79,12.0,93.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,22,0.0,36,0.375,,FALSE,7.37,12.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,31,0.5,8,0.125,,FALSE,8.03,12.0,96.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,44,0.875,29,0.625,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,39,0.875,6,0.125,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,47,0.25,38,0.0,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,14,0.375,33,0.5,,FALSE,6.34,12.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,39,0.25,12,0.25,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,39,0.625,28,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,21,0.375,51,0.125,,FALSE,7.79,12.0,93.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,21,0.25,26,0.375,,FALSE,6.64,12.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,50,0.875,50,0.625,,FALSE,28.5,12.0,342.0
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,12,0.375,11,0.0,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,15,0.5,23,0.5,,FALSE,5.42,12.0,65.04
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,51,0.0,30,0.0,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,20,0.375,9,0.5,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,31,0.125,13,0.875,,FALSE,8.79,12.0,105.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,6,0.625,44,0.875,,FALSE,6.13,12.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,25,0.75,11,0.875,,FALSE,8.03,12.0,96.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,48,0.25,20,0.75,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,4,0.875,12,0.875,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,11,0.25,23,0.625,,FALSE,5.19,12.0,62.28
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,27,0.375,16,0.5,,FALSE,8.79,12.0,105.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,34,0.0,8,0.0,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,8,0.625,18,0.375,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,13,0.75,11,0.0,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,38,0.5,8,0.0,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,18,0.375,13,0.5,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,43,0.375,40,0.375,,FALSE,21.04,12.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,34,0.125,33,0.125,,FALSE,17.31,12.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,24,0.625,31,0.625,,FALSE,7.37,12.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,23,0.5,50,0.75,,FALSE,8.21,12.0,98.52
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,10,0.5,19,0.625,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,7,0.25,47,0.5,,FALSE,6.13,12.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,6,0.875,6,0.625,,FALSE,5.09,12.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,40,0.125,7,0.875,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,7,0.875,43,0.25,,FALSE,6.13,12.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Panel,No,1,23,0.25,50,0.125,,FALSE,8.21,12.0,98.52
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,27,0.625,14,0.125,"95-101""",05027FE14AE07AT,61.53,1.0,61.53
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,24,0.5,42,0.375,"331-341""",05024DE42CE08AT,61.28,1.0,61.28
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,45,0.875,10,0.75,"19-21""",05045HE10GE02AT,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,10,12,0.375,40,0.0,"395-405""",05012CE40E10AT,63.4,1.0,63.4
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,34,0.375,33,0.625,"127-137""",05034CE33FE04AT,69.24,3.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,5,13,0.5,31,0.75,"149-161""",05013DE31GE05AT,31.7,2.0,63.4
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,37,0.375,33,0.25,"127-137""",05037CE33BE04AT,69.24,3.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,6,37,0.25,45,0.5,"265-275""",05037BE45DE06AT,126.24,2.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,16,0.125,33,0.375,"259-269""",05016AE33CE08AT,53.12,1.0,53.12
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,37,0.625,42,0.25,"122-130""",05037FE42BE03AT,63.12,4.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,15,0.625,39,0.0,"346-356""",05015FE39E09AT,59.76,1.0,59.76
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,12,0.5,39,0.25,"113-121""",05012DE39BE03AT,19.02,4.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,6,15,0.875,31,0.625,"181-191""",05015HE31FE06AT,39.84,2.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,25,0.25,37,0.25,"291-301""",05025BE37BE08AT,88.48,1.0,88.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,46,0.375,20,0.25,"58-62""",05046CE20BE03AT,51.93,4.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,6,24,0.125,28,0.5,"163-173""",05024AE28DE06AT,40.5,2.0,81.0
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,11,0.25,4,0.125,"7-9""",05011BE04AE02AT,10.18,6.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,44,0.375,34,0.125,"301-311""",05044CE34AE09AT,189.36,1.0,189.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,29,0.875,32,0.375,"283-293""",05029HE32CE09AT,106.29,1.0,106.29
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,37,0.625,40,0.125,"116-124""",05037FE40AE03AT,63.12,4.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,9,0.625,14,0.375,"27-29""",05009FE14CE02AT,10.18,6.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,50,0.75,47,0.625,"183-193""",05050GE47FE04AT,99.08,3.0,297.24
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,17,0.375,37,0.875,"328-338""",05017CE37HE09AT,60.75,1.0,60.75
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,7,0.5,29,0.25,"227-237""",05007DE29BE08AT,46.56,1.0,46.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,26,0.25,9,0.5,"61-65""",05026BE09DE07AT,56.21,1.0,56.21
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,30,0.625,18,0.5,"35-37""",05030FE18DE02AT,19.1,6.0,114.6
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,51,0.0,28,0.625,"54-58""",05051E28FE02AT,34.62,6.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,10,6,0.25,10,0.375,"97-103""",05006BE10CE10AT,50.9,1.0,50.9
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,6,18,0.5,33,0.75,"193-203""",05018DE33GE06AT,39.84,2.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,17,0.25,12,0.125,"35-37""",05017BE12AE03AT,15.27,4.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,11,0.25,13,0.125,"88-94""",05011BE13AE07AT,35.63,1.0,35.63
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,7,0.75,44,0.0,"127-137""",05007GE44E03AT,18.39,4.0,73.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,46,0.125,48,0.5,"187-197""",05046AE48DE04AT,99.08,3.0,297.24
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,13,0.125,48,0.875,"331-341""",05013AE48HE07AT,48.02,1.0,48.02
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,42,0.875,22,0.875,"171-181""",05042HE22HE08AT,138.48,1.0,138.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,21,0.75,49,0.625,"95-101""",05021GE49FE02AT,15.58,6.0,93.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,10,19,0.5,13,0.375,"125-135""",05019DE13CE10AT,51.9,1.0,51.9
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,27,0.25,42,0.5,"163-173""",05027BE42DE04AT,51.32,3.0,153.96
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,4,4,0.875,44,0.75,"171-181""",05004HE44GE04AT,23.28,3.0,69.84
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,8,16,0.125,13,0.125,"100-108""",05016AE13AE08AT,40.72,1.0,40.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,10,0.875,47,0.125,"324-334""",05010HE47AE07AT,46.48,1.0,46.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,3,13,0.25,30,0.5,"87-93""",05013BE30DE03AT,19.02,4.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,45,0.875,18,0.125,"122-130""",05045HE18AE07AT,121.17,1.0,121.17
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,2,27,0.0,40,0.0,"77-83""",05027E40E02AT,23.62,6.0,141.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,30,0.375,38,0.375,"337-347""",05030CE38CE09AT,115.47,1.0,115.47
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,40,0.25,24,0.5,"163-173""",05040BE24DE07AT,121.17,1.0,121.17
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,7,49,0.75,4,0.625,"27-29""",05049GE04FE07AT,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,10,10,0.25,17,0.75,"165-175""",05010BE17GE10AT,50.9,1.0,50.9
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,9,27,0.875,18,0.625,"157-167""",05027HE18FE09AT,85.95,1.0,85.95
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,Yes,10,51,0.0,34,0.0,"335-345""",05051E34E10AT,210.4,1.0,210.4
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,43,0.875,49,0.0,"289-299""",05043H4906AT,148.62,2.0,297.24
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,9,49,0.875,36,0.25,"319-329""",05049H36B09AT,189.36,1.0,189.36
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,31,0.625,17,0.625,"99-105""",05031F17F06AT,57.3,2.0,114.6
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,5,36,0.625,15,0.5,"73-77""",05036F15D05AT,86.55,2.0,173.1
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,17,0.375,12,0.875,"35-37""",05017C12H03AT,15.27,4.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,7,45,0.75,32,0.375,"219-229""",05045G32C07AT,121.17,1.0,121.17
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,7,0.625,27,0.375,"78-84""",05007F27C03AT,17.46,4.0,69.84
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,35,0.625,18,0.125,"52-56""",05035F18A03AT,51.93,4.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,10,44,0.125,42,0.375,"415-425""",05044A42C10AT,210.4,1.0,210.4
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,23,0.75,47,0.125,"277-287""",05023G47A06AT,45.96,2.0,91.92
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,39,0.0,43,0.25,"339-349""",0503943B08AT,168.32,1.0,168.32
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,4,50,0.625,23,0.5,"89-95""",05050F23D04AT,69.24,3.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,5,12,0.375,50,0.625,"245-255""",05012C50F05AT,34.3,2.0,68.6
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,26,0.25,13,0.625,"75-81""",05026B13F06AT,52.74,2.0,105.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,10,35,0.125,11,0.125,"106-114""",05035A11A10AT,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,2,27,0.875,27,0.875,"52-56""",05027H27H02AT,20.62,6.0,123.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,9,6,0.375,5,0.125,"44-46""",05006C05A09AT,45.81,1.0,45.81
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,44,0.25,28,0.25,"163-173""",05044B28B06AT,103.86,2.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,47,0.375,32,0.0,"187-197""",05047C3206AT,126.24,2.0,252.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,2,10,0.375,45,0.25,"87-93""",05010C45B02AT,12.68,6.0,76.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,9,26,0.25,17,0.375,"148-158""",05026B17C09AT,79.11,1.0,79.11
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,31,0.375,36,0.0,"283-293""",05031C3608AT,102.64,1.0,102.64
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,15,0.25,35,0.125,"101-109""",05015B35A03AT,19.92,4.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,16,0.0,45,0.375,"130-140""",0501645C03AT,22.11,4.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,10,16,0.0,18,0.625,"175-185""",0501618F10AT,51.9,1.0,51.9
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,4,18,0.125,27,0.875,"104-112""",05018A27H04AT,26.56,3.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,7,0.125,33,0.0,"96-102""",05007A3303AT,17.46,4.0,69.84
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,4,23,0.0,26,0.75,"100-108""",0502326G04AT,26.56,3.0,79.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,4,4,0.0,6,0.375,"23-25""",0500406C04AT,20.36,3.0,61.08
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,10,17,0.0,22,0.5,"215-225""",0501722D10AT,54.2,1.0,54.2
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,37,0.25,38,0.125,"299-309""",05037B38A08AT,138.48,1.0,138.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,9,50,0.0,4,0.375,"35-37""",0505004C09AT,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,2,18,0.25,42,0.5,"81-87""",05018B42D02AT,14.74,6.0,88.44
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,4,47,0.625,50,0.0,"195-205""",05047F5004AT,99.08,3.0,297.24
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,6,50,0.125,12,0.25,"70-74""",05050A12B06AT,103.86,2.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,7,10,0.75,24,0.625,"163-173""",05010G24F07AT,36.33,1.0,36.33
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,42,0.125,10,0.625,"29-31""",05042A10F03AT,#N/A,#N/A,#N/A
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,5,20,0.125,29,0.75,"140-150""",05020A29G05AT,33.2,2.0,66.4
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,17,0.875,18,0.375,"139-149""",05017H18C08AT,42.48,1.0,42.48
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,7,0.5,37,0.125,"291-301""",05007D37A08AT,49.04,1.0,49.04
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,10,17,0.375,47,0.5,"465-475""",05017C47D10AT,73.7,1.0,73.7
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,4,0.125,25,0.0,"195-205""",05004A2508AT,46.56,1.0,46.56
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,9,33,0.875,8,0.0,"70-74""",05033H0809AT,72.27,1.0,72.27
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,2,44,0.375,27,0.5,"52-56""",05044C27D02AT,34.62,6.0,207.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,7,26,0.875,50,0.125,"345-355""",05026H50A07AT,96.88,1.0,96.88
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,5,14,0.5,23,0.5,"111-119""",05014D23D05AT,26.55,2.0,53.1
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,7,28,0.375,42,0.5,"289-299""",05028C42D07AT,89.81,1.0,89.81
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,3,29,0.625,32,0.5,"93-99""",05029F32D03AT,35.43,4.0,141.72
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,8,24,0.625,51,0.5,"403-413""",05024F51D08AT,65.68,1.0,65.68
+Tri-Dek 15/40 3-Ply,Antimicrobial,Link,No,5,44,0.75,48,0.875,"235-245""",05044G48H05AT,123.85,2.0,247.7
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,51,0.125,45,0.25,,05645AE51BE01,26.79,12.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,20,0.625,27,0.875,,05620FE27HE01,7.19,12.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,35,0.375,44,0.125,,05635CE44AE01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,34,0.875,19,0.75,,05619HE34GE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,6,0.0,37,0.875,,05606E37HE01,6.29,12.0,75.48
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,32,0.75,30,0.5,,05630GE32DE01,12.79,12.0,153.48
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,29,0.125,5,0.0,,05605AE29E01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,48,0.25,32,0.375,,05632BE48CE01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,4,0.25,9,0.375,,05604BE09CE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,26,0.25,8,0.625,,05608BE26FE01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,50,0.875,48,0.0,,05648HE50E01,26.79,12.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,16,0.625,32,0.625,,05616FE32FE01,7.19,12.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,39,0.5,33,0.625,,05633DE39FE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,20,0.875,30,0.125,,05620HE30AE01,7.19,12.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,47,0.5,4,0.375,,05604DE47CE01,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,17,0.875,14,0.375,,05614HE17CE01,5.63,12.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,42,0.75,21,0.125,,05621GE42AE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,20,0.625,27,0.875,,05620FE27HE01,7.19,12.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,11,0.375,4,0.25,,05604CE11BE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,37,0.625,9,0.75,,05609FE37GE01,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,37,0.125,14,0.5,,05614AE37DE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,18,0.625,24,0.25,,05618FE24BE01,6.11,12.0,73.32
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,26,0.25,10,0.875,,05610BE26HE01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,46,0.0,28,0.75,,05628E46GE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,33,0.25,22,0.125,,05622BE33AE01,11.15,12.0,133.8
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,22,0.25,28,0.125,,05622BE28AE01,7.19,12.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,21,0.875,7,0.375,,05607HE21CE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,33,0.25,34,0.625,,05633BE34FE01,13.88,12.0,166.56
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,10,0.125,40,0.0,,05610AE40E01,6.85,12.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,16,0.75,10,0.0,,05610GE16E01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,30,0.875,26,0.125,,05626HE30AE01,11.97,12.0,143.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,50,0.875,22,0.25,,05622HE50BE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,12,0.25,34,0.0,,05612BE34E01,6.85,12.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,20,0.5,13,0.0,,05613DE20E01,5.63,12.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,15,0.875,6,0.375,,05606HE15CE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,7,0.125,21,0.5,,05607AE21DE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,44,0.75,12,0.375,,05612GE44CE01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,6,0.375,10,0.75,,05606CE10GE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,42,0.875,36,0.0,,05636HE42E01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,36,0.125,4,0.375,,05604AE36CE01,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,16,0.625,12,0.0,,05612FE16E01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,42,0.5,10,0.75,,05610DE42GE01,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,14,0.375,49,0.625,,05614CE49FE01,7.76,12.0,93.12
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,25,0.75,5,0.125,,05605GE25AE01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,48,0.75,31,0.125,,05631GE48AE01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,13,0.625,26,0.375,,05613FE26CE01,6.63,12.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,21,0.25,48,0.125,,05621BE48AE01,8.44,12.0,101.28
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,14,0.75,4,0.25,,05604GE14BE01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,13,0.625,7,0.0,,05607FE13E01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,43,0.625,4,0.625,,05604FE43FE01,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,35,0.375,42,0.125,,05635C42A01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,17,0.0,21,0.875,,0561721H01,5.86,12.0,70.32
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,10,0.875,23,0.0,,05610H2301,5.63,12.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,37,0.125,45,0.5,,05637A45D01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,35,0.875,17,0.25,,05617H35B01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,31,0.625,45,0.875,,05631F45H01,14.98,12.0,179.76
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,9,0.0,5,0.875,,0560509H01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,15,0.0,28,0.5,,0561528D01,6.85,12.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,16,0.5,16,0.875,,05616D16H01,5.63,12.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,12,0.25,51,0.5,,05612B51D01,7.42,12.0,89.04
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,32,0.625,4,0.125,,05604F32A01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,35,0.125,29,0.75,,05629A35G01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,21,0.5,23,0.125,,05621D23A01,6.11,12.0,73.32
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,24,0.25,18,0.25,,05618B24B01,5.99,12.0,71.88
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,23,0.125,7,0.0,,05607A2301,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,33,0.375,6,0.75,,05606C33G01,8.68,12.0,104.16
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,38,0.875,14,0.125,,05614H38A01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,43,0.625,11,0.5,,05611F43D01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,42,0.125,46,0.625,,05642A46F01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,20,0.375,41,0.25,,05620C41B01,7.97,12.0,95.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,45,0.375,30,0.75,,05630C45G01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,29,0.375,34,0.0,,05629C3401,12.79,12.0,153.48
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,21,0.75,14,0.875,,05614G21H01,5.75,12.0,69.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,9,0.5,32,0.25,,05609D32B01,6.63,12.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,9,0.375,49,0.0,,05609C4901,7.1,12.0,85.2
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,46,0.25,51,0.75,,05646B51G01,26.79,12.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,21,0.75,48,0.875,,05621G48H01,8.44,12.0,101.28
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,28,0.25,17,0.0,,05617B2801,9.5,12.0,114.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,37,0.25,32,0.875,,05632B37H01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,35,0.5,48,0.625,,05635D48F01,22.75,12.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,49,0.625,17,0.875,,05617F49H01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,30,0.75,44,0.0,,05630G4401,14.98,12.0,179.76
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,41,0.625,51,0.625,,05641F51F01,26.79,12.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,51,0.25,39,0.625,,05639B51F01,26.79,12.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,8,0.25,7,0.375,,05607B08C01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,36,0.25,33,0.75,,05633B36G01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,14,0.5,6,0.5,,05606D14D01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,36,0.625,29,0.625,,05629F36F01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,42,0.125,18,0.875,,05618A42H01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,9,0.5,30,0.875,,05609D30H01,6.63,12.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,16,0.375,8,0.125,,05608C16A01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,19,0.625,46,0.25,,05619F46B01,7.97,12.0,95.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,7,0.0,4,0.0,,056040701,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,49,0.25,51,0.625,,05649B51F01,30.84,12.0,370.08
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,10,0.75,19,0.25,,05610G19B01,5.5,12.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,51,0.0,16,0.0,,056165101,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,28,0.375,26,0.375,,05626C28C01,11.15,12.0,133.8
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,51,0.0,10,0.375,,0561051C01,18.72,12.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,25,0.5,14,0.375,,05614D25C01,9.5,12.0,114.0
+Tri-Dek 4-ply XL,None (Standard),Panel,No,1,13,0.0,19,0.625,,0561319F01,5.63,12.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,7,41,0.75,48,0.0,"331-341""",05641GE48E07,187.53,1.0,187.53
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,50,0.875,37,0.875,"180-190""",05650HE37HE05,113.75,2.0,227.5
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,10,49,0.0,43,0.0,"425-435""",05649E43E10,267.9,1.0,267.9
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,25,0.875,29,0.875,"140-150""",05625HE29HE05,55.75,2.0,111.5
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,11,0.125,34,0.875,"131-141""",05611AE34HE04,26.52,3.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,38,0.75,39,0.5,"75-81""",05638GE39DE02,45.5,6.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,44,0.5,19,0.625,"55-59""",05644DE19FE03,56.16,4.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,8,0.625,24,0.75,"116-124""",05608FE24GE05,27.5,2.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,9,34,0.0,17,0.75,"148-158""",05634E17GE09,168.48,1.0,168.48
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,9,19,0.5,11,0.125,"96-102""",05619DE11AE09,49.5,1.0,49.5
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,6,0.125,17,0.625,"49-53""",05606AE17FE03,16.5,4.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,13,0.25,31,0.5,"120-128""",05613BE31DE04,27.4,3.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,11,0.75,38,0.0,"147-157""",05611GE38E04,27.4,3.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,46,0.25,43,0.875,"339-349""",05646BE43HE08,214.32,1.0,214.32
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,6,16,0.5,31,0.5,"181-191""",05616DE31DE06,43.14,2.0,86.28
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,6,13,0.0,6,0.25,"35-37""",05613E06BE06,33.0,2.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,22,0.375,34,0.625,"165-175""",05622CE34FE05,39.85,2.0,79.7
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,10,8,0.625,12,0.625,"116-124""",05608FE12FE10,55.0,1.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,28,0.125,38,0.0,"185-195""",05628AE38E05,63.95,2.0,127.9
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,9,50,0.25,34,0.125,"301-311""",05650BE34AE09,204.75,1.0,204.75
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,47,0.375,41,0.875,"159-169""",05647CE41HE04,91.0,3.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,6,29,0.0,17,0.875,"99-105""",05629E17HE06,61.92,2.0,123.84
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,26,0.75,47,0.875,"91-97""",05626GE47HE02,27.76,6.0,166.56
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,34,0.375,42,0.375,"81-87""",05634CE42CE02,37.44,6.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,44,0.375,30,0.75,"58-62""",05644CE30GE02,37.44,6.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,9,31,0.625,39,0.375,"346-356""",05631FE39CE09,124.92,1.0,124.92
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,7,47,0.375,22,0.25,"149-159""",05647CE22BE07,131.04,1.0,131.04
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,9,24,0.625,6,0.0,"52-56""",05624FE06E09,49.5,1.0,49.5
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,49,0.5,41,0.625,"323-333""",05649DE41FE08,214.32,1.0,214.32
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,16,0.25,17,0.375,"82-88""",05616BE17CE05,28.15,2.0,56.3
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,12,0.375,28,0.75,"108-116""",05612CE28GE04,26.52,3.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,13,0.0,49,0.875,"191-201""",05613E49HE04,29.68,3.0,89.04
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,25,0.75,23,0.25,"67-71""",05625GE23BE03,30.96,4.0,123.84
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,37,0.75,19,0.25,"55-59""",05637GE19BE03,56.16,4.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,14,0.5,13,0.625,"100-108""",05614DE13FE08,44.0,1.0,44.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,6,0.75,37,0.125,"143-153""",05606GE37AE04,26.52,3.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,21,0.125,22,0.375,"106-114""",05621AE22CE05,30.55,2.0,61.1
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,6,6,0.625,12,0.75,"70-74""",05606FE12GE06,33.0,2.0,66.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,5,26,0.625,44,0.625,"215-225""",05626FE44FE05,69.4,2.0,138.8
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,49,0.875,45,0.375,"130-140""",05649HE45CE03,80.37,4.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,7,51,0.0,4,0.25,"27-29""",05651E04BE07,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,35,0.875,27,0.0,"211-221""",05635HE27E08,149.76,1.0,149.76
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,38,0.125,7,0.0,"13-15""",05638AE07E02,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,4,37,0.75,29,0.25,"112-120""",05637GE29BE04,74.88,3.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,7,11,0.0,17,0.125,"115-123""",05611E17AE07,38.5,1.0,38.5
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,33,0.875,17,0.25,"49-53""",05633HE17BE03,30.96,4.0,123.84
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,50,0.25,48,0.125,"379-389""",05650BE48AE08,214.32,1.0,214.32
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,3,51,0.0,40,0.0,"116-124""",05651E40E03,80.37,4.0,321.48
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,8,27,0.75,42,0.375,"331-341""",05627GE42CE08,111.04,1.0,111.04
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,7,9,0.0,44,0.625,"303-313""",05609E44FE07,47.95,1.0,47.95
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,30,0.625,50,0.5,"295-305""",05630F50D06,96.42,2.0,192.84
+Tri-Dek 4-ply XL,None (Standard),Link,No,2,12,0.875,33,0.875,"64-68""",05612H33H02,13.7,6.0,82.2
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,8,0.875,41,0.375,"364-374""",05608H41C09,59.67,1.0,59.67
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,44,0.125,7,0.0,"54-58""",05644A0708,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,44,0.0,10,0.125,"58-62""",0564410A06,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,30,0.875,38,0.5,"223-233""",05630H38D06,83.28,2.0,166.56
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,51,0.0,49,0.125,"289-299""",0565149A06,185.04,2.0,370.08
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,35,0.75,8,0.375,"54-58""",05635G08C07,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,8,0.5,49,0.0,"338-348""",05608D4907,49.7,1.0,49.7
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,42,0.0,51,0.25,"403-413""",0564251B08,214.32,1.0,214.32
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,50,0.25,29,0.625,"84-90""",05650B29F03,56.16,4.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,12,0.25,24,0.375,"116-124""",05612B24C05,28.15,2.0,56.3
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,38,0.125,50,0.75,"145-155""",05638A50G03,68.25,4.0,273.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,50,0.75,17,0.25,"131-141""",05650G17B08,149.76,1.0,149.76
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,14,0.75,14,0.625,"68-72""",05614G14F05,27.5,2.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,45,0.75,38,0.125,"337-347""",05645G38A09,204.75,1.0,204.75
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,27,0.75,6,0.5,"52-56""",05627G06D09,78.12,1.0,78.12
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,16,0.375,44,0.0,"391-401""",05616C4409,71.73,1.0,71.73
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,39,0.875,39,0.875,"385-395""",05639H39H10,227.5,1.0,227.5
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,7,0.0,22,0.75,"171-181""",0560722G08,44.0,1.0,44.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,49,0.0,37,0.625,"328-338""",0564937F09,204.75,1.0,204.75
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,41,0.125,23,0.625,"111-119""",05641A23F05,93.6,2.0,187.2
+Tri-Dek 4-ply XL,None (Standard),Link,No,9,48,0.0,31,0.625,"274-284""",0564831F09,204.75,1.0,204.75
+Tri-Dek 4-ply XL,None (Standard),Link,No,4,22,0.625,43,0.75,"167-177""",05622F43G04,31.88,3.0,95.64
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,37,0.75,20,0.25,"135-145""",05637G20B07,131.04,1.0,131.04
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,42,0.0,8,0.0,"62-66""",056420808,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,29,0.625,9,0.75,"87-93""",05629F09G10,86.8,1.0,86.8
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,48,0.625,15,0.875,"145-155""",05648F15H10,187.2,1.0,187.2
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,41,0.125,45,0.5,"355-365""",05641A45D08,182.0,1.0,182.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,22,0.5,13,0.625,"38-40""",05622D13F03,17.25,4.0,69.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,25,0.875,44,0.5,"127-137""",05625H44D03,41.64,4.0,166.56
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,37,0.5,11,0.375,"85-91""",05637D11C08,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,8,49,0.375,50,0.875,"395-405""",05649C50H08,246.72,1.0,246.72
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,38,0.5,9,0.875,"61-65""",05638D09H07,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,32,0.25,27,0.125,"184-194""",05632B27A07,83.79,1.0,83.79
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,51,0.125,26,0.125,"151-161""",05651A26A06,112.32,2.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,13,0.25,5,0.5,"49-51""",05613B05D10,55.0,1.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,10,0.875,14,0.875,"68-72""",05610H14H05,27.5,2.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,16,0.0,5,0.5,"49-51""",0561605D10,55.0,1.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,8,0.0,19,0.75,"185-195""",0560819G10,55.0,1.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,26,0.125,25,0.75,"73-77""",05626A25G03,33.45,4.0,133.8
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,6,0.875,36,0.625,"104-112""",05606H36F03,19.89,4.0,79.56
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,41,0.875,25,0.25,"73-77""",05641H25B03,56.16,4.0,224.64
+Tri-Dek 4-ply XL,None (Standard),Link,No,3,22,0.25,12,0.25,"35-37""",05622B12B03,16.89,4.0,67.56
+Tri-Dek 4-ply XL,None (Standard),Link,No,10,6,0.875,13,0.0,"125-135""",05606H1310,55.0,1.0,55.0
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,18,0.5,18,0.5,"87-93""",05618D18D05,28.75,2.0,57.5
+Tri-Dek 4-ply XL,None (Standard),Link,No,5,35,0.625,35,0.75,"170-180""",05635F35G05,93.6,2.0,187.2
+Tri-Dek 4-ply XL,None (Standard),Link,No,2,22,0.25,46,0.25,"89-95""",05622B46B02,16.58,6.0,99.48
+Tri-Dek 4-ply XL,None (Standard),Link,No,7,38,0.25,39,0.125,"268-278""",05638B39A07,131.04,1.0,131.04
+Tri-Dek 4-ply XL,None (Standard),Link,No,6,29,0.875,47,0.5,"277-287""",05629H47D06,89.88,2.0,179.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,21,0.75,45,0.25,,FALSE,8.29,12.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,51,0.0,15,0.625,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,29,0.5,24,0.125,,FALSE,11.6,12.0,139.2
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,28,0.25,12,0.375,,FALSE,9.88,12.0,118.56
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,10,0.625,22,0.125,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,25,0.625,38,0.125,,FALSE,13.3,12.0,159.6
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,37,0.25,36,0.125,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,13,0.625,23,0.75,,FALSE,5.98,12.0,71.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,7,0.5,20,0.25,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,43,0.625,44,0.875,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,50,0.75,50,0.875,,FALSE,32.07,12.0,384.84
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,12,0.875,7,0.875,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,49,0.5,19,0.125,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,6,0.0,40,0.625,,FALSE,6.54,12.0,78.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,30,0.25,42,0.5,,FALSE,14.44,12.0,173.28
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,25,0.25,36,0.0,,FALSE,12.45,12.0,149.4
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,36,0.625,25,0.25,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,36,0.875,29,0.25,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,43,0.75,48,0.5,,FALSE,27.86,12.0,334.32
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,26,0.5,30,0.0,,FALSE,11.6,12.0,139.2
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,14,0.0,13,0.125,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,13,0.125,9,0.875,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,41,0.0,5,0.25,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,22,0.875,32,0.75,,FALSE,8.29,12.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,13,0.0,6,0.75,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,14,0.625,4,0.0,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,47,0.875,15,0.75,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,12,0.5,27,0.0,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,39,0.375,21,0.125,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,5,0.125,20,0.875,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,20,0.75,5,0.75,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,48,0.125,51,0.5,,FALSE,27.86,12.0,334.32
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,7,0.625,37,0.375,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,23,0.125,36,0.375,,FALSE,8.29,12.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,8,0.25,22,0.625,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,20,0.25,10,0.875,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,11,0.625,45,0.75,,FALSE,7.48,12.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,32,0.75,20,0.25,,FALSE,11.6,12.0,139.2
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,48,0.125,37,0.0,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,6,0.0,21,0.75,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,5,0.125,35,0.375,,FALSE,6.54,12.0,78.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,32,0.125,48,0.875,,FALSE,16.71,12.0,200.52
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,46,0.375,30,0.875,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,13,0.375,29,0.75,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,37,0.875,21,0.875,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,51,0.125,18,0.0,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,28,0.75,24,0.625,,FALSE,11.6,12.0,139.2
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,29,0.5,6,0.125,,FALSE,9.03,12.0,108.36
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,40,0.5,26,0.625,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,Yes,1,13,0.25,32,0.625,,FALSE,7.12,12.0,85.44
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,50,0.25,33,0.375,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,37,0.125,21,0.25,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,26,0.125,32,0.0,,FALSE,12.45,12.0,149.4
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,46,0.25,4,0.25,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,44,0.625,4,0.5,,FALSE,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,26,0.875,17,0.125,,FALSE,9.88,12.0,118.56
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,30,0.0,30,0.375,,FALSE,12.45,12.0,149.4
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,35,0.0,23,0.25,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,10,0.375,19,0.75,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,51,0.0,45,0.25,,FALSE,27.86,12.0,334.32
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,15,0.0,19,0.75,,FALSE,5.86,12.0,70.32
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,15,0.75,5,0.25,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,12,0.125,42,0.375,,FALSE,7.48,12.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,15,0.875,26,0.5,,FALSE,7.12,12.0,85.44
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,46,0.875,22,0.75,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,35,0.625,18,0.125,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,12,0.375,39,0.375,,FALSE,7.12,12.0,85.44
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,29,0.0,14,0.375,,FALSE,9.88,12.0,118.56
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,8,0.625,42,0.25,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,20,0.125,29,0.75,,FALSE,7.48,12.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,48,0.5,23,0.0,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,45,0.75,32,0.5,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,35,0.5,32,0.875,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,21,0.5,17,0.875,,FALSE,6.09,12.0,73.08
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,50,0.875,37,0.375,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,10,0.375,36,0.75,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,33,0.5,17,0.25,,FALSE,10.73,12.0,128.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,11,0.875,33,0.5,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,29,0.25,21,0.25,,FALSE,10.73,12.0,128.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,26,0.5,36,0.125,,FALSE,13.3,12.0,159.6
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,11,0.625,5,0.0,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,32,0.25,47,0.75,,FALSE,16.71,12.0,200.52
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,42,0.375,18,0.375,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,37,0.75,39,0.875,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,26,0.125,43,0.375,,FALSE,14.44,12.0,173.28
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,46,0.875,31,0.5,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,25,0.875,42,0.375,,FALSE,13.3,12.0,159.6
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,29,0.25,31,0.125,,FALSE,12.45,12.0,149.4
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,7,0.125,28,0.375,,FALSE,6.54,12.0,78.48
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,14,0.625,32,0.625,,FALSE,7.12,12.0,85.44
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,45,0.25,24,0.375,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,51,0.0,10,0.5,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,19,0.25,31,0.625,,FALSE,7.48,12.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,45,0.375,37,0.5,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,9,0.375,32,0.75,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,10,0.625,29,0.75,,FALSE,6.9,12.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,7,0.375,9,0.375,,FALSE,5.72,12.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,50,0.0,25,0.0,,FALSE,19.47,12.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,27,0.375,43,0.875,,FALSE,14.44,12.0,173.28
+Tri-Dek 4-ply XL,Antimicrobial,Panel,No,1,39,0.75,45,0.375,,FALSE,23.66,12.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,9,20,0.25,18,0.125,"157-167""",05620BE18AE09AT,54.81,1.0,54.81
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,10,32,0.0,17,0.0,"165-175""",05632E17E10AT,107.3,1.0,107.3
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,2,23,0.0,42,0.625,"81-87""",05623E42FE02AT,16.58,6.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,9,0.375,51,0.125,"301-311""",05609CE51AE06AT,44.28,2.0,88.56
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,25,0.125,47,0.125,"136-146""",05625AE47AE03AT,43.32,4.0,173.28
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,46,0.625,9,0.5,"52-56""",05646FE09DE06AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,10,41,0.75,45,0.875,"445-455""",05641GE45HE10AT,236.6,1.0,236.6
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,25,0.625,8,0.0,"23-25""",05625FE08E03AT,27.09,4.0,108.36
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,23,0.0,44,0.5,"259-269""",05623E44DE06AT,51.72,2.0,103.44
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,5,14,0.625,12,0.875,"58-62""",05614FE12HE05AT,28.6,2.0,57.2
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,32,0.625,41,0.75,"159-169""",05632FE41GE04AT,62.32,3.0,186.96
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,9,39,0.75,39,0.5,"346-356""",05639GE39DE09AT,212.94,1.0,212.94
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,8,20,0.625,41,0.375,"323-333""",05620FE41CE08AT,66.32,1.0,66.32
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,35,0.375,4,0.5,"23-25""",05635CE04DE06AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,51,0.0,41,0.0,"159-169""",05651E41E04AT,111.44,3.0,334.32
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,25,0.0,21,0.25,"142-152""",05625E21BE07AT,75.11,1.0,75.11
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,2,19,0.0,5,0.0,"9-11""",05619E05E02AT,11.44,6.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,10,28,0.125,46,0.0,"455-465""",05628AE46E10AT,144.4,1.0,144.4
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,12,0.75,49,0.5,"191-201""",05612GE49DE04AT,30.88,3.0,92.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,23,0.25,25,0.5,"73-77""",05623BE25DE03AT,22.44,4.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,6,0.0,42,0.625,"289-299""",05606E42FE07AT,48.3,1.0,48.3
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,23,0.625,12,0.875,"70-74""",05623FE12HE06AT,35.88,2.0,71.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,8,30,0.125,12,0.5,"93-99""",05630AE12DE08AT,79.04,1.0,79.04
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,5,6,0.0,6,0.75,"29-31""",05606E06GE05AT,28.6,2.0,57.2
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,49,0.25,44,0.75,"127-137""",05649BE44GE03AT,83.58,4.0,334.32
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,6,16,0.625,23,0.25,"133-143""",05616FE23BE06AT,36.54,2.0,73.08
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,18,0.125,50,0.625,"195-205""",05618AE50FE04AT,35.12,3.0,105.36
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,24,0.875,35,0.625,"101-109""",05624HE35FE03AT,24.87,4.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,32,0.875,49,0.125,"191-201""",05632HE49AE04AT,66.84,3.0,200.52
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,50,0.5,16,0.5,"47-49""",05650DE16DE03AT,58.41,4.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,8,48,0.0,11,0.375,"85-91""",05648E11CE08AT,155.76,1.0,155.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,36,0.875,24,0.125,"163-173""",05636HE24AE07AT,136.29,1.0,136.29
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,9,43,0.125,31,0.25,"274-284""",05643AE31BE09AT,175.23,1.0,175.23
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,5,21,0.125,16,0.5,"77-83""",05621AE16DE05AT,29.9,2.0,59.8
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,10,0.125,38,0.125,"147-157""",05610AE38AE04AT,27.6,3.0,82.8
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,2,49,0.625,34,0.875,"66-70""",05649FE34HE02AT,47.32,6.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,2,38,0.25,19,0.625,"37-39""",05638BE19FE02AT,38.94,6.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,9,37,0.0,12,0.75,"104-112""",05637E12GE09AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,2,22,0.75,15,0.125,"29-31""",05622GE15AE02AT,11.96,6.0,71.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,9,0.625,44,0.25,"303-313""",05609FE44BE07AT,49.84,1.0,49.84
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,9,0.25,9,0.125,"61-65""",05609BE09AE07AT,40.04,1.0,40.04
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,7,13,0.75,27,0.5,"184-194""",05613GE27DE07AT,48.3,1.0,48.3
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,5,20,0.5,51,0.125,"250-260""",05620DE51AE05AT,43.9,2.0,87.8
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,3,51,0.0,9,0.125,"26-28""",05651E09AE03AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,20,0.125,24,0.125,"93-99""",05620AE24AE04AT,25.4,3.0,76.2
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,4,11,0.0,10,0.625,"39-41""",05611E10FE04AT,22.88,3.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,10,14,0.0,23,0.875,"225-235""",05614E23HE10AT,59.8,1.0,59.8
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,8,43,0.5,41,0.625,"323-333""",05643DE41FE08AT,189.28,1.0,189.28
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,5,36,0.0,6,0.0,"29-31""",05636E06E05AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,Yes,10,26,0.25,36,0.75,"355-365""",05626BE36GE10AT,133.0,1.0,133.0
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,25,0.625,6,0.5,"47-49""",05625F06D08AT,72.24,1.0,72.24
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,2,49,0.25,28,0.75,"54-58""",05649B28G02AT,38.94,6.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,30,0.25,7,0.75,"68-72""",05630B07G10AT,90.3,1.0,90.3
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,8,0.75,5,0.375,"39-41""",05608G05C08AT,45.76,1.0,45.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,5,49,0.75,45,0.875,"220-230""",05649G45H05AT,139.3,2.0,278.6
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,2,23,0.375,33,0.0,"64-68""",05623C3302AT,16.58,6.0,99.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,13,0.25,16,0.625,"62-66""",05613B16F04AT,22.88,3.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,15,0.0,4,0.0,"23-25""",056150406AT,34.32,2.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,21,0.25,7,0.0,"41-43""",05621B0706AT,34.32,2.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,10,0.0,9,0.875,"52-56""",0561009H06AT,34.32,2.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,35,0.5,6,0.75,"58-62""",05635D06G10AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,18,0.125,10,0.375,"87-93""",05618A10C09AT,51.48,1.0,51.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,31,0.0,20,0.75,"77-83""",0563120G04AT,42.92,3.0,128.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,19,0.125,23,0.75,"202-212""",05619A23G09AT,57.15,1.0,57.15
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,45,0.375,5,0.375,"29-31""",05645C05C06AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,5,29,0.5,26,0.125,"125-135""",05629D26A05AT,58.0,2.0,116.0
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,32,0.125,42,0.625,"163-173""",05632A42F04AT,62.32,3.0,186.96
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,45,0.25,38,0.375,"337-347""",05645B38C09AT,212.94,1.0,212.94
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,8,0.625,27,0.5,"157-167""",05608F27D06AT,39.24,2.0,78.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,26,0.75,48,0.125,"379-389""",05626G48A08AT,115.52,1.0,115.52
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,3,44,0.875,39,0.625,"113-121""",05644H39F03AT,70.98,4.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,5,12,0.875,49,0.375,"240-250""",05612H49C05AT,38.6,2.0,77.2
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,3,22,0.5,46,0.125,"133-143""",05622D46A03AT,25.86,4.0,103.44
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,23,0.125,49,0.875,"436-446""",05623A49H09AT,83.16,1.0,83.16
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,7,37,0.25,24,0.125,"163-173""",05637B24A07AT,136.29,1.0,136.29
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,15,0.875,41,0.125,"405-415""",05615H41A10AT,75.8,1.0,75.8
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,3,31,0.75,49,0.625,"142-152""",05631G49F03AT,50.13,4.0,200.52
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,2,35,0.5,45,0.75,"87-93""",05635D45G02AT,47.32,6.0,283.92
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,7,7,0.875,50,0.0,"345-355""",05607H5007AT,51.66,1.0,51.66
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,3,13,0.875,39,0.25,"113-121""",05613H39B03AT,22.44,4.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,7,49,0.5,27,0.75,"184-194""",05649D27G07AT,136.29,1.0,136.29
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,47,0.25,10,0.25,"97-103""",05647B10B10AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,30,0.5,31,0.375,"305-315""",05630D31C10AT,133.0,1.0,133.0
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,20,0.625,31,0.375,"120-128""",05620F31C04AT,29.92,3.0,89.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,22,0.0,34,0.75,"301-311""",0562234G09AT,74.61,1.0,74.61
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,2,6,0.5,5,0.875,"9-11""",05606D05H02AT,11.44,6.0,68.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,2,4,0.625,42,0.875,"81-87""",05604F42H02AT,13.08,6.0,78.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,5,4,0.125,17,0.5,"82-88""",05604A17D05AT,28.6,2.0,57.2
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,5,48,0.375,50,0.375,"245-255""",05648C50C05AT,139.3,2.0,278.6
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,9,0.0,11,0.75,"85-91""",0560911G08AT,45.76,1.0,45.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,40,0.5,9,0.875,"35-37""",05640D09H04AT,#N/A,#N/A,#N/A
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,20,0.25,10,0.125,"87-93""",05620B10A09AT,51.48,1.0,51.48
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,3,45,0.625,26,0.375,"75-81""",05645F26C03AT,58.41,4.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,10,14,0.75,50,0.0,"495-505""",05614G5010AT,80.7,1.0,80.7
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,39,0.5,21,0.25,"163-173""",05639D21B08AT,155.76,1.0,155.76
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,9,28,0.0,18,0.625,"157-167""",0562818F09AT,96.57,1.0,96.57
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,6,44,0.25,23,0.125,"133-143""",05644B23A06AT,116.82,2.0,233.64
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,8,6,0.625,25,0.25,"195-205""",05606F25B08AT,52.32,1.0,52.32
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,7,34,0.5,16,0.5,"108-116""",05634D16D07AT,136.29,1.0,136.29
+Tri-Dek 4-ply XL,Antimicrobial,Link,No,4,48,0.125,18,0.5,"70-74""",05648A18D04AT,77.88,3.0,233.64
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,2,0.5,20,0.0,,03102DE20E01,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,20,0.0,2,0.5,,03102E20DE01,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,52,0.0,40,0.0,,03140E52E01,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Panel,Yes,1,40,0.0,78,0.0,,03140E78E01,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,2,0.5,20,0.0,"39-41""",03102DE20E02,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,20,0.0,2,0.5,"3-5""",03120E02DE02,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,52,0.0,40,0.0,"77-83""",03152E40E02,0.0,0.0,0.0
+Tri-Dek FC Panel,None (Standard),Link,Yes,2,40,0.0,78,0.0,"151-161""",03140E78E02,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,2,0.5,20,0.0,,05402DE20E01,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,20,0.0,2,0.5,,05402E20DE01,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,52,0.0,40,0.0,,05440E52E01,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Panel,Yes,1,40,0.0,78,0.0,,05440E78E01,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,2,0.5,20,0.0,"39-41""",05402DE20E02,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,20,0.0,2,0.5,"3-5""",05420E02DE02,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,52,0.0,40,0.0,"77-83""",05452E40E02,0.0,0.0,0.0
+Tri-Dek 3/67 2-Ply,None (Standard),Link,Yes,2,40,0.0,78,0.0,"151-161""",05440E78E02,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,2,0.5,20,0.0,,05002DE20E01,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,20,0.0,2,0.5,,05002E20DE01,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,52,0.0,40,0.0,,05040E52E01,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Panel,Yes,1,40,0.0,78,0.0,,05040E78E01,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,2,0.5,20,0.0,"39-41""",05002DE20E02,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,20,0.0,2,0.5,"3-5""",05020E02DE02,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,52,0.0,40,0.0,"77-83""",05052E40E02,0.0,0.0,0.0
+Tri-Dek 15/40 3-Ply,None (Standard),Link,Yes,2,40,0.0,78,0.0,"151-161""",05040E78E02,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,2,0.5,20,0.0,,05602DE20E01,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,20,0.0,2,0.5,,05602E20DE01,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,52,0.0,40,0.0,,05640E52E01,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Panel,Yes,1,40,0.0,78,0.0,,05640E78E01,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,2,0.5,20,0.0,"39-41""",05602DE20E02,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,20,0.0,2,0.5,"3-5""",05620E02DE02,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,52,0.0,40,0.0,"77-83""",05652E40E02,0.0,0.0,0.0
+Tri-Dek 4-ply XL,None (Standard),Link,Yes,2,40,0.0,78,0.0,"151-161""",05640E78E02,0.0,0.0,0.0

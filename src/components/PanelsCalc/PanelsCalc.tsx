@@ -45,6 +45,9 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
   const [inputs, setInputs] = useState<PanelsLinksInputs>(initialInputs);
   const [pricingResult, setPricingResult] =
     useState<PanelsLinksResult>(initialResult);
+  const [inputMode, setInputMode] = useState<'decimal' | 'fractional'>('fractional');
+  const [decimalHeight, setDecimalHeight] = useState<number>(initialInputs.heightWhole + initialInputs.heightFraction);
+  const [decimalWidth, setDecimalWidth] = useState<number>(initialInputs.widthWhole + initialInputs.widthFraction);
 
   // Set initial product family once data is loaded
   useEffect(() => {
@@ -55,6 +58,19 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
       }
     }
   }, [data]);
+
+  // Sync decimal inputs when fractional inputs change
+  useEffect(() => {
+    setDecimalHeight(inputs.heightWhole + inputs.heightFraction);
+    setDecimalWidth(inputs.widthWhole + inputs.widthFraction);
+  }, [inputs.heightWhole, inputs.heightFraction, inputs.widthWhole, inputs.widthFraction]);
+
+  // Reset addOn if Antimicrobial is selected and user switches to a product that doesn't support it.
+  useEffect(() => {
+    if (inputs.productFamily === 'Tri-Dek FC Panel' && inputs.addOn === 'Antimicrobial') {
+      setInputs((prev) => ({ ...prev, addOn: 'Standard' }));
+    }
+  }, [inputs.productFamily, inputs.addOn]);
 
   // Main calculation effect
   useEffect(() => {
@@ -122,6 +138,25 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
     }
   };
 
+  // Handlers for decimal inputs
+  const handleDecimalHeightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseFloat(e.target.value) || 0;
+    setDecimalHeight(value);
+    const whole = Math.floor(value);
+    // Find the closest fractional value from the available options
+    const fraction = value - whole;
+    setInputs((prev) => ({ ...prev, heightWhole: whole, heightFraction: fraction }));
+  };
+
+  const handleDecimalWidthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = parseFloat(e.target.value) || 0;
+    setDecimalWidth(value);
+    const whole = Math.floor(value);
+    // Find the closest fractional value from the available options
+    const fraction = value - whole;
+    setInputs((prev) => ({ ...prev, widthWhole: whole, widthFraction: fraction }));
+  };
+
   // Loading and error states
   if (isLoading) return <div>Loading Panels-Links Data...</div>;
   if (error) return <div>Error loading data: {error.message}</div>;
@@ -130,6 +165,18 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
   // Generate integer lists for dropdowns
   const generateIntList = (min: number, max: number) =>
     Array.from({ length: max - min + 1 }, (_, i) => min + i);
+
+  // Determine if the Antimicrobial option should be available.
+  const isAntimicrobialAvailable = inputs.productFamily !== 'Tri-Dek FC Panel';
+
+  // Define product-specific max heights for UI validation
+  const PRODUCT_MAX_HEIGHTS: { [key: string]: number } = {
+    "Tri-Dek FC Panel": 24,
+    "Tri-Dek 3/67 2-Ply": 51,
+    "Tri-Dek 15/40 3-Ply": 51,
+    "Tri-Dek 4-ply XL": 51,
+  };
+  const maxAllowedHeight = PRODUCT_MAX_HEIGHTS[inputs.productFamily] ?? 77; // Default max
 
   return (
     <CalculatorTemplate
@@ -145,7 +192,8 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
           </FormField>
           <FormField label="Optional Add-on">
             <select name="addOn" value={inputs.addOn} onChange={handleChange} className="w-full p-3 border rounded-md bg-white">
-              <option value="Standard">Standard</option><option value="Antimicrobial">Antimicrobial</option>
+              <option value="Standard">Standard</option>
+              {isAntimicrobialAvailable && <option value="Antimicrobial">Antimicrobial</option>}
             </select>
           </FormField>
           <FormField label="Type">
@@ -153,31 +201,80 @@ function PanelsCalc({ onCalculate }: PanelsCalcProps) {
               <option value="Panel">Panel</option><option value="Link">Link</option>
             </select>
           </FormField>
+
           {inputs.type === 'Link' && (
             <FormField label="Number of Panels">
               <input type="number" name="numberOfPanels" value={inputs.numberOfPanels} onChange={handleChange} placeholder="e.g., 3" className="w-full p-3 border rounded-md" min="2"/>
             </FormField>
           )}
-          <FormField label="Height (inches)">
-            <div className="flex space-x-2">
-              <select name="heightWhole" value={inputs.heightWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
-                {generateIntList(3, 77).map((val) => (<option key={`h-int-${val}`} value={val}>{val}</option>))}
-              </select>
-              <select name="heightFraction" value={inputs.heightFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
-                {Array.from(data.fractionalCodes.keys()).map((val) => (<option key={`h-frac-${val}`} value={val}>{`${val}"`}</option>))}
-              </select>
-            </div>
-          </FormField>
-          <FormField label="Width (inches)">
-            <div className="flex space-x-2">
-              <select name="widthWhole" value={inputs.widthWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
-                {generateIntList(3, 51).map((val) => (<option key={`w-int-${val}`} value={val}>{val}</option>))}
-              </select>
-              <select name="widthFraction" value={inputs.widthFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
-                {Array.from(data.fractionalCodes.keys()).map((val) => (<option key={`w-frac-${val}`} value={val}>{`${val}"`}</option>))}
-              </select>
-            </div>
-          </FormField>
+
+          {/* Input Mode Toggle */}
+          <div className="flex items-center justify-start space-x-3 pt-2">
+            <span className={`font-medium ${inputMode === 'fractional' ? 'text-blue-600' : 'text-gray-500'}`}>Fractional</span>
+            <button
+              type="button"
+              onClick={() => setInputMode(inputMode === 'fractional' ? 'decimal' : 'fractional')}
+              className={`relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+                inputMode === 'decimal' ? 'bg-blue-600' : 'bg-gray-200'
+              }`}
+              aria-label="Toggle input mode"
+            >
+              <span
+                aria-hidden="true"
+                className={`inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${inputMode === 'decimal' ? 'translate-x-5' : 'translate-x-0'}`}
+              />
+            </button>
+            <span className={`font-medium ${inputMode === 'decimal' ? 'text-blue-600' : 'text-gray-500'}`}>Decimal</span>
+          </div>
+
+          {inputMode === 'fractional' ? (
+            <>
+              <FormField label="Height (inches)">
+                <div className="flex space-x-2">
+                  <select name="heightWhole" value={inputs.heightWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                    {generateIntList(3, maxAllowedHeight).map((val) => (<option key={`h-int-${val}`} value={val}>{val}</option>))}
+                  </select>
+                  <select name="heightFraction" value={inputs.heightFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                    {[0, ...Array.from(data.fractionalCodes.keys())].map((val) => (<option key={`h-frac-${val}`} value={val}>{`${val}"`}</option>))}
+                  </select>
+                </div>
+              </FormField>
+              <FormField label="Width (inches)">
+                <div className="flex space-x-2">
+                  <select name="widthWhole" value={inputs.widthWhole} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                    {generateIntList(3, 51).map((val) => (<option key={`w-int-${val}`} value={val}>{val}</option>))}
+                  </select>
+                  <select name="widthFraction" value={inputs.widthFraction} onChange={handleChange} className="w-1/2 p-3 border rounded-md bg-white">
+                    {[0, ...Array.from(data.fractionalCodes.keys())].map((val) => (<option key={`w-frac-${val}`} value={val}>{`${val}"`}</option>))}
+                  </select>
+                </div>
+              </FormField>
+            </>
+          ) : (
+            <>
+              <FormField label="Height (inches)">
+                <input
+                  type="number"
+                  value={decimalHeight}
+                  onChange={handleDecimalHeightChange}
+                  placeholder="e.g., 24.5"
+                  className="w-full p-3 border rounded-md"
+                  step="any"
+                />
+              </FormField>
+              <FormField label="Width (inches)">
+                <input
+                  type="number"
+                  value={decimalWidth}
+                  onChange={handleDecimalWidthChange}
+                  placeholder="e.g., 12.75"
+                  className="w-full p-3 border rounded-md"
+                  step="any"
+                />
+              </FormField>
+            </>
+          )}
+
           <FormField label="Made Exact?">
             <div className="flex items-center">
               <input type="checkbox" name="isExact" checked={inputs.isExact} onChange={handleChange} className="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"/>
