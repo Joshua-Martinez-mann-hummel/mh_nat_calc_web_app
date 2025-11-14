@@ -1,10 +1,10 @@
 // Based on the template from src/services/sleeveDataService.ts
-import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
 import type {
   PadsData,
   ProductInfo,
   PriceTier,
 } from '../data/PadsData/padsDataTypes';
+import { parseCsvFromUrl } from './csvParser';
 
 // Import CSV files as URL assets
 import productCrossReferenceUrl from '/src/data/PadsData/PadsProductCrossReference.csv?url';
@@ -16,32 +16,13 @@ import cartonQtyUnder26Url from '/src/data/PadsData/padsCartonQty_under26.csv?ur
 import cartonQtyOver26Url from '/src/data/PadsData/padsCartonQty_over26.csv?url';
 
 /**
- * Generic utility to fetch and parse a CSV file from a URL.
- * @param filePath The URL of the CSV file.
- * @returns A promise that resolves to an array of parsed objects.
- */
-const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
-  return new Promise<T[]>((resolve, reject) => {
-    const config: ParseRemoteConfig<T> = {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
-      dynamicTyping: true,
-      complete: (results: ParseResult<T>) => resolve(results.data),
-      error: (error: Error) => reject(error),
-    };
-    Papa.parse<T>(filePath, config);
-  });
-};
-
-/**
  * Loads and joins product cross-reference and master data.
  */
 const loadProductInfo = async (): Promise<Map<string, ProductInfo>> => {
   const [crossRefData, masterData] = await Promise.all([
     // Use the actual headers from the CSV file
-    loadAndParseCsv<{ 'Product Name': string; 'Product Prefix': number; 'Standard Carton QTY': number }>(productCrossReferenceUrl),
-    loadAndParseCsv<{ Prefix: number; Min: number; Max: number }>(productMasterUrl),
+    parseCsvFromUrl<{ 'Product Name': string; 'Product Prefix': number; 'Standard Carton QTY': number }>(productCrossReferenceUrl),
+    parseCsvFromUrl<{ Prefix: number; Min: number; Max: number }>(productMasterUrl),
   ]);
 
   // The master map should be keyed by the 'Prefix' column from the master file
@@ -86,7 +67,7 @@ const loadProductInfo = async (): Promise<Map<string, ProductInfo>> => {
  * Loads fractional codes into a Map.
  */
 const loadFractionalCodes = async (): Promise<Map<number, string>> => {
-  const data = await loadAndParseCsv<{ Decimal: number; Fractional: string; Letter: string; Whole: number }>(fractionalCodesUrl);
+  const data = await parseCsvFromUrl<{ Decimal: number; Fractional: string; Letter: string; Whole: number }>(fractionalCodesUrl);
   return new Map(data.map(item => [item.Decimal, item.Letter || '']));
 };
 
@@ -99,7 +80,7 @@ const loadPadPricing = async (): Promise<{
     at: PriceTier[];
   };
 }> => {
-  const rawPricing = await loadAndParseCsv<{ Prefix: number; Name: string; Range: string; From: number; To: number; Price: any; 'AT Price': any }>(padPricingUrl);
+  const rawPricing = await parseCsvFromUrl<{ Prefix: number; Name: string; Range: string; From: number; To: number; Price: any; 'AT Price': any }>(padPricingUrl);
   const pricingData: { [prefix: string]: { standard: PriceTier[]; at: PriceTier[]; } } = {};
 
   for (const row of rawPricing) {
@@ -139,7 +120,7 @@ const loadPadPricing = async (): Promise<{
  * Loads price exceptions into a Map.
  */
 const loadPriceExceptions = async (): Promise<Map<string, string>> => {
-  const data = await loadAndParseCsv<{ 'PART NUMBER': string; 'Return Value': string }>(priceExceptionsUrl);
+  const data = await parseCsvFromUrl<{ 'PART NUMBER': string; 'Return Value': string }>(priceExceptionsUrl);
   return new Map(data.map(item => [String(item['PART NUMBER']), String(item['Return Value'])]));
 };
 
@@ -149,8 +130,8 @@ const loadPriceExceptions = async (): Promise<Map<string, string>> => {
 const loadCartonQty = async (): Promise<PadsData['cartonQty']> => {
   // Fetch both files in parallel
   const [under26Data, over26Data] = await Promise.all([
-    loadAndParseCsv<{ Prefix: number; Qty: number }>(cartonQtyUnder26Url),
-    loadAndParseCsv<{ 'Max Length': string; Qty: number }>(cartonQtyOver26Url),
+    parseCsvFromUrl<{ Prefix: number; Qty: number }>(cartonQtyUnder26Url),
+    parseCsvFromUrl<{ 'Max Length': string; Qty: number }>(cartonQtyOver26Url),
   ]);
 
   // 1. Process the "Under 26" data into a Map

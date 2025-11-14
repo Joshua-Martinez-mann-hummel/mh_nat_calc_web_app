@@ -3,11 +3,11 @@
  * This service follows the same architecture as the other calculator data services.
  */
 
-import Papa, { type ParseConfig, type ParseRemoteConfig } from 'papaparse';
 import type {
   PanelsLinksData,
   PanelCustomPriceRow,
 } from '../data/PanelsData/panelsDataTypes';
+import { parseCsvFromUrl } from './csvParser';
 
 // Import CSV files as URL assets, which Vite will handle.
 import standardOverridesUrl from '/src/data/PanelsData/PanelsPriceExceptions.csv?url';
@@ -15,36 +15,6 @@ import fractionalCodesUrl from '/src/data/PanelsData/PanelsFractionalCodes.csv?u
 import linkTiersUrl from '/src/data/PanelsData/PanelsLinkTiers.csv?url';
 import productInfoUrl from '/src/data/PanelsData/PanelsProductMaster.csv?url';
 import customPriceListUrl from '/src/data/PanelsData/PanelsPricing.csv?url';
-
-/**
- * A generic utility to fetch and parse a CSV file from a given URL.
- * It uses papaparse for robust CSV handling.
- * @param filePath The URL of the CSV file.
- * @returns A promise that resolves to an array of parsed objects.
- */
-const fetchAndParseCSV = <T>(filePath: string, configOverrides: ParseConfig = {}): Promise<T[]> => {
-  return new Promise((resolve, reject) => {
-    const config: ParseRemoteConfig<T> = {
-      download: true,
-      header: true,
-      skipEmptyLines: true,
-      dynamicTyping: true,
-      transformHeader: (header) => header.trim(),
-      ...configOverrides,
-      complete: (results) => {
-        if (results.errors && results.errors.length) {
-          reject(
-            new Error(`Error parsing ${filePath}: ${results.errors[0].message}`)
-          );
-        } else {
-          resolve(results.data);
-        }
-      },
-      error: (error: Error) => reject(new Error(`Failed to fetch or parse ${filePath}: ${error.message}`)),
-    };
-    Papa.parse<T>(filePath, config);
-  });
-};
 
 /**
  * Main data loading function for the Panels-Links calculator.
@@ -62,17 +32,11 @@ export const loadPanelsData = async (): Promise<PanelsLinksData> => {
       customPriceListData,
     ] = await Promise.all([
       // Fetch product info, disabling dynamic typing on 'prefix' to keep leading zeros.
-      fetchAndParseCSV<{ productName: string; prefix: string }>(productInfoUrl, {
-        dynamicTyping: { prefix: false },
-      }),
-      fetchAndParseCSV<{ dimensionKey: string; price: string }>(standardOverridesUrl),
-      fetchAndParseCSV<{ fraction: number; code: string }>(fractionalCodesUrl),
-      fetchAndParseCSV<{ lengthMax: number; btnPanels: number }>(linkTiersUrl),
-      // Disable dynamic typing for the 'type' column to preserve leading zeros (e.g., "031").
-      // This ensures the prefix remains a string and matches the hard-coded productInfo map.
-      fetchAndParseCSV<PanelCustomPriceRow>(customPriceListUrl, {
-        dynamicTyping: { type: false },
-      }),
+      parseCsvFromUrl<{ productName: string; prefix: string }>(productInfoUrl),
+      parseCsvFromUrl<{ dimensionKey: string; price: string }>(standardOverridesUrl),
+      parseCsvFromUrl<{ fraction: number; code: string }>(fractionalCodesUrl),
+      parseCsvFromUrl<{ lengthMax: number; btnPanels: number }>(linkTiersUrl),
+      parseCsvFromUrl<PanelCustomPriceRow>(customPriceListUrl),
     ]);
 
     // 1. Product Info: Map<productName, prefix> from CSV

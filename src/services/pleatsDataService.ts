@@ -1,7 +1,15 @@
 // This file is responsible for fetching the raw CSV data from your project and converting it into a usable JavaScript object.
 
-import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
-import type { PricingData } from '../data/PleatsData/pleatsDataTypes';
+import type {
+  PricingData,
+  ProductFamilyCode,
+  TieredLookupRow,
+  StandardPriceRow,
+  DimensionThresholdRow,
+  SpecialOverridePriceRow,
+  FractionalCodeRow,
+} from '../data/PleatsData/pleatsDataTypes';
+import { parseCsvFromUrl } from './csvParser';
 
 // Import the CSV files as URL assets. Vite will generate the correct public URLs.
 import productFamilyCodesUrl from '/src/data/PleatsData/Product Family Codes.csv?url';
@@ -14,20 +22,6 @@ import fractionalCodesUrl from '/src/data/PleatsData/Fractional_Codes.csv?url';
 
 
 export const loadAndParseData = async (): Promise<PricingData> => {
-  const fetchAndParse = (filePath: string): Promise<any[]> => {
-    return new Promise((resolve, reject) => {
-      const config: ParseRemoteConfig<any> = {
-        download: true,
-        header: true,
-        skipEmptyLines: true,
-        dynamicTyping: true, // Automatically converts numbers
-        complete: (results: ParseResult<any>) => resolve(results.data),
-        error: (error: Error) => reject(error),
-      };
-      Papa.parse<any>(filePath, config);
-    });
-  };
-
   try {
     // Fetch all four files in parallel
     const [
@@ -39,13 +33,13 @@ export const loadAndParseData = async (): Promise<PricingData> => {
       specialOverrideB,
       fractionalCodes,
     ] = await Promise.all([
-      fetchAndParse(productFamilyCodesUrl),
-      fetchAndParse(tieredLookupMatrixUrl),
-      fetchAndParse(standardPricesUrl),
-      fetchAndParse(dimensionThresholdsUrl),
-      fetchAndParse(specialOverrideAUrl),
-      fetchAndParse(specialOverrideBUrl),
-      fetchAndParse(fractionalCodesUrl),
+      parseCsvFromUrl<ProductFamilyCode>(productFamilyCodesUrl),
+      parseCsvFromUrl<TieredLookupRow>(tieredLookupMatrixUrl),
+      parseCsvFromUrl<StandardPriceRow>(standardPricesUrl),
+      parseCsvFromUrl<DimensionThresholdRow>(dimensionThresholdsUrl),
+      parseCsvFromUrl<SpecialOverridePriceRow>(specialOverrideAUrl),
+      parseCsvFromUrl<SpecialOverridePriceRow>(specialOverrideBUrl),
+      parseCsvFromUrl<FractionalCodeRow>(fractionalCodesUrl),
     ]);
 
     return {

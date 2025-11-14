@@ -1,4 +1,3 @@
-import Papa, { type ParseResult, type ParseRemoteConfig } from 'papaparse';
 import type {
   SleevesData,
   SleeveProduct,
@@ -9,6 +8,7 @@ import type {
   SleeveFractionalCode,
   SleeveValidationRule,
 } from '../data/SleevesData/sleevesDataTypes';
+import { parseCsvFromUrl } from './csvParser';
 
 // Import CSV files as URL assets
 import sleevesProductMasterUrl from '/src/data/SleevesData/SleevesProductMaster.csv?url';
@@ -19,29 +19,15 @@ import sleevesCartonQtyUrl from '/src/data/SleevesData/SleevesCartonQty.csv?url'
 import sleevesFractionalCodesUrl from '/src/data/SleevesData/SleevesFractionalCodes.csv?url';
 import sleevesValidationRulesUrl from '/src/data/SleevesData/SleevesValidationRules.csv?url';
 
-const loadAndParseCsv = async <T>(filePath: string): Promise<T[]> => {
-  return new Promise<T[]>((resolve, reject) => {
-    const config: ParseRemoteConfig<T> = {
-      download: true, // Let PapaParse fetch the file from the URL
-      header: true,
-      skipEmptyLines: true,
-      dynamicTyping: true,
-      complete: (results: ParseResult<T>) => resolve(results.data),
-      error: (error: Error) => reject(error),
-    };
-    Papa.parse<T>(filePath, config);
-  });
-};
-
 export const loadSleevesData = async (): Promise<SleevesData> => {
   const [productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules] = await Promise.all([
-    loadAndParseCsv<SleeveProduct>(sleevesProductMasterUrl),
-    loadAndParseCsv<SleevePricingTier>(sleevesSleevePricingUrl),
-    loadAndParseCsv<FramePricingTier>(sleevesFramePricingUrl),
-    loadAndParseCsv<CrossWireRule>(sleevesCrossWireRulesUrl),
-    loadAndParseCsv<SleeveCartonQty>(sleevesCartonQtyUrl),
-    loadAndParseCsv<SleeveFractionalCode>(sleevesFractionalCodesUrl),
-    loadAndParseCsv<SleeveValidationRule>(sleevesValidationRulesUrl),
+    parseCsvFromUrl<SleeveProduct>(sleevesProductMasterUrl),
+    parseCsvFromUrl<SleevePricingTier>(sleevesSleevePricingUrl),
+    parseCsvFromUrl<FramePricingTier>(sleevesFramePricingUrl),
+    parseCsvFromUrl<CrossWireRule>(sleevesCrossWireRulesUrl),
+    parseCsvFromUrl<SleeveCartonQty>(sleevesCartonQtyUrl),
+    parseCsvFromUrl<SleeveFractionalCode>(sleevesFractionalCodesUrl),
+    parseCsvFromUrl<SleeveValidationRule>(sleevesValidationRulesUrl),
   ]);
 
   return { productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules };
