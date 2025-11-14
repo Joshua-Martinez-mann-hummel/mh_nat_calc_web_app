@@ -1,11 +1,42 @@
 // src/components/PleatsCalc.tsx
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useReducer, useMemo } from 'react';
 import CalculatorTemplate from '../ui/CalculatorTemplate';
 import FormField from '../ui/FormField';
 import PricingResult from '../ui/PricingResult';
 import { usePricingData } from '../../hooks/usePricingData';
 import { calculatePleatPrice, type PleatInputs, type PleatPricingResult } from '../../logic/pleatLogic';
+
+const initialInputs: PleatInputs = {
+  productFamily: '',
+  widthWhole: 12,
+  widthFraction: 0,
+  lengthWhole: 24,
+  lengthFraction: 0,
+  depth: 1,
+  isExact: false,
+};
+
+type PleatsAction =
+  | { type: 'SET_FIELD'; payload: { field: keyof PleatInputs; value: any } }
+  | { type: 'SET_DECIMAL_DIMENSION'; payload: { dim: 'width' | 'length'; value: number } }
+  | { type: 'RESET_DEPTH' };
+
+function pleatsReducer(state: PleatInputs, action: PleatsAction): PleatInputs {
+  switch (action.type) {
+    case 'SET_FIELD':
+      return { ...state, [action.payload.field]: action.payload.value };
+    case 'SET_DECIMAL_DIMENSION':
+      const { dim, value } = action.payload;
+      const whole = Math.floor(value);
+      const fraction = value - whole;
+      return { ...state, [`${dim}Whole`]: whole, [`${dim}Fraction`]: fraction };
+    case 'RESET_DEPTH':
+      return { ...state, depth: 1 };
+    default:
+      return state;
+  }
+}
 
 interface PleatsCalcProps {
   onCalculate: (productType: string, config: object, price: number, quoteDetails: object) => void;
@@ -14,25 +45,15 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   // Hook to load all our CSV data
   const { data, isLoading, error } = usePricingData();
 
-  const [inputMode, setInputMode] = useState<'decimal' | 'fractional'>('fractional'); // New state for input mode
-
-  // State to hold the user's form inputs
-  const [inputs, setInputs] = useState<PleatInputs>({
-    productFamily: '', // Will be set once data is loaded
-    widthWhole: 12,
-    widthFraction: 0,
-    lengthWhole: 24,
-    lengthFraction: 0,
-    depth: 1 as 1 | 2 | 4,
-    isExact: false,
-  });
-
-  // New states for decimal input fields, synchronized with initial inputs
-  const [decimalWidth, setDecimalWidth] = useState<number>(inputs.widthWhole + inputs.widthFraction);
-  const [decimalLength, setDecimalLength] = useState<number>(inputs.lengthWhole + inputs.lengthFraction);
+  const [inputMode, setInputMode] = useState<'decimal' | 'fractional'>('fractional');
+  const [inputs, dispatch] = useReducer(pleatsReducer, initialInputs);
 
   // State to hold the full pricing result, including debug info
   const [pricingResult, setPricingResult] = useState<PleatPricingResult | null>(null);
+
+  // Derived decimal values from the single source of truth: `inputs`
+  const decimalWidth = useMemo(() => inputs.widthWhole + inputs.widthFraction, [inputs.widthWhole, inputs.widthFraction]);
+  const decimalLength = useMemo(() => inputs.lengthWhole + inputs.lengthFraction, [inputs.lengthWhole, inputs.lengthFraction]);
 
   // A derived state for what's shown in the UI, which can include notes.
   const displayResult = {
@@ -45,26 +66,9 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   // This effect runs once when the data is loaded to set the initial product family
   useEffect(() => {
     if (data?.productFamilyCodes?.[0]?.Name) {
-      setInputs((currentInputs) => ({
-        ...currentInputs,
-        productFamily: data.productFamilyCodes[0].Name, // Set default product family
-        // Initialize fractions to 0 if not already set
-        widthFraction: currentInputs.widthFraction || 0,
-        lengthFraction: currentInputs.lengthFraction || 0,
-      }));
-      // Also update decimal inputs if they haven't been explicitly set yet
-      setDecimalWidth(inputs.widthWhole + inputs.widthFraction);
-      setDecimalLength(inputs.lengthWhole + inputs.lengthFraction);
+      dispatch({ type: 'SET_FIELD', payload: { field: 'productFamily', value: data.productFamilyCodes[0].Name } });
     }
   }, [data]); // Only run this when `data` changes
-
-  // Effect to synchronize decimal and fractional inputs when mode changes
-  useEffect(() => {
-    if (inputMode === 'decimal') {
-      setDecimalWidth(inputs.widthWhole + inputs.widthFraction);
-      setDecimalLength(inputs.lengthWhole + inputs.lengthFraction);
-    }
-  }, [inputMode, inputs.widthWhole, inputs.widthFraction, inputs.lengthWhole, inputs.lengthFraction]);
 
   // Find the current product code to determine available depths
   const currentProductCode = data?.productFamilyCodes.find(
@@ -78,7 +82,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   // If the new product has restricted depth and the current depth is 4, reset it.
   useEffect(() => {
     if (isDepthRestricted && inputs.depth === 4) {
-      setInputs((prev) => ({ ...prev, depth: 1 })); // Reset to a valid depth
+      dispatch({ type: 'RESET_DEPTH' });
     }
   }, [inputs.productFamily, isDepthRestricted, inputs.depth]);
 
@@ -93,47 +97,8 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
   // Handler for decimal width input change
   const handleDecimalWidthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value);
-    setDecimalWidth(value);
-    const whole = Math.floor(value);
-    const fraction = value - whole;
-    setInputs((prev) => ({ ...prev, widthWhole: whole, widthFraction: fraction }));
+    dispatch({ type: 'SET_DECIMAL_DIMENSION', payload: { dim: 'width', value } });
   };
-
-  // Handler for decimal length input change
-  const handleDecimalLengthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = Number(e.target.value);
-    setDecimalLength(value);
-    const whole = Math.floor(value);
-    const fraction = value - whole;
-    setInputs((prev) => ({ ...prev, lengthWhole: whole, lengthFraction: fraction }));
-  };
-
-  // Handler for fractional width whole part change
-  const handleWidthWholeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // Parse as an integer to prevent decimals in the whole number field
-    const value = parseInt(e.target.value, 10);
-    setInputs((prev) => ({ ...prev, widthWhole: isNaN(value) ? 0 : value }));
-  };
-
-  // Handler for fractional width fraction part change
-  const handleWidthFractionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = Number(e.target.value);
-    setInputs((prev) => ({ ...prev, widthFraction: value }));
-  };
-
-  // Handler for fractional length whole part change
-  const handleLengthWholeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // Parse as an integer to prevent decimals in the whole number field
-    const value = parseInt(e.target.value, 10);
-    setInputs((prev) => ({ ...prev, lengthWhole: isNaN(value) ? 0 : value }));
-  };
-
-  // Handler for fractional length fraction part change
-  const handleLengthFractionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = Number(e.target.value);
-    setInputs((prev) => ({ ...prev, lengthFraction: value }));
-  };
-
   // --- Render Logic ---
   if (isLoading) {
     return <div>Loading pricing data...</div>;
@@ -159,7 +124,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
           <FormField label="Product Family">
             <select
               value={inputs.productFamily}
-              onChange={(e) => setInputs({ ...inputs, productFamily: e.target.value })}
+              onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'productFamily', value: e.target.value } })}
               className="w-full p-3 border rounded-md bg-white"
             >
               {data?.productFamilyCodes.map((family) => (
@@ -195,16 +160,16 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
                 <div className="flex space-x-2">
                   <input
                     type="number"
-                    value={inputs.widthWhole}
-                    onChange={handleWidthWholeChange}
+                    value={inputs.widthWhole || ''}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'widthWhole', value: parseInt(e.target.value, 10) || 0 } })}
                     placeholder="Whole"
                     className="w-1/2 p-3 border rounded-md"
                     min="0"
                     step="1" // Prevent decimal input here
                   />
                   <select
-                    value={inputs.widthFraction}
-                    onChange={handleWidthFractionChange}
+                    value={inputs.widthFraction || 0}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'widthFraction', value: Number(e.target.value) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {data?.fractionalCodes.map((code) => (
@@ -219,16 +184,16 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
                 <div className="flex space-x-2">
                   <input
                     type="number"
-                    value={inputs.lengthWhole}
-                    onChange={handleLengthWholeChange}
+                    value={inputs.lengthWhole || ''}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'lengthWhole', value: parseInt(e.target.value, 10) || 0 } })}
                     placeholder="Whole"
                     className="w-1/2 p-3 border rounded-md"
                     min="0"
                     step="1" // Prevent decimal input here
                   />
                   <select
-                    value={inputs.lengthFraction}
-                    onChange={handleLengthFractionChange}
+                    value={inputs.lengthFraction || 0}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'lengthFraction', value: Number(e.target.value) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {data?.fractionalCodes.map((code) => (
@@ -245,7 +210,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
               <FormField label="Width (inches)">
                 <input
                   type="number"
-                  value={decimalWidth}
+                  value={decimalWidth || ''}
                   onChange={handleDecimalWidthChange}
                   placeholder="e.g., 12.5"
                   className="w-full p-3 border rounded-md"
@@ -255,8 +220,8 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
               <FormField label="Length (inches)">
                 <input
                   type="number"
-                  value={decimalLength}
-                  onChange={handleDecimalLengthChange}
+                  value={decimalLength || ''}
+                  onChange={(e) => dispatch({ type: 'SET_DECIMAL_DIMENSION', payload: { dim: 'length', value: Number(e.target.value) } })}
                   placeholder="e.g., 24.75"
                   className="w-full p-3 border rounded-md"
                   step="any" // Allow decimal input here
@@ -269,7 +234,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
               value={inputs.depth}
               onChange={(e) => {
                 const value = Number(e.target.value) as 1 | 2 | 4;
-                setInputs({ ...inputs, depth: value });
+                dispatch({ type: 'SET_FIELD', payload: { field: 'depth', value } });
               }}
               className="w-full p-3 border rounded-md bg-white"
             >
@@ -279,7 +244,7 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
             </select>
           </FormField>
           <FormField label="Made Exact?">
-            <div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="isExact" value="yes" checked={inputs.isExact} onChange={() => setInputs({ ...inputs, isExact: true })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">Yes</span></label><label className="flex items-center"><input type="radio" name="isExact" value="no" checked={!inputs.isExact} onChange={() => setInputs({ ...inputs, isExact: false })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">No</span></label></div>
+            <div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="isExact" value="yes" checked={inputs.isExact} onChange={() => dispatch({ type: 'SET_FIELD', payload: { field: 'isExact', value: true } })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">Yes</span></label><label className="flex items-center"><input type="radio" name="isExact" value="no" checked={!inputs.isExact} onChange={() => dispatch({ type: 'SET_FIELD', payload: { field: 'isExact', value: false } })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">No</span></label></div>
           </FormField>
         </div>
         <PricingResult results={displayResult} onCalculate={handleAddToDashboard} />

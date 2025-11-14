@@ -11,9 +11,9 @@ import productCrossReferenceUrl from '/src/data/PadsData/PadsProductCrossReferen
 import productMasterUrl from '/src/data/PadsData/PadsProductMaster.csv?url';
 import fractionalCodesUrl from '/src/data/PadsData/PadsFractionalCodes.csv?url';
 import padPricingUrl from '/src/data/PadsData/PadsPricing.csv?url';
-import priceExceptionsUrl from '/src/data/PadsData/PadsPriceExceptions.csv?url';
-import cartonQtyUnder26Url from '/src/data/PadsData/padsCartonQty_under26.csv?url';
-import cartonQtyOver26Url from '/src/data/PadsData/padsCartonQty_over26.csv?url';
+import priceExceptionsUrl from '/src/data/PadsData/PadsPriceExceptions.csv?url'; // Corrected path
+import cartonQtyUnder26Url from '/src/data/PadsData/PadsCartonQty_Under26.csv?url';
+import cartonQtyOver26Url from '/src/data/PadsData/PadsCartonQty_Over26.csv?url';
 
 /**
  * Loads and joins product cross-reference and master data.

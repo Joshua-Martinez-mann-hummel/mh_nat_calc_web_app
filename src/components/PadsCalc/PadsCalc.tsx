@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useReducer } from 'react';
 import CalculatorTemplate from '../ui/CalculatorTemplate.tsx';
 import FormField from '../ui/FormField.tsx';
 import PricingResult from '../ui/PricingResult.tsx';
@@ -28,36 +28,48 @@ const initialInputs: PadsInputs = {
   lengthFraction: 0,
 };
 
+type PadsAction =
+  | { type: 'SET_FIELD'; payload: { field: keyof PadsInputs; value: any } }
+  | { type: 'SET_DECIMAL_DIMENSION'; payload: { dim: 'width' | 'length'; value: number; fractionalKeys: number[] } }
+  | { type: 'SET_PRODUCT_NAME'; payload: string };
+
+function padsReducer(state: PadsInputs, action: PadsAction): PadsInputs {
+  switch (action.type) {
+    case 'SET_FIELD':
+      return { ...state, [action.payload.field]: action.payload.value };
+    case 'SET_PRODUCT_NAME':
+      return { ...state, productName: action.payload };
+    case 'SET_DECIMAL_DIMENSION': {
+      const { dim, value, fractionalKeys } = action.payload;
+      const whole = Math.floor(value);
+      const fraction = value - whole;
+      // Find the closest valid fraction to avoid floating point issues
+      const closestFraction = fractionalKeys.reduce((prev, curr) =>
+        (Math.abs(curr - fraction) < Math.abs(prev - fraction) ? curr : prev), 0);
+      return { ...state, [`${dim}Whole`]: whole, [`${dim}Fraction`]: closestFraction };
+    }
+    default:
+      return state;
+  }
+}
+
 function PadsCalc({ onCalculate }: PadsCalcProps) {
   const { data, isLoading, error } = usePadsData();
   const [inputMode, setInputMode] = useState<'decimal' | 'fractional'>('fractional');
-  const [inputs, setInputs] = useState<PadsInputs>(initialInputs);
+  const [inputs, dispatch] = useReducer(padsReducer, initialInputs);
   const [option, setOption] = useState('Standard'); // Separate state for option
   const [availableOptions, setAvailableOptions] = useState<string[]>(['Standard']);
   const [pricingResult, setPricingResult] = useState<PadsResult>(initialPadsResult);
 
-  const [decimalWidth, setDecimalWidth] = useState<number>(initialInputs.widthWhole + initialInputs.widthFraction);
-  const [decimalLength, setDecimalLength] = useState<number>(initialInputs.lengthWhole + initialInputs.lengthFraction);
-
   // Set initial product name once data is loaded
   useEffect(() => {
-    if (data?.productInfo) {
+    if (data?.productInfo && !inputs.productName) {
       const firstProduct = data.productInfo.keys().next().value;
       if (firstProduct) {
-        setInputs((prev) => ({ ...prev, productName: firstProduct }));
+        dispatch({ type: 'SET_PRODUCT_NAME', payload: firstProduct });
       }
-      setDecimalWidth(initialInputs.widthWhole + initialInputs.widthFraction);
-      setDecimalLength(initialInputs.lengthWhole + initialInputs.lengthFraction);
     }
-  }, [data]);
-
-  // Effect to synchronize decimal and fractional inputs when mode changes or values update
-  useEffect(() => {
-    if (inputMode === 'decimal') {
-      setDecimalWidth(inputs.widthWhole + inputs.widthFraction);
-      setDecimalLength(inputs.lengthWhole + inputs.lengthFraction);
-    }
-  }, [inputMode, inputs.widthWhole, inputs.widthFraction, inputs.lengthWhole, inputs.lengthFraction]);
+  }, [data, inputs.productName]);
 
   useEffect(() => {
     if (data && inputs.productName) {
@@ -123,40 +135,24 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
     }
   };
 
+  // Derive decimal values from the single source of truth: `inputs`
+  const decimalWidth = useMemo(() => inputs.widthWhole + inputs.widthFraction, [inputs.widthWhole, inputs.widthFraction]);
+  const decimalLength = useMemo(() => inputs.lengthWhole + inputs.lengthFraction, [inputs.lengthWhole, inputs.lengthFraction]);
+
   // Handler for decimal width input change
   const handleDecimalWidthChange = (e: React.ChangeEvent<HTMLInputElement>) => {    
     let value = Number(e.target.value);
     // Constrain the input to the maximum allowed width
     const maxFraction = Math.max(...(Array.from(data?.fractionalCodes.keys() || [0])));
-    if (value > maxAllowedWidth + maxFraction) {
-      value = maxAllowedWidth + maxFraction;
-    }
-    setDecimalWidth(value);    
-    const whole = Math.floor(value);    
-    const fraction = value - whole;    
-    // Find the closest valid fraction to avoid floating point issues
-    const closestFraction = Array.from(data?.fractionalCodes.keys() || []).reduce((prev, curr) =>
-      (Math.abs(curr - fraction) < Math.abs(prev - fraction) ? curr : prev)
-    , 0);
-    setInputs((prev) => ({ ...prev, widthWhole: whole, widthFraction: closestFraction }));
+    value = Math.min(value, maxAllowedWidth + maxFraction);
+    dispatch({ type: 'SET_DECIMAL_DIMENSION', payload: { dim: 'width', value, fractionalKeys: Array.from(data?.fractionalCodes.keys() || []) } });
   };
 
   // Handler for decimal length input change
   const handleDecimalLengthChange = (e: React.ChangeEvent<HTMLInputElement>) => {    
     let value = Number(e.target.value);
-    // Constrain the input to the maximum allowed length
-    const maxFraction = Math.max(...(Array.from(data?.fractionalCodes.keys() || [0])));
-    if (value > maxAllowedLength + maxFraction) {
-      value = maxAllowedLength + maxFraction;
-    }
-    setDecimalLength(value);
-    const whole = Math.floor(value);
-    const fraction = value - whole;
-    // Find the closest valid fraction
-    const closestFraction = Array.from(data?.fractionalCodes.keys() || []).reduce((prev, curr) =>
-      (Math.abs(curr - fraction) < Math.abs(prev - fraction) ? curr : prev)
-    , 0);
-    setInputs((prev) => ({ ...prev, lengthWhole: whole, lengthFraction: closestFraction }));
+    value = Math.min(value, maxAllowedLength);
+    dispatch({ type: 'SET_DECIMAL_DIMENSION', payload: { dim: 'length', value, fractionalKeys: Array.from(data?.fractionalCodes.keys() || []) } });
   };
   
   // --- Dropdown Options Generation ---
@@ -202,7 +198,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
           <FormField label="Product Family">
             <select
               value={inputs.productName}
-              onChange={(e) => setInputs({ ...inputs, productName: e.target.value })}
+              onChange={(e) => dispatch({ type: 'SET_PRODUCT_NAME', payload: e.target.value })}
               className="w-full p-3 border rounded-md bg-white"
             >
               {Array.from(data.productInfo.keys()).map((productName) => (
@@ -251,7 +247,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                 <div className="flex space-x-2">
                   <select
                     value={inputs.widthWhole}
-                    onChange={(e) => setInputs({ ...inputs, widthWhole: parseInt(e.target.value, 10) })}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'widthWhole', value: parseInt(e.target.value, 10) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {widthDropdownOptions.map((val) => (
@@ -260,7 +256,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                   </select>
                   <select
                     value={inputs.widthFraction}
-                    onChange={(e) => setInputs({ ...inputs, widthFraction: parseFloat(e.target.value) })}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'widthFraction', value: parseFloat(e.target.value) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {Array.from(data.fractionalCodes.entries()).map(([decimal]) => (
@@ -273,7 +269,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                 <div className="flex space-x-2">
                   <select
                     value={inputs.lengthWhole}
-                    onChange={(e) => setInputs({ ...inputs, lengthWhole: parseInt(e.target.value, 10) })}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'lengthWhole', value: parseInt(e.target.value, 10) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {lengthDropdownOptions.map((val) => (
@@ -282,7 +278,7 @@ function PadsCalc({ onCalculate }: PadsCalcProps) {
                   </select>
                   <select
                     value={inputs.lengthFraction}
-                    onChange={(e) => setInputs({ ...inputs, lengthFraction: parseFloat(e.target.value) })}
+                    onChange={(e) => dispatch({ type: 'SET_FIELD', payload: { field: 'lengthFraction', value: parseFloat(e.target.value) } })}
                     className="w-1/2 p-3 border rounded-md bg-white"
                   >
                     {Array.from(data.fractionalCodes.entries()).map(([decimal]) => (

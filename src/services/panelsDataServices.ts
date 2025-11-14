@@ -32,16 +32,17 @@ export const loadPanelsData = async (): Promise<PanelsLinksData> => {
       customPriceListData,
     ] = await Promise.all([
       // Fetch product info, disabling dynamic typing on 'prefix' to keep leading zeros.
-      parseCsvFromUrl<{ productName: string; prefix: string }>(productInfoUrl),
+      parseCsvFromUrl<{ productName: string; prefix: any }>(productInfoUrl),
       parseCsvFromUrl<{ dimensionKey: string; price: string }>(standardOverridesUrl),
       parseCsvFromUrl<{ fraction: number; code: string }>(fractionalCodesUrl),
       parseCsvFromUrl<{ lengthMax: number; btnPanels: number }>(linkTiersUrl),
       parseCsvFromUrl<PanelCustomPriceRow>(customPriceListUrl),
     ]);
 
-    // 1. Product Info: Map<productName, prefix> from CSV
+    // 1. Product Info: Map<productName, prefix>.
+    // Explicitly convert prefix to a string to ensure type safety and handle cases like "031".
     const productInfo = new Map<string, string>(
-      productInfoData.map((item) => [item.productName, item.prefix])
+      productInfoData.map((item) => [item.productName, String(item.prefix)])
     );
 
     // 2. Standard Overrides: Map<dimensionKey, price>
