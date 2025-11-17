@@ -5,10 +5,11 @@ interface PricingResultProps {
   results: Record<string, any> | null;
   onCalculate: () => void;
   note?: string;
+  buttonId?: string;
 }
 
 // This component displays the calculated quote and the "Add to Dashboard" button.
-function PricingResult({ results, onCalculate, note }: PricingResultProps) {
+function PricingResult({ results, onCalculate, note, buttonId }: PricingResultProps) {
   const isCalculated = results && results.Price > 0;
 
   const formatValue = (key: string, value: any) => {
@@ -44,6 +45,7 @@ function PricingResult({ results, onCalculate, note }: PricingResultProps) {
         )}
       </div>
       <button 
+        id={buttonId}
         onClick={onCalculate}
         disabled={!isCalculated}
         className={`w-full text-white py-2 px-4 rounded-md transition-colors ${isCalculated ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-400 cursor-not-allowed'}`}

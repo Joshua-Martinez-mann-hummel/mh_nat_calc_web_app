@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X } from 'lucide-react';
+import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X, HelpCircle } from 'lucide-react';
 
 // Import all separated components with the full file extension to ensure resolution
 import { PleatsCalc } from './components/PleatsCalc/PleatsCalc';
@@ -93,6 +93,82 @@ function AppContent() {
     addToast('Quote cleared', 'info');
   };
 
+  const startTour = async () => {
+    // Dynamically import driver.js only when the tour is started.
+    // This prevents it from interfering with the initial app load.
+    const { driver } = await import('driver.js');
+    await import('driver.js/dist/driver.css');
+
+    const Driver = driver; // driver.js v1 has a different API, this is a small workaround.
+    const driverObj = new Driver({
+      showProgress: true,
+      steps: (window.innerWidth < 768) ? [ // Mobile Steps
+        {
+          element: '#mobile-tour-step-1',
+          popover: {
+            title: 'Choose a Calculator',
+            description: 'Tap the menu icon to open the list of available calculators. We\'ll open it for you.',
+          },
+          onHighlightStarted: () => {
+            setIsMenuOpen(true);
+          },
+        },
+        { 
+          element: '#tour-step-2-content', 
+          popover: { 
+            title: 'Enter Dimensions', 
+            description: 'Fill in the form with your filter\'s specifications. The part number and price will update automatically as you type.' 
+          },
+          onHighlightStarted: () => {
+            setIsMenuOpen(false);
+            setActiveTab('pleats');
+          }
+        },
+        { 
+          element: '#tour-add-to-quote-mobile', 
+          popover: { 
+            title: 'Add to Quote', 
+            description: 'Once you have the correct price, click this button to add the item to your current quote.' 
+          } 
+        },
+        {
+          element: '#mobile-tour-step-dashboard',
+          popover: {
+            title: 'Manage Your Quote',
+            description: 'You can return to the Dashboard at any time to see your quote.'
+          }
+        }
+      ] : [ // Desktop Steps
+        { 
+          element: '#tour-step-1-nav', 
+          popover: { 
+            title: 'Choose a Calculator', 
+            description: 'Start by selecting a calculator for the product you need to price. We\'ll switch to the Pleats calculator for this demo.',
+            side: "bottom",
+            align: 'start'
+          }
+        },
+        { 
+          element: '#tour-step-2-content', 
+          popover: { 
+            title: 'Enter Dimensions', 
+            description: 'Fill in the form with your filter\'s specifications. The part number and price will update automatically as you type.' 
+          },
+          onHighlightStarted: () => { setActiveTab('pleats'); }
+        },
+        { 
+          element: '#tour-add-to-quote-desktop', 
+          popover: { 
+            title: 'Add to Quote', 
+            description: 'Once you have the correct price, click this button to add the item to your current quote.' 
+          } 
+        },
+        { element: '#tour-step-1-nav', popover: { title: 'Manage Your Quote', description: 'You can return to the Dashboard at any time to see all your quoted items, adjust quantities, and export to Excel.' } }
+      ],
+    });
+    driverObj.drive();
+  };
+
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
     setIsMenuOpen(false); // Close menu on selection
@@ -116,13 +192,19 @@ function AppContent() {
               <Calculator className="h-8 w-8 text-blue-600" />
               <h1 className="text-2xl font-bold text-gray-900">C&I Custom Calcuators</h1>
             </div>
+            <button onClick={startTour} className="flex items-center space-x-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+              <HelpCircle className="h-5 w-5" />
+              <span>
+                Help / Tour
+              </span>
+            </button>
           </div>
         </div>
       </header>
       <nav className="bg-white border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           {/* Desktop Menu: hidden on small screens */}
-          <div className="hidden md:flex md:space-x-8">
+          <div id="tour-step-1-nav" className="hidden md:flex md:space-x-8">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -142,6 +224,7 @@ function AppContent() {
           {/* Mobile Menu Button: visible only on small screens */}
           <div className="md:hidden flex justify-between items-center h-16">
             <button
+              id="mobile-tour-step-dashboard"
               onClick={() => handleTabClick('home')}
               className={`flex items-center px-1 py-4 text-sm font-medium border-b-2 transition-colors duration-200 ${
                 activeTab === 'home'
@@ -152,7 +235,7 @@ function AppContent() {
               <Home className="h-5 w-5 mr-2" />
               Dashboard
             </button>
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md text-gray-500 hover:bg-gray-100">
+            <button id="mobile-tour-step-1" onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md text-gray-500 hover:bg-gray-100">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -176,7 +259,7 @@ function AppContent() {
           )}
         </div>
       </nav>
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main id="tour-step-2-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {activeTab === 'home' && <Dashboard calculations={calculations} onUpdateCalculation={handleUpdateCalculation} onRemoveCalculation={handleRemoveCalculation} onClearQuote={handleClearQuote} />}
         {activeTab === 'pleats' && <PleatsCalc onCalculate={addCalculation} />}
         {activeTab === 'panels' && <PanelsCalc onCalculate={addCalculation} />}

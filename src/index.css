@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+/* Custom styles for Driver.js tour */
+.driver-popover {
+  border-radius: 0.5rem;
+}
+
+.driver-popover-arrow-side-bottom.driver-popover-arrow-align-start {
+  border-top-color: white;
+}
+
+.driver-popover-navigation-btns button {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+  text-shadow: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.driver-popover-navigation-btns button:hover {
+  background-color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
+.driver-popover-close-btn {
+  color: #6b7280; /* Tailwind's gray-500 */
+}
+
+.driver-popover-close-btn:hover {
+  color: #111827; /* Tailwind's gray-900 */
+}

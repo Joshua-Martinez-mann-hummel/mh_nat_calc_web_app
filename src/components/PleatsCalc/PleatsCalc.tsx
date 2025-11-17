@@ -246,8 +246,12 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
           <FormField label="Made Exact?">
             <div className="flex items-center space-x-4"><label className="flex items-center"><input type="radio" name="isExact" value="yes" checked={inputs.isExact} onChange={() => dispatch({ type: 'SET_FIELD', payload: { field: 'isExact', value: true } })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">Yes</span></label><label className="flex items-center"><input type="radio" name="isExact" value="no" checked={!inputs.isExact} onChange={() => dispatch({ type: 'SET_FIELD', payload: { field: 'isExact', value: false } })} className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500" /><span className="ml-2">No</span></label></div>
           </FormField>
+          {/* Mobile-only "Add to Dashboard" button */}
+          <div className="mt-6 md:hidden">
+            <button id="tour-add-to-quote-mobile" onClick={handleAddToDashboard} className="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-blue-700 disabled:bg-gray-400 transition-colors" disabled={!pricingResult || !pricingResult.price || pricingResult.price <= 0}>Add to Dashboard</button>
+          </div>
         </div>
-        <PricingResult results={displayResult} onCalculate={handleAddToDashboard} />
+        <PricingResult results={displayResult} onCalculate={handleAddToDashboard} buttonId="tour-add-to-quote-desktop" />
       </div>
     </CalculatorTemplate>
   );

@@ -1,15 +1,13 @@
-# Pricing Calculator
+# C&I Custom Pricing Calculators
 
-A robust and flexible pricing calculation engine.
-
-*(Please update this description to be more specific to your project's goals and features.)*
+A web-based application designed for the sales team to quickly and accurately generate price quotes for custom-sized filters. The application contains several distinct calculators and a central dashboard to build and manage a complete customer quote.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Dependencies](#dependencies)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,41 +26,37 @@ A robust and flexible pricing calculation engine.
 
 ## Usage
 
-*(This section is a placeholder. Please replace it with instructions on how to run and use your project.)*
+This project uses Vite for a fast development experience.
 
-If this is a command-line tool, you might show how to run it:
+1.  **Start the development server:**
+    This command will start the app on a local port (usually `http://localhost:5173`) with hot module replacement.
+    ```bash
+    npm run dev
+    ```
 
-```bash
-# Example:
-# node src/index.js --inputFile data/input.json --rules pricing-rules.js
-```
-
-If this is a library, you could provide a code example:
-
-```javascript
-/*
-const pricingCalc = require('./src/main');
-
-const options = {
-  // ... your options here
-};
-
-const finalPrice = pricingCalc.calculate(options);
-console.log(`The final price is: ${finalPrice}`);
-*/
-```
+2.  **Build for production:**
+    This command will lint the code, run the TypeScript compiler, and create a production-ready build in the `dist/` directory.
+    ```bash
+    npm run build
+    ```
 
 ## Features
 
-Based on the dependencies, your project likely includes features such as:
+This application is built with React, TypeScript, and Tailwind CSS and includes the following features:
 
-- Advanced string and pattern matching for rules (`micromatch`, `is-glob`).
-- Robust handling of numerical ranges and inputs (`to-regex-range`, `fill-range`, `is-number`).
-- Resilient asynchronous operations with retry logic (`@humanwhocodes/retry`).
+- **Multiple Calculators:** Separate, dedicated calculators for different product lines (Pleats, Panels, Pads, Sleeves).
+- **Data-Driven Logic:** All pricing rules, product specifications, and validation are driven by CSV files located in the `src/data` directory, making updates easy without changing code.
+- **Interactive Dashboard:** A central place to view all items in the current quote.
+- **Quote Management:** Users can update quantities, remove individual items, or clear the entire quote.
+- **Responsive Design:** A mobile-first interface that adapts from a card-based view on phones to a full table view on desktops.
+- **Export to Excel:** The current quote can be exported to a `.xlsx` file with a single click.
+- **User Feedback:** Toast notifications provide clear, non-intrusive feedback for actions like adding or removing items.
 
-## Dependencies
+## Testing
 
-This project relies on several open-source packages, including `micromatch`, `braces`, `@humanwhocodes/retry`, and others to provide its functionality.
+The project includes a comprehensive testing suite that uses Python to validate the TypeScript logic against the original Excel spreadsheets. This ensures that the pricing calculations are accurate and reliable.
+
+You can run the tests for each calculator using the `npm run test:all:<calculator>` scripts (e.g., `npm run test:all:pleats`).
 
 ## Contributing
 
