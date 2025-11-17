@@ -99,8 +99,7 @@ function AppContent() {
     const { driver } = await import('driver.js');
     await import('driver.js/dist/driver.css');
 
-    const Driver = driver; // driver.js v1 has a different API, this is a small workaround.
-    const driverObj = new Driver({
+    const driverObj = driver({
       showProgress: true,
       steps: (window.innerWidth < 768) ? [ // Mobile Steps
         {
