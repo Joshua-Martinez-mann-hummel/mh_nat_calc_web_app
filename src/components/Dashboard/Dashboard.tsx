@@ -165,8 +165,8 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
                           min="1"
                         />
                       </td>
-                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-800">${(calc.price * (calc.quantityInput ?? 1)).toFixed(2)}</td>
-                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-green-600">${calc.cartonPrice.toFixed(2)}</td>
+                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-green-600">${(calc.price * (calc.quantityInput ?? 1)).toFixed(2)}</td>
+                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-800">${calc.cartonPrice.toFixed(2)}</td>
                       <td className="py-4 px-4 whitespace-nowrap">
                         <button
                           onClick={() => onRemoveCalculation(calc.id)}
