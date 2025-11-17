@@ -12,7 +12,7 @@ import { ToastProvider, useToast } from './components/ui/ToastContext';
 export interface Calculation {
   id: number;
   productType: string;
-  config: object;
+  config: Record<string, any>;
   price: number;
   timestamp: string;
   partNumber: string;
