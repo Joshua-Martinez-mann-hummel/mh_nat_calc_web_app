@@ -7,6 +7,7 @@ import PanelsCalc from './components/PanelsCalc/PanelsCalc';
 import PadsCalc from './components/PadsCalc/PadsCalc';
 import SleevesCalc from './components/SleevesCalc/SleevesCalc';
 import Dashboard from './components/Dashboard/Dashboard';
+import { ToastProvider, useToast } from './components/ui/ToastContext';
 
 export interface Calculation {
   id: number;
@@ -18,11 +19,13 @@ export interface Calculation {
   notes?: string;
   cartonQuantity: number;
   cartonPrice: number;
+  quantityInput?: number;
 }
-// Main App Component - now acts as a clean layout and state manager
-export default function PricingCalculator() {
+
+function AppContent() {
   const [activeTab, setActiveTab] = useState('home');
   const [calculations, setCalculations] = useState<Calculation[]>([]);
+  const { addToast } = useToast();
 
   const addCalculation = (productType: string, config: object, price: number, resultDetails: any) => {
     const newCalc = {
@@ -32,9 +35,10 @@ export default function PricingCalculator() {
       price,
       timestamp: new Date().toLocaleString(),
       partNumber: resultDetails.partNumber,
-      cartonQuantity: resultDetails.cartonQuantity,
+      cartonQuantity: resultDetails.cartonQuantity ?? resultDetails.cartonQty ?? 0,
       cartonPrice: resultDetails.cartonPrice,
       notes: resultDetails.notes,
+      quantityInput: 1, // Default quantity to 1 when adding to quote
     };
 
     // Log debug information to the console if it exists
@@ -65,6 +69,27 @@ export default function PricingCalculator() {
       console.groupEnd();
     }
     setCalculations([newCalc, ...calculations]);
+    addToast('Filter added to quote', 'success');
+  };
+
+  const handleUpdateCalculation = (id: number, newQuantity: number) => {
+    setCalculations(currentCalculations =>
+      currentCalculations.map(calc =>
+        calc.id === id ? { ...calc, quantityInput: newQuantity } : calc
+      )
+    );
+  };
+
+  const handleRemoveCalculation = (id: number) => {
+    setCalculations(currentCalculations =>
+      currentCalculations.filter(calc => calc.id !== id),
+    );
+    addToast('Item removed from quote', 'info');
+  };
+
+  const handleClearQuote = () => {
+    setCalculations([]);
+    addToast('Quote cleared', 'info');
   };
 
   // Removed 'Product Guide' from the tabs array
@@ -84,12 +109,6 @@ export default function PricingCalculator() {
             <div className="flex items-center space-x-3">
               <Calculator className="h-8 w-8 text-blue-600" />
               <h1 className="text-2xl font-bold text-gray-900">NAT Pricing Calculator</h1>
-            </div>
-            <div className="flex items-center space-x-2">
-              <button className="flex items-center px-3 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
-                <Download className="h-4 w-4 mr-2" />
-                Export Results
-              </button>
             </div>
           </div>
         </div>
@@ -115,12 +134,21 @@ export default function PricingCalculator() {
         </div>
       </nav>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {activeTab === 'home' && <Dashboard calculations={calculations} />}
+        {activeTab === 'home' && <Dashboard calculations={calculations} onUpdateCalculation={handleUpdateCalculation} onRemoveCalculation={handleRemoveCalculation} onClearQuote={handleClearQuote} />}
         {activeTab === 'pleats' && <PleatsCalc onCalculate={addCalculation} />}
         {activeTab === 'panels' && <PanelsCalc onCalculate={addCalculation} />}
         {activeTab === 'pads' && <PadsCalc onCalculate={addCalculation} />}
         {activeTab === 'sleeves' && <SleevesCalc onCalculate={addCalculation} />}
       </main>
     </div>
+  );
+}
+
+// Main App Component - now acts as a clean layout and state manager
+export default function PricingCalculator() {
+  return (
+    <ToastProvider>
+      <AppContent />
+    </ToastProvider>
   );
 }
