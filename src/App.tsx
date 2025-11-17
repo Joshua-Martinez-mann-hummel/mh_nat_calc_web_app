@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, Package, Settings, Layers, Grid3x3, Home } from 'lucide-react';
+import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X } from 'lucide-react';
 
 // Import all separated components with the full file extension to ensure resolution
 import { PleatsCalc } from './components/PleatsCalc/PleatsCalc';
@@ -25,6 +25,7 @@ export interface Calculation {
 function AppContent() {
   const [activeTab, setActiveTab] = useState('home');
   const [calculations, setCalculations] = useState<Calculation[]>([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { addToast } = useToast();
 
   const addCalculation = (productType: string, config: object, price: number, resultDetails: any) => {
@@ -92,6 +93,11 @@ function AppContent() {
     addToast('Quote cleared', 'info');
   };
 
+  const handleTabClick = (tabId: string) => {
+    setActiveTab(tabId);
+    setIsMenuOpen(false); // Close menu on selection
+  };
+
   // Removed 'Product Guide' from the tabs array
   const tabs = [
     { id: 'home', label: 'Dashboard', icon: Home },
@@ -114,23 +120,60 @@ function AppContent() {
         </div>
       </header>
       <nav className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex space-x-8 overflow-x-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Desktop Menu: hidden on small screens */}
+          <div className="hidden md:flex md:space-x-8">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => handleTabClick(tab.id)}
                 className={`flex items-center px-3 py-4 text-sm font-medium border-b-2 transition-colors duration-200 ${
                   activeTab === tab.id
                     ? 'border-blue-500 text-blue-600'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
-                <tab.icon className="h-4 w-4 mr-2" />
+                <tab.icon className="h-5 w-5 mr-2" />
                 {tab.label}
               </button>
             ))}
           </div>
+
+          {/* Mobile Menu Button: visible only on small screens */}
+          <div className="md:hidden flex justify-between items-center h-16">
+            <button
+              onClick={() => handleTabClick('home')}
+              className={`flex items-center px-1 py-4 text-sm font-medium border-b-2 transition-colors duration-200 ${
+                activeTab === 'home'
+                  ? 'border-blue-500 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              <Home className="h-5 w-5 mr-2" />
+              Dashboard
+            </button>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md text-gray-500 hover:bg-gray-100">
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
+
+          {/* Mobile Menu Dropdown */}
+          {isMenuOpen && (
+            <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {tabs.filter(t => t.id !== 'home').map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleTabClick(tab.id)}
+                    className={`w-full text-left flex items-center px-3 py-3 text-base font-medium rounded-md transition-colors duration-200 ${activeTab === tab.id ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-800'}`}
+                  >
+                    <tab.icon className="h-5 w-5 mr-3" />
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </nav>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
