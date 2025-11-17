@@ -251,7 +251,9 @@ export const PleatsCalc = ({ onCalculate }: PleatsCalcProps) => {
             <button id="tour-add-to-quote-mobile" onClick={handleAddToDashboard} className="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-semibold hover:bg-blue-700 disabled:bg-gray-400 transition-colors" disabled={!pricingResult || !pricingResult.price || pricingResult.price <= 0}>Add to Dashboard</button>
           </div>
         </div>
-        <PricingResult results={displayResult} onCalculate={handleAddToDashboard} buttonId="tour-add-to-quote-desktop" />
+        <div className="hidden md:block">
+          <PricingResult results={displayResult} onCalculate={handleAddToDashboard} buttonId="tour-add-to-quote-desktop" />
+        </div>
       </div>
     </CalculatorTemplate>
   );
