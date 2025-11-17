@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, Package, Settings, Layers, Grid3x3, Download, Home } from 'lucide-react';
+import { Calculator, Package, Settings, Layers, Grid3x3, Home } from 'lucide-react';
 
 // Import all separated components with the full file extension to ensure resolution
 import { PleatsCalc } from './components/PleatsCalc/PleatsCalc';

@@ -67,8 +67,8 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
     // 1. Map the calculation data to the desired Excel format.
     const dataForExport = calculations.map(calc => ({
       sku: calc.partNumber,
-      // Use cartonQty/cartonQuantity if available, otherwise default to 1.
-      quantityInput: calc.cartonQuantity ?? calc.cartonQty ?? 1,
+      // The Calculation object always has cartonQuantity.
+      quantityInput: calc.cartonQuantity ?? 1,
       proposedPriceInput: calc.price,
     }));
 
@@ -155,7 +155,7 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
                       <td className="py-4 px-4 whitespace-nowrap font-medium text-gray-800">{calc.config.productFamily ?? calc.config.productName}</td>
                       <td className="py-4 px-4 whitespace-nowrap text-gray-600">{calc.partNumber}</td>
                       <td className="py-4 px-4 whitespace-nowrap font-semibold text-blue-600">${calc.price.toFixed(2)}</td>
-                      <td className="py-4 px-4 whitespace-nowrap text-gray-600">{calc.cartonQuantity ?? calc.cartonQty ?? 0}</td>
+                      <td className="py-4 px-4 whitespace-nowrap text-gray-600">{calc.cartonQuantity ?? 0}</td>
                       <td className="py-4 px-4 whitespace-nowrap">
                         <input
                           type="number"
