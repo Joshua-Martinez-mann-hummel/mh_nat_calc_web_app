@@ -135,7 +135,9 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
           {calculations.length === 0 ? (
             <p className="text-gray-500 text-center py-8">No calculations yet. Use the tabs above to start pricing products!</p>
           ) : (
-            <div className="overflow-x-auto">
+            <>
+            {/* Desktop Table View */}
+            <div className="overflow-x-auto hidden md:block">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -181,6 +183,53 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
                 </tbody>
               </table>
             </div>
+
+            {/* Mobile Card View */}
+            <div className="md:hidden space-y-4">
+              {sortedCalculations.map((calc) => (
+                <div key={calc.id} className="bg-gray-50 rounded-lg shadow p-4 border border-gray-200">
+                  {/* Top section: Info and Remove button */}
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <p className="font-bold text-gray-800 text-base">{calc.config.productFamily ?? calc.config.productName}</p>
+                      <p className="text-sm text-gray-500">{calc.partNumber}</p>
+                    </div>
+                    <button
+                      onClick={() => onRemoveCalculation(calc.id)}
+                      className="text-red-500 hover:text-red-700 transition-colors flex-shrink-0 ml-2 p-1"
+                      aria-label="Remove item"
+                    >
+                      <Trash2 className="h-5 w-5" />
+                    </button>
+                  </div>
+
+                  {/* Middle section: Details */}
+                  <div className="text-xs text-gray-600 border-t border-b py-2 my-2 flex justify-around">
+                    <span>Unit: <strong>${calc.price.toFixed(2)}</strong></span>
+                    <span className="border-l mx-2"></span>
+                    <span>Carton: <strong>${calc.cartonPrice.toFixed(2)}</strong></span>
+                    <span className="border-l mx-2"></span>
+                    <span>C.Qty: <strong>{calc.cartonQuantity ?? 0}</strong></span>
+                  </div>
+
+                  {/* Bottom section: Quantity and Total Price */}
+                  <div className="flex justify-between items-center mt-3">
+                    <div className="flex items-center">
+                      <label htmlFor={`quantity-mobile-${calc.id}`} className="text-sm font-medium text-gray-700 mr-2">Qty:</label>
+                      <input
+                        id={`quantity-mobile-${calc.id}`}
+                        type="number"
+                        value={calc.quantityInput ?? 1}
+                        onChange={(e) => onUpdateCalculation(calc.id, parseInt(e.target.value, 10) || 1)}
+                        className="w-20 p-1 border rounded-md text-center"
+                        min="1" />
+                    </div>
+                    <p className="text-lg font-bold text-green-600">${(calc.price * (calc.quantityInput ?? 1)).toFixed(2)}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            </>
           )}
         </div>
       </div>
