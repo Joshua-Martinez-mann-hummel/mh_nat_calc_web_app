@@ -83,7 +83,7 @@ const findCustomPrice = (
     const row = customPriceList[i];
 
     // 1. Check Type
-    const isTypeMatch = row.type === prefix;
+    const isTypeMatch = String(row.type) === prefix;
     if (!isTypeMatch) continue; // Not our product, skip
 
     console.log(`[PanelsLogic]     [findCustomPrice] Checking row for type '${row.type}' (H rule: '${row.height}', W rule: '${row.width}', Face range: ${row.rangeFrom}-${row.rangeTo})`);
@@ -125,7 +125,7 @@ const findCustomPrice = (
       // This is a perfect match
       console.log(`[PanelsLogic]         -> Face Value Match? true.`);
       matchingRow = row;
-      break; // Found it
+      break; // Found it - THIS IS THE FIX
     }
 
     // 4. Replicate Excel's LOOKUP bug (if FaceValue is too high)
