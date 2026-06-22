@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { utils, writeFile } from 'xlsx';
 import { Trash2, ArrowDown, ArrowUp, ChevronsUpDown } from 'lucide-react';
 import type { Calculation } from '../../App';
+import '../../logic/newProductLogic.ts';
 
 // Define the component's props interface
 interface DashboardProps {
@@ -21,7 +22,7 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
     const quantity = calc.quantityInput ?? 1;
     return sum + (calc.price * quantity);
   }, 0);
-  const uniqueProductTypes = new Set(calculations.map(calc => calc.config.productFamily));
+  const uniqueProductTypes = new Set(calculations.map(calc => calc.partNumber));
 
   const sortedCalculations = useMemo(() => {
     let sortableItems = [...calculations];
@@ -67,8 +68,7 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
     // 1. Map the calculation data to the desired Excel format.
     const dataForExport = calculations.map(calc => ({
       sku: calc.partNumber,
-      // The Calculation object always has cartonQuantity.
-      quantityInput: calc.cartonQuantity ?? 1,
+      quantityInput: calc.quantityInput ?? 1,
       proposedPriceInput: calc.price,
     }));
 
@@ -168,7 +168,9 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
                         />
                       </td>
                       <td className="py-4 px-4 whitespace-nowrap font-semibold text-green-600">${(calc.price * (calc.quantityInput ?? 1)).toFixed(2)}</td>
-                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-800">${calc.cartonPrice.toFixed(2)}</td>
+                      <td className="py-4 px-4 whitespace-nowrap font-semibold text-gray-800">
+                        {typeof calc.cartonPrice === 'number' ? `$${calc.cartonPrice.toFixed(2)}` : calc.cartonPrice}
+                      </td>
                       <td className="py-4 px-4 whitespace-nowrap">
                         <button
                           onClick={() => onRemoveCalculation(calc.id)}
@@ -207,7 +209,7 @@ function Dashboard({ calculations, onUpdateCalculation, onRemoveCalculation, onC
                   <div className="text-xs text-gray-600 border-t border-b py-2 my-2 flex justify-around">
                     <span>Unit: <strong>${calc.price.toFixed(2)}</strong></span>
                     <span className="border-l mx-2"></span>
-                    <span>Carton: <strong>${calc.cartonPrice.toFixed(2)}</strong></span>
+                    <span>Carton: <strong>{typeof calc.cartonPrice === 'number' ? `$${calc.cartonPrice.toFixed(2)}` : calc.cartonPrice}</strong></span>
                     <span className="border-l mx-2"></span>
                     <span>C.Qty: <strong>{calc.cartonQuantity ?? 0}</strong></span>
                   </div>

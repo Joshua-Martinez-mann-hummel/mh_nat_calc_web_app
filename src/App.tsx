@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X, HelpCircle } from 'lucide-react';
+import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X, HelpCircle, Shield } from 'lucide-react';
 
 // Import all separated components with the full file extension to ensure resolution
 import { PleatsCalc } from './components/PleatsCalc/PleatsCalc';
 import PanelsCalc from './components/PanelsCalc/PanelsCalc';
 import PadsCalc from './components/PadsCalc/PadsCalc';
 import SleevesCalc from './components/SleevesCalc/SleevesCalc';
+import NewProductCalc from './components/NewProductCalc/NewProductCalc';
 import Dashboard from './components/Dashboard/Dashboard';
 import { ToastProvider, useToast } from './components/ui/ToastContext';
+import { appConfig } from './config';
 
 export interface Calculation {
   id: number;
@@ -17,8 +19,8 @@ export interface Calculation {
   timestamp: string;
   partNumber: string;
   notes?: string;
-  cartonQuantity: number;
-  cartonPrice: number;
+  cartonQuantity: number | string;
+  cartonPrice: number | string;
   quantityInput?: number;
 }
 
@@ -94,6 +96,10 @@ function AppContent() {
   };
 
   const startTour = async () => {
+    const firstCalcTab = tabs.find(t => t.id !== 'home');
+    const targetTabId = firstCalcTab ? firstCalcTab.id : 'home';
+    const targetTabLabel = firstCalcTab ? firstCalcTab.label : 'a calculator';
+
     // Dynamically import driver.js only when the tour is started.
     // This prevents it from interfering with the initial app load.
     const { driver } = await import('driver.js');
@@ -120,7 +126,7 @@ function AppContent() {
           },
           onHighlightStarted: () => {
             setIsMenuOpen(false);
-            setActiveTab('pleats');
+            if (targetTabId !== 'home') setActiveTab(targetTabId);
           }
         },
         { 
@@ -142,7 +148,7 @@ function AppContent() {
           element: '#tour-step-1-nav', 
           popover: { 
             title: 'Choose a Calculator', 
-            description: 'Start by selecting a calculator for the product you need to price. We\'ll switch to the Pleats calculator for this demo.',
+            description: `Start by selecting a calculator for the product you need to price. We'll switch to the ${targetTabLabel} for this demo.`,
             side: "bottom",
             align: 'start'
           }
@@ -153,7 +159,9 @@ function AppContent() {
             title: 'Enter Dimensions', 
             description: 'Fill in the form with your filter\'s specifications. The part number and price will update automatically as you type.' 
           },
-          onHighlightStarted: () => { setActiveTab('pleats'); }
+          onHighlightStarted: () => { 
+            if (targetTabId !== 'home') setActiveTab(targetTabId); 
+          }
         },
         { 
           element: '#tour-add-to-quote-desktop', 
@@ -174,13 +182,16 @@ function AppContent() {
   };
 
   // Removed 'Product Guide' from the tabs array
-  const tabs = [
-    { id: 'home', label: 'Dashboard', icon: Home },
-    { id: 'pleats', label: 'Pleats Calc', icon: Layers },
-    { id: 'panels', label: 'Panels-Links Calc', icon: Grid3x3 },
-    { id: 'pads', label: 'Pads Calc', icon: Package },
-    { id: 'sleeves', label: 'Sleeves Calc', icon: Settings },
+  const allTabs = [
+    { id: 'home', label: 'Dashboard', icon: Home, visible: true },
+    { id: 'pleats', label: 'Pleats Calc', icon: Layers, visible: appConfig.pleatsCalc_visible },
+    { id: 'panels', label: 'Panels-Links Calc', icon: Grid3x3, visible: appConfig.panelsCalc_visible },
+    { id: 'pads', label: 'Pads Calc', icon: Package, visible: appConfig.padsCalc_visible },
+    { id: 'sleeves', label: 'Sleeves Calc', icon: Settings, visible: appConfig.sleevesCalc_visible },
+    { id: 'proshield', label: 'ProShield Calc', icon: Shield, visible: appConfig.proshieldCalc_visible },
   ];
+
+  const tabs = allTabs.filter(tab => tab.visible);
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
@@ -260,10 +271,11 @@ function AppContent() {
       </nav>
       <main id="tour-step-2-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {activeTab === 'home' && <Dashboard calculations={calculations} onUpdateCalculation={handleUpdateCalculation} onRemoveCalculation={handleRemoveCalculation} onClearQuote={handleClearQuote} />}
-        {activeTab === 'pleats' && <PleatsCalc onCalculate={addCalculation} />}
-        {activeTab === 'panels' && <PanelsCalc onCalculate={addCalculation} />}
-        {activeTab === 'pads' && <PadsCalc onCalculate={addCalculation} />}
-        {activeTab === 'sleeves' && <SleevesCalc onCalculate={addCalculation} />}
+        {activeTab === 'pleats' && appConfig.pleatsCalc_visible && <PleatsCalc onCalculate={addCalculation} />}
+        {activeTab === 'panels' && appConfig.panelsCalc_visible && <PanelsCalc onCalculate={addCalculation} />}
+        {activeTab === 'pads' && appConfig.padsCalc_visible && <PadsCalc onCalculate={addCalculation} />}
+        {activeTab === 'sleeves' && appConfig.sleevesCalc_visible && <SleevesCalc onCalculate={addCalculation} />}
+        {activeTab === 'proshield' && appConfig.proshieldCalc_visible && <NewProductCalc onCalculate={addCalculation} />}
       </main>
     </div>
   );

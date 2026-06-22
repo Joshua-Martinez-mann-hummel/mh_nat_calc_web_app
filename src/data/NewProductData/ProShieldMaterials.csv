@@ -1,0 +1,3 @@
+Material_ID,Name,Code_Suffix,Cost_Key,Roll_Width_Key
+1,PROSHIELD FM,,material_fm_per_yard,roll_width_fm
+2,PROSHIELD OG,-SC,material_og_per_yard,roll_width_og

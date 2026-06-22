@@ -10,7 +10,7 @@ interface PricingResultProps {
 
 // This component displays the calculated quote and the "Add to Dashboard" button.
 function PricingResult({ results, onCalculate, note, buttonId }: PricingResultProps) {
-  const isCalculated = results && results.Price > 0;
+  const isCalculated = results && Object.entries(results).some(([key, val]) => key.toLowerCase().includes('price') && typeof val === 'number' && val > 0);
 
   const formatValue = (key: string, value: any) => {
     if (typeof value === 'number') {
