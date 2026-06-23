@@ -3,3 +3,4 @@ Fastener_ID,Name,Code_Suffix,Cost_Key
 2,FLIP POST FASTENER,,fastener_flip_post
 3,PERMALOCK TWIST FASTENER,-PS,fastener_permalock
 4,INDUSTRIAL VELCRO,-V,velcro_placeholder
+5,NONE,,fastener_none

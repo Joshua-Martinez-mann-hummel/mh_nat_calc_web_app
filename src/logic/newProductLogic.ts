@@ -115,8 +115,8 @@ export const calculateProShieldPrice = (
   log(`   Perimeter: (${height} * 2) + (${width} * 2) = ${perimeterInches} inches`);
 
   let fastenerQty = 0;
-  if (fastenerId === '4') { // Industrial Velcro
-    log('   Fastener Type is Velcro, so discrete fastener quantity is 0.');
+  if (fastenerId === '4' || fastenerId === '5') { // Industrial Velcro or None
+    log(`   Fastener Type is ${fastener.Name}, so discrete fastener quantity is 0.`);
   } else {
     const hQty = getOptimalSegments(height);
     const wQty = getOptimalSegments(width);
@@ -136,11 +136,11 @@ export const calculateProShieldPrice = (
   if (fastener.Name.includes('PERMALOCK')) {
     k38_39_fastener_minutes = 1.5 * fastenerQty;
     log(`   Fastener Minutes: 1.5 * ${fastenerQty} = ${k38_39_fastener_minutes.toFixed(2)} mins (Permalock type)`);
-  } else if (fastenerId !== '4') {
+  } else if (fastenerId !== '4' && fastenerId !== '5') {
     k38_39_fastener_minutes = 0.75 * fastenerQty;
     log(`   Fastener Minutes: 0.75 * ${fastenerQty} = ${k38_39_fastener_minutes.toFixed(2)} mins`);
   } else {
-    log('   Fastener Minutes: 0 mins (Velcro)');
+    log(`   Fastener Minutes: 0 mins (${fastener.Name})`);
   }
 
   const extra_time_k42 = constants.get('extra_time_k42')!;
@@ -202,6 +202,9 @@ export const calculateProShieldPrice = (
     fastener_cost_cad = velcro_usd * 1.34; // Placeholder exchange rate
     log(`   [⚠️ WARNING] Velcro $1.00 USD/ft cost and 0.00 additional labor minutes are temporary placeholders.`);
     log(`   Velcro Placeholder Cost: ${feet.toFixed(2)} ft * $1.00 USD/ft * 1.34 CAD/USD = $${fastener_cost_cad.toFixed(2)} CAD`);
+  } else if (fastenerId === '5') { // None
+    fastener_cost_cad = 0;
+    log(`   Fastener is NONE. Cost is $0.00 CAD`);
   } else {
     const unit_cost = constants.get(fastener.Cost_Key)!;
     fastener_cost_cad = fastenerQty * unit_cost;
