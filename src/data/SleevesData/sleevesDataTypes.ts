@@ -52,4 +52,5 @@ export interface SleevesData {
   sleeveCartonQty: SleeveCartonQty[];
   fractionalCodes: SleeveFractionalCode[];
   validationRules: SleeveValidationRule[];
+  priceExceptions: Map<string, string>;
 }

@@ -112,25 +112,18 @@ export const calculatePads = (inputs: PadsInputsWithOption, data: PadsData): Pad
   let price = 0;
   let cartonQty = 0;
 
-  const isStandardPart = widthFraction === 0 && lengthFraction === 0 && option === 'Standard';
-  debugInfo.isStandardPartCheck = isStandardPart;
+  debugInfo.priceCalculation.push({ Step: 'Override Check', Value: 'Checking Exceptions', Details: `Checking key: ${partNumber}` });
 
-  if (isStandardPart) {
-    // The key in the CSV is just the numeric part number
-    const partNumberKey = `${prefix}${widthWhole.toString().padStart(2, '0')}${lengthWhole.toString().padStart(2, '0')}`;
-    debugInfo.priceCalculation.push({ Step: 'Override Check', Value: 'Is Standard Part', Details: `Checking key: ${partNumberKey}` });
+  const exceptionValue = priceExceptions.get(partNumber);
 
-    const exceptionValue = priceExceptions.get(partNumberKey);
-
-    if (exceptionValue) {
-      debugInfo.priceCalculation.push({ Step: 'Override Found', Value: exceptionValue, Details: 'Calculation will stop here.' });
-      errors.push(exceptionValue); // Add the message to errors/notes
-      result.price = 0;
-      cartonQty = currentProductInfo.standardCartonQty;
-      result.cartonQty = cartonQty;
-      console.log('[PadsLogic Debug Info]', debugInfo);
-      return result; // Return immediately as this is an override
-    }
+  if (exceptionValue) {
+    debugInfo.priceCalculation.push({ Step: 'Override Found', Value: exceptionValue, Details: 'Calculation will stop here.' });
+    errors.push(exceptionValue); // Add the message to errors/notes
+    result.price = 0;
+    cartonQty = currentProductInfo.standardCartonQty;
+    result.cartonQty = cartonQty;
+    console.log('[PadsLogic Debug Info]', debugInfo);
+    return result; // Return immediately as this is an override
   }
 
   // If validation failed earlier, return now before doing custom calcs

@@ -11,7 +11,7 @@ import os
 
 # --- Use paths relative to this script's location ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', 'raw_calc.xlsm') # Go up two directories
+WORKBOOK_PATH = "C&I Custom Calculators 2026.xlsm" # Connect by name instead of path
 OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pleats_excel.csv")
 
 SHEET_NAME = "Pleats Calc" 
@@ -132,8 +132,19 @@ def parse_excel_output_value(text_value):
 # MAIN
 # ----------------------------------------------------
 def main():
-    app = xw.App(visible=False)
-    wb = xw.Book(WORKBOOK_PATH)
+    print("Connecting to open Excel workbook...")
+    wb = None
+    for app in xw.apps:
+        try:
+            wb = app.books[WORKBOOK_PATH]
+            break
+        except KeyError:
+            continue
+            
+    if wb is None:
+        print(f"\n❌ ERROR: Could not find '{WORKBOOK_PATH}' open in Excel. Please make sure the file is open!")
+        return
+        
     ws = wb.sheets[SHEET_NAME]
 
     # Automatically detect dropdown lists
@@ -141,10 +152,10 @@ def main():
     depth_options = get_dropdown_values(ws, "F15")
     made_exact_options = get_dropdown_values(ws, "G13")
 
-    print("📦 Product Families:", product_families)
-    print("📏 Depth Options:", depth_options)
+    print("Product Families:", product_families)
+    print("Depth Options:", depth_options)
     print(f"   [DEBUG] Initial depth option types: {[type(o) for o in depth_options]}")
-    print("🎯 Will-Be-Made-Exact Options:", made_exact_options)
+    print("Will-Be-Made-Exact Options:", made_exact_options)
 
     results = []
     test_cases = []
@@ -226,7 +237,7 @@ def main():
 
         # Check if any of the *parsed* values are strings (meaning they were error messages)
         if any(isinstance(val, str) for val in [price, carton_qty, carton_price]):
-            print(f"\n✅  Found 'Contact'/'Error' case for {case['family']} | Depth: {case['depth']}. Including in results.")
+            print(f"\n Found 'Contact'/'Error' case for {case['family']} | Depth: {case['depth']}. Including in results.")
 
         # Ensure we don't write NaN values to the CSV.
         # This will only affect numeric values. String error messages will remain as strings.
@@ -251,10 +262,9 @@ def main():
 
     df = pd.DataFrame(results)
     df.to_csv(OUTPUT_CSV_PATH, index=False)
-    print(f"\n✅ Test results saved to {OUTPUT_CSV_PATH}")
+    print(f"\n Test results saved to {OUTPUT_CSV_PATH}")
 
-    wb.close()
-    app.quit()
+    print("Finished Excel test.")
     print("\n") # Newline after the progress indicator
 
 

@@ -18,9 +18,15 @@ import sleevesCrossWireRulesUrl from '/src/data/SleevesData/SleevesCrossWireRule
 import sleevesCartonQtyUrl from '/src/data/SleevesData/SleevesCartonQty.csv?url';
 import sleevesFractionalCodesUrl from '/src/data/SleevesData/SleevesFractionalCodes.csv?url';
 import sleevesValidationRulesUrl from '/src/data/SleevesData/SleevesValidationRules.csv?url';
+import priceExceptionsUrl from '/src/data/PadsData/PadsPriceExceptions.csv?url';
+
+const loadPriceExceptions = async (): Promise<Map<string, string>> => {
+  const data = await parseCsvFromUrl<{ 'PART NUMBER': string; 'Return Value': string }>(priceExceptionsUrl);
+  return new Map(data.map(item => [String(item['PART NUMBER']), String(item['Return Value'])]));
+};
 
 export const loadSleevesData = async (): Promise<SleevesData> => {
-  const [productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules] = await Promise.all([
+  const [productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules, priceExceptions] = await Promise.all([
     parseCsvFromUrl<SleeveProduct>(sleevesProductMasterUrl),
     parseCsvFromUrl<SleevePricingTier>(sleevesSleevePricingUrl),
     parseCsvFromUrl<FramePricingTier>(sleevesFramePricingUrl),
@@ -28,7 +34,8 @@ export const loadSleevesData = async (): Promise<SleevesData> => {
     parseCsvFromUrl<SleeveCartonQty>(sleevesCartonQtyUrl),
     parseCsvFromUrl<SleeveFractionalCode>(sleevesFractionalCodesUrl),
     parseCsvFromUrl<SleeveValidationRule>(sleevesValidationRulesUrl),
+    loadPriceExceptions(),
   ]);
 
-  return { productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules };
+  return { productMaster, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, fractionalCodes, validationRules, priceExceptions };
 };

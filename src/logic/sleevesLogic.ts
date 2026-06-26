@@ -29,7 +29,7 @@ export const calculateSleeves = (inputs: SleeveInputs, data: SleevesData): Sleev
   // Step 2.1: Initialization & Input Processing
   console.log('[SleevesLogic] Starting calculation with inputs:', inputs);
   const { productName, option, widthWhole, widthFraction, lengthWhole, lengthFraction } = inputs; // Get Inputs
-  const { productMaster, fractionalCodes, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, validationRules } = data; // Get Data
+  const { productMaster, fractionalCodes, sleevePricing, framePricing, crossWireRules, sleeveCartonQty, validationRules, priceExceptions } = data; // Get Data
 
   // Initialize
   const errors: string[] = [];
@@ -198,6 +198,25 @@ export const calculateSleeves = (inputs: SleeveInputs, data: SleevesData): Sleev
   if (errors.length > 0) {
     console.error('[SleevesLogic] Pricing/Carton failed. Errors:', errors);
     return result;
+  }
+
+  // --- Part 3.5: Price Exceptions (The Override Path) ---
+  // In Excel, exceptions for sleeves (070/072) were grouped under the "114" prefix in the Pads exceptions file.
+  // We reconstruct the part number with the "114" prefix to check against the exception map.
+  const exceptionKey = `114${partNumber.slice(3)}`;
+  debugInfo.priceCalculation = debugInfo.priceCalculation || [];
+  debugInfo.priceCalculation.push({ Step: 'Override Check', Value: 'Checking Exceptions', Details: `Checking key: ${exceptionKey}` });
+
+  const exceptionValue = priceExceptions.get(exceptionKey);
+
+  if (exceptionValue) {
+    debugInfo.priceCalculation.push({ Step: 'Override Found', Value: exceptionValue, Details: 'Calculation will stop here.' });
+    errors.push(exceptionValue); // Add the message to errors/notes
+    result.price = 0;
+    result.cartonQty = cartonQty; // keep the carton qty
+    result.cartonPrice = 0;
+    console.log('[SleevesLogic Debug Info]', debugInfo);
+    return result; // Return immediately as this is an override
   }
 
   // Step 2.6: Logic Path 4 - Final Calculation

@@ -32,35 +32,12 @@ const checkDimensionRule = (rule: string, value: number): boolean => {
     if (operator === '>=') return value >= limit;
     if (operator === '<=') return value <= limit;
     if (operator === '>') return value > limit;
-    if (operator === '<') return value < limit;
+    // Excel's logic uses <= for the upper bounds (e.g. Q18 <= 25) but the CSV exported them as '<25'
+    if (operator === '<') return value <= limit;
     return false; // Should not happen with valid rule strings
   });
 };
 
-/**
- * Parses a dimension rule and returns a "relaxed" version that *only* contains
- * the upper-bound checks (rules starting with '<').
- * @param rule The rule string (e.g., ">34;<78")
- * @param value The dimension value to check.
- * @returns True if the value satisfies the *relaxed* (upper-bound only) rule.
- */
-const checkRelaxedDimensionRule = (rule: string, value: number): boolean => {
-  if (rule === 'ALL') return true;
-
-  const rules = rule.split(';');
-
-  // Find only the "less than" rules
-  const lessThanRules = rules.filter(r => r.startsWith('<'));
-
-  // If there were no "less than" rules (e.g., rule was just ">34"),
-  // we can't relax it, so it fails.
-  if (lessThanRules.length === 0) {
-    return false;
-  }
-
-  // Use the *existing* checkDimensionRule function on this new, relaxed rule
-  return checkDimensionRule(lessThanRules.join(';'), value);
-};
 
 /**
  * Helper function to find the correct custom price from the price list.
@@ -73,6 +50,8 @@ const findCustomPrice = (
   prefix: string,
   totalHeight: number,
   totalWidth: number,
+  heightWhole: number,
+  widthWhole: number,
   faceValue: number
 ): { priceCustomStandard: number; PriceCustomAt: string } | null => {
   console.log(`[PanelsLogic]   [findCustomPrice] Searching for match with: prefix='${prefix}', H=${totalHeight}, W=${totalWidth}, FaceValue=${faceValue}`);
@@ -88,24 +67,11 @@ const findCustomPrice = (
 
     console.log(`[PanelsLogic]     [findCustomPrice] Checking row for type '${row.type}' (H rule: '${row.height}', W rule: '${row.width}', Face range: ${row.rangeFrom}-${row.rangeTo})`);
 
-    // 2. Check Dimensions (with Relaxed Fix)
-    let isHeightMatch = checkDimensionRule(row.height, totalHeight);
-    let isWidthMatch = checkDimensionRule(row.width, totalWidth);
-
-    // --- START FIX ---
-    // If H or W (or both) failed, try relaxing them
-    if (!isHeightMatch || !isWidthMatch) {
-        console.log(`[PanelsLogic]         -> Strict H/W match failed. Attempting relaxed check...`);
-        if (!isHeightMatch) {
-            isHeightMatch = checkRelaxedDimensionRule(row.height, totalHeight);
-            console.log(`[PanelsLogic]           -> Relaxed H result: ${isHeightMatch}`);
-        }
-        if (!isWidthMatch) {
-            isWidthMatch = checkRelaxedDimensionRule(row.width, totalWidth);
-            console.log(`[PanelsLogic]           -> Relaxed W result: ${isWidthMatch}`);
-        }
-    }
-    // --- END FIX ---
+    // 2. Check Dimensions
+    // IMPORTANT: Excel checks the WHOLE numbers (Q18, S18) against the rules (e.g. Q18 <= 48),
+    // but the face area still uses the total dimensions.
+    let isHeightMatch = checkDimensionRule(row.height, heightWhole);
+    let isWidthMatch = checkDimensionRule(row.width, widthWhole);
 
     // After EITHER strict OR relaxed checks, if dimensions don't match, this isn't our bucket.
     if (!isHeightMatch || !isWidthMatch) {
@@ -128,25 +94,7 @@ const findCustomPrice = (
       break; // Found it - THIS IS THE FIX
     }
 
-    // 4. Replicate Excel's LOOKUP bug (if FaceValue is too high)
-    if (faceValue > row.rangeTo) {
-      console.log(`[PanelsLogic]         -> Face Value ${faceValue} > ${row.rangeTo}. Peeking at next row...`);
-      const nextRow = (i + 1 < customPriceList.length) ? customPriceList[i + 1] : null;
 
-      // Check if the next row is a *different* dimension bucket
-      if (
-        !nextRow ||
-        nextRow.type !== row.type ||
-        nextRow.height !== row.height ||
-        nextRow.width !== row.width
-      ) {
-        // This is the LAST face-value-tier for this dimension-bucket.
-        // And our FaceValue is too high. This is the Excel LOOKUP behavior.
-        console.log(`[PanelsLogic]         -> Next row is a new bucket. Applying Excel LOOKUP behavior on current row.`);
-        matchingRow = row;
-        break; // Found it
-      }
-    }
 
     // If we get here, our FaceValue was too low for this tier (e.g., 613 vs 700-800).
     // The loop will continue to the next row (which must be the next FaceValue tier
@@ -381,7 +329,7 @@ export const calculatePanelsLinks = (
     const faceValue = Math.ceil(totalHeight * totalWidth);
     debugInfo.faceValue = faceValue;
     console.log(`[PanelsLogic] Path B: Calculated Face Value: ${faceValue}`);
-    const customPrices = findCustomPrice(customPriceList, prefix, totalHeight, totalWidth, faceValue);
+    const customPrices = findCustomPrice(customPriceList, prefix, totalHeight, totalWidth, heightWhole, widthWhole, faceValue);
 
     if (customPrices) {
       debugInfo.customPriceLookup = customPrices;
@@ -447,14 +395,8 @@ export const calculatePanelsLinks = (
       btnPanels = linkTiers[2].btnPanels;
     } else if (linkTiers.length > 3 && totalNominalWidth < linkTiers[3].lengthMax) { // Tier 4
       btnPanels = linkTiers[3].btnPanels;
-
-    // --- BUG REPLICATION ---
-    // This line replicates the Excel typo: M36-M47 instead of M36<M47
-    // This logic stays the same.
-    } else if (linkTiers.length > 4 && (totalNominalWidth - linkTiers[4].lengthMax) !== 0) { // Tier 5
-      console.log('[PanelsLogic] Applying Excel typo logic for link tier 5.');
+    } else if (linkTiers.length > 4 && totalNominalWidth < linkTiers[4].lengthMax) { // Tier 5
       btnPanels = linkTiers[4].btnPanels;
-    // --- END BUG REPLICATION ---
 
     } else if (linkTiers.length > 5 && totalNominalWidth < linkTiers[5].lengthMax) { // Tier 6
       btnPanels = linkTiers[5].btnPanels;

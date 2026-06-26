@@ -10,7 +10,7 @@ import os
 # ----------------------------------------------------
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', '..', 'raw_calc.xlsm')
+WORKBOOK_PATH = "C&I Custom Calculators 2026.xlsm"
 OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_pads_excel.csv")
 
 SHEET_NAME = "Pads Calc" 
@@ -102,7 +102,7 @@ def main():
         ws = wb.sheets[SHEET_NAME]
 
         product_names = get_dropdown_values(ws, "F7")
-        print("📦 Product Names:", product_names)
+        print("Product Names:", product_names)
 
         results = []
         test_cases = []
@@ -188,7 +188,7 @@ def main():
 
         df = pd.DataFrame(results)
         df.to_csv(OUTPUT_CSV_PATH, index=False)
-        print(f"\n✅ Test results saved to {OUTPUT_CSV_PATH}")
+        print(f"\nTest results saved to {OUTPUT_CSV_PATH}")
 
     finally:
         if 'wb' in locals(): wb.close()

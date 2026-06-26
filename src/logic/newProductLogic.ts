@@ -10,7 +10,7 @@ import type {
   ProShieldInputs,
   ProShieldPricingResult,
   ProShieldDebugInfo,
-} from '../data/NewProductData/newProductDataTypes';
+} from '../data/NewProductData/newProductDataTypes.js';
 
 // Helper for excel-style rounding
 const excelRound = (val: number, digits = 2): number => {

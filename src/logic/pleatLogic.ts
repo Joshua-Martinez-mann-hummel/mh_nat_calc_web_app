@@ -569,21 +569,8 @@ const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
       suffix = "Triple";
     }
   } else {
-  // --- Apply Rule 3 (Generic - All Others) with Excel C68 exception ---
-  const isC68ExceptionRange = tieredRow.Min_Range === 600 && tieredRow.Max_Range === 899; // Identify the specific range
-
-  if (
-    // inputs.depth === 2 && // Check if depth is exactly 2
-    // isC68ExceptionRange && // Check if FaceValue is in the 600-899 range
-    // secondaryCodeForActualDepth !== 1 // Check if secondary code is 2, 3, or 4
-    productCode === 21310 && // ADD THIS CHECK: Only apply to product 21310
-    inputs.depth === 2 &&
-    isC68ExceptionRange && // Checks if FaceValue is in the 600-899 range
-  secondaryCodeForActualDepth !== 1
-  ) {
-    // C68 Exception: Force 'Triple'
-    suffix = 'Triple';
-  } else if (secondaryCodeForActualDepth === 1) {
+  // --- Apply Rule 3 (Generic - All Others) ---
+  if (secondaryCodeForActualDepth === 1) {
     // Normal Generic Rule
     suffix = 'Update';
   } else if (secondaryCodeForActualDepth === 2) {
@@ -620,9 +607,9 @@ const calculateSecondaryCode = (depthForThresholds: 1 | 2 | 4): number => {
 
   // --- Final Assembly ---
 
-  // Carton quantity is always 12, regardless of depth.
+  // Carton quantity is 6 for 4" depth, and 12 otherwise.
 
-  const cartonQuantity = 12;
+  const cartonQuantity = inputs.depth === 4 ? 6 : 12;
 
   const cartonPrice = listPrice * cartonQuantity;
 

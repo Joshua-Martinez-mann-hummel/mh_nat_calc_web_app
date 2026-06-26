@@ -10,7 +10,7 @@ import os
 # ----------------------------------------------------
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-WORKBOOK_PATH = os.path.join(SCRIPT_DIR, '..', '..', '..', 'raw_calc.xlsm')
+WORKBOOK_PATH = "C&I Custom Calculators 2026.xlsm"
 OUTPUT_CSV_PATH = os.path.join(SCRIPT_DIR, "results_sleeves_excel.csv")
 
 SHEET_NAME = "Sleeves Calc" 
@@ -210,7 +210,7 @@ def main():
 
         df = pd.DataFrame(results)
         df.to_csv(OUTPUT_CSV_PATH, index=False)
-        print(f"\n✅ Test results saved to {OUTPUT_CSV_PATH}")
+        print(f"\n[OK] Test results saved to {OUTPUT_CSV_PATH}")
 
     finally:
         if 'wb' in locals(): wb.close()

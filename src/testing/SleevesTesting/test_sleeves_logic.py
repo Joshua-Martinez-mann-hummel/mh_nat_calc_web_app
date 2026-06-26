@@ -36,21 +36,21 @@ def main():
     logger.info("🚀 Starting Sleeves LOGIC test automation...")
 
     if not os.path.exists(LOGIC_RUNNER_PATH):
-        logger.error(f"❌ Logic runner script not found at '{LOGIC_RUNNER_PATH}'.")
+        logger.error(f"[FAIL] Logic runner script not found at '{LOGIC_RUNNER_PATH}'.")
         return
 
     compiled_logic_path = os.path.join(SCRIPT_DIR, '..', '..', '..', 'dist', 'logic', 'sleevesLogic.js')
     if not os.path.exists(compiled_logic_path):
-        logger.error(f"❌ Compiled logic file not found at '{compiled_logic_path}'.")
+        logger.error(f"[FAIL] Compiled logic file not found at '{compiled_logic_path}'.")
         logger.error("   Please run 'npm run build:logic' first.")
         return
 
     # --- 2. READ TEST DATA ---
     try:
         df_truth = pd.read_csv(INPUT_CSV_PATH)
-        logger.info(f"✅ Found {len(df_truth)} test cases in '{INPUT_CSV_PATH}'.")
+        logger.info(f"[OK] Found {len(df_truth)} test cases in '{INPUT_CSV_PATH}'.")
     except FileNotFoundError:
-        logger.error(f"❌ Input file not found: '{INPUT_CSV_PATH}'. Please create this file with your test cases.")
+        logger.error(f"[FAIL] Input file not found: '{INPUT_CSV_PATH}'. Please create this file with your test cases.")
         return
 
     app_results = []
@@ -94,13 +94,13 @@ def main():
                 encoding='utf-8'
             )
             result = json.loads(process.stdout)
-            logger.info("   ✅ Logic executed successfully.")
+            logger.info("   [OK] Logic executed successfully.")
             logger.info(f"      [CAPTURE] Part Number: '{result.get('partNumber')}'")
             logger.info(f"      [CAPTURE] Price: '{result.get('Price')}'")
             logger.info(f"      [CAPTURE] Carton Qty: '{result.get('cartonQty')}'")
 
         except (subprocess.CalledProcessError, json.JSONDecodeError) as e:
-            logger.error(f"❌ An error occurred during test case #{index + 1}: {e}", exc_info=True)
+            logger.error(f"[FAIL] An error occurred during test case #{index + 1}: {e}", exc_info=True)
             logger.error(f"   Stderr: {e.stderr if hasattr(e, 'stderr') else 'N/A'}")
             result = {"partNumber": "TEST_ERROR", "Price": "TEST_ERROR", "cartonQty": "TEST_ERROR", "cartonPrice": "TEST_ERROR"}
 
@@ -109,7 +109,7 @@ def main():
     # --- 6. SAVE RESULTS ---
     df_app_results = pd.DataFrame(app_results)[['partNumber', 'Price', 'cartonQty', 'cartonPrice']]
     df_app_results.to_csv(OUTPUT_CSV_PATH, index=False)
-    logger.info(f"\n\n✅ Test complete. Results saved to '{OUTPUT_CSV_PATH}'. Full logs in '{LOG_FILE_PATH}'.")
+    logger.info(f"\n\n[OK] Test complete. Results saved to '{OUTPUT_CSV_PATH}'. Full logs in '{LOG_FILE_PATH}'.")
 
 if __name__ == "__main__":
     main()

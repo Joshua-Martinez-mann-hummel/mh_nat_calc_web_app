@@ -27,7 +27,17 @@ const sleevesData = {
   crossWireRules: loadCSV('SleevesCrossWireRules.csv'),
   sleeveCartonQty: loadCSV('SleevesCartonQty.csv'),
   validationRules: loadCSV('SleevesValidationRules.csv'),
+  priceExceptions: new Map(),
 };
+
+// Load exceptions from PadsData
+const padsDataDir = path.join(__dirname, '..', '..', 'data', 'PadsData');
+const exceptionsCSV = Papa.parse(fs.readFileSync(path.join(padsDataDir, 'PadsPriceExceptions.csv'), 'utf8'), { header: true, skipEmptyLines: true }).data;
+exceptionsCSV.forEach((row) => {
+  if (row['PART NUMBER'] && row['Return Value']) {
+    sleevesData.priceExceptions.set(row['PART NUMBER'].toString().trim(), row['Return Value'].toString().trim());
+  }
+});
 
 // --- 2. GET INPUT ---
 let inputBuffer = '';

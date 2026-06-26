@@ -99,7 +99,14 @@ def main():
                    (is_invalid_part and pn_match and price_match)
 
         # Range of Link Width: Match if identical strings.
-        link_match = str(excel_row["rangeOfLinkWidth"]).strip() == str(app_row["rangeOfLinkWidth"]).strip()
+        excel_lw = str(excel_row["rangeOfLinkWidth"]).strip()
+        app_lw = str(app_row["rangeOfLinkWidth"]).strip()
+        
+        # Handle Excel bug where it outputs 'FALSE-FALSE"' for exceeded width
+        is_excel_lw_bug = excel_lw == 'FALSE-FALSE"'
+        is_app_lw_empty = app_lw.upper() == 'N/A' or app_lw.lower() == 'nan' or app_lw == ''
+        
+        link_match = (excel_lw == app_lw) or (is_excel_lw_bug and is_app_lw_empty)
 
         # Overall match is true only if all individual comparisons pass.
         overall_match = all([pn_match, price_match, cq_match, cp_match, link_match])

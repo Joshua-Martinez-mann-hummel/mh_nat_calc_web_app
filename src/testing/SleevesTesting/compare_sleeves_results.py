@@ -55,12 +55,12 @@ def main():
         df_excel = pd.read_csv(EXCEL_RESULTS_PATH)
         df_app = pd.read_csv(APP_RESULTS_PATH)
     except FileNotFoundError as e:
-        print(f"❌ Error: Could not find a results file. {e}")
+        print(f"[FAIL] Error: Could not find a results file. {e}")
         print("   Please run `npm run test:sleevesExcel` and `npm run test:sleevesLogic` first.")
         return
 
     if len(df_excel) != len(df_app):
-        print(f"⚠️ Warning: The two CSV files have a different number of rows (Excel: {len(df_excel)}, App: {len(df_app)}). Comparison may be misaligned.")
+        print(f"[WARN] Warning: The two CSV files have a different number of rows (Excel: {len(df_excel)}, App: {len(df_app)}). Comparison may be misaligned.")
 
     # --- 1. Clean Data ---
     df_excel_clean = clean_excel_df(df_excel.copy())
@@ -136,9 +136,9 @@ def main():
     
     num_mismatches = len(summary_df[summary_df['overall_match'] == False])
     if num_mismatches == 0:
-        print(f"\n✅ All {len(summary_df)} tests passed! No discrepancies found.")
+        print(f"\n[OK] All {len(summary_df)} tests passed! No discrepancies found.")
     else:
-        print(f"\n🚨 Found {num_mismatches} mismatches out of {len(summary_df)} tests. See '{SUMMARY_CSV_PATH}' for details.")
+        print(f"\n[ALERT] Found {num_mismatches} mismatches out of {len(summary_df)} tests. See '{SUMMARY_CSV_PATH}' for details.")
 
 if __name__ == "__main__":
     main()

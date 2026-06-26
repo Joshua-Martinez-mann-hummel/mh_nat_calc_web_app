@@ -1,8 +1,8 @@
 // Configuration file to toggle visibility of calculators
 export const appConfig = {
-  pleatsCalc_visible: false,
-  panelsCalc_visible: false,
-  padsCalc_visible: false,
-  sleevesCalc_visible: false,
+  pleatsCalc_visible: true,
+  panelsCalc_visible: true,
+  padsCalc_visible: true,
+  sleevesCalc_visible: true,
   proshieldCalc_visible: true,
 };
