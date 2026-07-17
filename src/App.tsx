@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X, HelpCircle, Shield } from 'lucide-react';
+import { Calculator, Package, Settings, Layers, Grid3x3, Home, Menu, X, HelpCircle, Shield, Lock, Unlock } from 'lucide-react';
 
 // Import all separated components with the full file extension to ensure resolution
 import { PleatsCalc } from './components/PleatsCalc/PleatsCalc';
@@ -29,6 +29,26 @@ function AppContent() {
   const [calculations, setCalculations] = useState<Calculation[]>([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { addToast } = useToast();
+
+  const [isICUnlocked, setIsICUnlocked] = useState(() => {
+    const unlocked = localStorage.getItem('ic_unlocked') === 'true';
+    if (unlocked) appConfig.showICPricing = true;
+    return unlocked;
+  });
+
+  const isFinanceUrl = new URLSearchParams(window.location.search).get('user') === 'finance';
+
+  const handleUnlockIC = () => {
+    const pwd = prompt("Enter IC Pricing Password:");
+    if (pwd === "mann+hummel_ic_pricing_unlocked") {
+      localStorage.setItem('ic_unlocked', 'true');
+      appConfig.showICPricing = true;
+      setIsICUnlocked(true);
+      addToast('IC Pricing Unlocked', 'success');
+    } else if (pwd !== null) {
+      addToast('Incorrect password', 'error');
+    }
+  };
 
   const addCalculation = (productType: string, config: object, price: number, resultDetails: any) => {
     const newCalc = {
@@ -202,12 +222,24 @@ function AppContent() {
               <Calculator className="h-8 w-8 text-blue-600" />
               <h1 className="text-2xl font-bold text-gray-900">C&I Custom Calcuators</h1>
             </div>
-            <button onClick={startTour} className="flex items-center space-x-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
-              <HelpCircle className="h-5 w-5" />
-              <span>
-                Help / Tour
-              </span>
-            </button>
+            <div className="flex items-center space-x-4">
+              {isFinanceUrl && !isICUnlocked && (
+                <button onClick={handleUnlockIC} className="flex items-center space-x-2 text-sm font-medium text-amber-600 hover:text-amber-700 transition-colors bg-amber-50 px-3 py-1.5 rounded-md border border-amber-200">
+                  <Lock className="h-4 w-4" />
+                  <span className="hidden sm:inline">Unlock IC Pricing</span>
+                </button>
+              )}
+              {isICUnlocked && (
+                <div className="flex items-center space-x-2 text-sm font-medium text-green-600 bg-green-50 px-3 py-1.5 rounded-md border border-green-200">
+                  <Unlock className="h-4 w-4" />
+                  <span className="hidden sm:inline">IC Pricing Unlocked</span>
+                </div>
+              )}
+              <button onClick={startTour} className="flex items-center space-x-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+                <HelpCircle className="h-5 w-5" />
+                <span className="hidden sm:inline">Help / Tour</span>
+              </button>
+            </div>
           </div>
         </div>
       </header>

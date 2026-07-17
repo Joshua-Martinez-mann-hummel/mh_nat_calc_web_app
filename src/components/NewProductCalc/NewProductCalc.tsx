@@ -6,6 +6,7 @@ import { useNewProductData } from '../../hooks/useNewProductData';
 import { calculateProShieldPrice } from '../../logic/newProductLogic';
 import type { ProShieldInputs, ProShieldPricingResult } from '../../data/NewProductData/newProductDataTypes';
 import { AlertTriangle } from 'lucide-react';
+import { appConfig } from '../../config';
 
 interface NewProductCalcProps {
   onCalculate?: (productType: string, config: object, price: number, quoteDetails: object) => void;
@@ -83,10 +84,17 @@ function NewProductCalc({ onCalculate }: NewProductCalcProps) {
   const displayResult = useMemo(() => {
     if (!pricingResult) return {};
 
-    return {
+    const res: Record<string, any> = {
       'Part Number': pricingResult.partNumber || 'N/A',
       'Net Price': pricingResult.price || 0,
     };
+    
+    // Conditional IC Pricing based on global appConfig
+    if (appConfig.showICPricing && pricingResult.icPrice) {
+      res['IC Price (Purchasing Only)'] = pricingResult.icPrice;
+    }
+
+    return res;
   }, [pricingResult]);
 
   const displayNote = useMemo(() => {

@@ -113,6 +113,7 @@ export interface ProShieldPricingResult {
   partNumber: string;
   price: number; // Final Net Price USD
   trueCost: number; // True Cost USD
+  icPrice?: number; // Intercompany Price USD (Purchasing only)
   fastenerQty: number;
   notes: string[];
   debugInfo?: ProShieldDebugInfo;

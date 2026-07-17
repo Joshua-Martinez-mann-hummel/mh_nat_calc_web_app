@@ -270,6 +270,7 @@ export const calculateProShieldPrice = (
   } else {
     result.price = net_price_usd;
     result.trueCost = true_cost_usd;
+    result.icPrice = excelRound(true_cost_usd * 1.20, 2);
     result.notes = warnings;
   }
 

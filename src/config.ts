@@ -5,4 +5,5 @@ export const appConfig = {
   padsCalc_visible: true,
   sleevesCalc_visible: true,
   proshieldCalc_visible: true,
+  showICPricing: false,
 };
